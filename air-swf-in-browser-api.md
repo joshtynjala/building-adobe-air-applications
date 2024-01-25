@@ -24,9 +24,9 @@ APIs from your own SWF file.
 
 Additionally, a SWF file running in the browser can communicate with a running
 AIR application by using the LocalConnection class. For more information, see
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for ActionScript developers) or
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
 Important: The features described in this section (and the APIs in the air.swf
@@ -247,9 +247,9 @@ FlashVars settings in the container HTML page.
 If the application starts automatically upon installation, you can use
 LocalConnection communication to have the installed application contact the
 badge.swf file upon invocation. For more information, see
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for ActionScript developers) or
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
 You may also call the `getApplicationVersion()` method of the air.swf file to
@@ -446,9 +446,9 @@ started. For details, see
 [Checking from a web page if an AIR application is installed](WS5b3ccc516d4fbf351e63e3d118666ade46-7c85.html).
 Once the application is running, it can communicate with the SWF content in the
 browser by using the LocalConnection class. For more information, see
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for ActionScript developers) or
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
 ## Launching an installed AIR application from the browser
@@ -505,23 +505,23 @@ call the `getApplicationVersion(`) method in the air.swf file. For details, see
 When the application is invoked via the browser invocation feature, the
 application's NativeApplication object dispatches a BrowserInvokeEvent object.
 For details, see
-[Invoking an AIR application from the browser](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
+[Invoking an AIR application from the browser](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
 (for ActionScript developers) or
-[Invoking an AIR application from the browser](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
+[Invoking an AIR application from the browser](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
 (for HTML developers).
 
 If you use the browser invocation feature, be sure to consider security
 implications. These implications are described in
-[Invoking an AIR application from the browser](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
+[Invoking an AIR application from the browser](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
 (for ActionScript developers) and
-[Invoking an AIR application from the browser](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
+[Invoking an AIR application from the browser](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
 (for HTML developers).
 
 Once the application is running, it can communicate with the SWF content in the
 browser by using the LocalConnection class. For more information, see
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for ActionScript developers) or
-[Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
+[Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
 Note: As of AIR 1.5.3, the publisher ID is deprecated. Publisher IDs are no

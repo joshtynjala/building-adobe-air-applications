@@ -7,20 +7,20 @@ release version of your application package, you can distribute your app through
 the standard platform mechanism. For Android, this typically means the Android
 Market; for iOS, the Apple App Store.
 
-You can use the [AIR SDK](http://www.adobe.com/go/air) and Flash Professional,
+You can use the [AIR SDK](https://airsdk.harman.com/) and Flash Professional,
 Flash Builder, or another ActionScript development tool to build AIR apps for
 mobile devices. HTML-based mobile AIR apps are not currently supported.
 
 Note: The Research In Motion (RIM) BlackBerry Playbook provides its own SDK for
 AIR development. For information on Playbook development, see
-[RIM: BlackBerry Tablet OS Development](http://us.blackberry.com/developers/tablet/).
+[RIM: BlackBerry Tablet OS Development](https://web.archive.org/web/20120215075832/https://bdsc.webapps.blackberry.com/air/).
 
 Note: This document describes how to develop iOS applications using the AIR 2.6
 SDK or later. Applications created with AIR 2.6+ can be installed on iPhone 3Gs,
 iPhone 4, and iPad devices running iOS 4, or later. To develop AIR applications
 for earlier versions of iOS, you must use the AIR 2 Packager for iPhone as
 described in
-[Building iPhone apps](http://help.adobe.com/en_US/as3/iphone/index.html).
+[Building iPhone apps](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/index.html).
 
 For more information on privacy best practices, see
 [Adobe AIR SDK Privacy Guide](http://www.adobe.com/go/learn_air_developer_privacy).

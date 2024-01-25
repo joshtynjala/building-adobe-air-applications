@@ -6,7 +6,7 @@ extension developers sometimes work with device manufacturers, and sometimes are
 third-party developers.
 
 If you are developing a native extension, see
-[Developing Native Extensions for Adobe AIR](http://www.adobe.com/go/learn_air_as_extensions_en).
+[Developing Native Extensions for Adobe AIR](https://web.archive.org/web/20150414032840/https://help.adobe.com/en_US/air/extensions/index.html).
 
 A native extension is a combination of:
 
@@ -35,40 +35,17 @@ Native extensions are useful in the following situations:
 Some examples of native extensions are on the Adobe Developer Center. For
 example, one native extension provides AIR applications access to Android's
 vibration feature. See
-[Native extensions for Adobe AIR](http://www.adobe.com/go/learn_native_extension_examples_en).
+[Native extensions for Adobe AIR](https://web.archive.org/web/20150414032840/https://help.adobe.com/en_US/air/extensions/index.html).
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td colspan="2"><h2 id="adobe-recommends">Adobe recommends</h2></td>
-<td colspan="2"><h3 id="have-a-tutorial-you-would-like-to-share"><img
-src="./img/TinyBlueTutIcon.png" /><a
-href="http://www.adobe.com/community/publishing/download.html">Have a
-tutorial you would like to share?</a></h3></td>
-</tr>
-<tr class="even">
-<td colspan="4" height="10"></td>
-</tr>
-<tr class="odd">
-<td width="5%"><span><img src="./img/oliver_goldman.png" /></span></td>
-<td width="45%"><h3 id="extending-adobe-air"><a
-href="http://goo.gl/y8Lu7">Extending Adobe AIR</a></h3>
-<span>Oliver Goldman</span></td>
-<td width="5%"><span><img src="./img/milkmanGames.png" /></span></td>
-<td width="45%"><h3
-id="developing-android-extensions-for-air3-a-beginners-guide"><a
-href="http://goo.gl/EPSg6">Developing Android Extensions for AIR3: A
-Beginner's Guide</a></h3>
-<span>Milkman Games</span></td>
-</tr>
-</tbody>
-</table>
+## Adobe recommends
+
+> ### ![](./img/oliver_goldman.png) [Extending Adobe AIR](https://web.archive.org/web/20170924112945/http://www.adobe.com/devnet/air/articles/extending-air.html)
+>
+> [Oliver Goldman](https://web.archive.org/web/20150206101641/http://blogs.adobe.com/simplicity/)
+
+> ### ![](./img/milkmanGames.png) [Developing Android Extensions for AIR3: A Beginner's Guide](https://web.archive.org/web/20170924112945/http://www.milkmangames.com/blog/2011/09/25/developing-android-extensions-for-air-3-a-beginners-guide/)
+>
+> [Milkman Games](https://web.archive.org/web/20160731193818/https://www.milkmanplugins.com/)
 
 ## AIR Native Extension (ANE) files
 
@@ -271,7 +248,7 @@ Use ADT to package an application that uses native extensions. You cannot
 package the application using Flash Professional CS5.5 or Flash Builder 4.5.1.
 
 Details about using ADT are at
-[AIR Developer Tool (ADT)](http://www.adobe.com/go/learn_fbairdevelopertool_en).
+[AIR Developer Tool (ADT)](./air-developer-tool-adt/index.md).
 
 For example, the following ADT command creates a DMG file (a native installer
 file for Mac OS X) for an application that uses native extensions:
@@ -402,4 +379,4 @@ More Help topics
 
 [About SWC files](http://www.adobe.com/go/learn_about_SWC_files_en)
 
-[AIR profile support](http://help.adobe.com/go/learn_air_app_profiles_en)
+[AIR profile support](./device-profiles.md)

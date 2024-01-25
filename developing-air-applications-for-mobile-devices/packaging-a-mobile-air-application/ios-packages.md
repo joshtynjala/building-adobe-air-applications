@@ -267,7 +267,7 @@ only present to make it easier to read.
 
 Also, the example assumes that the path to the ADT tool is on your command-line
 shell's path definition (see
-[Path environment variables](https://help.adobe.com/en_US/air/build/WSfffb011ac560372f-71994050128cca87097-8000.html)
+[Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
 for help). You must run the command from the directory containing the
 application files. The application files in the example are `myApp-app xml`(the
 application descriptor file), `myApp.swf`, icons directory, the `Default.png`

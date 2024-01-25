@@ -32,8 +32,8 @@ AIR for TV supports hardware decoding and presentation of H.264-encoded video.
 Use the StageVideo class to enable this feature.
 
 See
-[Using the StageVideo class for hardware accelerated presentation](http://www.adobe.com/go/learn_as3_stageVideo_en)in
-the _ActionScript 3.0 Developer's Guide_ for details about:
+[Using the StageVideo class for hardware accelerated presentation](http://www.adobe.com/go/learn_as3_stageVideo_en)
+in the _ActionScript 3.0 Developer's Guide_ for details about:
 
 - the API of the StageVideo class and related classes.
 
@@ -93,7 +93,7 @@ Regarding multichannel audio support in AIR for TV, consider the following:
 
 - Although AIR for TV supports many audio codecs, not all AIR for TV **devices**
   support the entire set. Use the
-  [flash.system.Capabilities](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/Capabilities.html)
+  [flash.system.Capabilities](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/Capabilities.html)
   method `hasMultiChannelAudio()`to check whether an AIR for TV device supports
   a particular multichannel audio codec such as AC-3.
 

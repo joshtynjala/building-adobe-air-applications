@@ -71,4 +71,4 @@ HTML, and Ajax-based applications to the desktop, mobile devices, and
 televisions.
 
 For information about what is included in each new AIR update, see the Adobe AIR
-Release Notes (<http://www.adobe.com/go/learn_air_relnotes_en>).
+Release Notes (<https://airsdk.harman.com/release_notes>).

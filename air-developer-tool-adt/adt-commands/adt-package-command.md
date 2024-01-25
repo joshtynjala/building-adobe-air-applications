@@ -159,11 +159,12 @@ The `-migrate` flag of the `-package` command is available in AIR 3.6 and later.
 
 **-sampler** (iOS only, AIR 3.4 and higher) Enables the telemetry-based
 ActionScript sampler in iOS applications. Using this flag lets you profile the
-application with Adobe Scout. Although [Scout](http://www.adobe.com/go/scout)
-can profile any Flash platform content, enabling detailed telemetry gives you
-deep insight into ActionScript function timing, DisplayList, Stage3D rendering
-and more. Note that using this flag will have a slight performance impact, so do
-not use it for production applications.
+application with Adobe Scout. Although
+[Scout](https://github.com/airsdk/Adobe-Scout) can profile any Flash platform
+content, enabling detailed telemetry gives you deep insight into ActionScript
+function timing, DisplayList, Stage3D rendering and more. Note that using this
+flag will have a slight performance impact, so do not use it for production
+applications.
 
 **-hideAneLibSymbols** (iOS only, AIR 3.4 and higher) Application developers can
 use multiple native extensions from multiple sources and if the ANEs share a

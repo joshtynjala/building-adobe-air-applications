@@ -9,16 +9,16 @@ included with the SDK. For information about package an application using one of
 the Adobe authoring tools, see the following:
 
 - Adobe® Flex® Builder™, see
-  [Packaging AIR applications with Flex Builder](http://livedocs.adobe.com/flex/3/html/UsingFB_1.html#1084848).
+  [Packaging AIR applications with Flex Builder](https://web.archive.org/web/20111130012028/http://livedocs.adobe.com/flex/3/html/UsingFB_1.html#1084848).
 
 - Adobe® Flash® Builder™, see
-  [Packaging AIR applications with Flash Builder](http://help.adobe.com/en_US/Flex/4.0/UsingFlashBuilder/WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-8000.html#WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-7ffd).
+  [Packaging AIR applications with Flash Builder](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/Flex/4.0/UsingFlashBuilder/WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-8000.html#WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-7ffd).
 
 - Adobe® Flash® Professional, see
-  [Publishing for Adobe AIR](http://help.adobe.com/en_US/Flash/CS5/Using/WSF0126B20-BFF4-4c50-9978-BCA47C8C3C3F.html).
+  [Publishing for Adobe AIR](https://web.archive.org/web/20141022094050/http://helpx.adobe.com/flash/using/publishing-adobe-air-desktop.html).
 
 - Adobe® Dreamweaver® see
-  [Creating an AIR application in Dreamweaver](http://help.adobe.com/en_US/Dreamweaver/CS5/Using/WS6463f310bbfa3de2-1eb2a492126f73db0f1-8000.html#WS6463f310bbfa3de2-1eb2a492126f73db0f1-7fff).
+  [Creating an AIR application in Dreamweaver](https://web.archive.org/web/20140902231802/https://helpx.adobe.com/dreamweaver/using/air-extension-dreamweaver.html#creating_an_air_application_in_dreamweaver).
 
 All AIR installer files must be signed using a digital certificate. The AIR
 installer uses the signature to verify that your application file has not been

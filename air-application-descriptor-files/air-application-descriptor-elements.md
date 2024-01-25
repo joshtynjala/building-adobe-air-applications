@@ -9,9 +9,9 @@ Enables the AIR in-browser API to detect and launch the application.
 
 If you set this value to `true`, be sure to consider security implications.
 These are described in
-[Invoking an AIR application from the browser](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
+[Invoking an AIR application from the browser](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
 (for ActionScript developers) and
-[Invoking an AIR application from the browser](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
+[Invoking an AIR application from the browser](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
 (for HTML developers).
 
 For more information, see
@@ -253,8 +253,8 @@ phones. On some devices, such as the iPad tablet, the application opens in the
 current orientation. In AIR 3.3 and higher, this applies to the entire
 application, not just the initial display.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -271,7 +271,7 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 Specifies whether the orientation of content in the application automatically
 reorients as the device itself changes physical orientation. For more
 information, see
-[Stage orientation](http://help.adobe.com/en_US/as3/dev/WS901d38e593cd1bac3bf97f12ca4e5c567-8000.html).
+[Stage orientation](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS901d38e593cd1bac3bf97f12ca4e5c567-8000.html).
 
 When using auto-orientation, consider setting the `align` and `scaleMode`
 properties of the Stage to the following:
@@ -285,8 +285,8 @@ other scale modes do adjust your content to fit the rotated stage dimensions,
 they also clip, distort, or excessively shrink that content. Better results can
 almost always be achieved by redrawing or relaying out the content yourself.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -359,8 +359,8 @@ running an AIR application with ADL, the URL is relative to the folder
 containing the application descriptor file. You can use the `root-dir` parameter
 of ADL to specify a different root directory.)
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -470,8 +470,8 @@ does not equal `direct`, ADT throws error 118:
 
     <depthAndStencil> element unexpected for render mode cpu.  It requires "direct" render mode.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -633,8 +633,8 @@ A string identifying the file extension characters (without the dot, ".").
 Specifies the ID of an ActionScript extension used by the application. The ID is
 defined in the extension descriptor document.
 
-**Parent
-element:**[extensions](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffd.html)
+**Parent element:**
+[extensions](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffd.html)
 
 **Child elements:** none
 
@@ -923,8 +923,8 @@ iOS:
 
 Specifies whether the application starts up in fullscreen mode.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -945,8 +945,8 @@ file or, in the case of an HTML-based AIR application, by the operating system.
 
 The maximum height of a window changed from 2048 pixels to 4096 pixels in AIR 2.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1238,8 +1238,8 @@ Defines iOS-specific application properties.
 
 Specifies information to add to the Android manifest file for the application.
 
-**Parent
-element:**[manifestAdditions](WSfffb011ac560372f33105f2a1293d3d21e0-7ffd.html)
+**Parent element:**
+[manifestAdditions](WSfffb011ac560372f33105f2a1293d3d21e0-7ffd.html)
 
 **Child elements:** Defined by the Android SDK.
 
@@ -1348,8 +1348,8 @@ Note: On operating systems, such as Mac OS X, for which maximizing windows is a
 resizing operation, both maximizable and resizable must be set to `false` to
 prevent the window from being zoomed or resized.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1366,8 +1366,8 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 The maximum sizes of the window. If you do not set a maximum size, it is
 determined by the operating system.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1388,8 +1388,8 @@ the maximum value you can use for width or height is 4095.)
 
 Specifies whether the window can be minimized.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** None
 
@@ -1405,8 +1405,8 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 Specifies the minimum size allowed for the window.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1556,8 +1556,8 @@ A publisher ID string.
 Specifies whether to use graphics processing unit (GPU) acceleration, if
 supported on the current computing device.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1664,8 +1664,8 @@ Note: On operating systems, such as Mac OS X, for which maximizing windows is a
 resizing operation, both maximizable and resizable must be set to `false` to
 prevent the window from being zoomed or resized.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:**
 
@@ -1690,8 +1690,8 @@ interactive objects dispatch a SoftKeyboardEvent when the soft keyboard is
 raised, but the runtime does not pan or resize the application. It is your
 application's responsibility to keep the text entry area in view.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1798,8 +1798,8 @@ title bar, borders, and controls provided by the operating system.
 
 The system chrome setting of the window cannot be changed at run time.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1863,8 +1863,8 @@ window.
 
 A title is only displayed if the `systemChrome` element is set to `standard`.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1887,8 +1887,8 @@ The transparent setting cannot be changed at run time.
 Important: You can only set `transparent` to `true` when `systemChrome` is
 `none`_._
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -1983,8 +1983,8 @@ unless the `visible` attribute is set to `false` in the MXML definition.
 On devices in the mobile profile, which does not support windows, the visible
 setting is ignored.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -2005,8 +2005,8 @@ or, in the case of an HTML-based AIR application, by the operating system.
 
 The maximum width of a window changed from 2048 pixels to 4096 pixels in AIR 2.
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -2028,8 +2028,8 @@ position of the window rather than assigning a fixed value.
 The origin of the screen coordinate system (0,0) is the top, left-hand corner of
 the main desktop screen (as determined by the operating system).
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -2051,8 +2051,8 @@ position of the window rather than assigning a fixed value.
 The origin of the screen coordinate system (0,0) is the top, left-hand corner of
 the main desktop screen (as determined by the operating system).
 
-**Parent
-element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
+**Parent element:**
+[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
@@ -2077,4 +2077,4 @@ More Help topics
 [The AndroidManifest.xml File](http://developer.android.com/guide/topics/manifest/manifest-intro.html)
 
 ![](../img/flashplatformLinkIndicator.png) 
-[SoftKeyboardEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html)
+[SoftKeyboardEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html)

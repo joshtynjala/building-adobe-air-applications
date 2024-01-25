@@ -61,8 +61,8 @@ JavaScript example:
 
 For more information, see:
 
-- [Workflow for reading and writing files](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html)
+- [Workflow for reading and writing files](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html)
   (for ActionScript developers)
 
-- [Workflow for reading and writing files](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html)
+- [Workflow for reading and writing files](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html)
   (for HTML developers)

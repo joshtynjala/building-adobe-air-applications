@@ -21,7 +21,7 @@ include multiple `-platform` options, each with its own `FILE_OPTIONS`.
 this file to specify non-default linker options, shared libraries, and
 third-party static libraries used by the extension. For more information and
 examples, see
-[iOS native libraries](http://help.adobe.com/en_US/air/extensions/WSdb11516da818ea8d49ce0fe713341ed67cf-7fff.html).
+[iOS native libraries](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/extensions/WSdb11516da818ea8d49ce0fe713341ed67cf-7fff.html).
 
 **FILE_OPTIONS** Identifies the native platform files to include in the package,
 such as static libraries to include in the native extension package. The file

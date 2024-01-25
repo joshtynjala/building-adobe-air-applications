@@ -23,7 +23,7 @@ that the AIR versions load the configuration options from the air-config.xml
 file instead of the flex-config.xml file.
 
 The Flex SDK tools and their command-line options are fully described in the
-[Flex documentation](http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7ffd.html).
+[Flex documentation](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7ffd.html).
 The Flex SDK tools are described here at a basic level to help you get started
 and to point out the differences between building Flex applications and building
 AIR applications.
@@ -243,4 +243,4 @@ More Help topics
 [Creating your first desktop AIR application with the Flex SDK](WS144092a96ffef7cc4c0afd1212601c9a36f-8000.html)
 
 ![](./img/flexLinkIndicator.png) 
-[Flex compilers](http://help.adobe.com/en_US/Flex/4.5/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ffd.html)
+[Flex compilers](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/Flex/4.5/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ffd.html)

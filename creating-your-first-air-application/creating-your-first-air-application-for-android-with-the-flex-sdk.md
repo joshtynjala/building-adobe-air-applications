@@ -10,7 +10,7 @@ described in:
 [Android Developers: Installing the SDK](http://developer.android.com/sdk/installing.html).
 
 Note: For information on iPhone development, see
-[Creating a Hello World iPhone application with Flash Professional CS5](http://help.adobe.com/en_US/as3/iphone/WS789ea67d3e73a8b2-240138de1243a7725e7-7ffc.html).
+[Creating a Hello World iPhone application with Flash Professional CS5](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/WS789ea67d3e73a8b2-240138de1243a7725e7-7ffc.html).
 
 ## Create the AIR application descriptor file
 

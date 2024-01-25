@@ -77,13 +77,13 @@ The notification workflow is as follows:
 AIR 3.4 introduced a set of APIs that support iOS push notifications. These APIs
 are in the `flash.notifications` package, and inlude the following classes:
 
-- [`NotificationStyle`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/notifications/NotificationStyle.html) -
+- [`NotificationStyle`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/notifications/NotificationStyle.html) -
   Defines constants for notification types: `ALERT`, `BADGE`, and `SOUND`.C
 
-- [`RemoteNotifier`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/notifications/RemoteNotifier.html) -
+- [`RemoteNotifier`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/notifications/RemoteNotifier.html) -
   Lets you subscribe to and unsubscribe from push notifications.
 
-- [`RemoteNotifierSubscribeOptions`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/notifications/RemoteNotifierSubscribeOptions.html) -
+- [`RemoteNotifierSubscribeOptions`](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/notifications/RemoteNotifierSubscribeOptions.html) -
   Lets you select which notification types to receive. Use the
   `notificationStyles` property to define a vector of strings that register for
   multiple notification types.

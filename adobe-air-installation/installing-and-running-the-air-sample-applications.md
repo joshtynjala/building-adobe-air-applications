@@ -24,4 +24,4 @@ access and install them using the following instructions:
       HD/Users/JoeUser/Applications/) by default.
 
 Note: Check the AIR release notes for updates to these instructions, which are
-located here: <http://www.adobe.com/go/learn_air_relnotes>.
+located here: <https://airsdk.harman.com/release_notes>.

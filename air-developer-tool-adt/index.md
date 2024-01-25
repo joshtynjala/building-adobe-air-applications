@@ -22,16 +22,15 @@ developing AIR applications. You can use ADT to perform the following tasks:
 
 - Remotely install and uninstall the AIR runtime on a mobile device
 
-ADT is a Java program included in the
-[AIR SDK](http://www.adobe.com/go/learn_air_download_AIRSDK_en). You must have
-Java 1.5 or higher to use it. The SDK includes a script file for invoking ADT.
-To use this script, the location of the Java program must be included in the
-path environment variable. If the AIR SDK `bin` directory is also listed in your
-path environment variable, you can type `adt` on the command line, with the
-appropriate arguments, to invoke ADT. (If you do not know how to set your path
-environment variable, please refer to your operating system documentation. As a
-further aid, procedures for setting the path on most computer systems are
-described in
+ADT is a Java program included in the [AIR SDK](https://airsdk.harman.com/). You
+must have Java 1.5 or higher to use it. The SDK includes a script file for
+invoking ADT. To use this script, the location of the Java program must be
+included in the path environment variable. If the AIR SDK `bin` directory is
+also listed in your path environment variable, you can type `adt` on the command
+line, with the appropriate arguments, to invoke ADT. (If you do not know how to
+set your path environment variable, please refer to your operating system
+documentation. As a further aid, procedures for setting the path on most
+computer systems are described in
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html).)
 
 At least 2GB of computer memory is required to use ADT. If you have less memory

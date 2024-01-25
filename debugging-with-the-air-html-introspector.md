@@ -322,9 +322,9 @@ displayed in the tab. (Tree nodes that are not visible are not searched.)
 
 You can load content from the application directory into an iframe or frame that
 is mapped to a non-application sandbox. (See
-[HTML security in Adobe AIR](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7f11)
+[HTML security in Adobe AIR](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7f11)
 for ActionScript developers or
-[HTML security in Adobe AIR](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7f11)
+[HTML security in Adobe AIR](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7f11)
 for HTML developers). You can use the AIR introspector with such content, but
 observe the following rules:
 

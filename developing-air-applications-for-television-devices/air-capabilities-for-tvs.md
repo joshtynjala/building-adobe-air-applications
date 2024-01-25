@@ -23,7 +23,7 @@ Use the following profiles for AIR for TV applications:
 The ActionScript capabilities defined for these profiles are covered in
 [Device profiles](WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html). Specific
 ActionScript differences for AIR for TV applications are noted in the
-[ActionScript 3.0 Reference for the Adobe Flash Platform](http://www.adobe.com/go/learn_air_aslr_en).
+[ActionScript 3.0 Reference for the Adobe Flash Platform](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/index.html).
 
 For details about AIR for TV profiles, see
 [Supported profiles](WS62b4b4caef5f7931-1f86f0fb1328dba45c2-7fd8.html).
@@ -100,20 +100,20 @@ function well with different (and possibly unknown) types of game input devices.
 
 The GameInput class is the entry point into the game input ActionScript APIs.
 For more information, see
-[GameInput](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/GameInput.html).
+[GameInput](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/GameInput.html).
 
 ## Stage 3D accelerated graphics rendering
 
 Starting with AIR 3, AIR for TV supports Stage 3D accelerated graphics
 rendering. The
-[Stage3D](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html)
+[Stage3D](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html)
 ActionScript APIs are a set of low-level GPU-accelerated APIs enabling advanced
 2D and 3D capabilities. These low-level APIs provide developers the flexibility
 to leverage GPU hardware acceleration for significant performance gains. You can
 also use gaming engines that support the Stage3D ActionScript APIs.
 
 For more information, see
-[Gaming engines, 3D, and Stage 3D](http://www.adobe.com/devnet/games/gaming_engines.html).
+[Gaming engines, 3D, and Stage 3D](https://web.archive.org/web/20140302145731/http://www.adobe.com:80/devnet/games/gaming_engines.html).
 
 ## Native extensions
 
@@ -154,4 +154,4 @@ For more information about using native extensions in your AIR application, see
 [Using native extensions for Adobe AIR](WS597e5dadb9cc1e0253f7d2fc1311b491071-8000.html).
 
 For information about creating native extensions, see
-[Developing Native Extensions for Adobe AIR](http://www.adobe.com/go/learn_air_as_extensions_en).
+[Developing Native Extensions for Adobe AIR](https://web.archive.org/web/20150414032840/https://help.adobe.com/en_US/air/extensions/index.html).

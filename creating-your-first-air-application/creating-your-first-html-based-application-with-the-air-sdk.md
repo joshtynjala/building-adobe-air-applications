@@ -221,9 +221,9 @@ since it was created. There is nothing to prevent someone from self-signing a
 masquerade AIR file and presenting it as your application. For publicly released
 AIR files, a verifiable, commercial certificate is strongly recommended. For an
 overview of AIR security issues, see
-[AIR security](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html)
+[AIR security](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa3.html)
 (for ActionScript developers) or
-[AIR security](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d23.html)
+[AIR security](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d23.html)
 (for HTML developers).
 
 #### Generate a self-signed certificate and key pair
@@ -268,4 +268,4 @@ typical web browser. (In fact, AIR uses the same WebKit rendering engine used by
 the Safari web browser.) However, there are some important differences that you
 must understand when you develop HTML applications in AIR. For more information
 on these differences, and other important topics, see
-[Programming HTML and JavaScript](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa7.html).
+[Programming HTML and JavaScript](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fa7.html).

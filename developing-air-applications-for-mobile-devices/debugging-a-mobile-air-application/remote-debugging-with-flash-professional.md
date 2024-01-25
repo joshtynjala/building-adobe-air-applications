@@ -37,4 +37,4 @@ application descriptor, do the following:
 More Help topics
 
 ![](../../img/flashLinkIndicator.png) 
-[Debug a remote ActionScript 3.0 SWF file](http://help.adobe.com/en_US/flash/cs/using/WSE9184681-3417-4849-B487-8D6C2F8CC688a.html)
+[Debug a remote ActionScript 3.0 SWF file](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flash/cs/using/WSE9184681-3417-4849-B487-8D6C2F8CC688a.html)

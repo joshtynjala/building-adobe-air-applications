@@ -15,7 +15,7 @@ Note: If your `trace()` statements do not display on the console, ensure that
 you have not specified `ErrorReportingEnable` or `TraceOutputFileEnable` in the
 mm.cfg file. For more information on the platform-specific location of this
 file, see
-[Editing the mm.cfg file](http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html).
+[Editing the mm.cfg file](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html).
 
 AIR supports debugging directly, so you do not need a debug version of the
 runtime (as you would with Adobe® Flash® Player). To conduct command-line

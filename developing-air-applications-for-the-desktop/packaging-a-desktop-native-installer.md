@@ -36,10 +36,10 @@ application gains these capabilities:
 - It can launch and interact with native processes, using the NativeProcess
   class. For details, see one of the following:
 
-  - [Communicating with native processes in AIR](http://help.adobe.com/en_US/as3/dev/WSb2ba3b1aad8a27b060d22f991220f00ad8a-8000.html)
+  - [Communicating with native processes in AIR](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WSb2ba3b1aad8a27b060d22f991220f00ad8a-8000.html)
     (for ActionScript developers)
 
-  - [Communicating with native processes in AIR](http://help.adobe.com/en_US/air/html/dev/WSb2ba3b1aad8a27b060d22f991220f00ad8a-8000.html)
+  - [Communicating with native processes in AIR](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WSb2ba3b1aad8a27b060d22f991220f00ad8a-8000.html)
     (for HTML developers)
 
 - It can use native extensions.

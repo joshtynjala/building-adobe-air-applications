@@ -5,7 +5,8 @@ the computer.
 
 #### Install the runtime on a Windows computer
 
-1.  Download the runtime installation file from <http://get.adobe.com/air>.
+1.  Download the runtime installation file from
+    <https://airsdk.harman.com/runtime>.
 
 2.  Double-click the runtime installation file.
 
@@ -13,7 +14,8 @@ the computer.
 
 #### Install the runtime on a Mac computer
 
-1.  Download the runtime installation file from <http://get.adobe.com/air>.
+1.  Download the runtime installation file from
+    <https://airsdk.harman.com/runtime>.
 
 2.  Double-click runtime installation file.
 

@@ -108,8 +108,7 @@ following:
   runtime
 
 For more information, see the
-_[Adobe AIR Administrator's Guide](http://www.adobe.com/go/learn_air_admin_guide_en)
-(http://www.adobe.com/go/learn_air_admin_guide_en)._
+_[Adobe AIR Administrator's Guide](http://www.adobe.com/go/learn_air_admin_guide_en)._
 
 ## Installation logs on desktop computers
 

@@ -27,7 +27,7 @@ the visual aspects of the application such that the code can render them
 efficiently.
 
 Important optimization techniques are discussed in the
-[Optimizing Content for the Flash Platform](http://help.adobe.com/en_US/as3/mobile/index.html)
+[Optimizing Content for the Flash Platform](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/mobile/index.html)
 guide. The techniques covered in the guide apply to all Flash and AIR content,
 but are essential to developing applications that run well on mobile devices.
 
@@ -96,7 +96,7 @@ for these keys in your application.
 Mobile content can be viewed in portrait or landscape orientation. Consider how
 your application will deal with screen orientation changes. For more
 information, see
-[Stage orientation](http://help.adobe.com/en_US/as3/dev/WS901d38e593cd1bac3bf97f12ca4e5c567-8000.html).
+[Stage orientation](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS901d38e593cd1bac3bf97f12ca4e5c567-8000.html).
 
 ## Screen dimming
 
@@ -162,18 +162,19 @@ guideline is that only files that contain user-entered data or data that
 otherwise can't be regenerated or re-downloaded should be stored in a directory
 that's designated for remote backup. For information on how to comply with
 Apple's guidelines for file backup and caching, see
-[Controlling file backup and caching](http://help.adobe.com/en_US/as3/dev/WS2f73111e7a180bd0-2c8d6a0213c56230816-8000.html).
+[Controlling file backup and caching](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS2f73111e7a180bd0-2c8d6a0213c56230816-8000.html).
 
 ## UI components
 
 Adobe has developed a mobile-optimized version of the Flex framework. For more
 information, see
-[Developing Mobile Applications with Flex and Flash Builder](http://help.adobe.com/en_US/flex/mobileapps/index.html).
+[Developing Mobile Applications with Flex and Flash Builder](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/mobileapps/index.html).
 
 Community component projects suitable for mobile applications are also
 available. These include:
 
-- Josh Tynjala's [Feathers UI controls for Starling](http://feathersui.com/)
+- Josh Tynjala's
+  [Feathers UI controls for Starling](https://feathersui.com/learn/as3-starling/)
 
 - Derrick Grigg's
   [skinnable version of Minimal Comps](http://www.dgrigg.com/post.cfm/04/28/2010/Alpha-Release-of-Skinnable-Minimal-Components)
@@ -184,14 +185,14 @@ available. These include:
 
 Starting with AIR 3.2, AIR for mobile supports Stage 3D accelerated graphics
 rendering. The
-[Stage3D](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html)
+[Stage3D](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage3D.html)
 ActionScript APIs are a set of low-level GPU-accelerated APIs enabling advanced
 2D and 3D capabilities. These low-level APIs provide developers the flexibility
 to leverage GPU hardware acceleration for significant performance gains. You can
 also use gaming engines that support the Stage3D ActionScript APIs.
 
 For more information, see
-[Gaming engines, 3D, and Stage 3D](http://www.adobe.com/devnet/games/gaming_engines.html).
+[Gaming engines, 3D, and Stage 3D](https://web.archive.org/web/20140302145731/http://www.adobe.com:80/devnet/games/gaming_engines.html).
 
 ## Video smoothing
 
@@ -205,9 +206,9 @@ libraries. These native extension libraries can access features available from
 the operating system or even specific to a given device. Native extensions can
 be written in C on iOS, and Java or C on Android. For information on developing
 native extensions, see
-[Introducing native extensions for Adobe AIR](http://help.adobe.com/en_US/air/extensions/WSb464b1207c184b14-70ccb6bd12937b4f2d6-8000.html).
+[Introducing native extensions for Adobe AIR](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/extensions/WSb464b1207c184b14-70ccb6bd12937b4f2d6-8000.html).
 
 More Help topics
 
 ![](../img/as3LinkIndicator.png) 
-[Working with File objects in AIR](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fe4.html)
+[Working with File objects in AIR](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fe4.html)

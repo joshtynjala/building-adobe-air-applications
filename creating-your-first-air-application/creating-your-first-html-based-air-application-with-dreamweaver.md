@@ -4,14 +4,14 @@ For a quick, hands-on illustration of how Adobe® AIR® works, use these
 instructions to create and package a simple HTML-based AIR "Hello World"
 application using the Adobe® AIR® Extension for Dreamweaver®.
 
-If you haven't already done so, download and install Adobe AIR, which is located
-here: [www.adobe.com/go/air](http://www.adobe.com/go/air).
+If you haven't already done so, download and install the Adobe AIR SDK, which is
+located here: [airsdk.harman.com](https://airsdk.harman.com/).
 
 For instructions on installing the Adobe AIR Extension for Dreamweaver, see
-[Install the AIR Extension for Dreamweaver](http://help.adobe.com/en_US/Dreamweaver/CS5/Using/WS6463f310bbfa3de2-1eb2a492126f73db0f1-8000.html#WS6463f310bbfa3de2474c13d1126f74475d2-7ffe).
+[Install the AIR Extension for Dreamweaver](https://web.archive.org/web/20140902231802/https://helpx.adobe.com/dreamweaver/using/air-extension-dreamweaver.html#installing_the_air_extension_for_dreamweaver).
 
 For an overview of the extension, including system requirements, see
-[AIR Extension for Dreamweaver](http://help.adobe.com/en_US/Dreamweaver/CS5/Using/WS6463f310bbfa3de2-1eb2a492126f73db0f1-8000.html).
+[AIR Extension for Dreamweaver](https://web.archive.org/web/20140902231802/https://helpx.adobe.com/dreamweaver/using/air-extension-dreamweaver.html).
 
 Note: HTML-based AIR applications can only be developed for the desktop and the
 extendedDesktop profiles. The mobile profile is not supported.
@@ -79,7 +79,7 @@ For more information on Dreamweaver sites, see Dreamweaver Help.
 
     For further explanation about all of the dialog box options and how to edit
     them, see
-    [Creating an AIR application in Dreamweaver](http://help.adobe.com/en_US/dreamweaver/cs/using/WS6463f310bbfa3de2-1eb2a492126f73db0f1-8000.html#WS6463f310bbfa3de2-1eb2a492126f73db0f1-7fff).
+    [Creating an AIR application in Dreamweaver](https://web.archive.org/web/20140902231802/https://helpx.adobe.com/dreamweaver/using/air-extension-dreamweaver.html#creating_an_air_application_in_dreamweaver).
 
 9.  Click the Create AIR File button.
 

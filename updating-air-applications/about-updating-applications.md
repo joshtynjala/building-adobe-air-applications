@@ -1,7 +1,7 @@
 # About updating applications
 
 The
-[Updater](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Updater.html)
+[Updater](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Updater.html)
 class (in the flash.desktop package) includes one method, `update()`, which you
 can use to update the currently running application with a different version.
 For example, if the user has a version of the AIR file ("Sample_App_v2.air")

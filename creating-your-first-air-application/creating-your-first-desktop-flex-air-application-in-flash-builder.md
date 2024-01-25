@@ -5,8 +5,8 @@ instructions to create and package a simple SWF file-based AIR "Hello World"
 application using Adobe® Flash® Builder.
 
 If you haven't already done so, download and install Flash Builder. Also,
-download and install the most recent version of Adobe AIR, which is located
-here: [www.adobe.com/go/air](http://www.adobe.com/go/air).
+download and install the most recent version of the Adobe AIR SDK, which is
+located here: [airsdk.harman.com](https://airsdk.harman.com/).
 
 ## Create an AIR project
 
@@ -38,7 +38,7 @@ application XML file (known as the application descriptor file). The latter file
 specifies application properties.
 
 For more information, see
-[Developing AIR applications with Flash Builder](http://help.adobe.com/en_US/Flex/4.0/UsingFlashBuilder/WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-8000.html).
+[Developing AIR applications with Flash Builder](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/Flex/4.0/UsingFlashBuilder/WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-8000.html).
 
 ## Write the AIR application code
 

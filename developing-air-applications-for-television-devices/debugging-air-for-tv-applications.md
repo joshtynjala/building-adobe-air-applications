@@ -110,7 +110,7 @@ The example assumes that:
   native code is installed on the AIR for TV device.
 
 For more information, see
-[Developing Native Extensions for Adobe AIR](http://www.adobe.com/go/learn_air_as_extensions_en).
+[Developing Native Extensions for Adobe AIR](https://web.archive.org/web/20150414032840/https://help.adobe.com/en_US/air/extensions/index.html).
 
 #### Control input
 

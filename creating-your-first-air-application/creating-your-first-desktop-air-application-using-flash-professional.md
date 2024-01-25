@@ -4,8 +4,8 @@ For a quick, hands-on demonstration of how Adobe® AIR® works, follow the
 instructions in this topic to create and package a simple "Hello World" AIR
 application using Adobe® Flash® Professional.
 
-If you haven't already done so, download and install Adobe AIR, which is located
-here: [www.adobe.com/go/air](http://www.adobe.com/go/air).
+If you haven't already done so, download and install the Adobe AIR SDK, which is
+located here: [airsdk.harman.com](https://airsdk.harman.com/).
 
 ## Create the Hello World application in Flash
 

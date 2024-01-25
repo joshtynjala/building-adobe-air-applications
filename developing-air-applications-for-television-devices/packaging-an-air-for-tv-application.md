@@ -78,7 +78,7 @@ the application:
     adt -package -storetype pkcs12 -keystore ../codesign.p12 -target airn myApp.airn myApp.airi
 
 For more information, see
-[Developing Native Extensions for Adobe AIR](http://www.adobe.com/go/learn_air_as_extensions_en).
+[Developing Native Extensions for Adobe AIR](https://web.archive.org/web/20150414032840/https://help.adobe.com/en_US/air/extensions/index.html).
 
 ## Packaging with Flash Builder or Flash Professional
 

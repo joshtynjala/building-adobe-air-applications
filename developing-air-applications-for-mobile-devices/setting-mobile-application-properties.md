@@ -46,9 +46,9 @@ element. The following namespaces should be used for mobile applications
 Note: Support for iOS 3 devices is provided by the Packager for iPhone SDK,
 based on the AIR 2.0 SDK. For information about building AIR applications for
 iOS 3, see
-[Building iPhone apps](http://help.adobe.com/en_US/as3/iphone/index.html). The
-AIR 2.6 SDK (and later) support iOS 4, and above on iPhone 3Gs, iPhone 4, and
-iPad devices.
+[Building iPhone apps](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/index.html).
+The AIR 2.6 SDK (and later) support iOS 4, and above on iPhone 3Gs, iPhone 4,
+and iPad devices.
 
 ### Application identity
 
@@ -1539,13 +1539,13 @@ More Help topics
 [imageNxN](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffc.html)
 
 ![](../img/as3LinkIndicator.png) 
-[Virtual keyboards](http://help.adobe.com/en_US/as3/dev/WSfffb011ac560372f2e63562a12dedf852e9-8000.html)
+[Virtual keyboards](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WSfffb011ac560372f2e63562a12dedf852e9-8000.html)
 
 ![](../img/flashplatformLinkIndicator.png) 
-[Stage.softKeyboardRect](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#softKeyboardRect)
+[Stage.softKeyboardRect](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#softKeyboardRect)
 
 ![](../img/flashplatformLinkIndicator.png) 
-[SoftKeyboardEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html)
+[SoftKeyboardEvent](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html)
 
 [Android Security and Permissions](http://developer.android.com/guide/topics/security/security.html)
 
