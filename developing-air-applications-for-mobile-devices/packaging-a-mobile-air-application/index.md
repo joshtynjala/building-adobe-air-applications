@@ -26,8 +26,8 @@ an AIR download from the Google market, you can specify an alternate download
 URL using the `-airDownloadURL` parameter of ADT. When a user who does not have
 the required version of the AIR runtime launches your app, they are directed to
 the specified URL. See
-[ADT package command](WS901d38e593cd1bac1e63e3d128cdca935b-8000.html) for more
-information.
+[ADT package command](../../air-developer-tool-adt/adt-commands/adt-package-command.md)
+for more information.
 
 By default, ADT packages Android application with shared runtime. So to run the
 application, user should install separate AIR runtime on the device.
@@ -50,6 +50,6 @@ application. Different certificates are used for creating test builds than are
 used for the final packaging prior to application submission.
 
 For an example of how to package an iOS application using Ant, see
-[Piotr Walczyszyn: Packaging AIR application for iOS devices with ADT command and ANT script](http://www.riaspace.com/2011/03/packaging-air-application-for-ios-devices-with-adt-command-and-ant-script/)
+[Piotr Walczyszyn: Packaging AIR application for iOS devices with ADT command and ANT script](https://web.archive.org/web/20120119164034/http://www.riaspace.com/2011/03/packaging-air-application-for-ios-devices-with-adt-command-and-ant-script/)
 
-- [Packaging with ADT](WS901d38e593cd1bac1e63e3d12994b39ff0-8000.html)
+- [Packaging with ADT](./packaging-with-adt.md)

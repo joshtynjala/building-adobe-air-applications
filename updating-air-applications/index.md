@@ -49,7 +49,7 @@ to install the new version.
 The AIR application installer creates log files when an AIR application is
 installed, updated, or removed. You can consult these logs to help determine the
 cause of any installation problems. See
-[Installation logs](http://kb2.adobe.com/cps/839/cpsid_83989.html).
+[Installation logs](https://web.archive.org/web/20150520002006/http://kb2.adobe.com/cps/839/cpsid_83989.html).
 
 Note: New versions of the Adobe AIR runtime may include updated versions of
 WebKit. An updated version of WebKit _may_ result in unexpected changes in HTML

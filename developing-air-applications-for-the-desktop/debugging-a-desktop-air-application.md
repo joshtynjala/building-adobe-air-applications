@@ -92,7 +92,7 @@ For basic information on FDB commands, execute the `help` command:
     <fdb>help [Enter]
 
 For details on the FDB commands, see
-[Using the command-line debugger commands](http://livedocs.adobe.com/flex/3/html/debugging_05.html)
+[Using the command-line debugger commands](https://web.archive.org/web/20150519055835/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7ffb.html#WS2db454920e96a9e51e63e3d11c0bf69084-7ed2)
 in the Flex documentation.
 
 More Help topics

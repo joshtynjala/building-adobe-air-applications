@@ -7,7 +7,7 @@ Some sample applications are available that demonstrate AIR features. You can
 access and install them using the following instructions:
 
 1.  Download and run the
-    [AIR sample applications](http://www.adobe.com/go/learn_air_samples_download).
+    [AIR sample applications](https://web.archive.org/web/20080302082306/http://www.adobe.com/devnet/air/?navID=samples).
     The compiled applications as well as the source code are available.
 
 2.  To download and run a sample application, click the sample application

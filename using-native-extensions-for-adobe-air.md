@@ -377,6 +377,6 @@ application that uses the ANE file. Consider the following rules:
 
 More Help topics
 
-[About SWC files](http://www.adobe.com/go/learn_about_SWC_files_en)
+[About SWC files](https://web.archive.org/web/20151111191946/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fd3.html)
 
 [AIR profile support](./device-profiles.md)

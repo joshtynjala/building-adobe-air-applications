@@ -103,4 +103,4 @@ update framework to best suit your needs.
 For another example of using the update framework, see the following sample
 application at the Adobe AIR developer center:
 
-- [Update Framework in a Flash-based Application](http://www.adobe.com/go/learn_air_qs_update_framework_flash_en)
+- [Update Framework in a Flash-based Application](https://web.archive.org/web/20120502163951/http://www.adobe.com/devnet/air/flash/quickstart/articles/update_framework.html)

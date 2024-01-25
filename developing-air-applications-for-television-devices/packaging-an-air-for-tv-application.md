@@ -92,6 +92,6 @@ for AIR for TV applications that use native extensions.
 
 For more information, see the following:
 
-- [Package AIR applications with Flash Builder](http://www.adobe.com/go/learn_dev_AIR_Flash_Builder_en)
+- [Package AIR applications with Flash Builder](https://web.archive.org/web/20151111192059/http://help.adobe.com/en_US/flashbuilder/using/WSe4e4b720da9dedb5-13a250c812e8e9b5533-7ff1.html)
 
-- [Publishing for Adobe AIR using Flash Professional](http://www.adobe.com/go/learn_publish_AIR_Flash_Pro_en)
+- [Publishing for Adobe AIR using Flash Professional](https://web.archive.org/web/20141022094050/http://helpx.adobe.com/flash/using/publishing-adobe-air-desktop.html)

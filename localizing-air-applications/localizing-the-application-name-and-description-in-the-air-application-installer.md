@@ -32,6 +32,6 @@ For more information, see
 
 More Help topics
 
-[Building multilingual Flex applications on Adobe AIR](http://www.adobe.com/devnet/air/flex/articles/localizing_flex_air_apps.html)
+[Building multilingual Flex applications on Adobe AIR](https://web.archive.org/web/20120130214712/http://www.adobe.com/devnet/air/flex/articles/localizing_flex_air_apps.html)
 
-[Building a multilingual HTML-based application](http://www.adobe.com/devnet/air/ajax/quickstart/articles/multilingual_air_apps.html)
+[Building a multilingual HTML-based application](https://web.archive.org/web/20120429051153/http://www.adobe.com/devnet/air/ajax/quickstart/articles/multilingual_air_apps.html)

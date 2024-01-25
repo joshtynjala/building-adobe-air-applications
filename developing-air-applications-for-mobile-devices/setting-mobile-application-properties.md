@@ -75,7 +75,7 @@ Note: The prefix added to the application ID can be used to identify AIR
 applications in the Android Market. If you do not want your application to
 identified as an AIR application because of the prefix, you must unpackage the
 APK file, change the application ID, and repackage it as described in,
-[Opt-out of AIR application analytics for Android](http://kb2.adobe.com/cps/875/cpsid_87562.html).
+[Opt-out of AIR application analytics for Android](https://web.archive.org/web/20120825013033/http://helpx.adobe.com/air/kb/opt-out-air-application-analytics.html).
 
 #### iOS application IDs
 
@@ -995,7 +995,7 @@ stripped SWFs.
 
 ![](../img/byline.png) For more information on this feature, including sample
 code, see
-[External hosting of secondary SWFs for AIR apps on iOS](http://blogs.adobe.com/airodynamics/2013/03/08/external-hosting-of-secondary-swfs-for-air-apps-on-ios/),
+[External hosting of secondary SWFs for AIR apps on iOS](https://web.archive.org/web/20130325084011/http://blogs.adobe.com/airodynamics/2013/03/08/external-hosting-of-secondary-swfs-for-air-apps-on-ios/),
 a blog post by Adobe engineer Abhinav Dhandh.
 
 ### Geolocation Support
@@ -1135,7 +1135,7 @@ available in the Apple iOS app store. If you do not want your application to
 identified as an AIR application because of this icon metadata, you must
 unpackage the IPA file, remove the icon metadata, and repackage it. This
 procedure is described in the article
-[Opt-out of AIR application analytics for iOS](http://kb2.adobe.com/cps/893/cpsid_89362.html).
+[Opt-out of AIR application analytics for iOS](https://web.archive.org/web/20120727040525/http://helpx.adobe.com/air/kb/opt-out-air-app-analytics.html).
 
 ### iOS launch images
 
@@ -1559,7 +1559,7 @@ More Help topics
 
 [Android Developers: Android feature name constants](http://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH)
 
-[Renaun Erickson: Developing for both retina and non-retina iOS screens using AIR 2.6](http://renaun.com/blog/2011/03/developing-for-both-retina-and-non-retina-ios-screens-using-air-2-6/)
+[Renaun Erickson: Developing for both retina and non-retina iOS screens using AIR 2.6](https://web.archive.org/web/20120519134741/http://renaun.com/blog/2011/03/developing-for-both-retina-and-non-retina-ios-screens-using-air-2-6/)
 
 [Android Developers: Icon Design Guidelines](http://developer.android.com/guide/practices/ui_guidelines/icon_design.html)
 

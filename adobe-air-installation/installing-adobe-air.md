@@ -32,7 +32,8 @@ applications deployed to Linux should continue to use the AIR 2.6 SDK.
 _Using the binary installer:_
 
 1.  Locate the installation binary file from
-    <http://kb2.adobe.com/cps/853/cpsid_85304.html> and download.
+    <https://web.archive.org/web/20190421142311/http://kb2.adobe.com/cps/853/cpsid_85304.html>
+    and download.
 
 2.  Set the file permissions so that the installer application can be executed.
     From a command line, you can set the file permissions with:
@@ -54,8 +55,9 @@ support any other package format.
 _Using the package installers:_
 
 1.  Locate the AIR package file from
-    <http://kb2.adobe.com/cps/853/cpsid_85304.html>. Download the rpm or Debian
-    package, depending on which package format your system supports.
+    <https://web.archive.org/web/20190421142311/http://kb2.adobe.com/cps/853/cpsid_85304.html>.
+    Download the rpm or Debian package, depending on which package format your
+    system supports.
 
 2.  If needed, double-click AIR package file to install the package.
 

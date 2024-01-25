@@ -31,4 +31,4 @@ that the -e option cannot be used when packaging an ANE file.)
 
 More Help topics
 
-[Packaging a native extension](http://www.adobe.com/go/learn_package_native_extension_en)
+[Packaging a native extension](https://web.archive.org/web/20150530014906/http://help.adobe.com/en_US/air/extensions/WSf00ab63af761f170-168f6f2a129378b935d-8000.html)

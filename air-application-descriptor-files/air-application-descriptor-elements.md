@@ -17,7 +17,7 @@ These are described in
 For more information, see
 [Launching an installed AIR application from the browser](WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html).
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -36,7 +36,7 @@ AndroidManifest.xml file for every APK package. You can use the android element
 in the AIR application descriptor to add additional items to it. Ignored on all
 platforms except Android.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**
 
@@ -308,7 +308,7 @@ fidelity. Prior to AIR 3, 16-bit color is always used on Android. In AIR 3,
 
 Note: If your application uses the StageVideo class, you must use 32-bit color.
 
-**Parent element:**[android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
+**Parent element:** [android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
 
 **Child elements:** none
 
@@ -331,7 +331,7 @@ One of the following values:
 
 Specifies whether the application will contain any video content or not.
 
-**Parent element:**[android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
+**Parent element:** [android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
 
 **Child elements:** none
 
@@ -384,7 +384,7 @@ a file. The value should be the MIME type of the file content. Note that the
 value is ignored on Linux if the file type is already registered and has an
 assigned MIME type.
 
-**Parent element:**[fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
+**Parent element:** [fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
 
 **Child elements:** none
 
@@ -404,7 +404,7 @@ appears in the About dialog box for the installed application. On Mac OS, the
 copyright information is also used in the NSHumanReadableCopyright field in the
 Info.plist file for the application.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -441,7 +441,7 @@ application logic, displaying your custom UI as necessary, whether or not
 For more information, see
 [Updating AIR applications](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html).
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -505,7 +505,7 @@ defined in the application descriptor file.
 For more information on developing multi-language applications, see
 [Localizing AIR applications](WSB2927578-20D8-4065-99F3-00ACE6511EEE.html).
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**[text](WSfffb011ac560372f-1f98376f1293df83869-7ffa.html)
 
@@ -516,8 +516,7 @@ defined for the name (not multiple `text` elements).
 
 In AIR 1.1 (or above), you can specify multiple languages in the `description`
 element. The `xml:lang` attribute for each text element specifies a language
-code, as defined in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt)
-(http://www.ietf.org/rfc/rfc4646.txt).
+code, as defined in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt).
 
 #### Example
 
@@ -542,7 +541,7 @@ file type description is not localizable.
 See also: [description](WSfffb011ac560372f2fea1812938a6e463-7ff8.html) as child
 of the application element
 
-**Parent element:**[fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
+**Parent element:** [fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
 
 **Child elements:** none
 
@@ -561,7 +560,7 @@ A string describing the file contents.
 Allows you to use custom fonts on StageText in the AIR application. This element
 is optional.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**[font](font.html)
 
@@ -588,7 +587,7 @@ iOS uses properties called entitlements to provide application access to
 additional resources and capabilities. Use the Entitlements element to specify
 this information in a mobile iOS application.
 
-**Parent element:**[iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html)
+**Parent element:** [iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html)
 
 **Child elements:** iOS Entitlements.plist elements
 
@@ -616,7 +615,7 @@ in the iOS Developer Library.
 
 The extension string of a file type.
 
-**Parent element:**[fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
+**Parent element:** [fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
 
 **Child elements:** none
 
@@ -650,7 +649,7 @@ A string identifying the ActionScript extension ID.
 
 Identifies the ActionScript extensions used by an application.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**[extensionID](WSfffb011ac560372f2fea1812938a6e463-7fda.html)
 
@@ -682,7 +681,7 @@ an application is installed.
 For more information, see
 [Minimize download size by loading external, asset-only SWFs](WS180fc5cb46642d107f85760613d88823106-8000.html).
 
-**Parent element:**[iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html),
+**Parent element:** [iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html),
 [initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
@@ -711,7 +710,7 @@ application is installed. The application file launches the AIR application in
 the runtime. If no `name` value is provided, the `filename` is also used as the
 name of the installation folder.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -742,7 +741,7 @@ The `filename` value cannot end in a period.
 
 Describes a single file type that the application can register for.
 
-**Parent element:**[fileTypes](WSfffb011ac560372f2fea1812938a6e463-7fdd.html)
+**Parent element:** [fileTypes](WSfffb011ac560372f2fea1812938a6e463-7fdd.html)
 
 **Child elements:**
 
@@ -790,7 +789,7 @@ declared in the application descriptor.
 
 The `fileTypes` element is optional.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**[fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
 
@@ -821,7 +820,7 @@ The `fileTypes` element may contain any number of `fileType` elements.
 
 Describes a single custom font that can be used in the AIR application.
 
-**Parent element:**[embedFonts](embedFonts.html)
+**Parent element:** [embedFonts](embedFonts.html)
 
 **Child elements:**[fontName](fontName.html), [fontPath](fontPath.html)
 
@@ -842,7 +841,7 @@ Elements specifying the custom font name and its path.
 
 Specifies the name of the custom font.
 
-**Parent element:**[font](font.html)
+**Parent element:** [font](font.html)
 
 **Child elements:** None
 
@@ -860,7 +859,7 @@ Name of the custom font to be specified in StageText.fontFamily
 
 Gives the location of the custom font file.
 
-**Parent element:**[font](font.html)
+**Parent element:** [font](font.html)
 
 **Child elements:** None
 
@@ -893,7 +892,7 @@ list of device model names. Valid device model names include the following:
 | iPad3,3 |           |          |
 | iPad3,4 |           |          |
 
-**Parent element:**[iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html),
+**Parent element:** [iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html),
 [initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
@@ -978,7 +977,7 @@ application is packaged.
 For best results, provide an image for each of the available sizes. In addition,
 make sure that the icons look presentable in both 16- and 32-bit color modes.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**[imageNxN](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffc.html)
 
@@ -1000,7 +999,7 @@ An imageNxN element for each desired icon size.
 An identifier string for the application, known as the application ID. A reverse
 DNS-style identifier is often used, but this style is not required.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1065,7 +1064,7 @@ element. Icon files must be included in the application package; icons
 referenced in the application descriptor document are not included
 automatically.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1094,7 +1093,7 @@ following, which are prohibited from use as filenames on various file systems:
 
 Allows you to specify additional properties of an iOS application.
 
-**Parent element:**[iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html)
+**Parent element:** [iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html)
 
 **Child elements:** iOS Info.plist elements
 
@@ -1124,7 +1123,7 @@ and how to express them in XML.
 
 Defines the main content file and initial application appearance.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** All of the following elements can appear as children of the
 initialWindow element. However, some elements are ignored depending on whether
@@ -1199,7 +1198,7 @@ The `installFolder` property is optional. If you specify no `installFolder`
 property, the application is installed in a subdirectory of the default
 installation directory, based on the `name` property.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** None
 
@@ -1220,7 +1219,7 @@ want to specify a nested subdirectory.
 
 Defines iOS-specific application properties.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**
 
@@ -1284,7 +1283,7 @@ descriptor and an automatically generated Android manifest file. When an AIR for
 Android app is packaged, the information in this `manifestAdditions` element is
 added to the corresponding parts of the Android manifest document.
 
-**Parent element:**[android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
+**Parent element:** [android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
 
 **Child elements:**[manifest](WSfffb011ac560372f33105f2a1293d3d21e0-7ffe.html)
 
@@ -1427,7 +1426,7 @@ The application title displayed by the AIR application installer.
 If no `name` element is specified, the AIR application installer displays the
 `filename` as the application name.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**[text](WSfffb011ac560372f-1f98376f1293df83869-7ffa.html)
 
@@ -1441,8 +1440,7 @@ defined for the name (not multiple `text` elements). In AIR 1.1 (or above), you
 can specify multiple languages in the `name` element.
 
 The `xml:lang` attribute for each text element specifies a language code, as
-defined in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt)
-(http://www.ietf.org/rfc/rfc4646.txt).
+defined in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt).
 
 The AIR application installer uses the name that most closely matches the user
 interface language of the user's operating system. For example, consider an
@@ -1489,7 +1487,7 @@ languages (English, French, and Spanish) using \<text\> element nodes:
 
 Identifies the name of a file type.
 
-**Parent element:**[fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
+**Parent element:** [fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
 
 **Child elements:** none
 
@@ -1507,7 +1505,7 @@ Identifies the location in which to place shortcuts to the application in the
 All Programs menu of the Windows operating system or in the Applications menu on
 Linux. (This setting is currently ignored on other operating systems.)
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1539,7 +1537,7 @@ ID.
 For more information, see
 [About AIR publisher identifiers](WS5b3ccc516d4fbf351e63e3d118666ade46-7cca.html).
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1613,7 +1611,7 @@ support high-resolution displays. The specified value applies to all native
 windows used in the application. Nesting the `requestedDisplayResolution`
 element in the `initialWindow` element is supported in AIR 3.6 and later.
 
-**Parent element:**[iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html),
+**Parent element:** [iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html),
 [initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
@@ -1721,7 +1719,7 @@ following actions based on the application type:
 - Android — Application bundle has resources for all languages supported by the
   AIR runtime.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1749,7 +1747,7 @@ for that language.
 
 Identifies the profiles that are supported for the application.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1821,8 +1819,7 @@ One of the following values:
 Specifies a localized string.
 
 The `xml:lang` attribute of a text element specifies a language code, as defined
-in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt)
-(http://www.ietf.org/rfc/rfc4646.txt).
+in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt).
 
 The AIR application installer uses the `text` element with the `xml:lang`
 attribute value that most closely matches the user interface language of the
@@ -1912,7 +1909,7 @@ current than version "2.0." Examples: `"1.0"`, "`.4"`, "`0.5`", `"4.9"`,
 In AIR 2.5 and later, the `version` element is superseded by the `versionNumber`
 and `versionLabel` elements.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1932,7 +1929,7 @@ The value of the version label is displayed in installation dialogs instead of
 the value of the `versionNumber` element. If `versionLabel` is not used, then
 the `versionNumber` is used for both.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 
@@ -1948,7 +1945,7 @@ A string containing the publicly displayed version text.
 
 The application version number.
 
-**Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
+**Parent element:** [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
 

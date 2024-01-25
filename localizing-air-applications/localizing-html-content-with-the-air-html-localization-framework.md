@@ -637,4 +637,4 @@ for this event:
 
 More Help topics
 
-[Building a multilingual HTML-based application](http://www.adobe.com/devnet/air/ajax/quickstart/articles/multilingual_air_apps.html)
+[Building a multilingual HTML-based application](https://web.archive.org/web/20120429051153/http://www.adobe.com/devnet/air/ajax/quickstart/articles/multilingual_air_apps.html)

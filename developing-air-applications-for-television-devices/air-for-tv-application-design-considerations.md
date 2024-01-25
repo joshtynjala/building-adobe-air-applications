@@ -32,7 +32,7 @@ AIR for TV supports hardware decoding and presentation of H.264-encoded video.
 Use the StageVideo class to enable this feature.
 
 See
-[Using the StageVideo class for hardware accelerated presentation](http://www.adobe.com/go/learn_as3_stageVideo_en)
+[Using the StageVideo class for hardware accelerated presentation](https://web.archive.org/web/20151009032620/http://help.adobe.com/en_US/as3/dev/WSe9ecd9e6b89aefd2-68d5ef8f12cc8511f6c-8000.html)
 in the _ActionScript 3.0 Developer's Guide_ for details about:
 
 - the API of the StageVideo class and related classes.
@@ -50,7 +50,7 @@ However, when you write new applications, use the StageVideo object for
 H.264-encoded video.
 
 For an example of using the StageVideo class, see
-[Delivering video and content for the Flash Platform on TV](http://www.adobe.com/go/learn_air_for_tv_article_en).
+[Delivering video and content for the Flash Platform on TV](https://web.archive.org/web/20151003093740/http://www.adobe.com/devnet/devices/articles/video_content_tv.html).
 
 #### Video delivery guidelines
 
@@ -74,16 +74,16 @@ to an AIR for TV application:
 
 For more information, see the following:
 
-- [Adobe Flash Media Server Developer's Guide](http://www.adobe.com/go/learn_fms_devguide_en)
+- [Adobe Flash Media Server Developer's Guide](https://web.archive.org/web/20150511070017/https://helpx.adobe.com/adobe-media-server/dev/topics.html)
 
-- [Open Source Media Framework](http://www.opensourcemediaframework.com/)
+- [Open Source Media Framework](https://sourceforge.net/projects/osmf.adobe/)
 
 ## Audio considerations
 
 The ActionScript for playing sound is no different in AIR for TV applications
 than in other AIR applications. For information, see
-[Working with sound](http://www.adobe.com/go/learn_as3_sound_en) in the
-_ActionScript 3.0 Developer's Guide_.
+[Working with sound](https://web.archive.org/web/20151004054644/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b8f2ae-8000.html)
+in the _ActionScript 3.0 Developer's Guide_.
 
 Regarding multichannel audio support in AIR for TV, consider the following:
 
@@ -261,11 +261,11 @@ types of operations, use one of the following techniques:
 
 For more information about bitmap caching, see the following:
 
-- [Caching display objects](http://www.adobe.com/go/learn_caching_display_objects_en)
+- [Caching display objects](https://web.archive.org/web/20150910215000/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e35.html)
 
-- [Bitmap caching](http://www.adobe.com/go/learn_bitmap_caching_OptPerf_en)
+- [Bitmap caching](https://web.archive.org/web/20151029204500/http://help.adobe.com/en_US/as3/mobile/WS4bebcd66a74275c36c11f3d612431904db9-7ffc.html)
 
-- [Manual bitmap caching](http://www.adobe.com/go/learn_manual_bitmap_caching_OptPerf_en)
+- [Manual bitmap caching](https://web.archive.org/web/20151029192238/http://help.adobe.com/en_US/as3/mobile/WS4bebcd66a74275c36c11f3d612431904db9-7ffb.html)
 
 #### Managing graphics memory
 
@@ -292,7 +292,7 @@ To manage your application's use of graphics memory:
   PerfMaster Deluxe to compare different implementations of the same operation.
   For example, compare moving a bitmap image versus moving a vector image.
   PerfMaster Deluxe is available at
-  [Flash Platform for TV](http://www.adobe.com/go/learn_flashplatform_tv_en).
+  [Flash Platform for TV](https://web.archive.org/web/20110401112931/http://www.adobe.com/devnet/devices/articles/deluxe-app-tv-tools.html).
 
 #### Managing the display list
 
@@ -531,7 +531,7 @@ good on multiple AIR for TV devices. Do the following:
     device applications, concepts such as dynamic layout, relative positioning,
     and adaptive content are the same. For further information about
     ActionScript to support these concepts, see
-    [Authoring mobile Flash content for multiple screen sizes](http://www.adobe.com/go/learn_multiple_screen_sizes_en).
+    [Authoring mobile Flash content for multiple screen sizes](https://web.archive.org/web/20151008075943/http://www.adobe.com/devnet/flash/articles/authoring_for_multiple_screen_sizes.html).
 
 #### Stage quality
 
@@ -546,7 +546,7 @@ Users typically interact with your AIR for TV application using a remote
 control. However, handle key input the same way you handle key input from a
 keyboard on a desktop application. Specifically, handle the event
 `KeyboardEvent.KEY_DOWN`. For more information, see
-[Capturing keyboard input](http://www.adobe.com/go/learn_air_keyboard_input_en)
+[Capturing keyboard input](https://web.archive.org/web/20151111192021/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d01.html)
 in the _ActionScript 3.0 Developer's Guide_.
 
 The keys on the remote control map to ActionScript constants. For example, the
@@ -562,8 +562,8 @@ keys on the directional keypad on a remote control map as follows:
 
 AIR 2.5 added many other Keyboard constants to support remote control input. For
 a complete list, see the
-[Keyboard class](http://www.adobe.com/go/learn_keyboard_class_en) in the
-_ActionScript 3.0 Reference for the Adobe Flash Platform_.
+[Keyboard class](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html)
+in the _ActionScript 3.0 Reference for the Adobe Flash Platform_.
 
 To ensure your application works on as many devices as possible, Adobe
 recommends the following:
@@ -673,7 +673,7 @@ possible.
   Design your graphics to achieve this goal. The complexity of your graphics
   operations can affect your frames per second. For tips on improving rendering
   performance, see
-  [Optimizing Performance for the Adobe Flash Platform](http://www.adobe.com/go/learn_optimizing_fp_en).
+  [Optimizing Performance for the Adobe Flash Platform](https://web.archive.org/web/20160315010039/http://help.adobe.com/en_US/as3/mobile/index.html).
 
   Note: The graphics hardware on AIR for TV devices typically updates the screen
   at a rate of 60 Hz or 120 Hz (60 or 120 times per second). The hardware scans
@@ -783,11 +783,11 @@ device fonts.
 
 Adobe provides an application called FontMaster Deluxe that displays all the
 device fonts on the device. The application is available at
-[Flash Platform for TV](http://www.adobe.com/go/learn_flashplatform_tv_en).
+[Flash Platform for TV](https://web.archive.org/web/20110401112931/http://www.adobe.com/devnet/devices/articles/deluxe-app-tv-tools.html).
 
 You can also embed fonts in your AIR for TV application. For information on
 embedded fonts, see
-[Advanced text rendering](http://www.adobe.com/go/learn_advancedTextRendering_en)
+[Advanced text rendering](https://web.archive.org/web/20150922231858/http://help.adobe.com/en_US/as3/dev/WS8d7bb3e8da6fb92f-20050207122bd5f80cb-7ff0.html)
 in the _ActionScript 3.0 Developer's Guide_.
 
 Adobe recommends the following regarding using TLF text fields:
@@ -796,8 +796,8 @@ Adobe recommends the following regarding using TLF text fields:
   which the application is running. Set the `locale` property of the
   TextLayoutFormat object associated with the TLFTextField object. To determine
   the current locale, see
-  [Choosing a locale](http://www.adobe.com/go/learn_choosingLocale_en) in the
-  _ActionScript 3.0 Developer's Guide_.
+  [Choosing a locale](https://web.archive.org/web/20151104125816/http://help.adobe.com/en_US/as3/dev/WS9b644acd4ebe59993a5b57f812214f2074b-8000.html#WS9b644acd4ebe59993a5b57f812214f2074b-7ffd)
+  in the _ActionScript 3.0 Developer's Guide_.
 
 - Specify the font name in the `fontFamily` property in the TextLayoutFormat
   object if the font is not one of the AIR for TV device fonts. AIR for TV uses
@@ -853,12 +853,12 @@ extra layer protects AIR for TV applications from maliciously or inadvertently
 accessing local files that do not belong to them.
 
 For details, see
-[Directory view for AIR for TV applications](http://www.adobe.com/go/learn_air_tv_directory_view_en).
+[Directory view for AIR for TV applications](https://web.archive.org/web/20131210153448/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fe4.html).
 
 ## The AIR application sandbox
 
 AIR for TV applications run in the AIR application sandbox, described in
-[The AIR application sandbox](http://www.adobe.com/go/learn_air_app_sandbox_en).
+[The AIR application sandbox](https://web.archive.org/web/20150922181351/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7e3f.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e35).
 
 The only difference for AIR for TV applications is that they have limited access
 to the file system as described in
@@ -906,4 +906,4 @@ Use the ActionScript property` URLRequest.manageCookies` as follows:
   cookies in the HTTP response.
 
 For more information, see
-[URLRequest](http://www.adobe.com/go/learn_url_request_en).
+[URLRequest](https://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequest.html).

@@ -64,7 +64,7 @@ for existing streaming solutions with lower security requirements. RTMPE and
 related SWF verification technologies are supported in Flash Media Server.
 
 For more information, see
-[Adobe Flash Access](http://www.adobe.com/go/learn_flashaccess_product_en).
+[Adobe Flash Access](https://web.archive.org/web/20151102110511/http://www.adobe.com/products/adobe-access.html).
 
 ## Multichannel audio
 

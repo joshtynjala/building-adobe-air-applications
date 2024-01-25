@@ -31,13 +31,13 @@ Important optimization techniques are discussed in the
 guide. The techniques covered in the guide apply to all Flash and AIR content,
 but are essential to developing applications that run well on mobile devices.
 
-- [Paul Trani: Tips and Tricks for Mobile Flash Development](http://www.paultrani.com/blog/index.php/2011/03/tips-and-tricks-for-mobile-flash-development/)
+- [Paul Trani: Tips and Tricks for Mobile Flash Development](https://www.slideshare.net/paultrani/tips-and-tricks-for-mobile-flash-development)
 
-- [roguish: GPU Test App AIR for Mobile](http://www.roguish.com/blog/?p=214)
+- [roguish: GPU Test App AIR for Mobile](https://web.archive.org/web/20150628042611/http://www.roguish.com/blog/?p=214)
 
-- [Jonathan Campos: Optimization Techniques for AIR for Android apps](http://www.unitedmindset.com/jonbcampos/2010/09/08/optimization-techniques-for-air-for-android-apps/)
+- [Jonathan Campos: Optimization Techniques for AIR for Android apps](https://web.archive.org/web/20120513072615/http://www.unitedmindset.com/jonbcampos/2010/09/08/optimization-techniques-for-air-for-android-apps/)
 
-- [Charles Schulze: AIR 2.6 Game Development: iOS included](http://www.flash-3d.net/2011/03/air-2-6-game-development/)
+- [Charles Schulze: AIR 2.6 Game Development: iOS included](https://web.archive.org/web/20150217173740/http://www.flash-3d.net/2011/03/air-2-6-game-development/)
 
 ## Application life cycle
 
@@ -177,9 +177,10 @@ available. These include:
   [Feathers UI controls for Starling](https://feathersui.com/learn/as3-starling/)
 
 - Derrick Grigg's
-  [skinnable version of Minimal Comps](http://www.dgrigg.com/post.cfm/04/28/2010/Alpha-Release-of-Skinnable-Minimal-Components)
+  [skinnable version of Minimal Comps](https://github.com/dgrigg/SkinnableMinimalComponents)
 
-- Todd Anderson's [as3flobile components](http://custardbelly.com/blog/?p=173)
+- Todd Anderson's
+  [as3flobile components](https://github.com/bustardcelly/as3flobile)
 
 ## Stage 3D accelerated graphics rendering
 

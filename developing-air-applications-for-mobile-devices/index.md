@@ -23,10 +23,10 @@ described in
 [Building iPhone apps](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/index.html).
 
 For more information on privacy best practices, see
-[Adobe AIR SDK Privacy Guide](http://www.adobe.com/go/learn_air_developer_privacy).
+[Adobe AIR SDK Privacy Guide](https://web.archive.org/web/20180415053853/https://helpx.adobe.com/air/licenses/air-sdk-privacy-guidelines.html).
 
 For the full system requirements for running AIR applications, see
-[Adobe AIR system requirements](http://www.adobe.com/products/air/systemreqs/).
+[Adobe AIR system requirements](https://web.archive.org/web/20200408200256/https://www.adobe.com/products/air/tech-specs.html).
 
 - [Setting up your development environment](WS2d929364fa0b81371f0a344f12a2038d1f4-8000.html)
 - [Mobile application design considerations](WSfffb011ac560372f82c4ee412b1275403b-8000.html)

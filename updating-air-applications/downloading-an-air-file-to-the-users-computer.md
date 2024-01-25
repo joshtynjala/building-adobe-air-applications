@@ -10,8 +10,8 @@ For details, see
 [Using the update framework](WS9CD40F06-4DD7-4230-B56A-88AA27541A1E.html).
 
 The following code reads an AIR file from a URL
-(http://example.com/air/updates/Sample_App_v2.air) and saves the AIR file to the
-application storage directory.
+(`http://example.com/air/updates/Sample_App_v2.air`) and saves the AIR file to
+the application storage directory.
 
 ActionScript example:
 

@@ -30,15 +30,15 @@ runtime in the following ways:
 
 The system requirements for installing AIR and running AIR applications are
 detailed here:
-[Adobe AIR: System requirements (http://www.adobe.com/products/air/systemreqs/)](http://www.adobe.com/products/air/systemreqs/).
+[Adobe AIR: System requirements](https://web.archive.org/web/20200408200256/https://www.adobe.com/products/air/tech-specs.html).
 
 Both the runtime installer and the AIR application installer create log files
 when they install, update, or remove AIR applications or the AIR runtime itself.
 You can consult these logs to help determine the cause of any installation
 problems. See
-[Installation logs](http://kb2.adobe.com/cps/839/cpsid_83989.html).
+[Installation logs](https://web.archive.org/web/20150520002006/http://kb2.adobe.com/cps/839/cpsid_83989.html).
 
-- [Installing Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7fee.html)
-- [Removing Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7fed.html)
-- [Installing and running the AIR sample applications](WS5b3ccc516d4fbf351e63e3d118666ade46-7fec.html)
-- [Adobe AIR updates](WS144092a96ffef7cc6f8e57c21279330af31-8000.html)
+- [Installing Adobe AIR](./installing-adobe-air.md)
+- [Removing Adobe AIR](./removing-adobe-air.md)
+- [Installing and running the AIR sample applications](./installing-and-running-the-air-sample-applications.md)
+- [Adobe AIR updates](./adobe-air-updates.md)

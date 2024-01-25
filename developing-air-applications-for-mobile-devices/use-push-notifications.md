@@ -6,7 +6,7 @@ iOS devices using the Apple Push Notification service (APNs).
 
 Note: To enable push notifications for an AIR for Android application, use a
 native extension, such as
-[as3c2dm](http://www.riaspace.com/2011/09/as3c2dm-air-native-extension-to-push-notifications-with-c2dm/),
+[as3c2dm](https://web.archive.org/web/20120112184645/http://www.riaspace.com/2011/09/as3c2dm-air-native-extension-to-push-notifications-with-c2dm/),
 developed by Adobe evangelist Piotr Walczyszyn.
 
 The remainder of this section describes how to enable push notifications in AIR

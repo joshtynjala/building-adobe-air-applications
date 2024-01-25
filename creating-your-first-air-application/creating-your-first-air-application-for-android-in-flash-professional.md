@@ -1,7 +1,7 @@
 # Create your first AIR application for Android in Flash Professional
 
 To develop AIR applications for Android, you must download the Flash
-Professional CS5 extension for Android from [Adobe Labs](http://labs.adobe.com).
+Professional CS5 extension for Android.
 
 You must also download and install the Android SDK from the Android web site, as
 described in:
