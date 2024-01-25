@@ -1,7 +1,5 @@
 # ADT certificate command
 
-<div>
-
 The -certificate command lets you create a self-signed digital code signing
 certificate. The command uses the following syntax:
 
@@ -27,15 +25,3 @@ not specified a validity of five years is assigned. (Optional.)
 
 **password** The password for accessing the new certificate. The password is
 required when signing AIR files with this certificate.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # AIR application descriptor files
 
-<div>
-
 Every AIR application requires an application descriptor file. The application
 descriptor file is an XML document that defines the basic properties of the
 application.
@@ -14,8 +12,6 @@ be found in the `samples` directory of both the AIR and Flex SDKs.
 Any filename can be used for the application descriptor file. When you package
 the application, the application descriptor file is renamed `application.xml`
 and placed within a special directory inside the AIR package.
-
-<div>
 
 #### Example application descriptor
 
@@ -55,20 +51,6 @@ only the `<content>` element is different:
         HelloWorld.html
     </content>
 
-</div>
-
 - [Application descriptor changes](WSfffb011ac560372f-1f98376f1293df83869-8000.html)
 - [The application descriptor file structure](WS5b3ccc516d4fbf351e63e3d118666ade46-7f84.html)
 - [AIR application descriptor elements](WSfffb011ac560372f2fea1812938a6e463-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

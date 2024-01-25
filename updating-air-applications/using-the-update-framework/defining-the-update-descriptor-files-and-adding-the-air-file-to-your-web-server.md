@@ -1,7 +1,5 @@
 # Defining the update descriptor files and adding the AIR file to your web server
 
-<div>
-
 When you use the AIR update framework, you define basic information about the
 available update in update descriptor files, stored on your web server. An
 update descriptor file is a simple XML file. The update framework included in
@@ -9,8 +7,8 @@ the application checks this file to see if a new version has been uploaded.
 
 The format of the update descriptor file changed for AIR 2.5. The new format
 uses a different namespace. The original namespace is
-“http://ns.adobe.com/air/framework/update/description/1.0”. The AIR 2.5 name
-space is “http://ns.adobe.com/air/framework/update/description/2.5”.
+"http://ns.adobe.com/air/framework/update/description/1.0". The AIR 2.5 name
+space is "http://ns.adobe.com/air/framework/update/description/2.5".
 
 AIR applications created prior to AIR 2.5 can only read the version 1.0 update
 descriptor. AIR applications created using the updater framework included in AIR
@@ -29,13 +27,13 @@ The update descriptor file contains the following data:
   applications. The value must be the same string that is used in the
   `versionNumber` element of the new AIR application descriptor file. If the
   version number in the update descriptor file does not match the update AIR
-  file’s version number, the update framework will throw an exception.
+  file's version number, the update framework will throw an exception.
 
 - `version`—The new version of the AIR application. Use the `version` element in
   update descriptors used to update applications created prior to AIR 2.5. The
   value must be the same string that is used in the `version` element of the new
   AIR application descriptor file. If the version in the update descriptor file
-  does not match the update AIR file’s version, the update framework will throw
+  does not match the update AIR file's version, the update framework will throw
   an exception.
 
 - `versionLabel`—The human readable version string intended to be shown to
@@ -55,34 +53,34 @@ optional.
 Here is a sample version 2.5 update descriptor file:
 
     <?xml version="1.0" encoding="utf-8"?>
-         <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
-           <versionNumber>1.1.1</versionNumber>
-           <url>http://example.com/updates/sample_1.1.1.air</url>
-           <description>This is the latest version of the Sample application.</description>
-        </update>
+    <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
+      <versionNumber>1.1.1</versionNumber>
+      <url>http://example.com/updates/sample_1.1.1.air</url>
+      <description>This is the latest version of the Sample application.</description>
+    </update>
 
 And, here is a sample version 1.0 update descriptor file:
 
     <?xml version="1.0" encoding="utf-8"?>
-         <update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
-           <version>1.1.1</version>
-           <url>http://example.com/updates/sample_1.1.1.air</url>
-           <description>This is the latest version of the Sample application.</description>
-        </update>
+    <update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
+      <version>1.1.1</version>
+      <url>http://example.com/updates/sample_1.1.1.air</url>
+      <description>This is the latest version of the Sample application.</description>
+    </update>
 
 If you want to define the `description` tag using multiple languages, use
 multiple `text` elements that define a `lang` attribute:
 
     <?xml version="1.0" encoding="utf-8"?>
-         <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
-           <versionNumber>1.1.1</versionNumber>
-           <url>http://example.com/updates/sample_1.1.1.air</url>
-           <description>
-               <text xml:lang="en">English description</text>
-               <text xml:lang="fr">French description</text>
-               <text xml:lang="ro">Romanian description</text>
-           </description>
-        </update>
+    <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
+      <versionNumber>1.1.1</versionNumber>
+      <url>http://example.com/updates/sample_1.1.1.air</url>
+      <description>
+        <text xml:lang="en">English description</text>
+        <text xml:lang="fr">French description</text>
+        <text xml:lang="ro">Romanian description</text>
+      </description>
+    </update>
 
 Place the update descriptor file, along with the update AIR file, on your web
 server.
@@ -90,15 +88,3 @@ server.
 The templates directory included with the update descriptor includes sample
 update descriptor files. These include both single-language and multi-language
 versions.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

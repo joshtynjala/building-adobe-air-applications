@@ -1,7 +1,5 @@
 # Updating to AIR 2.5
 
-<div>
-
 Because the rules for assigning version numbers to applications changed in AIR
 2.5, the AIR 2 update framework cannot parse the version information in an AIR
 2.5 application descriptor. This incompatibility means that you must update your
@@ -25,23 +23,19 @@ namespace and has new features implemented using AIR 2.5 APIs.
     1.  Use AIR 2.5 Application Updater framework while creating the
         application.
 
-        <div>
-
         Note: Use `applicationupdater.swc` or `applicationupdater_ui.swc` for
         AIR applications based on Flash technology and `applicationupdater.swf`
         or `applicationupdater_ui.swf` for HTML-based AIR applications.
-
-        </div>
 
     2.  Create an update descriptor file for version 1.0.1 by using the old
         namespace and the version as shown below:
 
             <?xml version="1.0" encoding="utf-8"?>
-                <update xmlns="http://ns.adobe.com/air/framework/update/description/2.0">
-                    <version>1.0.1</version>
-                    <url>http://example.com/updates/sample_1.0.1.air</url>
-                    <description>This is the intermediate version.</description>
-                </update>
+            <update xmlns="http://ns.adobe.com/air/framework/update/description/2.0">
+                <version>1.0.1</version>
+                <url>http://example.com/updates/sample_1.0.1.air</url>
+                <description>This is the intermediate version.</description>
+            </update>
 
 2.  Create the version 2.0 of the application that uses AIR 2.5 APIs and 2.5
     namespace.
@@ -49,23 +43,9 @@ namespace and has new features implemented using AIR 2.5 APIs.
 3.  Create an update descriptor to update the application from the 1.0.1 version
     to 2.0 version.
 
-<!-- -->
-
-    <?xml version="1.0" encoding="utf-8"?>
+        <?xml version="1.0" encoding="utf-8"?>
         <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
             <version>2.0</version>
             <url>http://example.com/updates/sample_2.0.air</url>
             <description>This is the intermediate version.</description>
         </update>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

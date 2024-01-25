@@ -1,17 +1,9 @@
 # Debugging with the AIR HTML Introspector
 
-<div>
-
 The Adobe® AIR® SDK includes an AIRIntrospector.js JavaScript file that you can
 include in your application to help debug HTML-based applications.
 
-</div>
-
-<div>
-
 ## About the AIR Introspector
-
-<div>
 
 The Adobe AIR HTML/JavaScript Application Introspector (called the AIR HTML
 Introspector) provides useful features to assist HTML-based application
@@ -45,17 +37,7 @@ development and debugging:
 
 - You can search for matching text in the source code and files.
 
-<!-- -->
-
-</div>
-
-</div>
-
-<div>
-
 ## Loading the AIR Introspector code
-
-<div>
 
 The AIR Introspector code is included in a JavaScript file, AIRIntrospector.js,
 that is included in the frameworks directory of the AIR SDK. To use the AIR
@@ -68,33 +50,17 @@ HTML file in your application:
 Also include the file in every HTML file that corresponds to different native
 windows in your application.
 
-<div>
-
 Important: Include the AIRIntrospector.js file only when developing and
 debugging the application. Remove it in the packaged AIR application that you
 distribute.
 
-</div>
-
 The AIRIntrospector.js file defines a class, Console, which you can access from
 JavaScript code by calling `air.Introspector.Console`.
-
-<div>
 
 Note: Code using the AIR Introspector must be in the application security
 sandbox (in a file in the application directory).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Inspecting an object in the Console tab
-
-<div>
 
 The Console class defines five methods: `log()`, `warn()`, `info()`, `error()`,
 and `dump()`.
@@ -143,8 +109,6 @@ The `info()`, `error()`, and `warn()` methods are like the `log()` method.
 However, when you call these methods, the Console displays an icon at the
 beginning of the line:
 
-<div>
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -184,21 +148,15 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 </tbody>
 </table>
 
-</div>
-
 The `log()`, `warn()`, `info()`, and `error()` methods send a reference only to
 an actual object, so the properties available are the ones at the moment of
 viewing. If you want to serialize the actual object, use the `dump()` method.
 The method has two parameters:
 
-<div>
-
 | Parameter    | Description                                                                                                                                                                                                             |
 | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `dumpObject` | The object to be serialized.                                                                                                                                                                                            |
 | `levels`     | The maximum number of levels to be examined in the object tree (in addition to the root level). The default value is 1 (meaning that one level beyond the root level of the tree is shown). This parameter is optional. |
-
-</div>
 
 Calling the `dump()` method serializes an object before sending it to the
 Console tab, so that you cannot edit the objects properties. For example,
@@ -212,15 +170,7 @@ consider the following code:
 When you execute this code, the Console displays the `testObject` object and its
 properties, but you cannot edit the property values in the Console.
 
-</div>
-
-</div>
-
-<div>
-
 ## Configuring the AIR Introspector
-
-<div>
 
 You can configure the console by setting properties of the global
 `AIRIntrospectorConfig` variable. For example, the following JavaScript code
@@ -234,8 +184,6 @@ loading the AIRIntrospector.js file (via a `script` tag).
 
 There are eight properties of the `AIRIntrospectorConfig` variable:
 
-<div>
-
 | Property                  | Default value     | Description                                                                                                                                  |
 | ------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | `closeIntrospectorOnExit` | `true`            | Sets the Inspector window to close when all other windows of the application are closed.                                                     |
@@ -247,17 +195,7 @@ There are eight properties of the `AIRIntrospectorConfig` variable:
 | `showSender`              | `true`            | Sets the Console tab to display information on the object sending the message at the beginning of each line.                                 |
 | `wrapColumns`             | 2000              | The number of columns at which source files are wrapped.                                                                                     |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## AIR Introspector interface
-
-<div>
 
 To open the AIR introspector window when debugging the application, press the
 F12 key or call one of the methods of the Console class (see
@@ -269,8 +207,6 @@ The AIR Introspector window has six tabs—Console, HTML, DOM, Assets, Source, a
 XHR—as shown in the following illustration:
 
 ![](./img/AIR_Introspector_inspect_popup.png)
-
-<div>
 
 #### The Console tab
 
@@ -294,10 +230,6 @@ methods of the air.Introspector.Console class. For details, see
 
 - To search for matching text displayed in the tab, click CTRL+F on Windows or
   Command+F on Mac OS. (Tree nodes that are not visible are not searched.)
-
-</div>
-
-<div>
 
 #### The HTML tab
 
@@ -324,10 +256,6 @@ window) to refresh the data displayed in the HTML tab.
 Click CTRL+F on Windows or Command+F on Mac OS to search for matching text
 displayed in the tab. (Tree nodes that are not visible are not searched.)
 
-</div>
-
-<div>
-
 #### The DOM tab
 
 The DOM tab shows the window object in a tree structure. You can edit any string
@@ -340,10 +268,6 @@ window) to refresh the data displayed in the DOM tab.
 
 Click CTRL+F on Windows or Command+F on Mac OS to search for matching text
 displayed in the tab. (Tree nodes that are not visible are not searched.)
-
-</div>
-
-<div>
 
 #### The Assets tab
 
@@ -358,10 +282,6 @@ window) to refresh the data displayed in the Assets tab.
 
 Click CTRL+F on Windows or Command+F on Mac OS to search for matching text
 displayed in the tab. (Tree nodes that are not visible are not searched.)
-
-</div>
-
-<div>
 
 #### The Source tab
 
@@ -387,10 +307,6 @@ window) to refresh the data displayed in the Source tab.
 Click CTRL+F on Windows or Command+F on Mac OS to search for matching text
 displayed in the tab. (Tree nodes that are not visible are not searched.)
 
-</div>
-
-<div>
-
 #### The XHR tab
 
 The XHR tab intercepts all XMLHttpRequest communication in the application and
@@ -402,17 +318,7 @@ logs the information. This lets you view the XMLHttpRequest properties including
 Click CTRL+F on Windows or Command+F on Mac OS to search for matching text
 displayed in the tab. (Tree nodes that are not visible are not searched.)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Using the AIR Introspector with content in a non-application sandbox
-
-<div>
 
 You can load content from the application directory into an iframe or frame that
 is mapped to a non-application sandbox. (See
@@ -447,22 +353,8 @@ observe the following rules:
   for the non-application sandbox. You can differentiate the two using the title
   displayed in the AIR Introspector windows.
 
-- The Source tab doesn’t display application files when the AIR Introspector is
+- The Source tab doesn't display application files when the AIR Introspector is
   run from a non-application sandbox
 
 - The AIR Introspector can only look at code in the sandbox from which it was
   opened.
-
-<!-- -->
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # About Adobe AIR
 
-<div>
-
 Adobe® AIR® is a multi-operating system, multi-screen runtime that allows you to
 leverage your web development skills to build and deploy rich Internet
 applications (RIAs) to the desktop and mobile devices. Desktop, television, and
@@ -74,15 +72,3 @@ televisions.
 
 For information about what is included in each new AIR update, see the Adobe AIR
 Release Notes (<http://www.adobe.com/go/learn_air_relnotes_en>).
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

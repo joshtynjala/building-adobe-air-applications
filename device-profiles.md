@@ -1,7 +1,5 @@
 # Device profiles
 
-<div>
-
 Profiles are a mechanism for defining the classes of computing devices on which
 your application works. A profile defines a set of APIs and capabilities
 typically supported on a particular class of device. The available profiles
@@ -54,8 +52,6 @@ whether the current device has a supported accelerometer.
 There are following profiles can be assigned to your AIR application using the
 supportedProfiles element in the application descriptor:
 
-<div>
-
 Desktop  
 The desktop profile defines a set of capabilities for AIR applications that are
 installed as AIR files on a desktop computer. These applications install and run
@@ -83,25 +79,13 @@ The extended mobile device profile defines an extended set of capabilities for
 applications that are installed on mobile devices. Currently, there are no
 devices that support this profile.
 
-</div>
-
-</div>
-
-<div>
-
 ## Restricting target profiles in the application descriptor file
-
-<div>
-
-<div>
 
 As of AIR 2, the application descriptor file includes a `supportedProfiles`
 element, which lets you restrict target profiles. For example, the following
 setting specifies that the application is only available in the desktop profile:
 
     <supportedProfiles>desktop</supportedProfiles>
-
-</div>
 
 When this element is set, the application can only be packaged in the profiles
 you list. Use the following values:
@@ -121,20 +105,10 @@ with a space character, as in the following:
 
     <supportedProfiles>desktop extendedDesktop</supportedProfiles>
 
-</div>
-
-</div>
-
-<div>
-
 ## Capabilities of different profiles
-
-<div>
 
 The following table lists the classes and features that are not supported in all
 profiles.
-
-<div>
 
 | Class or Feature                                                    | desktop | extendedDesktop | mobileDevice |
 | ------------------------------------------------------------------- | ------- | --------------- | ------------ |
@@ -182,8 +156,6 @@ profiles.
 | Updater (Updater.isSupported)                                       | Yes     | No              | No           |
 | XMLSignatureValidator (XMLSignatureValidator.isSupported)           | Yes     | Yes             | No           |
 
-</div>
-
 The entries in the table have the following meanings:
 
 - _Check_ — The feature is supported on some, but not all devices in the
@@ -199,15 +171,7 @@ The entries in the table have the following meanings:
   computing devices make lack the hardware necessary for a feature. For example,
   not all phones have cameras.
 
-<!-- -->
-
-</div>
-
-<div>
-
 ### Specifying profiles when debugging with ADL
-
-<div>
 
 ADL checks if you specify supported profiles in the `supportedProfiles` element
 of the application descriptor file. If you do, by default ADL uses the first
@@ -220,19 +184,3 @@ You can use this argument regardless of whether you specify a profile in the
 `supportedProfiles` element in the application descriptor file. However, if you
 do specify a `supportedProfiles` element, it must include the profile you
 specify in the command line. Otherwise, ADL generates an error.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

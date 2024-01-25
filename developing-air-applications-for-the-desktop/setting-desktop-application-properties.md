@@ -1,19 +1,11 @@
 # Setting desktop application properties
 
-<div>
-
 Set the basic application properties in the application descriptor file. This
 section covers the properties relevant to desktop AIR applications. The elements
 of the application descriptor file are fully described in
 [AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html).
 
-</div>
-
-<div>
-
 ## Required AIR runtime version
-
-<div>
 
 Specify the version of the AIR runtime required by your application using the
 namespace of the application descriptor file.
@@ -31,15 +23,7 @@ element:
 
     <application xmlns="http://ns.adobe.com/air/application/3.0">
 
-</div>
-
-</div>
-
-<div>
-
 ## Application identity
-
-<div>
 
 Several settings should be unique for each application that you publish. The
 unique settings include the ID, the name, and the filename.
@@ -48,33 +32,21 @@ unique settings include the ID, the name, and the filename.
     <name>My Application</name>
     <filename>MyApplication</filename>
 
-</div>
-
-</div>
-
-<div>
-
 ## Application version
-
-<div>
 
 In versions of AIR earlier than AIR 2.5, specify the application in the
 `version` element. You can use any string. The AIR runtime does not interpret
-the string; “2.0” is not treated as a higher version than “1.0.”
-
-<div>
+the string; "2.0" is not treated as a higher version than "1.0."
 
     <!-- AIR 2 or earlier -->
     <version>1.23 Beta 7</version>
 
-</div>
-
 In AIR 2.5 and later, specify the application version in the `versionNumber`
 element. The `version` element can no longer be used. When specifying a value
 for `versionNumber`, you must use a sequence of up to three numbers separated by
-dots, such as: “0.1.2”. Each segment of the version number can have up to three
-digits. (In other words, “999.999.999” is the largest version number permitted.)
-You do not have to include all three segments in the number; “1” and “1.0” are
+dots, such as: "0.1.2". Each segment of the version number can have up to three
+digits. (In other words, "999.999.999" is the largest version number permitted.)
+You do not have to include all three segments in the number; "1" and "1.0" are
 legal version numbers as well.
 
 You can also specify a label for the version using the `versionLabel` element.
@@ -85,15 +57,7 @@ such places as the AIR application installer dialogs.
     <versionNumber>1.23.7<versionNumber>
     <versionLabel>1.23 Beta 7</versionLabel>
 
-</div>
-
-</div>
-
-<div>
-
 ## Main window properties
-
-<div>
 
 When AIR starts an application on the desktop, it creates a window and loads the
 main SWF file or HTML page into it. AIR uses the child elements of the
@@ -143,10 +107,8 @@ initial application window.
   - direct — display objects are rendered by the runtime software, but copying
     the rendered frame to display memory (blitting) is hardware accelerated.
     StageVideo is available. Stage3D uses hardware acceleration, if otherwise
-    possible. If window transparency is set to true, then the window “falls
-    back” to software rendering and blitting.
-
-    <div>
+    possible. If window transparency is set to true, then the window "falls
+    back" to software rendering and blitting.
 
     Note: In order to leverage GPU acceleration of Flash content with AIR for
     mobile platforms, Adobe recommends that you use renderMode="direct" (that
@@ -154,8 +116,6 @@ initial application window.
     recommends the following Stage3D based frameworks: Starling (2D) and Away3D
     (3D). For more details on Stage3D and Starling/Away3D, see
     <http://gaming.adobe.com/getstarted/>.
-
-    </div>
 
   - gpu — hardware acceleration is used, if available.
 
@@ -189,15 +149,7 @@ initial application window.
 
 - **y** — The vertical position of the window.
 
-</div>
-
-</div>
-
-<div>
-
 ## Desktop features
-
-<div>
 
 The following elements control desktop installation and update features.
 
@@ -210,16 +162,12 @@ The following elements control desktop installation and update features.
   already the default opener for a file type, then AIR does not override the
   existing registration. However, your application can override the registration
   at runtime using the `setAsDefaultApplication()` method of the
-  NativeApplication object. It is good form to ask for the user’s permission
+  NativeApplication object. It is good form to ask for the user's permission
   before overriding their existing file type associations.
-
-  <div>
 
   Note: File type registration is ignored when you package an application as a
   captive runtime bundle (using the `-bundle` target). To register a given file
   type, you must create an installer program that performs the registration.
-
-  </div>
 
 - installFolder — Specifies a path relative to the standard application
   installation folder into which the application is installed. You can use this
@@ -231,15 +179,7 @@ The following elements control desktop installation and update features.
   menu. If no menu folder is specified, the application shortcut is added
   directly to the main menu.
 
-</div>
-
-</div>
-
-<div>
-
 ## Supported profiles
-
-<div>
 
 If your application only makes sense on the desktop, then you can prevent it
 from being installed on devices in another profile by excluding that profile
@@ -257,15 +197,7 @@ For a list of ActionScript classes supported in the `desktop` and
 `extendedDesktop` profile, see
 [Capabilities of different profiles](WS144092a96ffef7cc16ddeea2126bb46b82f-7ffe.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Required native extensions
-
-<div>
 
 Applications that support the `extendedDesktop` profile can use native
 extensions.
@@ -284,15 +216,7 @@ extension descriptor file. The extension descriptor file is an XML file called
 extension.xml. It is packaged in the ANE file you receive from the native
 extension developer.
 
-</div>
-
-</div>
-
-<div>
-
 ## Application icons
-
-<div>
 
 On the desktop, the icons specified in the application descriptor are used as
 the application file, shortcut, and program menu icons. The application icon
@@ -310,15 +234,7 @@ application descriptor file:
 If you do not supply an icon of a given size, the next largest size is used and
 scaled to fit. If you do not supply any icons, a default system icon is used.
 
-</div>
-
-</div>
-
-<div>
-
 ## Ignored settings
-
-<div>
 
 Applications on the desktop ignore application settings that apply to mobile
 profile features. The ignored settings are:
@@ -339,19 +255,7 @@ profile features. The ignored settings are:
 
 - softKeyboardBehavior
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
@@ -414,13 +318,3 @@ More Help topics
 [icon](WSfffb011ac560372f2fea1812938a6e463-7ff6.html)
 
 [imageNxN](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffc.html)
-
-</div>
-
-<div>
-
-
-
-</div>
-
-</div>

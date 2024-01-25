@@ -1,7 +1,5 @@
 # Instantiating an updater object
 
-<div>
-
 After loading the AIR update framework in your code (see
 [Setting up your Flex development environment](WS01EC1957-C9FB-484d-9AA4-D7293468133D.html)
 and
@@ -30,13 +28,3 @@ JavaScript example:
 
 The remaining code samples in this document assume that you have instantiated an
 updater object named `appUpdater`.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

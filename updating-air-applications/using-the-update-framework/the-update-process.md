@@ -1,7 +1,5 @@
 # The update process
 
-<div>
-
 The AIR update framework completes the update process in the following steps:
 
 1.  The updater initialization checks to see if an update check has been
@@ -53,15 +51,3 @@ property is set to a string with the following possible values:
 
 Some methods of the updater object only execute if the updater is in a certain
 state.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

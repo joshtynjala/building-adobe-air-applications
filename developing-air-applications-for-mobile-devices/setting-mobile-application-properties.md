@@ -1,7 +1,5 @@
 # Setting mobile application properties
 
-<div>
-
 As with other AIR applications, you set the basic application properties in the
 application descriptor file. Mobile applications ignore some of the
 desktop-specific properties, such as window size and transparency. Mobile
@@ -9,24 +7,12 @@ applications can also use their own platform-specific properties. For example,
 you can include an `android` element for Android apps and an `iPhone` element
 for iOS apps.
 
-</div>
-
-<div>
-
 ## Common settings
-
-<div>
 
 Several application descriptor settings are important for all mobile device
 applications.
 
-</div>
-
-<div>
-
 ### Required AIR runtime version
-
-<div>
 
 Specify the version of the AIR runtime required by your application using the
 namespace of the application descriptor file.
@@ -45,12 +31,8 @@ do not have the required version. On devices that incorporate the runtime, such
 as iPhone, this situation does not occur (since the required version is packaged
 with the app in the first place).
 
-<div>
-
 Note: (AIR 3.7 and higher) By default, ADT packages the runtime with Android
 applications.
-
-</div>
 
 Specify the namespace using the xmlns attribute of the root `application`
 element. The following namespaces should be used for mobile applications
@@ -61,8 +43,6 @@ element. The following namespaces should be used for mobile applications
                                 iOS only:
                                 <application xmlns="http://ns.adobe.com/air/application/2.0">
 
-<div>
-
 Note: Support for iOS 3 devices is provided by the Packager for iPhone SDK,
 based on the AIR 2.0 SDK. For information about building AIR applications for
 iOS 3, see
@@ -70,26 +50,14 @@ iOS 3, see
 AIR 2.6 SDK (and later) support iOS 4, and above on iPhone 3Gs, iPhone 4, and
 iPad devices.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Application identity
-
-<div>
 
 Several settings should be unique for each application that you publish. These
 include the ID, the name, and the filename.
 
-<div>
-
 #### Android application IDs
 
-On Android, the ID is converted to the Android package name by prefixing “air.”
+On Android, the ID is converted to the Android package name by prefixing "air."
 to the AIR ID. Thus, if your AIR ID is _com.example.MyApp_, then the Android
 package name is _air.com.example.MyApp_.
 
@@ -100,22 +68,14 @@ package name is _air.com.example.MyApp_.
 In addition, if the ID is not a legal package name on the Android operating
 system, it is converted to a legal name. Hyphen characters are changed to
 underscores and leading digits in any ID component are preceded by a capital
-“A”. For example, the ID: _3-goats.1-boat_, is transformed to the package name:
+"A". For example, the ID: _3-goats.1-boat_, is transformed to the package name:
 _air.A3_goats.A1_boat_.
-
-<div>
 
 Note: The prefix added to the application ID can be used to identify AIR
 applications in the Android Market. If you do not want your application to
 identified as an AIR application because of the prefix, you must unpackage the
 APK file, change the application ID, and repackage it as described in,
 [Opt-out of AIR application analytics for Android](http://kb2.adobe.com/cps/875/cpsid_87562.html).
-
-</div>
-
-</div>
-
-<div>
 
 #### iOS application IDs
 
@@ -144,24 +104,14 @@ For example:
 When specifying the app ID, do not include the bundle seed ID portion of the app
 ID.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Application version
-
-<div>
 
 In AIR 2.5 and later, specify the application version in the `versionNumber`
 element. The `version` element can no longer be used. When specifying a value
 for `versionNumber`, you must use a sequence of up to three numbers separated by
-dots, such as: “0.1.2”. Each segment of the version number can have up to three
-digits. (In other words, “999.999.999” is the largest version number permitted.)
-You do not have to include all three segments in the number; “1” and “1.0” are
+dots, such as: "0.1.2". Each segment of the version number can have up to three
+digits. (In other words, "999.999.999" is the largest version number permitted.)
+You do not have to include all three segments in the number; "1" and "1.0" are
 legal version numbers as well.
 
 You can also specify a label for the version using the `versionLabel` element.
@@ -179,15 +129,7 @@ On Android, the AIR `versionNumber` is translated to the Android integer
 `versionCode` using the formula:` a*1000000 + b*1000 + c`, where a, b, and c are
 the components of the AIR version number: `a.b.c`.
 
-</div>
-
-</div>
-
-<div>
-
 ### Main application SWF
-
-<div>
 
 Specify the main application SWF file in the `content` child of the
 `initialWindow` element. When you target devices in the mobile profile, you must
@@ -201,15 +143,7 @@ You must include the file in the AIR package (using ADT or your IDE). Simply
 referencing the name in the application descriptor does not cause the file to be
 included in the package automatically.
 
-</div>
-
-</div>
-
-<div>
-
 ### Main screen properties
-
-<div>
 
 Several child elements of the initialWindow element control the initial
 appearance and behavior of the main application screen.
@@ -252,8 +186,6 @@ appearance and behavior of the main application screen.
   You can set the render mode to _gpu_, _cpu_, _direct_, or _auto_. The default
   value is _auto_, which currently falls back to cpu mode.
 
-  <div>
-
   Note: In order to leverage GPU acceleration of Flash content with AIR for
   mobile platforms, Adobe recommends that you use renderMode="direct" (that is,
   Stage3D) rather than renderMode="gpu". Adobe officially supports and
@@ -261,16 +193,10 @@ appearance and behavior of the main application screen.
   (3D). For more details on Stage3D and Starling/Away3D, see
   <http://gaming.adobe.com/getstarted/>.
 
-  </div>
-
       <renderMode>direct</renderMode>
 
-  <div>
-
-  Note: You cannot use renderMode=”direct” for applications that run in the
+  Note: You cannot use renderMode="direct" for applications that run in the
   background.
-
-  </div>
 
   The limitations of GPU mode are:
 
@@ -294,23 +220,11 @@ appearance and behavior of the main application screen.
     all. For example, if a filter is applied to a display object, the object is
     not shown.
 
-  <div>
-
   Note: The GPU implementation for iOS in AIR 2.6+ is much different than the
   implementation used in the earlier, AIR 2.0 version. Different optimization
   considerations apply.
 
-  </div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Supported profiles
-
-<div>
 
 You can add the `supportedProfiles` element to specify which device profiles
 your application supports. Use the mobileDevice profile for mobile devices. When
@@ -327,15 +241,7 @@ following element:
 
     <supportedProfiles>mobileDevice desktop</supportedProfiles>
 
-</div>
-
-</div>
-
-<div>
-
 ### Required native extensions
-
-<div>
 
 Applications that support the `mobileDevice` profile can use native extensions.
 
@@ -353,20 +259,12 @@ extension descriptor file. The extension descriptor file is an XML file called
 extension.xml. It is packaged in the ANE file you receive from the native
 extension developer.
 
-</div>
-
-</div>
-
-<div>
-
 ### Virtual keyboard behavior
-
-<div>
 
 Set the `softKeyboardBehavior` element to `none` in order to disable the
 automatic panning and resizing behavior that the runtime uses to make sure that
 the focused text entry field is in view after the virtual keyboard is raised. If
-you disable the automatic behavior, then it is your application’s responsibility
+you disable the automatic behavior, then it is your application's responsibility
 to make sure that the text entry area, or other relevant content is visible
 after the keyboard is raised. You can use the `softKeyboardRect` property of the
 stage in conjunction with the SoftKeyboardEvent to detect when the keyboard
@@ -376,30 +274,12 @@ To enable the automatic behavior, set the element value to `pan`:
 
     <softKeyboardBehavior>pan</softKeyboardBehavior>
 
-<div>
-
 Since `pan` is the default value, omitting the `softKeyboardBehavior` element
 also enables the automatic keyboard behavior.
 
-<div>
-
 Note: When you also use GPU rendering, the pan behavior is not supported.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Android settings
-
-<div>
 
 On the Android platform, you can use the `android` element of the application
 descriptor to add information to the Android application manifest, which is an
@@ -409,39 +289,23 @@ package. AIR sets a few properties to the values required for certain features
 to work. Any other properties set in the android section of the AIR application
 descriptor are added to the corresponding section of the Manifest.xml file.
 
-<div>
-
 Note: For most AIR applications, you must set the Android permissions needed by
 your application within the `android` element, but you generally will not need
 to set any other properties.
 
-</div>
-
 You can only set attributes that take string, integer, or boolean values.
 Setting references to resources in the application package is not supported.
-
-<div>
 
 Note: The runtime requires a minimum SDK version equal to or greater than 14. If
 you wish to create an application only for higher versions, you should ensure
 that the Manifest includes `<uses-sdk android:minSdkVersion=""></uses-sdk>` with
 correct version, accordingly.
 
-</div>
-
-</div>
-
-<div>
-
 ### Reserved Android manifest settings
-
-<div>
 
 AIR sets several manifest entries in the generated Android manifest document to
 ensure that application and runtime features work correctly. You cannot define
 the following settings:
-
-<div>
 
 #### manifest element
 
@@ -455,10 +319,6 @@ You cannot set the following attributes of the manifest element:
 
 - xmlns:android
 
-</div>
-
-<div>
-
 #### activity element
 
 You cannot set the following attributes for the main activity element:
@@ -466,10 +326,6 @@ You cannot set the following attributes for the main activity element:
 - android:label
 
 - android:icon
-
-</div>
-
-<div>
 
 #### application element
 
@@ -489,17 +345,7 @@ You cannot set the following attributes of the application element:
 
 - android:launchMode
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Android permissions
-
-<div>
 
 The Android security model requires that each app request permission in order to
 use features that have security or privacy implications. These permissions must
@@ -543,15 +389,11 @@ Allows the application to access network information the NetworkInfo class.
 CAMERA  
 Allows the application to access the camera.
 
-<div>
-
 Note: When you ask for permission to use the camera feature, Android assumes
 that your application also requires the camera. If the camera is an optional
 feature of your application, then you should add a `uses-feature` element to the
 manifest for the camera, setting the required attribute to `false`. See
 [Android compatibility filtering](WS2d929364fa0b81373f2c6cba12a3522f10c-7fff.html).
-
-</div>
 
 INTERNET  
 Allows the application to make network requests. Also allows remote debugging.
@@ -593,15 +435,7 @@ permission, you could add the following to the application descriptor:
                                 </manifestAdditions>
                                 </android>
 
-</div>
-
-</div>
-
-<div>
-
 ### Android custom URI schemes
-
-<div>
 
 You can use a custom URI scheme to launch an AIR application from a web page or
 a native Android application. Custom URI support relies on intent filters
@@ -646,22 +480,10 @@ object dispatches an `invoke` event. The URL of the link, including query
 parameters, is placed in the `arguments` array of the InvokeEvent object. You
 can use any number of intent-filters.
 
-<div>
-
 Note: Links in a StageWebView instance cannot open URLs that use a custom URI
 scheme.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Android compatibility filtering
-
-<div>
 
 The Android operating system uses a number of elements in the application
 manifest file to determine whether your application is compatible with a given
@@ -679,8 +501,6 @@ The Android manifest tags that you can use for filtering include:
 - uses-feature
 
 - uses-sdk (in AIR 3+)
-
-<div>
 
 #### Camera applications
 
@@ -708,10 +528,6 @@ make all camera features optional:
                                     </manifestAdditions>
                                     </android>
 
-</div>
-
-<div>
-
 #### Audio recording applications
 
 If you request the permission to record audio, Android also assumes that the app
@@ -734,17 +550,7 @@ microphone while still making the microphone hardware optional:
                                     </manifestAdditions>
                                     </android>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Install location
-
-<div>
 
 You can permit your application to be installed or moved to the external memory
 card by setting the `installLocation` attribute of the Android `manifest`
@@ -758,7 +564,7 @@ element to either `auto` or `preferExternal`:
                                 </manifestAdditions>
                                 </android>
 
-The Android operating system doesn’t guarantee that your app will be installed
+The Android operating system doesn't guarantee that your app will be installed
 to the external memory. A user can also move the app between internal and
 external memory using the system settings app.
 
@@ -770,15 +576,7 @@ directory. Large amounts of data should be saved to the SDCard using the
 `File.userDirectory` or `File.documentsDirectory` locations (which both map to
 the root of the SD card on Android).
 
-</div>
-
-</div>
-
-<div>
-
 ### Enabling Flash Player and other plug-ins in a StageWebView object
-
-<div>
 
 In Android 3.0+, an application must enable hardware acceleration in the Android
 application element in order for plug-in content to be displayed in a
@@ -795,15 +593,7 @@ StageWebView object. To enable plug-in rendering, set the
                                 </manifestAdditions>
                                 </android>
 
-</div>
-
-</div>
-
-<div>
-
 ### Color depth
-
-<div>
 
 In AIR 3 and later, the runtime sets the display to render 32-bit colors. In
 earlier versions of AIR, the runtime uses 16-bit color. You can instruct the
@@ -818,25 +608,13 @@ descriptor:
 Using the 16-bit color depth can increase rendering performance, but at the
 expense of color fidelity.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## iOS Settings
-
-<div>
 
 Settings that apply only to iOS devices are placed within the `<iPhone>` element
 in the application descriptor. The `iPhone` element can have an `InfoAdditions`
 element, a `requestedDisplayResolution` element, an `Entitlements` element, an
 `externalSwfs` element, and a `forceCPURenderModeForDevices` element as
 children.
-
-<div>
 
 The `InfoAdditions` element lets you specify key-value pairs that are added to
 the Info.plist settings file for the application. For example, the following
@@ -852,8 +630,6 @@ application does not require persistent Wi-Fi access.
                                 ]]>
                                 </InfoAdditions>
 
-</div>
-
 The InfoAdditions settings are enclosed in a `CDATA` tag.
 
 Th `Entitlements` element lets you specify key-value pairs added to the
@@ -864,13 +640,7 @@ notifications.
 For more detailed information on Info.plist and Entitlements.plist settings, see
 the Apple developer documentation.
 
-</div>
-
-<div>
-
 ### Supporting background tasks on iOS
-
-<div>
 
 Adobe AIR 3.3 and higher supports multitasking on iOS by enabling certain
 background behaviors:
@@ -882,8 +652,6 @@ background behaviors:
 - Networking
 
 - Opting out of background app execution
-
-<div>
 
 Note: With swf-version 21 and its earlier versions, AIR does not support
 background execution on iOS and Android when render mode direct is set. Due to
@@ -901,10 +669,6 @@ native applications are allowed to make OpenGLES calls in the background. For
 optimal utilization of mobile resource, do not make rendering calls while an
 application is executing in the background.
 
-</div>
-
-<div>
-
 #### Background audio
 
 To enable background audio playback and recording, include the following
@@ -918,10 +682,6 @@ key-value pair in the `InfoAdditions` element:
                                     </array>
                                     ]]>
                                     </InfoAdditions>
-
-</div>
-
-<div>
 
 #### Background location updates
 
@@ -937,16 +697,8 @@ the `InfoAdditions` element:
                                     ]]>
                                     </InfoAdditions>
 
-<div>
-
 Note: Use this feature only when necessary, as location APIs are a significant
 drain on the battery.
-
-</div>
-
-</div>
-
-<div>
 
 #### Background networking
 
@@ -963,10 +715,6 @@ to `true` does not guarantee the application will run indefinitely, as iOS
 imposes a time limit on background tasks. When iOS stops background processing,
 AIR dispatches the `NativeApplication.suspend` event.
 
-</div>
-
-<div>
-
 #### Opting out of background execution
 
 Your application can explicitly opt out of background execution by including the
@@ -979,23 +727,11 @@ following key-value pair in the `InfoAdditions` element:
                                     ]]>
                                     </InfoAdditions>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Reserved iOS InfoAdditions settings
-
-<div>
 
 AIR sets several entries in the generated Info.plist file to ensure that
 application and runtime features work correctly. You cannot define the following
 settings:
-
-<div>
 
 <table>
 <colgroup>
@@ -1030,24 +766,10 @@ settings:
 </tbody>
 </table>
 
-</div>
-
-<div>
-
 Note: You can define the MinimumOSVersion. The MinimumOSVersion definition is
 honoured in Air 3.3 and later.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Supporting different iOS device models
-
-<div>
 
 For iPad support, include the proper key-value settings for `UIDeviceFamily`
 within your `InfoAdditions` element. The `UIDeviceFamily` setting is an array of
@@ -1078,20 +800,12 @@ The following setting limits support for tvOS:
                                 <string>3</string>
                                 </array>
 
-<div>
-
 Note: If UIDeviceFamily is not provided and tvOS provisioning is given, then the
 UIDeviceFamily value equal to 3 is added automatically in the final IPA that is
 generated.
 
-</div>
-
-<div>
-
 Note: Following warnings appear if there is a mismatch between the provisioning
 profile and the UIDeviceFamily value:
-
-</div>
 
 - Warning: Provisioning profile specified for tvOS, ignoring iOS UIDeviceFamily
   value(s).
@@ -1119,15 +833,7 @@ mode for all other devices, specify the following in the application descriptor:
                                    </forceCPURenderModeForDevices>
                                 </iPhone>
 
-</div>
-
-</div>
-
-<div>
-
 ### High-resolution displays
-
-<div>
 
 `The requestedDisplayResolution` element specifies whether your application
 should use the _standard_ or _high_ resolution mode on iOS devices with
@@ -1145,7 +851,7 @@ the `requestedDisplayResolution` element as a child of the `iPhone` element (not
 the `InfoAdditions` element or `initialWindow` element).
 
 If you want to use different settings on different devices, specify your default
-value as the `requestedDisplayResolution` element’s value. Use the
+value as the `requestedDisplayResolution` element's value. Use the
 `excludeDevices` attribute to specify devices that should use the opposite
 value. For example, with the following code, high resolution mode is used for
 all devices that support it except 3rd-generation iPads, which use standard
@@ -1155,15 +861,7 @@ mode:
 
 The `excludeDevices` attribute is available in AIR 3.6 and later.
 
-</div>
-
-</div>
-
-<div>
-
 ### iOS custom URI schemes
-
-<div>
 
 You can register a custom URI scheme to allow your application to be invoked by
 a link in a web page or another, native application on the device. To register a
@@ -1188,29 +886,13 @@ object dispatches an `invoke` event. The URL of the link, including query
 parameters, is placed in the `arguments` array of the InvokeEvent object. You
 can use any number of custom URI schemes.
 
-<div>
-
 Note: Links in a StageWebView instance cannot open URLs that use a custom URI
 scheme.
-
-</div>
-
-<div>
 
 Note: If another application has already registered a scheme, then your
 application cannot replace it as the application registered for that URI scheme.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### iOS compatibility filtering
-
-<div>
 
 Add entries to a UIRequiredDeviceCapabilities array within the `InfoAdditions`
 element if your application should only be used on devices with specific
@@ -1225,8 +907,6 @@ that an application requires a still camera and a microphone:
 
 If a device lacks the corresponding capability, the application cannot be
 installed. The capability settings relevant to AIR applications include:
-
-<div>
 
 <table>
 <colgroup>
@@ -1251,29 +931,15 @@ installed. The capability settings relevant to AIR applications include:
 </tbody>
 </table>
 
-</div>
-
 AIR 2.6+ automatically adds _armv7_ and _opengles-2_ to the list of required
 capabilities.
-
-<div>
 
 Note: You do not need to include these capabilities in the application
 descriptor in order for your application to use them. Use the
 UIRequiredDeviceCapabilities settings only to prevent users from installing your
 application on devices on which it cannot function properly.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Exiting instead of pausing
-
-<div>
 
 When a user switches away from an AIR application it enters the background and
 pauses. If you want your application to exit completely instead of pausing, set
@@ -1282,28 +948,20 @@ the `UIApplicationExitsOnSuspend` property to `YES`:
     <key>UIApplicationExitsOnSuspend</key>
                                 <true/>
 
-</div>
-
-</div>
-
-<div>
-
 ### Minimize download size by loading external, asset-only SWFs
-
-<div>
 
 You can minimize your initial application download size by packaging a subset of
 the SWFs used by your application and loading the remaining (asset-only)
 external SWFs at runtime using the `Loader.load()` method. To use this feature,
 you must package the application such that ADT moves all ActionScript ByteCode
 (ABC) from the externally loaded SWF files to the main application SWF, leaving
-a SWF file that contains only assets. This is to conform with the Apple Store’s
+a SWF file that contains only assets. This is to conform with the Apple Store's
 rule that forbids downloading any code after an application is installed.
 
 ADT does the following to support externally loaded SWFs (also called stripped
 SWFs):
 
-- Reads the text file specified in the `<iPhone>` element’s `<externalSwfs>`
+- Reads the text file specified in the `<iPhone>` element's `<externalSwfs>`
   subelement to access the line-delimited list of SWFs to be loaded at execution
   time:
 
@@ -1331,28 +989,16 @@ one per line in a text file, as the following example shows:
 The file path specified is relative to the application descriptor file.
 Additionally, you must specify these swfs as assets in the `adt` command.
 
-<div>
-
 Note: This feature applies to standard packaging only. For fast packaging (using
 for example, using interpreter, simulator, or debug) ADT does not create
 stripped SWFs.
-
-</div>
 
 ![](../img/byline.png) For more information on this feature, including sample
 code, see
 [External hosting of secondary SWFs for AIR apps on iOS](http://blogs.adobe.com/airodynamics/2013/03/08/external-hosting-of-secondary-swfs-for-air-apps-on-ios/),
 a blog post by Adobe engineer Abhinav Dhandh.
 
-</div>
-
-</div>
-
-<div>
-
 ### Geolocation Support
-
-<div>
 
 For Geolocation support, add one of the following key-value pairs to the
 `InfoAdditions` element:
@@ -1368,21 +1014,9 @@ For Geolocation support, add one of the following key-value pairs to the
                                 ]]>
                                 </InfoAdditions>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Application icons
 
-<div>
-
 The following table lists the icon sizes used on each mobile platform:
-
-<div>
 
 | Icon size | Platform     |
 | --------- | ------------ |
@@ -1411,8 +1045,6 @@ The following table lists the icon sizes used on each mobile platform:
 | 512x512   | Android, iOS |
 | 1024x1024 | iOS          |
 
-</div>
-
 Specify the path to the icon files in the icon element of the application
 descriptor file:
 
@@ -1425,8 +1057,6 @@ descriptor file:
 If you do not supply an icon of a given size, the next largest size is used and
 scaled to fit.
 
-<div>
-
 #### Icons on Android
 
 On Android, the icons specified in the application descriptor are used as the
@@ -1438,16 +1068,10 @@ medium-density, and high-density screens, respectively.
 The developers are required to submit the 512x512–pixel icon at the time of
 app-submission on Google Play Store.
 
-</div>
-
-<div>
-
 #### Icons on iOS
 
 The icons defined in the application descriptor are used in the following places
 for an iOS application:
-
-<div>
 
 - A 29-by-29–pixel icon— Spotlight search icon for lower resolution
   iPhones/iPods and Settings icon for lower resolution iPads.
@@ -1492,13 +1116,9 @@ for an iOS application:
 - A 1024-by-1024-pixel icon— Application icon for Retina Display
   iPhones/iPods/iPads.
 
-</div>
-
 iOS adds a glare effect to the icon. You do not need to apply the effect to your
 source image. To remove this default glare effect, add the following to the
 `InfoAdditions` element in the application descriptor file:
-
-<div>
 
     <InfoAdditions>
                                     <![CDATA[
@@ -1506,10 +1126,6 @@ source image. To remove this default glare effect, add the following to the
                                     <true/>
                                     ]]>
                                     </InfoAdditions>
-
-</div>
-
-<div>
 
 Note: 1. Starting AIR 28, Assets.car needs to be packaged along with application
 xml and swf file for the icons to be visible on devices having iOS 11 and
@@ -1521,17 +1137,7 @@ unpackage the IPA file, remove the icon metadata, and repackage it. This
 procedure is described in the article
 [Opt-out of AIR application analytics for iOS](http://kb2.adobe.com/cps/893/cpsid_89362.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### iOS launch images
-
-<div>
 
 In addition to the application icons, you must also provide at least one launch
 image named _Default.png_. Optionally, you can include separate launch images
@@ -1543,8 +1149,6 @@ invoked through a URL.
 Launch image files are not referenced in the application descriptor and must be
 placed in the root application directory. (Do _not_ put the files in a
 subdirectory.)
-
-<div>
 
 #### File naming scheme
 
@@ -1619,18 +1223,12 @@ For iPad, you include images as follows:
   the top 20 pixels (top 40 pixels for high resolution ) are covered by the
   status bar. Avoid displaying important information in this area.
 
-</div>
-
-<div>
-
 #### Examples
 
 The following table shows an example set of launch images that you could include
 for a hypothetical application that supports the widest possible range of
 devices and orientations, and can be launched with URLs using the `example://`
 scheme:
-
-<div>
 
 <table>
 <colgroup>
@@ -1728,8 +1326,6 @@ higher)</p></td>
 </tbody>
 </table>
 
-</div>
-
 This example only illustrates one approach. You could, for example, use the
 `Default.png` image for the iPad, and specify specific launch images for the
 iPhone and iPod with `Default~iphone.png` and `Default@2x~iphone.png`.
@@ -1738,13 +1334,7 @@ iPhone and iPod with `Default~iphone.png` and `Default@2x~iphone.png`.
 
 [iOS Application Programming Guide: Application Launch Images](http://developer.apple.com/library/ios/#documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/App-RelatedResources/App-RelatedResources.html#//apple_ref/doc/uid/TP40007072-CH6-SW12)
 
-</div>
-
-<div>
-
 #### Launch images to package for iOS devices
-
-<div>
 
 |                       |                         |                                           |                 |
 | --------------------- | ----------------------- | ----------------------------------------- | --------------- |
@@ -1774,15 +1364,9 @@ iPhone and iPod with `Default~iphone.png` and `Default@2x~iphone.png`.
 | iPad Pro (12.9")      | 2048 x 2732             | Default-Portrait@2x.png                   | Portrait        |
 | iPad Pro (12.9")      | 2732 x 2048             | Default-Landscape@2x.png                  | Landscape       |
 
-</div>
-
-</div>
-
-<div>
-
 #### Art guidelines
 
-You can create any art you’d like for a launch image, as long as it is the
+You can create any art you'd like for a launch image, as long as it is the
 correct dimensions. However, it is often best to have the image match the
 initial state of your application. You can create such a launch image by taking
 a screenshot of the startup screen of your application:
@@ -1803,19 +1387,7 @@ other languages.
 
 [iOS Human Interface Guidelines: Launch images](https://developer.apple.com/ios/human-interface-guidelines/icons-and-images/launch-screen/)
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Icons and launch images for tvOS
-
-<div>
 
 Follow the steps below to create Assets.car using Xcode for generating
 application icons, launch images, and TopShelf Images for your Apple TV
@@ -1871,8 +1443,6 @@ for your images:
     <string>App Icon - Small</string>
     </dict>
 
-<div>
-
 Note:
 
 1\. If Assets.car is created from Xcode 9, icon tag in application descriptor
@@ -1887,17 +1457,7 @@ should be:
     <key>CFBundlePrimaryIcon</key>
     <string>App Icon - Small</string>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Ignored settings
-
-<div>
 
 Applications on mobile devices ignore application settings that apply to native
 windows or desktop operating system features. The ignored settings are:
@@ -1938,19 +1498,7 @@ windows or desktop operating system features. The ignored settings are:
 
 - y
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
@@ -1990,37 +1538,29 @@ More Help topics
 
 [imageNxN](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffc.html)
 
-</div>
-
 ![](../img/as3LinkIndicator.png) 
-[Virtual keyboards](http://help.adobe.com/en_US/as3/dev/WSfffb011ac560372f2e63562a12dedf852e9-8000.html "http://help.adobe.com/en_US/as3/dev/WSfffb011ac560372f2e63562a12dedf852e9-8000.html")
+[Virtual keyboards](http://help.adobe.com/en_US/as3/dev/WSfffb011ac560372f2e63562a12dedf852e9-8000.html)
 
 ![](../img/flashplatformLinkIndicator.png) 
-[Stage.softKeyboardRect](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#softKeyboardRect "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#softKeyboardRect")
+[Stage.softKeyboardRect](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Stage.html#softKeyboardRect)
 
 ![](../img/flashplatformLinkIndicator.png) 
-[SoftKeyboardEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html")
+[SoftKeyboardEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html)
 
-[Android Security and Permissions](http://developer.android.com/guide/topics/security/security.html "http://developer.android.com/guide/topics/security/security.html")
+[Android Security and Permissions](http://developer.android.com/guide/topics/security/security.html)
 
-[Android Manifest.permission class](http://developer.android.com/reference/android/Manifest.permission.html "http://developer.android.com/reference/android/Manifest.permission.html")
+[Android Manifest.permission class](http://developer.android.com/reference/android/Manifest.permission.html)
 
-[Android intent filters](http://developer.android.com/guide/topics/intents/intents-filters.html#ifs "http://developer.android.com/guide/topics/intents/intents-filters.html#ifs")
+[Android intent filters](http://developer.android.com/guide/topics/intents/intents-filters.html#ifs)
 
-[Android actions and categories](http://developer.android.com/reference/android/content/Intent.html#constants "http://developer.android.com/reference/android/content/Intent.html#constants")
+[Android actions and categories](http://developer.android.com/reference/android/content/Intent.html#constants)
 
-[Android Developers: Android Compatibility](http://developer.android.com/guide/practices/compatibility.html "http://developer.android.com/guide/practices/compatibility.html")
+[Android Developers: Android Compatibility](http://developer.android.com/guide/practices/compatibility.html)
 
-[Android Developers: Android feature name constants](http://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH "http://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH")
+[Android Developers: Android feature name constants](http://developer.android.com/reference/android/content/pm/PackageManager.html#FEATURE_BLUETOOTH)
 
-[Renaun Erickson: Developing for both retina and non-retina iOS screens using AIR 2.6](http://renaun.com/blog/2011/03/developing-for-both-retina-and-non-retina-ios-screens-using-air-2-6/ "http://renaun.com/blog/2011/03/developing-for-both-retina-and-non-retina-ios-screens-using-air-2-6/")
+[Renaun Erickson: Developing for both retina and non-retina iOS screens using AIR 2.6](http://renaun.com/blog/2011/03/developing-for-both-retina-and-non-retina-ios-screens-using-air-2-6/)
 
-[Android Developers: Icon Design Guidelines](http://developer.android.com/guide/practices/ui_guidelines/icon_design.html "http://developer.android.com/guide/practices/ui_guidelines/icon_design.html")
+[Android Developers: Icon Design Guidelines](http://developer.android.com/guide/practices/ui_guidelines/icon_design.html)
 
-[iOS Human Interface Guidelines: Custom Icon and Image Creation Guidelines](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html "https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html")
-
-<div>
-
-</div>
-
-</div>
+[iOS Human Interface Guidelines: Custom Icon and Image Creation Guidelines](https://developer.apple.com/library/ios/#documentation/UserExperience/Conceptual/MobileHIG/IconsImages/IconsImages.html)

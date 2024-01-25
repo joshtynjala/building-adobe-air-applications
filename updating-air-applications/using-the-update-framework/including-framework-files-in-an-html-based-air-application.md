@@ -1,7 +1,5 @@
 # Including framework files in an HTML-based AIR application
 
-<div>
-
 The frameworks/html directory of the update framework includes these SWF files:
 
 - applicationupdater.swf—Defines the basic functionality of the update library,
@@ -26,15 +24,3 @@ Or use this `script` tag to load the applicationupdater_ui.swf file:
 
 The API defined in these two files is described in the remainder of this
 document.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

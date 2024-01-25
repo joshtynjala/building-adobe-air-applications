@@ -1,7 +1,5 @@
 # Creating your first AIR application for iOS
 
-<div>
-
 You can code, build, and test the basic features of an iOS application using
 only Adobe tools. However, to install an iOS application on a device and to
 distribute that application, you must join the Apple iOS Developer program
@@ -16,17 +14,9 @@ testing and for subsequent distribution. These items and files include:
 
 - Development and distribution provisioning files
 
-<!-- -->
-
-</div>
-
-<div>
-
 ## Create the application content
 
-<div>
-
-Create a SWF file that displays the text, “Hello world!” You can perform this
+Create a SWF file that displays the text, "Hello world!" You can perform this
 task using Flash Professional, Flash Builder, or another IDE. This example
 simply uses a text editor and the command line SWF compiler included in the Flex
 SDK.
@@ -67,8 +57,6 @@ SDK.
 
     A SWF file, _HelloWorld.swf_, is created in the same folder.
 
-    <div>
-
     Note: This example assumes that you have set up your environment path
     variable to include the directory containing amxmlc. For information on
     setting the path, see
@@ -76,17 +64,7 @@ SDK.
     Alternately, you can type the full path to amxmlc and the other command-line
     tools used in this example.
 
-    </div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Create icon art and initial screen art for the application
-
-<div>
 
 All iOS applications have icons that appear in the user interface of the iTunes
 application and on the device screen.
@@ -100,17 +78,9 @@ application and on the device screen.
     must be 29-by-29 pixels, 57-by-57 pixels, and 512-by-512 pixels. For this
     test, you can simply use solid color squares as the art.
 
-    <div>
-
-    <div>
-
     Note: When you submit an application to the Apple App Store, you use a JPG
     version (not a PNG version) of the 512-pixel file. You use the PNG version
     while testing development versions of an application.
-
-    </div>
-
-    </div>
 
 All iPhone applications display an initial image while the application loads on
 the iPhone. You define the initial image in a PNG file:
@@ -125,15 +95,7 @@ the iPhone. You define the initial image in a PNG file:
 For detailed information on these graphics, see
 [Application icons](WS901d38e593cd1bac1e63e3d129907d2886-8000.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Create the application descriptor file
-
-<div>
 
 Create an application descriptor file that specifies the basic properties for
 the application. You can complete this task using an IDE such as Flash Builder
@@ -165,12 +127,8 @@ or a text editor.
     For the sake of simplicity, this example only sets a few of the available
     properties.
 
-    <div>
-
     Note: If you are using AIR 2, or earlier, you must use the `<version>`
     element instead of the `<versionNumber>` element.
-
-    </div>
 
 3.  Change the application ID to match the application ID specified in the iOS
     Provisioning Portal. (Do not include the random bundle seed portion at the
@@ -184,15 +142,7 @@ or a text editor.
     World!_ If it does not, check the source code and application descriptor for
     errors.
 
-</div>
-
-</div>
-
-<div>
-
 ## Compile the IPA file
-
-<div>
 
 You can now compile the IPA installer file using ADT. You must have your Apple
 certificate and private key in P12 file format and your Apple development
@@ -226,15 +176,7 @@ make it easier to read.)
 ADT generates the iOS application installer file, _HelloWorld.ipa_, in the
 project directory. Compiling the IPA file can take a few minutes.
 
-</div>
-
-</div>
-
-<div>
-
 ## Install the application on a device
-
-<div>
 
 To install the iOS application for testing:
 
@@ -277,15 +219,7 @@ list of applications in iTunes, and then redo this procedure. This may be the
 case if the currently installed version uses the same application ID and
 version.
 
-</div>
-
-</div>
-
-<div>
-
 ## Edit the initial screen graphic
-
-<div>
 
 Before you compiled your application, you created a Default.png file (see
 [Create icon art and initial screen art for the application](WSfffb011ac560372f3cb56e2a12cc36970aa-7ffe.html)).
@@ -294,9 +228,9 @@ tested the application on your iPhone, you may have noticed this blank screen at
 startup.
 
 You should change this image to match the startup screen of your application
-(“Hello World!”):
+("Hello World!"):
 
-1.  Open your application on your device. When the first “Hello World” text
+1.  Open your application on your device. When the first "Hello World" text
     appears, press and hold the Home button (below the screen). While holding
     the Home button, press the Power/Sleep button (at the top of the iPhone).
     This takes a screenshot and sends it to the Camera Roll.
@@ -313,7 +247,7 @@ You should change this image to match the startup screen of your application
 
     - Open the screenshot image you captured.
 
-    - Tap the image and then tap the “forward” (arrow) button in the
+    - Tap the image and then tap the "forward" (arrow) button in the
       bottom-left-hand corner. Then click the Email Photo button and send the
       image to yourself.
 
@@ -326,28 +260,6 @@ You should change this image to match the startup screen of your application
 
 The application now uses the new startup screen as it loads.
 
-<div>
-
-<div>
-
-Note: You can create any art you’d like for the Default.png file, as long as it
+Note: You can create any art you'd like for the Default.png file, as long as it
 is the correct dimensions (320 by 480 pixels). However, it is often best to have
 the Default.png image match the initial state of your application.
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

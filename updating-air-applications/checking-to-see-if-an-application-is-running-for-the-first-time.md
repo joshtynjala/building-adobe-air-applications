@@ -1,25 +1,15 @@
 # Checking to see if an application is running for the first time
 
-<div>
-
 Once you have updated an Adobe AIR application, you may want to provide the user
-with a “getting started” or “welcome” message. Upon launching, the application
+with a "getting started" or "welcome" message. Upon launching, the application
 checks to see if it is running for the first time, so that it can determine
 whether to display the message.
-
-<div>
-
-<div>
 
 Note: AIR 1.5 includes an update framework, which assists developers in
 providing good update capabilities in AIR applications. This framework provides
 easy methods to check if a version of an application is running for the first
 time. For details, see
 [Using the update framework](WS9CD40F06-4DD7-4230-B56A-88AA27541A1E.html).
-
-</div>
-
-</div>
 
 One way to do this is to save a file to the application store directory upon
 initializing the application. Every time the application starts up, it should
@@ -132,13 +122,3 @@ The following example demonstrates the concept in JavaScript:
 If your application saves data locally (such as, in the application storage
 directory), you may want to check for any previously saved data (from previous
 versions) upon first run.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

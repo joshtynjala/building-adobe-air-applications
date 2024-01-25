@@ -1,7 +1,5 @@
 # Initializing the update framework
 
-<div>
-
 After setting the configuration properties (see
 [Basic example: Using the ApplicationUpdaterUI version](WS96E10DFB-39A5-4488-A666-15B9B46C5EE8.html)),
 call the `initialize()` method to initialize the update:
@@ -51,15 +49,3 @@ the `checkNow()` method:
 If you cancel the `checkForUpdate` event, you can call the `checkForUpdate()`
 method of the updater object. (See the next section.) If you do not cancel the
 event, the update process proceeds to check for the update descriptor file.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

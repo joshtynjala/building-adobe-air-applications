@@ -1,7 +1,5 @@
 # ADT package command
 
-<div>
-
 The `-package` command should be run from the main application directory. The
 command uses the following syntaxes:
 
@@ -61,12 +59,8 @@ Create a native extension package from the component native extension files:
         output
         ANE_OPTIONS
 
-<div>
-
 Note: You do not have to sign an ANE file, so the `AIR_SIGNING_OPTIONS`
 parameters are optional in this example.
-
-</div>
 
 **AIR_SIGNING_OPTIONS** The AIR signing options identify the certificate used to
 sign an AIR installation file. The signing options are fully described in
@@ -88,11 +82,9 @@ For more information, see
 
 The `-migrate` flag of the `-package` command is available in AIR 3.6 and later.
 
-<div>
-
 **-target** The type of package to create. The supported package types are:
 
-- air — an AIR package. “air” is the default value and the -target flag does not
+- air — an AIR package. "air" is the default value and the -target flag does not
   need to be specified when creating AIR or AIRI files.
 
 - airn — a native application package for devices in the extended television
@@ -165,8 +157,6 @@ The `-migrate` flag of the `-package` command is available in AIR 3.6 and later.
   For more information see
   [Packaging a desktop native installer](WS789ea67d3e73a8b22388411123785d839c-8000.html).
 
-</div>
-
 **-sampler** (iOS only, AIR 3.4 and higher) Enables the telemetry-based
 ActionScript sampler in iOS applications. Using this flag lets you profile the
 application with Adobe Scout. Although [Scout](http://www.adobe.com/go/scout)
@@ -177,10 +167,10 @@ not use it for production applications.
 
 **-hideAneLibSymbols** (iOS only, AIR 3.4 and higher) Application developers can
 use multiple native extensions from multiple sources and if the ANEs share a
-common symbol name, ADT generates a “duplicate symbol in object file” error. In
+common symbol name, ADT generates a "duplicate symbol in object file" error. In
 some cases, this error can even manifest itself as a crash at runtime. You can
 use the `hideAneLibSymbols` option to specify whether or not to make the ANE
-library’s symbols visible only to that library’s sources (yes) or visible
+library's symbols visible only to that library's sources (yes) or visible
 globally (no):
 
 - **yes** — Hides ANE symbols, which resolves any unintended symbol conflict
@@ -225,7 +215,7 @@ only the native signing options can be specified.
 
 In many cases, you can use the same code signing certificate to apply both an
 AIR and a native signature. However, this is not true in all cases. For example,
-Google’s policy for apps submitted to the Android Market dictates that all apps
+Google's policy for apps submitted to the Android Market dictates that all apps
 must be signed with a certificate valid until at least the year 2033. This means
 that a certificate issued by a well known certificate authority, which are
 recommended when applying an AIR signature, should not be used to sign an
@@ -239,8 +229,6 @@ current operating system is added.
 **app_descriptor** The path to the application descriptor file. The path can be
 specified relative to the current directory or as an absolute path. (The
 application descriptor file is renamed as _application.xml_ in the AIR file.)
-
-<div>
 
 **-platformsdk** The path to the platform SDK for the target device:
 
@@ -258,18 +246,12 @@ application descriptor file is renamed as _application.xml_ in the AIR file.)
   Additionally, when using ADT with the iOS Simulator, you must always include
   the -platformsdk option, specifying the path to the iOS Simulator SDK.
 
-</div>
-
 **-arch**Application developers can use this argument to create APK for x86
 platforms, it takes following values:
-
-<div>
 
 - armv7 - ADT packages APK for the Android armv7 platform.
 
 - x86 - ADT packages APK for the Android x86 platform.
-
-</div>
 
 armv7 is the default value when no value is specified
 
@@ -279,7 +261,7 @@ file options are fully described in
 specify file options when creating a native package from an AIR or AIRI file.
 
 **input_airi** Specify when creating a native package from an AIRI file. The
-AIR_SIGNING_OPTIONS are required if the target is _air_ (or no target is
+AIR*SIGNING_OPTIONS are required if the target is \_air* (or no target is
 specified).
 
 **input_air** Specify when creating a native package from an AIR file. Do not
@@ -289,13 +271,7 @@ specify AIR_SIGNING_OPTIONS.
 package. The extension package options are fully described in
 [Native extension options](WS901d38e593cd1bac1e63e3d128fc240122-7ff0.html).
 
-</div>
-
-<div>
-
 ## ADT -package command examples
-
-<div>
 
 Package specific application files in the current directory for a SWF-based AIR
 application:
@@ -311,15 +287,11 @@ Package all files and subdirectories in the current working directory:
 
     adt –package -storetype pkcs12 -keystore ../cert.p12 myApp.air myApp.xml .
 
-<div>
-
 Note: The keystore file contains the private key used to sign your application.
 Never include the signing certificate inside the AIR package! If you use
 wildcards in the ADT command, place the keystore file in a different location so
 that it is not included in the package. In this example the keystore file,
 cert.p12, resides in the parent directory.
-
-</div>
 
 Package only the main files and an images subdirectory:
 
@@ -400,7 +372,7 @@ package):
 
     java -com.adobe.air.ADT –package -storetype pkcs12 -keystore cert.p12 myApp.air myApp.xml myApp.swf
 
-Run ADT as a Java task in Apache Ant (although it’s usually best to use the ADT
+Run ADT as a Java task in Apache Ant (although it's usually best to use the ADT
 command directly in Ant scripts). The paths shown in the example are for
 Windows:
 
@@ -421,27 +393,9 @@ Windows:
         </java>
     </target>
 
-<div>
-
 Note: On some computer systems, double-byte characters in the file system paths
 can be misinterpreted. If this occurs, try setting the JRE used to run ADT to
 use the UTF-8 character set. This is done by default in the script used to
 launch ADT on Mac and Linux. In the Windows adt.bat file, or when you run ADT
 directly from Java, specify the `‑Dfile.encoding=UTF-8` option on the Java
 command line.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

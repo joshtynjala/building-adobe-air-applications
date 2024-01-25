@@ -1,7 +1,5 @@
 # Downloading and interpreting the update descriptor file
 
-<div>
-
 The ApplicationUpdater object dispatches the `checkForUpdate` event before the
 update process begins, just before the updater tries to download the update
 descriptor file. If you cancel the default behavior of the `checkForUpdate`
@@ -36,15 +34,3 @@ download and interpret the update descriptor file. As a result of calling the
 
 - `StatusUpdateErrorEvent.UPDATE_ERROR`—There was an error, and the updater
   could not download or interpret the update descriptor file.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

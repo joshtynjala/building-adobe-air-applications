@@ -1,7 +1,5 @@
 # Adobe AIR installation
 
-<div>
-
 The Adobe® AIR® runtime allows you to run AIR applications. You can install the
 runtime in the following ways:
 
@@ -9,7 +7,7 @@ runtime in the following ways:
   application)
 
 - By installing an AIR application for the first time through a web page
-  installation “badge” (you are prompted to also install the runtime)
+  installation "badge" (you are prompted to also install the runtime)
 
 - By creating a custom installer that installs both your application and the
   runtime. You must get approval from Adobe to distribute the AIR runtime in
@@ -44,15 +42,3 @@ problems. See
 - [Removing Adobe AIR](WS5b3ccc516d4fbf351e63e3d118666ade46-7fed.html)
 - [Installing and running the AIR sample applications](WS5b3ccc516d4fbf351e63e3d118666ade46-7fec.html)
 - [Adobe AIR updates](WS144092a96ffef7cc6f8e57c21279330af31-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

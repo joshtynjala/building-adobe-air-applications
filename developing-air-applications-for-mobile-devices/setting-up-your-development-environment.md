@@ -1,19 +1,11 @@
 # Setting up your development environment
 
-<div>
-
 Mobile platforms have additional setup requirements beyond the normal AIR, Flex,
 and Flash development environment setup. (For more information about setting up
 the basic AIR development environment, see
 [Adobe Flash Platform tools for AIR development](WS2d8d13466044a7337d7adee012406959c52-8000.html).)
 
-</div>
-
-<div>
-
 ## Android setup
-
-<div>
 
 No special setup is normally required for Android in AIR 2.6+. The Android ADB
 tool is included in the AIR SDK (in the lib/android/bin folder). The AIR SDK
@@ -34,15 +26,7 @@ Android SDK folder. If you do not set this environment variable, you must
 specify the path to the Android SDK in the `-platformsdk` argument on the ADT
 command line.
 
-</div>
-
-</div>
-
-<div>
-
 ## iOS setup
-
-<div>
 
 To install and test an iOS application on a device and to distribute that
 application, you must join the Apple iOS Developer program (which is a fee-based
@@ -57,30 +41,8 @@ for subsequent distribution. These items and files include:
 
 - Development and distribution provisioning files
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [ADT environment variables](WS901d38e593cd1bac1e63e3d129cf8c19f1-8000.html)
 
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
-
-</div>
-
-<div>
-
-
-
-</div>
-
-</div>

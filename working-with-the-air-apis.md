@@ -1,67 +1,37 @@
 # Working with the AIR APIs
 
-<div>
-
 Adobe® AIR® includes functionality that is not available to SWF content running
 in Adobe® Flash® Player.
-
-<div>
 
 #### ActionScript 3.0 Developers
 
 The Adobe AIR APIs are documented in the following two books:
 
-<div>
-
 - [ActionScript 3.0 Developer's Guide](http://help.adobe.com/en_US/as3/dev/index.html)
 
 - [ActionScript 3.0 Reference for the Adobe Flash Platform](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/)
 
-</div>
-
-</div>
-
-<div>
-
 #### HTML Developers
 
-If you’re building HTML-based AIR applications, the APIs that are available to
+If you're building HTML-based AIR applications, the APIs that are available to
 you in JavaScript via the AIRAliases.js file (see
 [Accessing AIR API classes from JavaScript](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7f0d.html))
 are documented in the following two books:
-
-<div>
 
 - [HTML Developer's Guide for Adobe AIR](http://help.adobe.com/en_US/air/html/dev/index.html)
 
 - [Adobe AIR API Reference for HTML Developers](http://help.adobe.com/en_US/air/reference/html/)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## AIR-specific ActionScript 3.0 classes
-
-<div>
 
 The following table contains runtime classes are specific to Adobe AIR. They are
 not available to SWF content running in Adobe® Flash® Player in the browser.
-
-<div>
 
 #### HTML Developers
 
 The classes that are available to you in JavaScript via the AIRAliases.js file
 are listed in
 [Adobe AIR API Reference for HTML Developers](http://help.adobe.com/en_US/air/reference/html/).
-
-</div>
-
-<div>
 
 | Class                                                                                                                                                     | ActionScript 3.0 Package | Added in AIR version                |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ | ----------------------------------- |
@@ -210,22 +180,10 @@ are listed in
 | [URLRequestDefaults](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequestDefaults.html)                                | flash.net                | 1.0                                 |
 | [XMLSignatureValidator](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/security/XMLSignatureValidator.html)                     | flash.security           | 1.0                                 |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Flash Player classes with AIR-specific functionality
-
-<div>
 
 The following classes are available to SWF content running in the browser, but
 AIR provides additional properties or methods:
-
-<div>
 
 | Package        | Class                                                                                                                                    | Property, method, or event          | Added in AIR version |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- | -------------------- |
@@ -309,8 +267,6 @@ AIR provides additional properties or methods:
 |                | [Security](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/system/Security.html)                                | `APPLICATION`                       | 1.0                  |
 | flash.ui       | [KeyLocation](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/KeyLocation.html)                              | D_PAD                               | 2.5                  |
 
-</div>
-
 Most of these new properties and methods are available only to content in the
 AIR application security sandbox. However, the new members in the URLRequest
 classes are also available to content running in other sandboxes.
@@ -319,15 +275,7 @@ The `ByteArray.compress()` and `ByteArray.uncompress()` methods each include a
 new `algorithm` parameter, allowing you to choose between deflate and zlib
 compression. This parameter is available only to content running in AIR.
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR-specific Flex components
-
-<div>
 
 The following Adobe® Flex™ MX components are available when developing content
 for Adobe AIR:
@@ -366,17 +314,3 @@ Additionally, Flex 4 includes the following spark AIR components:
 
 For more information about the AIR Flex components, see
 [Using the Flex AIR components](http://help.adobe.com/en_US/Flex/4.0/UsingSDK/WSacd9bdd0c5c09f4a-690d4877120e8b878b0-8000.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

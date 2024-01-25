@@ -1,7 +1,5 @@
 # AIR Debug Launcher (ADL)
 
-<div>
-
 Use the AIR Debug Launcher (ADL) to run both SWF-based and HTML-based
 applications during development. Using ADL, you can run an application without
 first packaging and installing it. By default, ADL uses a runtime included with
@@ -13,15 +11,11 @@ not support breakpoints or other debugging features. You can use the Flash
 Debugger (or an integrated development environment such as Flash Builder) for
 complex debugging issues.
 
-<div>
-
 Note: If your `trace()` statements do not display on the console, ensure that
 you have not specified `ErrorReportingEnable` or `TraceOutputFileEnable` in the
 mm.cfg file. For more information on the platform-specific location of this
 file, see
 [Editing the mm.cfg file](http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html).
-
-</div>
 
 AIR supports debugging directly, so you do not need a debug version of the
 runtime (as you would with Adobe® Flash® Player). To conduct command-line
@@ -33,21 +27,11 @@ version is in the lib subdirectory. The AIR Debug Launcher, adl.exe, is in the
 bin directory of your Flex SDK installation. (There is no separate Java
 version).
 
-<div>
-
 Note: You cannot start an AIR application directly with fdb, because fdb
 attempts to launch it with Flash Player. Instead, let the AIR application
 connect to a running fdb session.
 
-</div>
-
-</div>
-
-<div>
-
 ## ADL usage
-
-<div>
 
 To run an application with ADL, use the following pattern:
 
@@ -84,14 +68,10 @@ connection, that use the publisher ID to help uniquely identify an application.
 As of AIR 1.5.3, you can also specify the publisher ID in the application
 descriptor file (and should not use this parameter).
 
-<div>
-
 Note: As of AIR 1.5.3, a Publisher ID is no longer automatically computed and
 assigned to an AIR application. You can specify a publisher ID when creating an
 update to an existing AIR application, but new applications do not need and
 should not specify a publisher ID.
-
-</div>
 
 **-nodebug** Turns off debugging support. If used, the application process
 cannot connect to the Flash debugger and dialogs for unhandled exceptions are
@@ -131,8 +111,6 @@ screen type, or as the pixel dimensions of the normal width and height for
 portrait layout, plus the fullscreen width and height. To specify the value by
 type, use one of the following predefined screen types:
 
-<div>
-
 | Screen type      | Normal width x height | Fullscreen width x height |
 | ---------------- | --------------------- | ------------------------- |
 | 480              | 720 x 480             | 720 x 480                 |
@@ -159,8 +137,6 @@ type, use one of the following predefined screen types:
 | WQVGA            | 240 x 400             | 240 x 400                 |
 | WVGA             | 480 x 800             | 480 x 800                 |
 
-</div>
-
 To specify the screen pixel dimensions directly, use the following format:
 
     widthXheight:fullscreenWidthXfullscreenHeight
@@ -175,8 +151,6 @@ screen can be specified with:
 search for native extensions. The directory contains a subdirectory for each
 native extension that the application uses. Each of these subdirectories contain
 the _unpackaged_ ANE file of an extension. For example:
-
-<div>
 
     C:\extensionDirs\
         extension1.ane\
@@ -202,15 +176,10 @@ the _unpackaged_ ANE file of an extension. For example:
             library.swf
             mimetype
 
-
-</div>
-
 When using the -extdir parameter, consider the following:
 
-<div>
-
 - The ADL command requires that each of the specified directories have the .ane
-  filename extension. However, the part of the filename before the “.ane” suffix
+  filename extension. However, the part of the filename before the ".ane" suffix
   can be any valid filename. It does _not_ have to match the value of the
   `extensionID` element of the application descriptor file.
 
@@ -223,8 +192,6 @@ When using the -extdir parameter, consider the following:
   extension directories. See
   [ADT environment variables](WS901d38e593cd1bac1e63e3d129cf8c19f1-8000.html).
 
-</div>
-
 **_application.xml_** The application descriptor file. See
 [AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html).
 The application descriptor is the only parameter required by ADL and, in most
@@ -236,23 +203,11 @@ not specified, the directory containing the application descriptor file is used.
 **-- _arguments_** Any character strings appearing after "--" are passed to the
 application as command line arguments.
 
-<div>
-
 Note: When you launch an AIR application that is already running, a new instance
 of that application is not started. Instead, an `invoke` event is dispatched to
 the running instance.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## ADL Examples
-
-<div>
 
 Run an application in the current directory:
 
@@ -294,19 +249,9 @@ the example are for Windows):
         </exec>
     </target>
 
-</div>
-
-</div>
-
-<div>
-
 ## ADL exit and error codes
 
-<div>
-
 The following table describes the exit codes printed by ADL:
-
-<div>
 
 | Exit code | Description                                                                                                                                   |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -320,21 +265,5 @@ The following table describes the exit codes printed by ADL:
 | 7         | The contents of the application descriptor are not valid. This error usually indicates that the XML is not well formed.                       |
 | 8         | The main application content file (specified in the \<content\> element of the application descriptor file) cannot be found.                  |
 | 9         | The main application content file is not a valid SWF or HTML file.                                                                            |
-| 10        | The application doesn’t support the profile specified with the -profile option.                                                               |
+| 10        | The application doesn't support the profile specified with the -profile option.                                                               |
 | 11        | The -screensize argument is not supported in the current profile.                                                                             |
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

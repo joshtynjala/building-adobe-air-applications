@@ -1,19 +1,11 @@
 # Viewing Source Code
 
-<div>
-
 Just as a user can view source code for an HTML page in a web browser, users can
 view the source code of an HTML-based AIR application. The Adobe® AIR® SDK
 includes an AIRSourceViewer.js JavaScript file that you can use in your
 application to easily reveal source code to end users.
 
-</div>
-
-<div>
-
 ## Loading, configuring, and opening the Source Viewer
-
-<div>
 
 The Source Viewer code is included in a JavaScript file, AIRSourceViewer.js,
 that is included in the frameworks directory of the AIR SDK. To use the Source
@@ -29,22 +21,14 @@ from JavaScript code by calling `air.SourceViewer`.
 The SourceViewer class defines three methods: `getDefault()`, `setup()`, and
 `viewSource()`.
 
-<div>
-
 | Method         | Description                                                                                                                                           |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `getDefault()` | A static method. Returns a SourceViewer instance, which you can use to call the other methods.                                                        |
 | `setup()`      | Applies configuration settings to the Source Viewer. For details, see [Configuring the Source Viewer](WS5b3ccc516d4fbf351e63e3d118666ade46-7c4e.html) |
 | `viewSource()` | Opens a new window in which the user can browse and open source files of the host application.                                                        |
 
-</div>
-
-<div>
-
 Note: Code using the Source Viewer must be in the application security sandbox
 (in a file in the application directory).
-
-</div>
 
 For example, the following JavaScript code instantiates a Source Viewer object
 and opens the Source Viewer window listing all source files:
@@ -52,21 +36,13 @@ and opens the Source Viewer window listing all source files:
     var viewer = air.SourceViewer.getDefault();
     viewer.viewSource();
 
-</div>
-
-<div>
-
 ### Configuring the Source Viewer
-
-<div>
 
 The `config()` method applies given settings to the Source Viewer. This method
 takes one parameter: `configObject`. The `configObject` object has properties
 that define configuration settings for the Source Viewer. The properties are
 `default`, `exclude`, `initialPosition`, `modal`, `typesToRemove`, and
 `typesToAdd`.
-
-<div>
 
 #### default
 
@@ -80,10 +56,6 @@ the index.html file as the initial file shown:
     var configObj = {};
     configObj.default = "index.html";
     viewer.viewSource(configObj);
-
-</div>
-
-<div>
 
 #### exclude
 
@@ -100,10 +72,6 @@ the Images and Sounds subdirectories:
     configObj.exclude = ["AIRSourceViewer.js", "Images" "Sounds"];
     viewer.viewSource(configObj);
 
-</div>
-
-<div>
-
 #### initialPosition
 
 An array that includes two numbers, specifying the initial x and y coordinates
@@ -116,10 +84,6 @@ screen coordinates \[40, 60\] (X = 40, Y = 60):
     var configObj = {};
     configObj.initialPosition = [40, 60];
     viewer.viewSource(configObj);
-
-</div>
-
-<div>
 
 #### modal
 
@@ -134,10 +98,6 @@ application windows:
     var configObj = {};
     configObj.modal = false;
     viewer.viewSource(configObj);
-
-</div>
-
-<div>
 
 #### typesToAdd
 
@@ -165,10 +125,6 @@ By default, the Source Viewer lists the following file types:
   For each file type you list, you must specify "text" (for text file types) or
   "image" (for image file types).
 
-</div>
-
-<div>
-
 #### typesToExclude
 
 An array of strings specifying the file types to exclude from the Source Viewer.
@@ -191,17 +147,7 @@ By default, the Source Viewer lists the following file types:
   For each file type you list, you must specify `"text"` (for text file types)
   or `"image"` (for image file types).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Opening the Source Viewer
-
-<div>
 
 You should include a user interface element, such as a link, button, or menu
 command, that calls the Source Viewer code when the user selects it. For
@@ -227,17 +173,7 @@ clicks a link:
         </body>
     </html>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Source Viewer user interface
-
-<div>
 
 When the application calls the `viewSource()` method of a SourceViewer object,
 the AIR application opens a Source Viewer window. The window includes a list of
@@ -253,19 +189,7 @@ The Source Viewer can display the source for text files with recognized
 extensions (such as HTML, JS, TXT, XML, and others) or for image files with
 recognized image extensions (JPG, JPEG, PNG, and GIF). If the user selects a
 file that does not have a recognized file extension, an error message is
-displayed (“Cannot retrieve text content from this filetype”).
+displayed ("Cannot retrieve text content from this filetype").
 
 Any source files that are excluded via the `setup()` method are not listed (see
 [Loading, configuring, and opening the Source Viewer](WS5b3ccc516d4fbf351e63e3d118666ade46-7c4d.html)).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

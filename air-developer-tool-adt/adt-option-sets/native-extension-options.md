@@ -1,7 +1,5 @@
 # Native extension options
 
-<div>
-
 The native extension options specify the options and files for packaging an ANE
 file for a native extension. Use these options with an ADT package command in
 which the `-target` option is `ane`.
@@ -31,26 +29,6 @@ options are fully described in
 [File and path options](WS901d38e593cd1bac1e63e3d128fc240122-7ff2.html). (Note
 that the -e option cannot be used when packaging an ANE file.)
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
-
-<div>
-
-</div>
-
-[Packaging a native extension](http://www.adobe.com/go/learn_package_native_extension_en "http://www.adobe.com/go/learn_package_native_extension_en")
-
-<div>
-
-
-
-</div>
-
-</div>
+[Packaging a native extension](http://www.adobe.com/go/learn_package_native_extension_en)

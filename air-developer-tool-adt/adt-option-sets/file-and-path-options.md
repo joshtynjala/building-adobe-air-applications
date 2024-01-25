@@ -1,7 +1,5 @@
 # File and path options
 
-<div>
-
 The file and path options specify all the files that are included in the
 package. The file and path options use the following syntax:
 
@@ -16,8 +14,6 @@ ignored and not added to the package a second time.) Files and directories
 specified must be in the current directory or one of its subdirectories. Use the
 `-C` option to change the current directory.
 
-<div>
-
 Important: Wild cards cannot be used in the `file_or_dir` arguments following
 the –`C` option. (Command shells expand the wildcards before passing the
 arguments to ADT, which causes ADT to look for files in the wrong location.) You
@@ -25,8 +21,6 @@ can, however, still use the dot character, ".", to stand for the current
 directory. For example: `-C assets .` _copies everything in the assets
 directory, including any subdirectories, to the root level of the application
 package._
-
-</div>
 
 **`-C dir files_and_dirs`** Changes the working directory to the value of _dir_
 before processing subsequent files and directories added to the application
@@ -46,13 +40,9 @@ application folder.
 **`-e file_or_dir dir`**` `Places the file or directory into the specified
 package directory. This option cannot be used when packaging an ANE file.
 
-<div>
-
 Note: The `<content>` element of the application descriptor file must specify
 the final location of the main application file within the application package
 directory tree.
-
-</div>
 
 **-extdir _dir_** The value of _`dir`_ is the name of a directory to search for
 native extensions (ANE files). Specify either an absolute path, or a path
@@ -68,32 +58,11 @@ descriptor file.
 For example, if you use `-extdir ./extensions`, the directory `extensions` can
 look like the following:
 
-<div>
-
     extensions/
         extension1.ane
         extension2.ane
-
-
-</div>
-
-<div>
 
 Note: The use of the -extdir option is different for the ADT tool and the ADL
 tool. In ADL, the option specifies a directory that contains subdirectories,
 each containing an unpackaged ANE file. In ADT, the options specifies a
 directory that contains ANE files.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

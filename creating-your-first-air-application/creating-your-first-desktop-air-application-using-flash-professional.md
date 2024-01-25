@@ -1,27 +1,17 @@
 # Creating your first desktop AIR application using Flash Professional
 
-<div>
-
 For a quick, hands-on demonstration of how Adobe® AIR® works, follow the
-instructions in this topic to create and package a simple “Hello World” AIR
+instructions in this topic to create and package a simple "Hello World" AIR
 application using Adobe® Flash® Professional.
 
-If you haven’t already done so, download and install Adobe AIR, which is located
+If you haven't already done so, download and install Adobe AIR, which is located
 here: [www.adobe.com/go/air](http://www.adobe.com/go/air).
 
-</div>
-
-<div>
-
 ## Create the Hello World application in Flash
-
-<div>
 
 Creating an Adobe AIR application in Flash is much like creating any other FLA
 file. The following procedure guides you through the process of creating a
 simple Hello World application using Flash Professional.
-
-<div>
 
 #### To create the Hello World application
 
@@ -34,21 +24,11 @@ simple Hello World application using Flash Professional.
     default) in the center of the Stage. Make it wide enough to contain 15 -20
     characters.
 
-4.  Enter the text “Hello World” in the text field.
+4.  Enter the text "Hello World" in the text field.
 
 5.  Save the file, giving it a name (for example, HelloAIR).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Test the application
-
-<div>
 
 1.  Press Ctrl + Enter or select Control -\>Test Movie-\>Test to test the
     application in Adobe AIR.
@@ -66,15 +46,7 @@ The Hello World application looks like this illustration:
 
 ![](../img/Flsh_Hello_AIR_popup.png)
 
-</div>
-
-</div>
-
-<div>
-
 ## Package the application
-
-<div>
 
 1.  Select File \> Publish.
 
@@ -92,7 +64,7 @@ The Hello World application looks like this illustration:
 
     4.  Save the information in a certificate file by completing the Save as
         entry or clicking the Browse... button to browse to a folder location.
-        (For example, _C:/Temp/mycert.pfx_). When you’re finished click OK.
+        (For example, _C:/Temp/mycert.pfx_). When you're finished click OK.
 
     5.  Flash returns you to the Digital Signature Dialog. The path and filename
         of the self-signed certificate that you created appears in the
@@ -115,19 +87,7 @@ The Hello World application looks like this illustration:
 5.  Click the Install button in the Application Install dialog.
 
 6.  Review the Installation Preferences and Location settings and make sure that
-    the ‘Start application after installation’ checkbox is checked. Then click
+    the 'Start application after installation' checkbox is checked. Then click
     Continue.
 
 7.  Click Finish when the Installation Completed message appears.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

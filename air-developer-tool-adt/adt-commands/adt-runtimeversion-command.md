@@ -1,7 +1,5 @@
 # ADT runtimeVersion command
 
-<div>
-
 The -runtimeVersion command reports the installed version of the AIR runtime on
 a device or emulator. The command uses the following syntax:
 
@@ -29,15 +27,3 @@ On Android, use the Android ADB tool to list the serial numbers of attached
 devices and running emulators:
 
     adb devices
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

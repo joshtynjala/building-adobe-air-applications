@@ -1,14 +1,6 @@
 # Debugging AIR for TV applications
 
-<div>
-
-</div>
-
-<div>
-
 ## Device simulation using ADL
-
-<div>
 
 The fastest, easiest way to test and debug most application features is to run
 your application on your development computer using the Adobe Debug Launcher
@@ -16,8 +8,6 @@ your application on your development computer using the Adobe Debug Launcher
 
 ADL uses the `supportedProfiles` element in the application descriptor to choose
 which profile to use. Specifically:
-
-<div>
 
 - If more than one profile is listed, ADL uses the first one in the list.
 
@@ -30,15 +20,11 @@ which profile to use. Specifically:
 For example, use the following command to launch an application to simulate the
 `tv` profile:
 
-</div>
-
     adl -profile tv myApp-app.xml
 
 When simulating the `tv` or `extendedTV` profile on the desktop with ADL, the
 application runs in an environment that more closely matches a target device.
 For example:
-
-<div>
 
 - ActionScript APIs that are not part of the profile in the `-profile` argument
   are not available.
@@ -53,12 +39,8 @@ For example:
   use native extension stubs or simulators packaged with the application AIRN
   file.
 
-</div>
-
 However, because ADL runs the application on the desktop, testing AIR for TV
 applications using ADL has limitations:
-
-<div>
 
 - It does not reflect application performance on the device. Run performance
   tests on the target device.
@@ -66,7 +48,7 @@ applications using ADL has limitations:
 - It does not simulate the limitations of the StageVideo object. Typically, you
   use the StageVideo class, not the Video class, to play a video when targeting
   AIR for TV devices. The StageVideo class takes advantage of performance
-  benefits of the device’s hardware, but has display limitations. ADL plays the
+  benefits of the device's hardware, but has display limitations. ADL plays the
   video on the desktop without these limitations. Therefore, test playing video
   on the target device.
 
@@ -78,12 +60,8 @@ applications using ADL has limitations:
   includes native code. To test using the extension with its native code, run
   the application on the target device.
 
-</div>
-
 For more information, see
 [AIR Debug Launcher (ADL)](WSfffb011ac560372f-6fa6d7e0128cca93d31-8000.html).
-
-<div>
 
 #### Using native Extensions
 
@@ -94,9 +72,7 @@ following example:
 
 The example assumes that:
 
-<div>
-
-- The path to the ADL tool is on your command-line shell’s path definition. (See
+- The path to the ADL tool is on your command-line shell's path definition. (See
   [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html).)
 
 - The current directory contains the application files. These files include the
@@ -106,8 +82,6 @@ The example assumes that:
 - The parameter `-extdir` names a directory that contains a directory for each
   native extension that the application uses. Each of these directories contains
   the _unpackaged_ ANE file of a native extension. For example:
-
-  <div>
 
       C:\extensionDirs
           extension1.ane
@@ -131,31 +105,18 @@ The example assumes that:
               library.swf
               mimetype
 
-
-  </div>
-
   These unpackaged ANE files contain an ActionScript-only stub or simulator
   version of the extension. The version of the extension that contains the
   native code is installed on the AIR for TV device.
 
-</div>
-
 For more information, see
 [Developing Native Extensions for Adobe AIR](http://www.adobe.com/go/learn_air_as_extensions_en).
-
-</div>
-
-<div>
 
 #### Control input
 
 ADL simulates the remote control buttons on a TV device. You can send these
 button inputs to the simulated device using the menu displayed when ADL is
 launched using one of the TV profiles.
-
-</div>
-
-<div>
 
 #### Screen size
 
@@ -168,30 +129,12 @@ width as a value smaller than the value for height. For example:
 
     adl -screensize 728x1024:768x1024 myApp-app.xml
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Trace statements
-
-<div>
 
 When you run your TV application on the desktop, trace output is printed to
 either the debugger or the terminal window used to launch ADL.
 
-</div>
-
-</div>
-
-<div>
-
 ## Remote debugging with Flash Professional
-
-<div>
 
 You can use Flash Professional to remotely debug your AIR for TV application
 while it runs on the target device. However, the steps to set up remote
@@ -220,15 +163,7 @@ remote debugging:
 The last steps are installing and running the application on the target device.
 However, these steps are dependent on the device.
 
-</div>
-
-</div>
-
-<div>
-
 ## Remote debugging with Flash Builder
-
-<div>
 
 You can also use Flash Builder to remotely debug your AIR for TV application
 while it runs on the target device. However, the steps to do remote debugging
@@ -245,7 +180,7 @@ remote debugging:
 
 2.  Publish your application, creating the AIRI file.
 
-3.  Change the application’s AIRI package to contain SWF files that contain
+3.  Change the application's AIRI package to contain SWF files that contain
     debug information.
 
     The SWF files that contain debug information are located in the Flash
@@ -255,8 +190,6 @@ remote debugging:
 
 On a Windows development machine, you can make this replacement by doing the
 following:
-
-<div>
 
 1.  Rename the AIRI package file to have the filename extension .zip instead of
     .airi.
@@ -270,16 +203,12 @@ following:
 
 5.  Change the zipped file to once again have the .airi filename extension.
 
-</div>
-
 If you are using a Mac development machine, the steps for this replacement are
 device-dependent. However, they generally involve the following:
 
-<div>
-
 1.  Install the AIRI package on the target device.
 
-2.  Replace the SWF files in the application’s installation directory on the
+2.  Replace the SWF files in the application's installation directory on the
     target device with the SWF files from the bin-debug directory.
 
     For example, consider the device included with the Adobe AIR for TV MAX 2010
@@ -290,12 +219,8 @@ device-dependent. However, they generally involve the following:
     /opt/adobe/stagecraft/apps/_\<application name\>_/ with the SWF files from
     the bin-debug directory.
 
-</div>
-
 The following steps are for remote debugging with Flash Builder and the device
 included with the Adobe AIR for TV MAX 2010 Hardware Development Kit.
-
-<div>
 
 1.  On the computer running Flash Builder, your development computer, run the
     AIR for TV Device Connector that comes with the MAX 2010 Hardware
@@ -323,11 +248,7 @@ included with the Adobe AIR for TV MAX 2010 Hardware Development Kit.
     different port in the AIR for TV Device Connector. Also, make sure that your
     firewall allows access to the chosen port.
 
-</div>
-
 Next, start the debugger in Flash Builder. Do the following:
-
-<div>
 
 1.  In Flash Builder, select Run \> Debug Configurations.
 
@@ -348,21 +269,5 @@ Next, start the debugger in Flash Builder. Do the following:
 
 8.  Start your application on the hardware kit device.
 
-</div>
-
 You can now use the Flash Builder debugger to, for example, set breakpoints and
 examine variables.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

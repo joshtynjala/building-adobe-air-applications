@@ -1,9 +1,7 @@
 # Installing from an arbitrary AIR file
 
-<div>
-
 You can call the `installFromAIRFile()` method to install the update version to
-install from an AIR file on the user’s computer:
+install from an AIR file on the user's computer:
 
     appUpdater.installFromAIRFile();
 
@@ -30,15 +28,3 @@ The `installFromAIRFile()` method can dispatch the following events:
 
 - `StatusFileUpdateErrorEvent.FILE_UPDATE_ERROR`—There was an error, and the
   updater could not install the AIR application.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Presenting a custom application update user interface
 
-<div>
-
 AIR includes a default update interface:
 
 ![](../img/InstallationSecurityWarning_popup.png)
@@ -25,13 +23,3 @@ The application can decide, when it is run (when the
 whether to update the application (using the Updater class). If it decides to
 update, it can present its own installation interface (which differs from its
 standard running interface) to the user.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # ADT sign command
 
-<div>
-
 The -sign command signs AIRI and ANE files.
 
 The -sign command uses the following syntax:
@@ -19,15 +17,3 @@ sign a package file. The signing options are fully described in
 If an ANE file is already signed, the old signature is discarded. (AIR files
 cannot be resigned — to use a new signature for an application update, use the
 `-migrate` command.)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

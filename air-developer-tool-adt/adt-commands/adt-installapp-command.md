@@ -1,7 +1,5 @@
 # ADT installApp command
 
-<div>
-
 The -installApp command installs an app on a device or emulator.
 
 You must uninstall an existing app before reinstalling with this command.
@@ -12,8 +10,6 @@ The command uses the following syntax:
 
 **-platform** The name of the platform of the device. Specify _ios_ or
 _android_.
-
-<div>
 
 **-platformsdk** The path to the platform SDK for the target device (optional):
 
@@ -31,8 +27,6 @@ _android_.
   Additionally, when using ADT with the iOS Simulator, you must always include
   the -platformsdk option, specifying the path to the iOS Simulator SDK.
 
-</div>
-
 **-device** Specify _ios_simulator_, the serial number (Android), or handle
 (iOS) of the connected device. On iOS, this parameter is required; on Android,
 this paramater only needs to be specified when more than one Android device or
@@ -41,12 +35,8 @@ not connected, ADT returns exit code 14: Device error (Android) or Invalid
 device specified (iOS). If more than one device or emulator is connected and a
 device is not specified, ADT returns exit code 2: Usage error.
 
-<div>
-
 Note: Installing an IPA file directly to an iOS device is available in AIR 3.4
 and higher and requires iTunes 10.5.0 or higher.
-
-</div>
 
 Use the `adt ‑devices` command (available in AIR 3.4 and higher) to determine
 the handle or serial number of connected devices. Note that on iOS, you use the
@@ -61,15 +51,3 @@ attached devices and running emulators:
 **-package** The file name of the package to install. On iOS, this must be an
 IPA file. On Android, this must be an APK package. If the specified package is
 already installed, ADT returns error code 14:Device error.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

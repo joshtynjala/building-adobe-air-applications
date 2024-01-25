@@ -1,23 +1,13 @@
-# Downloading an AIR file to the user’s computer
-
-<div>
+# Downloading an AIR file to the user's computer
 
 To use the Updater class, the user or the application must first save an AIR
 file locally to the user's computer.
-
-<div>
-
-<div>
 
 Note: AIR 1.5 includes an update framework, which assists developers in
 providing good update capabilities in AIR applications. Using this framework may
 be much easier than using the `update()` method of the Update class directly.
 For details, see
 [Using the update framework](WS9CD40F06-4DD7-4230-B56A-88AA27541A1E.html).
-
-</div>
-
-</div>
 
 The following code reads an AIR file from a URL
 (http://example.com/air/updates/Sample_App_v2.air) and saves the AIR file to the
@@ -76,17 +66,3 @@ For more information, see:
 
 - [Workflow for reading and writing files](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7dc8.html)
   (for HTML developers)
-
-<!-- -->
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

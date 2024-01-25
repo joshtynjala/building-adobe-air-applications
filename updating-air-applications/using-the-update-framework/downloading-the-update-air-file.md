@@ -1,7 +1,5 @@
 # Downloading the update AIR file
 
-<div>
-
 The ApplicationUpdater object dispatches the `updateStatus` event after the
 updater successfully downloads and interprets the update descriptor file. The
 default behavior is to start downloading the update file if it is available. If
@@ -23,7 +21,7 @@ The `downloadUpdate()` method can dispatch the following events:
 
 - `DownloadErrorEvent.DOWNLOAD_ERROR`—Dispatched if there is an error while
   connecting or downloading the update file. It is also dispatched for invalid
-  HTTP statuses (such as “404 - File not found”). This event has an `errorID`
+  HTTP statuses (such as "404 - File not found"). This event has an `errorID`
   property, an integer defining additional error information. An additional
   `subErrorID` property may contain more error information.
 
@@ -32,13 +30,3 @@ The `downloadUpdate()` method can dispatch the following events:
   ApplicationUpdater version proceeds to install the update version. In the
   ApplicationUpdaterUI version, the user is presented with a dialog box that
   gives them the option to proceed.
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

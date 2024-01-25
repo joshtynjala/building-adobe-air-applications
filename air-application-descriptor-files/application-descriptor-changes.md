@@ -1,55 +1,23 @@
 # Application descriptor changes
 
-<div>
-
 The AIR application descriptor has changed in the following AIR releases.
 
-</div>
-
-<div>
-
 ## AIR 1.1 descriptor changes
-
-<div>
 
 Allowed application `name` and `description` elements to be localized using the
 [`text`](WSfffb011ac560372f-1f98376f1293df83869-7ffa.html) element.
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 1.5 descriptor changes
-
-<div>
 
 [`contentType`](WSfffb011ac560372f2fea1812938a6e463-7fd8.html) became a required
 child of `fileType`.
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 1.5.3 descriptor changes
-
-<div>
 
 Added the [`publisherID`](WS901d38e593cd1bac1e63e3d12939cc14ab-8000.html)
 element to allow applications to specify a publisher ID value.
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 2.0 descriptor changes
-
-<div>
 
 Added:
 
@@ -74,15 +42,7 @@ Added:
 
 - [`supportedProfiles`](WSfffb011ac560372f2fea1812938a6e463-7fe2.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 2.5 descriptor changes
-
-<div>
 
 Removed: `version`
 
@@ -103,15 +63,7 @@ Added:
 
 - [`versionNumber`](WSfffb011ac560372f2fea1812938a6e463-7ffb.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 2.6 descriptor changes
-
-<div>
 
 Added:
 
@@ -121,15 +73,7 @@ Added:
 
 - [`softKeyboardBehavior`](WSfffb011ac560372f1a6f6f1912d7748050e-7fff.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 3.0 descriptor changes
-
-<div>
 
 Added:
 
@@ -143,29 +87,13 @@ Added:
 - The Android `<uses-sdk>` element can be specified. (It was previously not
   allowed.)
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 3.1 descriptor changes
-
-<div>
 
 Added:
 
 - [Entitlements](WSd6d4f896b3a8801b-3c9d92f81393051c54c-8000.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 3.2 descriptor changes
-
-<div>
 
 Added:
 
@@ -173,30 +101,14 @@ Added:
 
 - [`supportedLanguages`](WS06ac295d95cf5a5c-4601cdc2134337a7308-8000.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 3.3 descriptor changes
-
-<div>
 
 Added:
 
 - [`aspectRatio`](WSfffb011ac560372f2fea1812938a6e463-7fe6.html) now includes
   the `ANY` option.
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 3.4 descriptor changes
-
-<div>
 
 Added:
 
@@ -208,15 +120,7 @@ Added:
 
 - `image1024x1024 (see `[`imageNxN`](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffc.html)`)`
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 3.6 descriptor changes
-
-<div>
 
 Added:
 
@@ -231,15 +135,7 @@ Added:
   specifies whether to use high or standard resolution on desktop platforms such
   as Macs with high-resolution displays
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR 3.7 descriptor changes
-
-<div>
 
 Added:
 
@@ -251,17 +147,3 @@ Added:
   provides a
   [forceCPURenderModeForDevices](WS180fc5cb46642d10-3a65697f13da2342af2-8000.html)
   element, which lets you force CPU render mode for a specified set of devices.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

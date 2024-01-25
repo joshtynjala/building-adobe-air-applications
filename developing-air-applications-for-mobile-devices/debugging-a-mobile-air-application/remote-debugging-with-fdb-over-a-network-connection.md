@@ -1,7 +1,5 @@
 # Remote debugging with FDB over a network connection
 
-<div>
-
 To debug an app running on a device with the command-line Flash Debugger (FDB),
 first run the debugger on your development computer and then start the
 application on the device. The following procedure uses the AMXMLC, FDB and ADT
@@ -73,15 +71,3 @@ to simplify the command examples.)
                                             (fdb) break clickHandler
                                             Breakpoint 1 at 0x5993: file DebugExample.as, line 14
                                             (fdb) continue
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

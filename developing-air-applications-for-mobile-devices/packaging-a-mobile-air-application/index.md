@@ -1,12 +1,8 @@
 # Packaging a mobile AIR application
 
-<div>
-
 Use the ADT -package command to create the application package for an AIR
 application intended for a mobile device. The -target parameter specifies the
 mobile platform for which the package is created.
-
-<div>
 
 #### Android packages
 
@@ -36,16 +32,8 @@ information.
 By default, ADT packages Android application with shared runtime. So to run the
 application, user should install separate AIR runtime on the device.
 
-<div>
-
 Note: To force ADT to create an APK that uses captive runtime, use
 `target apk-captive-runtime`.
-
-</div>
-
-</div>
-
-<div>
 
 #### iOS packages
 
@@ -64,18 +52,4 @@ used for the final packaging prior to application submission.
 For an example of how to package an iOS application using Ant, see
 [Piotr Walczyszyn: Packaging AIR application for iOS devices with ADT command and ANT script](http://www.riaspace.com/2011/03/packaging-air-application-for-ios-devices-with-adt-command-and-ant-script/)
 
-</div>
-
 - [Packaging with ADT](WS901d38e593cd1bac1e63e3d12994b39ff0-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

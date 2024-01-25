@@ -1,7 +1,5 @@
 # Signing an updated version of an AIR application
 
-<div>
-
 Each time you create an updated version of an existing AIR application you sign
 the updated application. In the best case you can use the same certificate to
 sign the updated version that you used to sign the previous version. In that
@@ -18,18 +16,10 @@ certificate owner has published the update.
 Before you apply a migration signature, consider the following points:
 
 - To apply a migration signature, the original certificate must still be valid
-  or have expired within the last 365 days. This period is termed as the ‘grace
-  period’ and the duration can change in the future.
-
-  <div>
-
-  <div>
+  or have expired within the last 365 days. This period is termed as the 'grace
+  period' and the duration can change in the future.
 
   Note: Until AIR 2.6, the grace period was 180 days.
-
-  </div>
-
-  </div>
 
 - You cannot apply a migration signature after the certificate expires and the
   365 days grace period elapses. In that case, users must uninstall the existing
@@ -37,8 +27,6 @@ Before you apply a migration signature, consider the following points:
 
 - The 365-day grace period only applies to applications specifying AIR version
   1.5.3 or higher in the application descriptor namespace.
-
-<div>
 
 Important: Signing updates with migration signatures from expired certificates
 is a temporary solution. For a comprehensive solution, create a standardized
@@ -49,11 +37,7 @@ each update to its own URL from which users can download the application. For
 more information, see
 [Signing workflow for application updates](WS8b24479264ec4228-36ce971912ccecd3180-8000.html).
 
-</div>
-
 The following table and figure summarize the workflow for migration signatures:
-
-<div>
 
 <table>
 <colgroup>
@@ -139,19 +123,11 @@ the latest version</p></td>
 </tbody>
 </table>
 
-</div>
-
 ![](../img/ua_air_upgrade_process.png)
 
 Signing workflow for updates
 
-</div>
-
-<div>
-
 ## Migrate an AIR application to use a new certificate
-
-<div>
 
 To migrate an AIR application to a new certificate while updating the
 application:
@@ -167,14 +143,10 @@ An AIR file signed with the `-migrate` command can also be used to install a new
 version of the application, in addition to being used to update any previous
 version signed with the old certificate.
 
-<div>
-
 Note: When updating an application published for a version of AIR earlier
 than1.5.3, specify the original publisher ID in the application descriptor.
 Otherwise, users of your application must uninstall the earlier version before
 installing the update.
-
-</div>
 
 Use the ADT -`migrate` command with following syntax:
 
@@ -190,32 +162,16 @@ Use the ADT -`migrate` command with following syntax:
 
 - **air_file_out** The AIR file to create.
 
-<div>
-
 Note: The filenames used for the input and output AIR files must be different.
-
-</div>
 
 The following example demonstrates calling ADT with the `-migrate` flag to apply
 a migration signature to an updated version of an AIR application:
 
     adt -migrate -storetype pkcs12 -keystore cert.p12 myAppIn.air myApp.air
 
-<div>
-
 Note: The `-migrate` command was added to ADT in the AIR 1.1 release.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Migrate a native installer AIR application to use a new certificate
-
-<div>
 
 An AIR application that is published as a native installer (for example, an
 application that uses the native extension api) cannot be signed using the ADT
@@ -239,7 +195,7 @@ extension to a new certificate:
 
 5.  Package the .air file into a native installer using the ADT `-package`
     command with the `-target native` flag. Because the application is already
-    signed, you don’t specify a signing certificate as part of this step.
+    signed, you don't specify a signing certificate as part of this step.
 
 The following example demonstrates steps 3-5 of this process. The code calls ADT
 with the `-package` command, calls ADT with the the `-migrate` command, then
@@ -250,19 +206,11 @@ AIR application as a native installer:
     adt -migrate -storetype pkcs12 -keystore original_cert.p12 myAppUpdated.air myAppMigrate.air
     adt -package -target native myApp.exe myAppMigrate.air
 
-</div>
-
-</div>
-
-<div>
-
 ## Migrate an AIR application that uses a native extension to use a new certificate
 
-<div>
-
 An AIR application that uses a native extension cannot be signed using the ADT
-`-migrate` command. It also can’t be migrated using the procedure for migrating
-a native installer AIR application because it can’t be published as an
+`-migrate` command. It also can't be migrated using the procedure for migrating
+a native installer AIR application because it can't be published as an
 intermediate .air file. Instead, to migrate an AIR application that uses a
 native extension to a new certificate:
 
@@ -297,21 +245,5 @@ uses a native extension and apply a migration signature to the update:
 
     adt -package -storetype pkcs12 -keystore new_cert.p12 -migrate -storetype pkcs12 -keystore original_cert.p12 -target native myApp.exe myApp.xml myApp.swf
 
-<div>
-
 Note: The `-migrate` flag of the `-package` command is available in ADT in AIR
 3.6 and later.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

@@ -1,31 +1,17 @@
 # AIR for TV application descriptor properties
 
-<div>
-
 As with other AIR applications, you set the basic application properties in the
 application descriptor file. TV profile applications ignore some of the
 desktop-specific properties, such as window size and transparency. Applications
 targeting devices in the `extendedTV` profile can use native extensions. These
 applications identify the native extensions used in an `extensions` element.
 
-</div>
-
-<div>
-
 ## Common settings
-
-<div>
 
 Several application descriptor settings are important for all TV profile
 applications.
 
-</div>
-
-<div>
-
 ### Required AIR runtime version
-
-<div>
 
 Specify the version of the AIR runtime required by your application using the
 namespace of the application descriptor file.
@@ -47,15 +33,7 @@ element:
 
 AIR 2.5 is the first version of AIR to support TV applications.
 
-</div>
-
-</div>
-
-<div>
-
 ### Application identity
-
-<div>
 
 Several settings should be unique for each application that you publish. These
 settings include the elements
@@ -67,23 +45,15 @@ settings include the elements
     <name>My Application</name>
     <filename>MyApplication</filename>
 
-</div>
-
-</div>
-
-<div>
-
 ### Application version
-
-<div>
 
 Specify the application version in the
 [`versionNumber`](WSfffb011ac560372f2fea1812938a6e463-7ffb.html) element. When
 specifying a value for `versionNumber`, you can use a sequence of up to three
-numbers separated by dots, such as: “0.1.2”. Each segment of the version number
-can have up to three digits. (In other words, “999.999.999” is the largest
+numbers separated by dots, such as: "0.1.2". Each segment of the version number
+can have up to three digits. (In other words, "999.999.999" is the largest
 version number permitted.) You do not have to include all three segments in the
-number; “1” and “1.0” are legal version numbers as well.
+number; "1" and "1.0" are legal version numbers as well.
 
 You can also specify a label for the version using the
 [`versionLabel`](WSfffb011ac560372f2fea1812938a6e463-7ffa.html) element. When
@@ -92,15 +62,7 @@ you add a version label, it is displayed instead of the version number.
     <versionNumber>1.23.7<versionNumber>
     <versionLabel>1.23 Beta 7</versionLabel>
 
-</div>
-
-</div>
-
-<div>
-
 ### Main application SWF
-
-<div>
 
 Specify the main application SWF file in the
 [`versionLabel`](WSfffb011ac560372f2fea1812938a6e463-7ffa.html) child of the
@@ -116,15 +78,7 @@ You must include the file in the AIR package (using ADT or your IDE). Simply
 referencing the name in the application descriptor does not cause the file to be
 included in the package automatically.
 
-</div>
-
-</div>
-
-<div>
-
 ### Main screen properties
-
-<div>
 
 Several child elements of the
 [`initialWindow`](WSfffb011ac560372f2fea1812938a6e463-7ff5.html) element control
@@ -138,27 +92,19 @@ of these properties are ignored on devices in the TV profiles, you can use the
 
       <fullScreen>true</fullScreen>
 
-</div>
-
-</div>
-
-<div>
-
 ### The visible element
-
-<div>
 
 The [`visible`](WSfffb011ac560372f2fea1812938a6e463-7ff0.html) element is a
 child element of the
 [`initialWindow`](WSfffb011ac560372f2fea1812938a6e463-7ff5.html) element. AIR
-for TV ignores the `visible` element because your application’s content is
+for TV ignores the `visible` element because your application's content is
 always visible on AIR for TV devices.
 
 However, set the `visible` element to `true` if your application also targets
 desktop devices.
 
-On desktop devices, this element’s value defaults to `false`. Therefore, if you
-do not include the `visible` element, the application’s content is not visible
+On desktop devices, this element's value defaults to `false`. Therefore, if you
+do not include the `visible` element, the application's content is not visible
 on desktop devices. Although you can use the ActionScript class NativeWindow to
 make the content visible on desktop devices, the TV device profiles do not
 support the NativeWindow class. If you try to use the NativeWindow class on an
@@ -166,15 +112,7 @@ application running on an AIR for TV device, the application fails to load.
 Whether you call a method of the NativeWindow class does not matter; an
 application using the class does not load on an AIR for TV device.
 
-</div>
-
-</div>
-
-<div>
-
 ### Supported profiles
-
-<div>
 
 If your application only makes sense on a television device, then you can
 prevent its installation on other types of computing devices. Exclude the other
@@ -203,17 +141,7 @@ For a list of ActionScript classes supported in the `tv` and `extendedTV`
 profiles, see
 [Capabilities of different profiles](WS144092a96ffef7cc16ddeea2126bb46b82f-7ffe.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Required native extensions
-
-<div>
 
 Applications that support the `extendedTV` profile can use native extensions.
 
@@ -243,17 +171,7 @@ application has a stub version of the extension. If so, the application can run,
 and it uses the stub version of the extension. The stub version has ActionScript
 code, but no native code.
 
-</div>
-
-</div>
-
-<div>
-
 ## Application icons
-
-<div>
-
-<div>
 
 Requirements for application icons in televisions devices are device-dependent.
 For example, the device manufacturer specifies:
@@ -273,17 +191,7 @@ For example, the device manufacturer specifies:
 
 Consult the device manufacturer for details.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Ignored settings
-
-<div>
 
 Applications on television devices ignore application settings that apply to
 mobile, native window, or desktop operating system features. The ignored
@@ -330,17 +238,3 @@ settings are:
 - x
 
 - y
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

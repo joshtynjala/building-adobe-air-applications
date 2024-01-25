@@ -1,11 +1,7 @@
 # Installing Adobe AIR
 
-<div>
-
 To install or update the runtime, a user must have administrative privileges for
 the computer.
-
-<div>
 
 #### Install the runtime on a Windows computer
 
@@ -14,10 +10,6 @@ the computer.
 2.  Double-click the runtime installation file.
 
 3.  In the installation window, follow the prompts to complete the installation.
-
-</div>
-
-<div>
 
 #### Install the runtime on a Mac computer
 
@@ -30,18 +22,10 @@ the computer.
 4.  If the Installer displays an Authenticate window, enter your Mac OS user
     name and password.
 
-</div>
-
-<div>
-
 #### Install the runtime on a Linux computer
-
-<div>
 
 Note: At this time, AIR 2.7 and later are not supported on Linux. AIR
 applications deployed to Linux should continue to use the AIR 2.6 SDK.
-
-</div>
 
 _Using the binary installer:_
 
@@ -97,10 +81,6 @@ AIR registers the mime-type
 .air files are of this mime-type and are therefore registered with the AIR
 runtime.
 
-</div>
-
-<div>
-
 #### Install the runtime on an Android device
 
 You can install the latest release of the AIR runtime from the Android Market.
@@ -113,38 +93,12 @@ development version installed.
 See [ADT installRuntime command](WS901d38e593cd1bac1e63e3d128fc240122-7ff6.html)
 for more information.
 
-</div>
-
-<div>
-
 #### Install the runtime on an iOS device
 
 The necessary AIR runtime code is bundled with each application created for
 iPhone, iTouch, and iPad devices. You do not install a separate runtime
 component.
 
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
-
-<div>
-
 [AIR for iOS](WSfffb011ac560372f4239c49b12cd282d498-8000.html)
-
-</div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Adobe AIR updates
 
-<div>
-
 Periodically, Adobe updates Adobe AIR with new features or fixes to minor
 problems. The Automatic Notification and Update feature allows Adobe to
 automatically notify users when an updated version of Adobe AIR is available.
@@ -27,25 +25,9 @@ only transmitted once per installation and it allows Adobe to confirm that the
 installation was successful. No personally identifiable information is collected
 or transmitted.
 
-<div>
-
 #### Updating captive runtimes
 
 If you distribute your application with a captive runtime bundle, the captive
 runtime is not updated automatically. For the security of your users, you must
 monitor the updates published by Adobe and update your application with the new
 runtime version when a relevant security change is published.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

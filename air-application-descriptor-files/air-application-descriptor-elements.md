@@ -1,17 +1,9 @@
 # AIR application descriptor elements
 
-<div>
-
 The following dictionary of elements describes each of the legal elements of an
 AIR application descriptor file.
 
-</div>
-
-<div>
-
 ## allowBrowserInvocation
-
-<div>
 
 Enables the AIR in-browser API to detect and launch the application.
 
@@ -29,31 +21,15 @@ For more information, see
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` or `false` (default)
-
-</div>
-
-<div>
 
 #### Example
 
     <allowBrowserInvocation>true</allowBrowserInvocation>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## android
-
-<div>
 
 Allows you to add elements to the Android manifest file. AIR creates the
 AndroidManifest.xml file for every APK package. You can use the android element
@@ -68,16 +44,10 @@ platforms except Android.
 
 - [manifestAdditions](WSfffb011ac560372f33105f2a1293d3d21e0-7ffd.html)
 
-<div>
-
 #### Content
 
 Elements defining the Android-specific properties to add to the Android
 application manifest.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -87,17 +57,7 @@ application manifest.
         </manifestAdditions>
     </android>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## application
-
-<div>
 
 The root element of an AIR application descriptor document.
 
@@ -147,8 +107,6 @@ The root element of an AIR application descriptor document.
 
 - [versionNumber](WSfffb011ac560372f2fea1812938a6e463-7ffb.html)
 
-<div>
-
 #### Attributes
 
 minimumPatchLevel — The AIR runtime minimum patch level required by this
@@ -158,7 +116,7 @@ xmlns — the XML namespace attribute determines the required AIR runtime versio
 of the application.
 
 The namespace changes with each major release of AIR (but not with minor
-patches). The last segment of the namespace, such as “3.0,” indicates the
+patches). The last segment of the namespace, such as "3.0," indicates the
 runtime version required by the application.
 
 The xmlns values for the major AIR releases are:
@@ -209,8 +167,6 @@ namespace, sometimes it is determined by the version of the loading content, and
 sometimes it is determined by the version of the loaded content. The following
 table shows how the API version is determined based on the loading method:
 
-<div>
-
 | How the content is loaded                                                                         | How the API version is determined  |
 | ------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | Initial content, SWF-based application                                                            | SWF version of the **loaded** file |
@@ -219,8 +175,6 @@ table shows how the API version is determined based on the loading method:
 | SWF library loaded by HTML content using \<script\> tag                                           | Application descriptor namespace   |
 | SWF loaded by HTML content using AIR or Flash Player APIs (such as flash.display.Loader)          | Application descriptor namespace   |
 | SWF loaded by HTML content using \<object\> or \<embed\> tags (or the equivalent JavaScript APIs) | SWF version of the **loaded** file |
-
-</div>
 
 When loading a SWF file of a different version than the loading content, you can
 run into the two problems:
@@ -233,18 +187,10 @@ run into the two problems:
   newer versions of AIR and Flash Player may behave in ways that the loaded
   content does not expect.
 
-</div>
-
-<div>
-
 #### Content
 
 The application element contains child elements that define the properties of an
 AIR application.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -296,21 +242,11 @@ AIR application.
         </fileTypes>
     </application>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## aspectRatio
-
-<div>
 
 Specifies the aspect ratio of the application.
 
-If not specified, the application opens in the “natural” aspect ratio and
+If not specified, the application opens in the "natural" aspect ratio and
 orientation of the device. The natural orientation varies from device to device.
 Typically, it is the portrait aspect ratio on small-screen devices such as
 phones. On some devices, such as the iPad tablet, the application opens in the
@@ -322,31 +258,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `portrait, landscape`, or `any`
-
-</div>
-
-<div>
 
 #### Example
 
     <aspectRatio>landscape</aspectRatio>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## autoOrients
-
-<div>
 
 Specifies whether the orientation of content in the application automatically
 reorients as the device itself changes physical orientation. For more
@@ -370,31 +290,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` or `false` (default)
-
-</div>
-
-<div>
 
 #### Example
 
     <autoOrients>true</autoOrients>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## colorDepth
-
-<div>
 
 Specifies whether to use 16-bit or 32-bit color.
 
@@ -402,17 +306,11 @@ Using 16-bit color can increase rendering performance at the expense of color
 fidelity. Prior to AIR 3, 16-bit color is always used on Android. In AIR 3,
 32-bit color is used by default.
 
-<div>
-
 Note: If your application uses the StageVideo class, you must use 32-bit color.
-
-</div>
 
 **Parent element:**[android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
 
 **Child elements:** none
-
-<div>
 
 #### Content
 
@@ -422,10 +320,6 @@ One of the following values:
 
 - 32bit
 
-</div>
-
-<div>
-
 #### Example
 
     <android>
@@ -433,25 +327,13 @@ One of the following values:
         <manifestAdditions>...</manifestAdditions>
     </android>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## containsVideo
-
-<div>
 
 Specifies whether the application will contain any video content or not.
 
 **Parent element:**[android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
 
 **Child elements:** none
-
-<div>
 
 #### Content
 
@@ -461,10 +343,6 @@ One of the following values:
 
 - false
 
-</div>
-
-<div>
-
 #### Example
 
     <android>
@@ -472,17 +350,7 @@ One of the following values:
         <manifestAdditions>...</manifestAdditions>
     </android>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## content
-
-<div>
 
 The value specified for the `content` element is the URL for the main content
 file of the application. This may be either a SWF file or an HTML file. The URL
@@ -496,8 +364,6 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A URL relative to the application directory. Because the value of the content
@@ -506,25 +372,11 @@ URL encoded according to the rules defined in
 [RFC 1738](http://tools.ietf.org/html/rfc1738). Space characters, for example,
 must be encoded as `%20`.
 
-</div>
-
-<div>
-
 #### Example
 
     <content>TravelPlanner.swf</content>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## contentType
-
-<div>
 
 `contentType` is required as of AIR 1.5 (it was optional in AIR 1.0 and 1.1).
 The property helps some operating systems to locate the best application to open
@@ -536,32 +388,16 @@ assigned MIME type.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 The MIME type and subtype. See [RFC2045](http://www.ietf.org/rfc/rfc2045.txt)
 for more information about MIME types.
 
-</div>
-
-<div>
-
 #### Example
 
     <contentType>text/plain</contentType>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## copyright
-
-<div>
 
 The copyright information for the AIR application. On Mac OS, the copyright text
 appears in the About dialog box for the installed application. On Mac OS, the
@@ -572,31 +408,15 @@ Info.plist file for the application.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A string containing the application copyright information.
-
-</div>
-
-<div>
 
 #### Example
 
     <copyright>© 2010, Examples, Inc.All rights reserved.</copyright>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## customUpdateUI
-
-<div>
 
 Indicates whether an application will provide its own update dialogs. If
 `false`, AIR presents standard update dialogs to the user. Only applications
@@ -611,16 +431,12 @@ determine how to proceed with the update operation. (The application ID and
 publisher ID in the AIR file must match the values in the installed application
 for an upgrade to proceed.)
 
-<div>
-
 Note: The `customUpdateUI` mechanism only comes into play when the application
 is already installed and the user double-clicks the AIR installation file
 containing an update or installs an update of the application using the seamless
 install feature. You can download and start an update through your own
 application logic, displaying your custom UI as necessary, whether or not
 `customUpdateUI` is `true`.
-
-</div>
 
 For more information, see
 [Updating AIR applications](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html).
@@ -629,31 +445,15 @@ For more information, see
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` or `false` (default)
-
-</div>
-
-<div>
 
 #### Example
 
     <customUpdateUI>true</customUpdateUI>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## depthAndStencil
-
-<div>
 
 Indicates that the application requires the use of the depth or stencil buffer.
 You typically use these buffers when working with 3D content. By default, the
@@ -668,52 +468,32 @@ method. If the values do not match, AIR issues an error.
 This element is only applicable when `renderMode` = `direct`. If `renderMode`
 does not equal `direct`, ADT throws error 118:
 
-<div>
-
     <depthAndStencil> element unexpected for render mode cpu.  It requires "direct" render mode.
-
-</div>
 
 **Parent
 element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` or `false` (default)
-
-</div>
-
-<div>
 
 #### Example
 
     <depthAndStencil>true</depthAndStencil>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## description
-
-<div>
 
 The description of the application, displayed in the AIR application installer.
 
 If you specify a single text node (not multiple text elements), the AIR
 application installer uses this description, regardless of the system language.
 Otherwise, the AIR application installer uses the description that most closely
-matches the user interface language of the user’s operating system. For example,
+matches the user interface language of the user's operating system. For example,
 consider an installation in which the `description` element of the application
 descriptor file includes a value the en (English) locale. The AIR application
-installer uses the en description if the user’s system identifies en (English)
+installer uses the en description if the user's system identifies en (English)
 as the user interface language. It also uses the en description if the system
 user interface language is en-US (U.S. English). However, if system user
 interface language is en-US and the application descriptor file defines both
@@ -729,8 +509,6 @@ For more information on developing multi-language applications, see
 
 **Child elements:**[text](WSfffb011ac560372f-1f98376f1293df83869-7ffa.html)
 
-<div>
-
 #### Content
 
 The AIR 1.0 application descriptor schema allows only one simple text node to be
@@ -740,10 +518,6 @@ In AIR 1.1 (or above), you can specify multiple languages in the `description`
 element. The `xml:lang` attribute for each text element specifies a language
 code, as defined in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt)
 (http://www.ietf.org/rfc/rfc4646.txt).
-
-</div>
-
-<div>
 
 #### Example
 
@@ -760,17 +534,7 @@ in AIR 1.1 and later):
         <text xml:lang="es">Esto es un ejemplo.</text>
     </description>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## description
-
-<div>
 
 The file type description is displayed to the user by the operating system. The
 file type description is not localizable.
@@ -782,33 +546,17 @@ of the application element
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A string describing the file contents.
-
-</div>
-
-<div>
 
 #### Example
 
     <description>PNG image</description>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 <span id="embedFonts"></span>
 
 ## embedFonts
-
-<div>
 
 Allows you to use custom fonts on StageText in the AIR application. This element
 is optional.
@@ -817,15 +565,9 @@ is optional.
 
 **Child elements:**[font](font.html)
 
-<div>
-
 #### Content
 
 The embedFonts element may contain any number of font elements.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -840,17 +582,7 @@ The embedFonts element may contain any number of font elements.
        </font>
     </embedFonts>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Entitlements
-
-<div>
 
 iOS uses properties called entitlements to provide application access to
 additional resources and capabilities. Use the Entitlements element to specify
@@ -860,8 +592,6 @@ this information in a mobile iOS application.
 
 **Child elements:** iOS Entitlements.plist elements
 
-<div>
-
 #### Content
 
 Contains child elements specifying key-value pairs to use as Entitlements.plist
@@ -869,10 +599,6 @@ settings for the application. Content of the Entitlements element should be
 enclosed in a CDATA block. For more information, see the
 [Entitlement Key Reference](https://developer.apple.com/library/IOs/#documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html)
 in the iOS Developer Library.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -886,17 +612,7 @@ in the iOS Developer Library.
        </Entitlements>
     </iphone>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## extension
-
-<div>
 
 The extension string of a file type.
 
@@ -904,31 +620,15 @@ The extension string of a file type.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
-A string identifying the file extension characters (without the dot, “.”).
-
-</div>
-
-<div>
+A string identifying the file extension characters (without the dot, ".").
 
 #### Example
 
     <extension>png</extension>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## extensionID
-
-<div>
 
 Specifies the ID of an ActionScript extension used by the application. The ID is
 defined in the extension descriptor document.
@@ -938,31 +638,15 @@ element:**[extensions](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffd.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A string identifying the ActionScript extension ID.
-
-</div>
-
-<div>
 
 #### Example
 
     <extensionID>com.example.extendedFeature</extensionID>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## extensions
-
-<div>
 
 Identifies the ActionScript extensions used by an application.
 
@@ -970,16 +654,10 @@ Identifies the ActionScript extensions used by an application.
 
 **Child elements:**[extensionID](WSfffb011ac560372f2fea1812938a6e463-7fda.html)
 
-<div>
-
 #### Content
 
 Child `extensionID` elements containing the ActionScript extension IDs from the
 extension descriptor file.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -989,17 +667,7 @@ extension descriptor file.
         <extensionID>extension.last</extensionID>
     </extensions>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## externalSwfs
-
-<div>
 
 Specifies the name of a text file that contains a list of SWFs to be configured
 by ADT for remote hosting. You can minimize your initial application download
@@ -1008,7 +676,7 @@ remaining (asset-only) external SWFs at runtime using the `Loader.load()`
 method. To use this feature, you must package the application such that ADT
 moves all ActionScript ByteCode (ABC) from the externally loaded SWF files to
 the main application SWF, leaving a SWF file that contains only assets. This is
-to conform with the Apple Store’s rule that forbids downloading any code after
+to conform with the Apple Store's rule that forbids downloading any code after
 an application is installed.
 
 For more information, see
@@ -1019,24 +687,14 @@ For more information, see
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 Name of a text file that contains a line-delimited list of SWFs to be remotely
 hosted.
 
-</div>
-
-<div>
-
 #### Attributes:
 
 None.
-
-</div>
-
-<div>
 
 #### Examples
 
@@ -1046,17 +704,7 @@ iOS:
         <externalSwfs>FileContainingListofSWFs.txt</externalSwfs>
     </iPhone>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## filename
-
-<div>
 
 The string to use as a filename of the application (without extension) when the
 application is installed. The application file launches the AIR application in
@@ -1067,14 +715,10 @@ name of the installation folder.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 The `filename` property can contain any Unicode (UTF-8) character except the
 following, which are prohibited from use as filenames on various file systems:
-
-<div>
 
 | Character | Hexadecimal Code |
 | --------- | ---------------- |
@@ -1088,29 +732,13 @@ following, which are prohibited from use as filenames on various file systems:
 | \\        | x5C              |
 | \|        | x7C              |
 
-</div>
-
 The `filename` value cannot end in a period.
-
-</div>
-
-<div>
 
 #### Example
 
     <filename>MyApplication</filename>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## fileType
-
-<div>
 
 Describes a single file type that the application can register for.
 
@@ -1128,15 +756,9 @@ Describes a single file type that the application can register for.
 
 - [name](WSfffb011ac560372f2fea1812938a6e463-7fdb.html)
 
-<div>
-
 #### Content
 
 Elements describing a file type.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -1151,17 +773,7 @@ Elements describing a file type.
         <icon>
     </fileType>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## fileTypes
-
-<div>
 
 The `fileTypes` element allows you to declare the file types with which an AIR
 application can be associated.
@@ -1171,14 +783,10 @@ the operating system. If these file types are not already associated with
 another application, they are associated with the AIR application. To override
 an existing association between a file type and another application, use the
 `NativeApplication.setAsDefaultApplication()` method at run time (preferably
-with the user’s permission).
-
-<div>
+with the user's permission).
 
 Note: The runtime methods can only manage associations for the file types
 declared in the application descriptor.
-
-</div>
 
 The `fileTypes` element is optional.
 
@@ -1186,15 +794,9 @@ The `fileTypes` element is optional.
 
 **Child elements:**[fileType](WSfffb011ac560372f2fea1812938a6e463-7fdc.html)
 
-<div>
-
 #### Content
 
 The `fileTypes` element may contain any number of `fileType` elements.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -1213,19 +815,9 @@ The `fileTypes` element may contain any number of `fileType` elements.
         </fileType>
     </fileTypes>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 <span id="font"></span>
 
 ## font
-
-<div>
 
 Describes a single custom font that can be used in the AIR application.
 
@@ -1233,15 +825,9 @@ Describes a single custom font that can be used in the AIR application.
 
 **Child elements:**[fontName](fontName.html), [fontPath](fontPath.html)
 
-<div>
-
 #### Content
 
 Elements specifying the custom font name and its path.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -1250,19 +836,9 @@ Elements specifying the custom font name and its path.
        <fontName>space age</fontName>
     </font>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 <span id="fontName"></span>
 
 ## fontName
-
-<div>
 
 Specifies the name of the custom font.
 
@@ -1270,33 +846,17 @@ Specifies the name of the custom font.
 
 **Child elements:** None
 
-<div>
-
 #### Content
 
 Name of the custom font to be specified in StageText.fontFamily
-
-</div>
-
-<div>
 
 #### Example
 
     <fontName>space age</fontName>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 <span id="fontPath"></span>
 
 ## fontPath
-
-<div>
 
 Gives the location of the custom font file.
 
@@ -1304,39 +864,21 @@ Gives the location of the custom font file.
 
 **Child elements:** None
 
-<div>
-
 #### Content
 
 Path of the custom font file (with respect to the source).
-
-</div>
-
-<div>
 
 #### Example
 
     <fontPath>ttf/space age.ttf</fontPath>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## forceCPURenderModeForDevices
-
-<div>
 
 Force CPU render mode for a specified set of devices. This feature effectively
 lets you selectively enable GPU render mode for the remaining iOS devices.
 
 You add this tag as a child of the `iPhone` tag and specify a space-separated
 list of device model names. Valid device model names include the following:
-
-<div>
 
 |         |           |          |
 | ------- | --------- | -------- |
@@ -1351,30 +893,18 @@ list of device model names. Valid device model names include the following:
 | iPad3,3 |           |          |
 | iPad3,4 |           |          |
 
-</div>
-
 **Parent element:**[iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html),
 [initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 Space-separated list of device model names.
 
-</div>
-
-<div>
-
 #### Attributes:
 
 None.
-
-</div>
-
-<div>
 
 #### Examples
 
@@ -1389,17 +919,7 @@ iOS:
        </forceCPURenderModeForDevices>
     </iPhone>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## fullScreen
-
-<div>
 
 Specifies whether the application starts up in fullscreen mode.
 
@@ -1408,31 +928,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` or `false` (default)
-
-</div>
-
-<div>
 
 #### Example
 
     <fullscreen>true</fullscreen>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## height
-
-<div>
 
 The initial height of the main window of the application.
 
@@ -1446,31 +950,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A positive integer with a maximum value of 4095.
-
-</div>
-
-<div>
 
 #### Example
 
     <height>4095</height>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## icon
-
-<div>
 
 The `icon` property specifies one or more icon files to be used for the
 application. Including an icon is optional. If you do not specify an `icon`
@@ -1483,13 +971,9 @@ If an element for a given size is present, the image in the file must be exactly
 the size specified. If all sizes are not provided, the closest size is scaled to
 fit for a given use of the icon by the operating system.
 
-<div>
-
 Note: The icons specified are not automatically added to the AIR package. The
 icon files must be included in their correct relative locations when the
 application is packaged.
-
-</div>
 
 For best results, provide an image for each of the available sizes. In addition,
 make sure that the icons look presentable in both 16- and 32-bit color modes.
@@ -1498,15 +982,9 @@ make sure that the icons look presentable in both 16- and 32-bit color modes.
 
 **Child elements:**[imageNxN](WSfffb011ac560372f-6fd06f0f1293d3b33ea-7ffc.html)
 
-<div>
-
 #### Content
 
 An imageNxN element for each desired icon size.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -1517,17 +995,7 @@ An imageNxN element for each desired icon size.
         <image128x128>icons/biggestIcon.png</image128x128>
     </icon>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## id
-
-<div>
 
 An identifier string for the application, known as the application ID. A reverse
 DNS-style identifier is often used, but this style is not required.
@@ -1535,8 +1003,6 @@ DNS-style identifier is often used, but this style is not required.
 **Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
-
-<div>
 
 #### Content
 
@@ -1554,25 +1020,11 @@ The ID value is restricted to the following characters:
 
 The value must contain 1 to 212 characters. This element is required.
 
-</div>
-
-<div>
-
 #### Example
 
     <id>org.example.application</id>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## imageNxN
-
-<div>
 
 Defines the path to an icon relative to the application directory.
 
@@ -1617,14 +1069,10 @@ automatically.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 The file path to the icon can contain any Unicode (UTF-8) character except the
 following, which are prohibited from use as filenames on various file systems:
-
-<div>
 
 | Character | Hexadecimal Code |
 | --------- | ---------------- |
@@ -1638,35 +1086,17 @@ following, which are prohibited from use as filenames on various file systems:
 | \\        | x5C              |
 | \|        | x7C              |
 
-</div>
-
-</div>
-
-<div>
-
 #### Example
 
     <image32x32>icons/icon32.png</image32x32>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## InfoAdditions
-
-<div>
 
 Allows you to specify additional properties of an iOS application.
 
 **Parent element:**[iPhone](WSfffb011ac560372f2fea1812938a6e463-7fd6.html)
 
 **Child elements:** iOS Info.plist elements
-
-<div>
 
 #### Content
 
@@ -1679,10 +1109,6 @@ See
 in the Apple iPhone Reference Library for information about the key value pairs
 and how to express them in XML.
 
-</div>
-
-<div>
-
 #### Example
 
     <InfoAdditions>
@@ -1694,29 +1120,15 @@ and how to express them in XML.
         ]]>
     </InfoAdditions>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## initialWindow
-
-<div>
 
 Defines the main content file and initial application appearance.
 
 **Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
-<div>
-
 **Child elements:** All of the following elements can appear as children of the
 initialWindow element. However, some elements are ignored depending on whether
 AIR supports windows on a platform:
-
-<div>
 
 | Element                                                                        | Desktop                   | Mobile  |
 | ------------------------------------------------------------------------------ | ------------------------- | ------- |
@@ -1742,19 +1154,9 @@ AIR supports windows on a platform:
 | [x](WSfffb011ac560372f2fea1812938a6e463-7fec.html)                             | used                      | ignored |
 | [y](WSfffb011ac560372f2fea1812938a6e463-7feb.html)                             | used                      | ignored |
 
-</div>
-
-</div>
-
-<div>
-
 #### Content
 
 Child elements defining the application appearance and behavior.
-
-</div>
-
-<div>
 
 #### Example
 
@@ -1782,17 +1184,7 @@ Child elements defining the application appearance and behavior.
         <renderMode>direct</renderMode>
     </initialWindow>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## installFolder
-
-<div>
 
 Identifies the subdirectory of the default installation directory.
 
@@ -1811,8 +1203,6 @@ installation directory, based on the `name` property.
 
 **Child elements:** None
 
-<div>
-
 #### Content
 
 The `installFolder` property can contain any Unicode (UTF-8) character except
@@ -1822,31 +1212,15 @@ the `filename` property for the list of exceptions).
 Use the forward-slash (/) character as the directory separator character if you
 want to specify a nested subdirectory.
 
-</div>
-
-<div>
-
 #### Example
 
     <installFolder>utilities/toolA</installFolder>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## iPhone
-
-<div>
 
 Defines iOS-specific application properties.
 
 **Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
-
-<div>
 
 **Child elements:**
 
@@ -1860,17 +1234,7 @@ Defines iOS-specific application properties.
 
 - [requestedDisplayResolution](WSfffb011ac560372f-4cb7055d12d779150e8-8000.html)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## manifest
-
-<div>
 
 Specifies information to add to the Android manifest file for the application.
 
@@ -1878,8 +1242,6 @@ Specifies information to add to the Android manifest file for the application.
 element:**[manifestAdditions](WSfffb011ac560372f33105f2a1293d3d21e0-7ffd.html)
 
 **Child elements:** Defined by the Android SDK.
-
-<div>
 
 #### Content
 
@@ -1899,10 +1261,6 @@ adding.
 The manifest element itself must be enclosed in a CDATA block within the AIR
 application descriptor.
 
-</div>
-
-<div>
-
 #### Example
 
     <![CDATA[
@@ -1915,17 +1273,7 @@ application descriptor.
         </manifest>
     ]]>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## manifestAdditions
-
-<div>
 
 Specifies information to add to the Android manifest file.
 
@@ -1939,8 +1287,6 @@ added to the corresponding parts of the Android manifest document.
 **Parent element:**[android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
 
 **Child elements:**[manifest](WSfffb011ac560372f33105f2a1293d3d21e0-7ffe.html)
-
-<div>
 
 #### Content
 
@@ -1981,10 +1327,6 @@ You cannot set the following attributes of the application element:
 
 - android:launchMode
 
-</div>
-
-<div>
-
 #### Example
 
     <manifestAdditions>
@@ -1998,58 +1340,28 @@ You cannot set the following attributes of the application element:
         ]]>
     </manifestAdditions>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## maximizable
 
-<div>
-
 Specifies whether the window can be maximized.
-
-<div>
 
 Note: On operating systems, such as Mac OS X, for which maximizing windows is a
 resizing operation, both maximizable and resizable must be set to `false` to
 prevent the window from being zoomed or resized.
-
-</div>
 
 **Parent
 element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` (default) or `false`
-
-</div>
-
-<div>
 
 #### Example
 
     <maximizable>false</maximizable>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## maxSize
-
-<div>
 
 The maximum sizes of the window. If you do not set a maximum size, it is
 determined by the operating system.
@@ -2059,40 +1371,20 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 Two integers representing the maximum width and height, separated by whites
 pace.
 
-<div>
-
 Note: The maximum window size supported by AIR increased from 2048x2048 pixels
 to 4096x4096 pixels in AIR 2. (Because the screen coordinates are zero-based,
 the maximum value you can use for width or height is 4095.)
-
-</div>
-
-</div>
-
-<div>
 
 #### Example
 
     <maxSize>1024 360</maxSize>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## minimizable
-
-<div>
 
 Specifies whether the window can be minimized.
 
@@ -2101,31 +1393,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** None
 
-<div>
-
 #### Content
 
 `true` (default) or `false`
-
-</div>
-
-<div>
 
 #### Example
 
     <minimizable>false</minimizable>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## minSize
-
-<div>
 
 Specifies the minimum size allowed for the window.
 
@@ -2134,33 +1410,17 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 Two integers representing the minimum width and height, separated by whites
 pace. Note that the minimum size imposed by the operating system takes
 precedence over the value set in the application descriptor.
 
-</div>
-
-<div>
-
 #### Example
 
     <minSize>120 60</minSize>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## name
-
-<div>
 
 The application title displayed by the AIR application installer.
 
@@ -2170,8 +1430,6 @@ If no `name` element is specified, the AIR application installer displays the
 **Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:**[text](WSfffb011ac560372f-1f98376f1293df83869-7ffa.html)
-
-<div>
 
 #### Content
 
@@ -2187,7 +1445,7 @@ defined in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt)
 (http://www.ietf.org/rfc/rfc4646.txt).
 
 The AIR application installer uses the name that most closely matches the user
-interface language of the user’s operating system. For example, consider an
+interface language of the user's operating system. For example, consider an
 installation in which the `name` element of the application descriptor file
 includes a value for the en (English) locale. The AIR application installer uses
 the en name if the operating system identifies en (English) as the user
@@ -2212,10 +1470,6 @@ The `name` element does _not_ define the locales available for the running,
 installed application. For details on developing multi-language applications,
 see [Localizing AIR applications](WSB2927578-20D8-4065-99F3-00ACE6511EEE.html).
 
-</div>
-
-<div>
-
 #### Example
 
 The following example defines a name with a simple text node:
@@ -2231,17 +1485,7 @@ languages (English, French, and Spanish) using \<text\> element nodes:
         <text xml:lang="es">Hola AIR</text>
     </name>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## name
-
-<div>
 
 Identifies the name of a file type.
 
@@ -2249,31 +1493,15 @@ Identifies the name of a file type.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A string representing the name of the file type.
-
-</div>
-
-<div>
 
 #### Example
 
     <name>adobe.VideoFile</name>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## programMenuFolder
-
-<div>
 
 Identifies the location in which to place shortcuts to the application in the
 All Programs menu of the Windows operating system or in the Applications menu on
@@ -2283,8 +1511,6 @@ Linux. (This setting is currently ignored on other operating systems.)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 The string used for the `programMenuFolder` value can contain any Unicode
@@ -2292,25 +1518,11 @@ The string used for the `programMenuFolder` value can contain any Unicode
 various file systems (see the `filename` element for the list of exceptions). Do
 _not_ use a forward slash (/) character as the last character of this value.
 
-</div>
-
-<div>
-
 #### Example
 
     <programMenuFolder>Example Company/Sample Application</programMenuFolder>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## publisherID
-
-<div>
 
 Identifies the publisher ID for updating an AIR application originally created
 with AIR version 1.5.2 or earlier.
@@ -2331,31 +1543,15 @@ For more information, see
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A publisher ID string.
-
-</div>
-
-<div>
 
 #### Example
 
     <publisherID>B146A943FBD637B68C334022D304CEA226D129B4.1</publisherID>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## renderMode
-
-<div>
 
 Specifies whether to use graphics processing unit (GPU) acceleration, if
 supported on the current computing device.
@@ -2364,8 +1560,6 @@ supported on the current computing device.
 element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
-
-<div>
 
 #### Content
 
@@ -2378,8 +1572,6 @@ One of the following values:
 - `direct` — rendering composition occurs in the CPU; blitting uses the GPU.
   Available in AIR 3+.
 
-  <div>
-
   Note: In order to leverage GPU acceleration of Flash content with AIR for
   mobile platforms, Adobe recommends that you use renderMode="direct" (that is,
   Stage3D) rather than renderMode="gpu". Adobe officially supports and
@@ -2387,35 +1579,15 @@ One of the following values:
   (3D). For more details on Stage3D and Starling/Away3D, see
   <http://gaming.adobe.com/getstarted/>.
 
-  </div>
-
 - `gpu` — hardware acceleration is used, if available.
 
-  <div>
-
   Important: Do not use GPU rendering mode for Flex applications.
-
-  </div>
-
-</div>
-
-<div>
 
 #### Example
 
     <renderMode>direct</renderMode>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## requestedDisplayResolution
-
-<div>
 
 Specifies whether the application desires to use the standard or high resolution
 on a device or computer monitor with a high-resolution screen. When set to
@@ -2446,15 +1618,9 @@ element in the `initialWindow` element is supported in AIR 3.6 and later.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 Either _standard_, the default, or _high_.
-
-</div>
-
-<div>
 
 #### Attribute:
 
@@ -2476,10 +1642,6 @@ or CDMA 3rd-generation iPads). Alternatively, the value iPad3 refers to any
 3rd-generation iPad. An unofficial list of iOS model names is available at
 [the iPhone wiki Models page](http://theiphonewiki.com/wiki/Models).
 
-</div>
-
-<div>
-
 #### Examples
 
 Desktop:
@@ -2494,58 +1656,28 @@ iOS:
         <requestedDisplayResolution excludeDevices="iPad3 iPad4">high</requestedDisplayResolution>
     </iPhone>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## resizable
 
-<div>
-
 Specifies whether the window can be resized.
-
-<div>
 
 Note: On operating systems, such as Mac OS X, for which maximizing windows is a
 resizing operation, both maximizable and resizable must be set to `false` to
 prevent the window from being zoomed or resized.
-
-</div>
 
 **Parent
 element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:**
 
-<div>
-
 #### Content
 
 `true` (default) or `false`
-
-</div>
-
-<div>
 
 #### Example
 
     <resizable>false</resizable>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## softKeyboardBehavior
-
-<div>
 
 Specifies the default behavior of the application when a virtual keyboard is
 displayed. The default behavior is to pan the application upward. The runtime
@@ -2556,38 +1688,22 @@ You can also turn off the automatic behavior by setting the
 `softKeyboardBehavior` element to _none_. In this case, text fields and
 interactive objects dispatch a SoftKeyboardEvent when the soft keyboard is
 raised, but the runtime does not pan or resize the application. It is your
-application’s responsibility to keep the text entry area in view.
+application's responsibility to keep the text entry area in view.
 
 **Parent
 element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 Either _none_ or _pan_. The default value is _pan_.
-
-</div>
-
-<div>
 
 #### Example
 
     <softKeyboardBehavior>none</softKeyboardBehavior>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## supportedLanguages
-
-<div>
 
 Identifies the languages supported by the application. This element is only used
 by iOS, Mac captive runtime, and Android applications. This element is ignored
@@ -2595,8 +1711,6 @@ by all other application types.
 
 If you do not specify this element, then by default the packager performs the
 following actions based on the application type:
-
-<div>
 
 - iOS — All languages supported by the AIR runtime are listed in the iOS app
   store as supported languages of the application.
@@ -2607,13 +1721,9 @@ following actions based on the application type:
 - Android — Application bundle has resources for all languages supported by the
   AIR runtime.
 
-</div>
-
 **Parent element:**[application](WSfffb011ac560372f2fea1812938a6e463-7fff.html)
 
 **Child elements:** none
-
-<div>
 
 #### Content
 
@@ -2625,39 +1735,17 @@ ISO 639‑1 values for the languages supported by the AIR runtime: `en`, `de`,
 The packager generates an error for an empty value for the
 `<supportedLanguages>` element.
 
-<div>
-
-<div>
-
 Note: Localized tags (such as the name tag) ignore the value of a language if
 you use the `<supportedLanguages>` tag and it does not contain that language. If
 a native extension has resources for a language which is not specified by the
 `<supportedLangauges>` tag, a warning is issued and the resources are ignored
 for that language.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 #### Example
 
     <supportedLanguages>en ja fr es</supportedLanguages>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## supportedProfiles
-
-<div>
 
 Identifies the profiles that are supported for the application.
 
@@ -2665,13 +1753,9 @@ Identifies the profiles that are supported for the application.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 You can include any of these values in the `supportedProfiles` element:
-
-<div>
 
 - `desktop`—The desktop profile is for AIR applications that are installed on a
   desktop computer using an AIR file. These applications do not have access to
@@ -2688,8 +1772,6 @@ You can include any of these values in the `supportedProfiles` element:
 - `extendedMobileDevice`—The extended mobile device profile is not currently in
   use.
 
-</div>
-
 The `supportedProfiles` property is optional. When you do not include this
 element in the application descriptor file, the application can be compiled and
 deployed for any profile.
@@ -2700,34 +1782,16 @@ desktop and extended profiles:
 
     <supportedProfiles>desktop extendedDesktop</supportedProfiles>
 
-<div>
-
 Note: When you run an application with ADL and do not specify a value for the
 ADL `-profile` option, then the first profile in the application descriptor is
 used. (If no profiles are specified in the application descriptor either, then
 the desktop profile is used.)
 
-</div>
-
-</div>
-
-<div>
-
 #### Example
 
     <supportedProfiles>desktop mobileDevice</supportedProfiles>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## systemChrome
-
-<div>
 
 Specifies whether the initial application window is created with the standard
 title bar, borders, and controls provided by the operating system.
@@ -2739,8 +1803,6 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 One of the following values:
@@ -2750,25 +1812,11 @@ One of the following values:
 
 - `standard` (default) — System chrome is provided by the operating system.
 
-</div>
-
-<div>
-
 #### Example
 
     <systemChrome>standard</systemChrome>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## text
-
-<div>
 
 Specifies a localized string.
 
@@ -2778,7 +1826,7 @@ in [RFC4646](http://www.ietf.org/rfc/rfc4646.txt)
 
 The AIR application installer uses the `text` element with the `xml:lang`
 attribute value that most closely matches the user interface language of the
-user’s operating system.
+user's operating system.
 
 For example, consider an installation in which a `text` element includes a value
 for the en (English) locale. The AIR application installer uses the en name if
@@ -2792,43 +1840,23 @@ If the application defines no `text` element that matches the system user
 interface languages, the AIR application installer uses the first `name` value
 defined in the application descriptor file.
 
-<div>
-
 **Parent elements:**
 
 - [name](WSfffb011ac560372f2fea1812938a6e463-7ffd.html)
 
 - [description](WSfffb011ac560372f2fea1812938a6e463-7ff8.html)
 
-</div>
-
 **Child elements:** none
-
-<div>
 
 #### Content
 
 An `xml:lang` attribute specifying a locale and a string of localized text.
 
-</div>
-
-<div>
-
 #### Example
 
     <text xml:lang="fr">Bonjour AIR</text>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## title
-
-<div>
 
 Specifies the title displayed in the title bar of the initial application
 window.
@@ -2840,31 +1868,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A string containing the window title.
-
-</div>
-
-<div>
 
 #### Example
 
     <title>Example Window Title</title>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## transparent
-
-<div>
 
 Specifies whether the initial application window is alpha-blended with the
 desktop.
@@ -2872,49 +1884,29 @@ desktop.
 A window with transparency enabled may draw more slowly and require more memory.
 The transparent setting cannot be changed at run time.
 
-<div>
-
 Important: You can only set `transparent` to `true` when `systemChrome` is
 `none`_._
-
-</div>
 
 **Parent
 element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` or `false` (default)
-
-</div>
-
-<div>
 
 #### Example
 
     <transparent>true</transparent>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## version
-
-<div>
 
 Specifies the version information for the application.
 
 The version string is an application-defined designator. AIR does not interpret
-the version string in any way. Thus, version “3.0” is not assumed to be more
-current than version “2.0.” Examples: `"1.0"`, "`.4"`, "`0.5`", `"4.9"`,
+the version string in any way. Thus, version "3.0" is not assumed to be more
+current than version "2.0." Examples: `"1.0"`, "`.4"`, "`0.5`", `"4.9"`,
 `"1.3.4a"`.
 
 In AIR 2.5 and later, the `version` element is superseded by the `versionNumber`
@@ -2924,31 +1916,15 @@ and `versionLabel` elements.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A string containing the application version.
-
-</div>
-
-<div>
 
 #### Example
 
     <version>0.1 Alpha</version>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## versionLabel
-
-<div>
 
 Specifies a human-readable version string.
 
@@ -2960,31 +1936,15 @@ the `versionNumber` is used for both.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A string containing the publicly displayed version text.
-
-</div>
-
-<div>
 
 #### Example
 
     <versionLabel>0.9 Beta</versionlabel>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## versionNumber
-
-<div>
 
 The application version number.
 
@@ -2992,16 +1952,10 @@ The application version number.
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 The version number can contain a sequence of up to three integers separated by
 periods. Each integer must be a number between 0 and 999 (inclusive).
-
-</div>
-
-<div>
 
 #### Examples
 
@@ -3011,17 +1965,7 @@ periods. Each integer must be a number between 0 and 999 (inclusive).
 
     <versionNumber>0.01</versionNumber>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## visible
-
-<div>
 
 Specifies whether the initial application window is visible as soon as it is
 created.
@@ -3029,8 +1973,8 @@ created.
 AIR windows, including the initial window, are created in an invisible state by
 default. You can display a window by calling the `activate()` method of the
 NativeWindow object or by setting the `visible` property to `true`. You may want
-to leave the main window hidden initially, so that changes to the window’s
-position, the window’s size, and the layout of its contents are not shown.
+to leave the main window hidden initially, so that changes to the window's
+position, the window's size, and the layout of its contents are not shown.
 
 The Flex `mx:WindowedApplication` component automatically displays and activates
 the window immediately before the `applicationComplete` event is dispatched,
@@ -3044,31 +1988,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 `true` or `false` (default)
-
-</div>
-
-<div>
 
 #### Example
 
     <visible>true</visible>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## width
-
-<div>
 
 The initial width of the main window of the application.
 
@@ -3082,31 +2010,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 A positive integer with a maximum value of 4095.
-
-</div>
-
-<div>
 
 #### Example
 
     <width>1024</width>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## x
-
-<div>
 
 The horizontal position of the initial application window.
 
@@ -3121,31 +2033,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 An integer value.
-
-</div>
-
-<div>
 
 #### Example
 
     <x>120</x>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## y
-
-<div>
 
 The vertical position of the initial application window.
 
@@ -3160,35 +2056,15 @@ element:**[initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
 
 **Child elements:** none
 
-<div>
-
 #### Content
 
 An integer value.
-
-</div>
-
-<div>
 
 #### Example
 
     <y>250</y>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Android settings](WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffc.html)
 
@@ -3198,15 +2074,7 @@ More Help topics
 
 [Supported profiles](WS901d38e593cd1bac1e63e3d12991865ede-8000.html)
 
-</div>
-
-[The AndroidManifest.xml File](http://developer.android.com/guide/topics/manifest/manifest-intro.html "http://developer.android.com/guide/topics/manifest/manifest-intro.html")
+[The AndroidManifest.xml File](http://developer.android.com/guide/topics/manifest/manifest-intro.html)
 
 ![](../img/flashplatformLinkIndicator.png) 
-[SoftKeyboardEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html "http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html")
-
-<div>
-
-</div>
-
-</div>
+[SoftKeyboardEvent](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SoftKeyboardEvent.html)

@@ -1,14 +1,6 @@
 # Packaging an AIR for TV application
 
-<div>
-
-</div>
-
-<div>
-
 ## Packaging with ADT
-
-<div>
 
 You can use the AIR ADT command-line tool to package an AIR for TV application.
 Starting with the AIR SDK version 2.5, ADT supports packaging for TV devices.
@@ -19,8 +11,6 @@ have a code signing certificate. You can create a certificate using the ADT
 For a detailed reference on ADT commands and options, see
 [AIR Developer Tool (ADT)](WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html).
 
-<div>
-
 #### Creating an AIR package
 
 To create an AIR package, use the ADT package command:
@@ -29,15 +19,11 @@ To create an AIR package, use the ADT package command:
 
 The example assumes that:
 
-<div>
-
-- The path to the ADT tool is on your command-line shell’s path definition. (See
+- The path to the ADT tool is on your command-line shell's path definition. (See
   [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html).)
 
 - The certificate codesign.p12 is in the parent directory from where you are
   running the ADT command.
-
-</div>
 
 Run the command from the directory containing the application files. The
 application files in the example are myApp-app.xml (the application descriptor
@@ -47,10 +33,6 @@ When you run the command as shown, ADT prompts you for the keystore password.
 Not all shell programs display the password characters you type; just press
 Enter when you are done typing. Alternatively, you can use the `storepass`
 parameter to include the password in the ADT command.
-
-</div>
-
-<div>
 
 #### Creating an AIRN package
 
@@ -62,9 +44,7 @@ command, setting the target type to `airn`.
 
 The example assumes that:
 
-<div>
-
-- The path to the ADT tool is on your command-line shell’s path definition. (See
+- The path to the ADT tool is on your command-line shell's path definition. (See
   [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html).)
 
 - The certificate codesign.p12 is in the parent directory from where you are
@@ -76,8 +56,6 @@ The example assumes that:
   These ANE files contain an ActionScript-only stub or simulator version of the
   extension. The version of the extension that contains the native code is
   installed on the AIR for TV device.
-
-</div>
 
 Run the command from the directory containing the application files. The
 application files in the example are myApp-app.xml (the application descriptor
@@ -102,17 +80,7 @@ the application:
 For more information, see
 [Developing Native Extensions for Adobe AIR](http://www.adobe.com/go/learn_air_as_extensions_en).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Packaging with Flash Builder or Flash Professional
-
-<div>
 
 Flash Professional and Flash Builder allow you to publish or export the AIR
 packages without having to run ADT yourself. The procedure for creating an AIR
@@ -124,24 +92,6 @@ for AIR for TV applications that use native extensions.
 
 For more information, see the following:
 
-<div>
-
 - [Package AIR applications with Flash Builder](http://www.adobe.com/go/learn_dev_AIR_Flash_Builder_en)
 
 - [Publishing for Adobe AIR using Flash Professional](http://www.adobe.com/go/learn_publish_AIR_Flash_Pro_en)
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

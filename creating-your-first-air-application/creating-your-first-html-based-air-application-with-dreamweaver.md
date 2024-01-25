@@ -1,12 +1,10 @@
 # Create your first HTML-based AIR application with Dreamweaver
 
-<div>
-
 For a quick, hands-on illustration of how Adobe® AIR® works, use these
-instructions to create and package a simple HTML-based AIR “Hello World”
+instructions to create and package a simple HTML-based AIR "Hello World"
 application using the Adobe® AIR® Extension for Dreamweaver®.
 
-If you haven’t already done so, download and install Adobe AIR, which is located
+If you haven't already done so, download and install Adobe AIR, which is located
 here: [www.adobe.com/go/air](http://www.adobe.com/go/air).
 
 For instructions on installing the Adobe AIR Extension for Dreamweaver, see
@@ -15,20 +13,10 @@ For instructions on installing the Adobe AIR Extension for Dreamweaver, see
 For an overview of the extension, including system requirements, see
 [AIR Extension for Dreamweaver](http://help.adobe.com/en_US/Dreamweaver/CS5/Using/WS6463f310bbfa3de2-1eb2a492126f73db0f1-8000.html).
 
-<div>
-
 Note: HTML-based AIR applications can only be developed for the desktop and the
 extendedDesktop profiles. The mobile profile is not supported.
 
-</div>
-
-</div>
-
-<div>
-
 ## Prepare the application files
-
-<div>
 
 Your Adobe AIR application must have a start page and all of its related pages
 defined in a Dreamweaver site:
@@ -49,15 +37,7 @@ defined in a Dreamweaver site:
 
 For more information on Dreamweaver sites, see Dreamweaver Help.
 
-</div>
-
-</div>
-
-<div>
-
 ## Create the Adobe AIR application
-
-<div>
 
 1.  Make sure you have the hello_world.html page open in the Dreamweaver
     Document window. (See the previous section for instructions on creating it.)
@@ -83,7 +63,7 @@ For more information on Dreamweaver sites, see Dreamweaver Help.
     it instead.)
 
 6.  Complete the required fields in the Self-Signed Digital Certificate dialog
-    box. You’ll need to enter your name, enter a password and confirm it, and
+    box. You'll need to enter your name, enter a password and confirm it, and
     enter a name for the digital certificate file. Dreamweaver saves the digital
     certificate in your site root.
 
@@ -108,17 +88,9 @@ For more information on Dreamweaver sites, see Dreamweaver Help.
     in the same place. This file serves as a manifest, defining various
     properties of the application.
 
-</div>
-
-</div>
-
-<div>
-
 ## Install the application on a desktop
 
-<div>
-
-Now that you’ve created the application file, you can install it on any desktop.
+Now that you've created the application file, you can install it on any desktop.
 
 1.  Move the Adobe AIR application file out of your Dreamweaver site and onto
     your desktop, or to another desktop.
@@ -129,19 +101,11 @@ Now that you’ve created the application file, you can install it on any deskto
 2.  Double-click the application executable file (.air file) to install the
     application.
 
-</div>
-
-</div>
-
-<div>
-
 ## Preview the Adobe AIR application
 
-<div>
-
 You can preview pages that will be part of AIR applications at any time. That
-is, you don’t necessarily need to package the application before seeing what it
-will look like when it’s installed.
+is, you don't necessarily need to package the application before seeing what it
+will look like when it's installed.
 
 1.  Make sure your hello_world.html page is open in the Dreamweaver Document
     window.
@@ -152,17 +116,5 @@ will look like when it’s installed.
     You can also press Ctrl+Shift+F12 (Windows) or Cmd+Shift+F12 (Macintosh).
 
     When you preview this page, you are essentially seeing what a user would see
-    as the start page of the application after they’ve installed the application
+    as the start page of the application after they've installed the application
     on a desktop.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

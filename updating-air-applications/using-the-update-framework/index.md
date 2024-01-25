@@ -1,7 +1,5 @@
 # Using the update framework
 
-<div>
-
 Managing updates to applications can be tedious. The _update framework for
 AdobeAIR applications_ provides APIs that enable developers to provide
 robustupdate capabilities in AIR applications. The AIR update framework performs
@@ -31,7 +29,7 @@ update functionality to the end user.
 
 Even without using the update framework, Adobe AIR includes an Updater class
 that AIR applications can use to upgrade to new versions. The Updater class lets
-an application upgrade to a version contained in an AIR file on the user’s
+an application upgrade to a version contained in an AIR file on the user's
 computer. However, upgrade management can involve more than simply having the
 application update based on a locally stored AIR file.
 
@@ -50,15 +48,3 @@ application update based on a locally stored AIR file.
 - [Installing from an arbitrary AIR file](WS1C85A6A7-F137-4f5a-966C-95D5CF92C513.html)
 - [Canceling the update process](WSF3DE47E9-2009-49b2-966D-35DF9F93CC45.html)
 - [Localizing the ApplicationUpdaterUI interface](WS35FDB8D9-5684-44ad-829D-DFA53A7ED75A.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

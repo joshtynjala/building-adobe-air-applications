@@ -1,7 +1,5 @@
 # Setting up your Flex development environment
 
-<div>
-
 The SWC files in the frameworks/libs/air directory of the AIR 2 SDK define
 classes that you can use in Flex and Flash development.
 
@@ -22,15 +20,3 @@ the Flex Build Path settings in the Properties dialog box.
 
 Be sure to copy the SWC files to the directory that you will reference in the
 amxmlc compiler (using Flex SDK) or Flash Builder.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

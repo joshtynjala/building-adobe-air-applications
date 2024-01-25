@@ -1,7 +1,5 @@
 # Defining update settings ActionScript or JavaScript code
 
-<div>
-
 These configuration parameters can also be set using code in the application, as
 in the following:
 
@@ -46,15 +44,3 @@ user interface. Each property is a Boolean value, with a default value of
 of the update procedure.
 
 These dialog box properties override settings in the update configuration file.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

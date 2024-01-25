@@ -1,7 +1,5 @@
 # ADT appVersion command
 
-<div>
-
 The -appVersion command reports the installed version of an app on a device or
 emulator. The command uses the following syntax:
 
@@ -9,8 +7,6 @@ emulator. The command uses the following syntax:
 
 **-platform** The name of the platform of the device. Specify _ios_ or
 _android_.
-
-<div>
 
 **-platformsdk** The path to the platform SDK for the target device:
 
@@ -28,8 +24,6 @@ _android_.
   Additionally, when using ADT with the iOS Simulator, you must always include
   the -platformsdk option, specifying the path to the iOS Simulator SDK.
 
-</div>
-
 **-device** Specify _ios_simulator_ or the serial number of the device. The
 device only needs to be specified when more than one Android device or emulator
 is attached to your computer and running. If the specified device is not
@@ -45,15 +39,3 @@ devices and running emulators:
 **-appid** The AIR application ID of the installed application. If no
 application with the specified ID is installed on the device, then ADT returns
 exit code 14: Device error.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

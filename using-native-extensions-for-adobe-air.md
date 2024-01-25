@@ -1,7 +1,5 @@
 # Using native extensions for Adobe AIR
 
-<div>
-
 Native extensions for Adobe AIR provide ActionScript APIs that provide you
 access to device-specific functionality programmed in native code. Native
 extension developers sometimes work with device manufacturers, and sometimes are
@@ -35,11 +33,9 @@ Native extensions are useful in the following situations:
   native code.
 
 Some examples of native extensions are on the Adobe Developer Center. For
-example, one native extension provides AIR applications access to Android’s
+example, one native extension provides AIR applications access to Android's
 vibration feature. See
 [Native extensions for Adobe AIR](http://www.adobe.com/go/learn_native_extension_examples_en).
-
-<div xmlns:adobe="http://www.adobe.com/saxon">
 
 <table>
 <colgroup>
@@ -74,15 +70,7 @@ Beginner's Guide</a></h3>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR Native Extension (ANE) files
-
-<div>
 
 Native extension developers package a native extension into an ANE file. An ANE
 file is an archive file that contains the necessary libraries and resources for
@@ -95,34 +83,18 @@ at all for a particular device; it is implemented with ActionScript only.
 
 As an AIR application developer, you use the ANE file as follows:
 
-<div>
-
-- Include the ANE file in the application’s library path in the same way you
+- Include the ANE file in the application's library path in the same way you
   include a SWC file in the library path. This action allows the application to
-  reference the extension’s ActionScript classes.
-
-  <div>
+  reference the extension's ActionScript classes.
 
   Note: When compiling your application, be sure to use dynamic linking for the
   ANE. If you use Flash Builder, specify External on the ActionScript Builder
   Path Properties panel; if you use the command line, specify
   -external-library-path.
 
-  </div>
-
 - Package the ANE file with the AIR application.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Native extensions versus the NativeProcess ActionScript class
-
-<div>
 
 ActionScript 3.0 provides a NativeProcess class. This class lets an AIR
 application execute native processes on the host operating system. This
@@ -145,17 +117,7 @@ NativeProcess class versus using a native extension, consider the following:
   However, the separate process means that you possibly have interprocess
   communication handling to implement.
 
-<!-- -->
-
-</div>
-
-</div>
-
-<div>
-
 ## Native extensions versus ActionScript class libraries (SWC files)
-
-<div>
 
 A SWC file is an ActionScript class library in an archive format. The SWC file
 contains a SWF file and other resource files. The SWC file is a convenient way
@@ -167,29 +129,15 @@ an ActionScript class library, containing a SWF file and other resource files in
 an archive format. However, the most important difference between an ANE file
 and a SWC file is that only an ANE file can contain a native code library.
 
-<div>
-
 Note: When compiling your application, be sure to use dynamic linking for the
 ANE file. If you use Flash Builder, specify External on the ActionScript Builder
 Path Properties panel; if you use the command line, specify
 -external-library-path.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Supported devices
-
-<div>
 
 Starting in AIR 3, you can use native extensions in applications for the
 following devices:
-
-<div>
 
 - Android devices, starting with Android 2.2
 
@@ -203,14 +151,12 @@ following devices:
 
 - Mac OS X desktop devices that support AIR 3.0
 
-</div>
-
-Often, the same native extension targets multiple platforms. The extension’s ANE
+Often, the same native extension targets multiple platforms. The extension's ANE
 file contains ActionScript and native libraries for each supported platform.
 Usually, the ActionScript libraries have the same public interfaces for all the
 platforms. The native libraries are necessarily different.
 
-Sometimes a native extension supports a default platform. The default platform’s
+Sometimes a native extension supports a default platform. The default platform's
 implementation has only ActionScript code, but no native code. If you package an
 application for a platform that the extension does not specifically support, the
 application uses the default implementation when it executes. For example,
@@ -218,19 +164,9 @@ consider an extension that provides a feature that applies only to mobile
 devices. The extension can also provide a default implementation that a desktop
 application can use to simulate the feature.
 
-</div>
-
-</div>
-
-<div>
-
 ## Supported device profiles
 
-<div>
-
 The following AIR profiles support native extensions:
-
-<div>
 
 - `extendedDesktop`, starting in AIR 3.0
 
@@ -238,35 +174,17 @@ The following AIR profiles support native extensions:
 
 - `extendedMobileDevice`, starting in AIR 3.0
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Task list for using a native extension
-
-<div>
 
 To use a native extension in your application, do the following tasks:
 
 1.  Declare the extension in your application descriptor file.
 
-2.  Include the ANE file in your application’s library path.
+2.  Include the ANE file in your application's library path.
 
 3.  Package the application.
 
-</div>
-
-</div>
-
-<div>
-
 ## Declaring the extension in your application descriptor file
-
-<div>
 
 All AIR applications have an application descriptor file. When an application
 uses a native extension, the application descriptor file includes an
@@ -282,34 +200,18 @@ extension descriptor file. The extension descriptor file is an XML file called
 extension.xml. It is packaged in the ANE file. You can use an archive extractor
 tool to look at the extension.xml file.
 
-</div>
-
-</div>
-
-<div>
-
-## Including the ANE file in your application’s library path
-
-<div>
+## Including the ANE file in your application's library path
 
 To compile an application that uses a native extension, include the ANE file in
 your library path.
 
-</div>
-
-<div>
-
 ### Using the ANE file with Flash Builder
-
-<div>
 
 If your application uses a native extension, include the ANE file for the native
 extension in your library path. Then you can use Flash Builder to compile your
 ActionScript code.
 
 Do the following steps, which use Flash Builder 4.5.1:
-
-<div>
 
 1.  Change the filename extension of the ANE file from .ane to .swc. This step
     is necessary so that Flash Builder can find the file.
@@ -333,26 +235,14 @@ Do the following steps, which use Flash Builder 4.5.1:
 8.  In the Library Path Item Options dialog box, change the Link Type to
     External.
 
-</div>
-
 Now you can compile your application using, for example, Project \> Build
 Project.
 
-</div>
-
-</div>
-
-<div>
-
 ### Using the ANE file with Flash Professional
-
-<div>
 
 If your application uses a native extension, include the ANE file for the native
 extension in your library path. Then you can use Flash Professional CS5.5 to
 compile your ActionScript code. Do the following:
-
-<div>
 
 1.  Change the filename extension of the ANE file from .ane to .swc. This step
     is necessary so that Flash Professional can find the file.
@@ -375,19 +265,7 @@ compile your ActionScript code. Do the following:
 7.  In the Library Path Item Options dialog box, change the Link Type to
     External.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Packaging an application that uses native extensions
-
-<div>
 
 Use ADT to package an application that uses native extensions. You cannot
 package the application using Flash Professional CS5.5 or Flash Builder 4.5.1.
@@ -398,8 +276,6 @@ Details about using ADT are at
 For example, the following ADT command creates a DMG file (a native installer
 file for Mac OS X) for an application that uses native extensions:
 
-<div>
-
     adt -package
         -storetype pkcs12
         -keystore myCert.pfx
@@ -408,10 +284,6 @@ file for Mac OS X) for an application that uses native extensions:
         application.xml
         index.html resources
         -extdir extensionsDir
-
-</div>
-
-<div>
 
 The following command creates an APK package for an Android device:
 
@@ -422,8 +294,6 @@ The following command creates an APK package for an Android device:
         myApp-app.xml
         myApp.swf icons
         -extdir extensionsDir
-
-</div>
 
 The following command creates an iOS package for an iPhone application:
 
@@ -442,17 +312,9 @@ Note the following:
 
 - Specify the extension directory.
 
-- Make sure that the ANE file supports the application’s target device.
-
-<!-- -->
-
-</div>
-
-<div>
+- Make sure that the ANE file supports the application's target device.
 
 ### Use a native installer package type
-
-<div>
 
 The application package must be a native installer. You cannot create a
 cross-platform AIR package (a .air package) for an application that uses a
@@ -464,10 +326,6 @@ different native installer packages.
 The following table summarizes the value to use for the `-target` option of the
 ADT command:
 
-<div>
-
-<div>
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -475,7 +333,7 @@ ADT command:
 </colgroup>
 <thead>
 <tr class="header">
-<th><p>Application’s target platform</p></th>
+<th><p>Application's target platform</p></th>
 <th><p>-target</p></th>
 </tr>
 </thead>
@@ -503,19 +361,7 @@ ADT command:
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### Specify the extension directory
-
-<div>
 
 Use the ADT option `-extdir`to tell ADT the directory that contains the native
 extensions (ANE files).
@@ -523,15 +369,7 @@ extensions (ANE files).
 For details about this option, see
 [File and path options](WS901d38e593cd1bac1e63e3d128fc240122-7ff2.html).
 
-</div>
-
-</div>
-
-<div>
-
-### Make sure that the ANE file supports the application’s target device
-
-<div>
+### Make sure that the ANE file supports the application's target device
 
 When providing an ANE file, the native extension developer informs you which
 platforms the extension supports. You can also use an archive extractor tool to
@@ -560,30 +398,8 @@ application that uses the ANE file. Consider the following rules:
   `Windows-x86` platform. Alternatively, the ANE file must include the default
   platform and at least one other platform.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+[About SWC files](http://www.adobe.com/go/learn_about_SWC_files_en)
 
-<div>
-
-</div>
-
-[About SWC files](http://www.adobe.com/go/learn_about_SWC_files_en "http://www.adobe.com/go/learn_about_SWC_files_en")
-
-[AIR profile support](http://help.adobe.com/go/learn_air_app_profiles_en "http://help.adobe.com/go/learn_air_app_profiles_en")
-
-<div>
-
-</div>
-
-</div>
+[AIR profile support](http://help.adobe.com/go/learn_air_app_profiles_en)

@@ -1,7 +1,5 @@
 # Remote debugging with FDB over USB
 
-<div>
-
 To debug an app over a USB connection, you package the application using the
 `‑listen` option instead of the `-connect` option. When you specify the
 `‑listen` option, the runtime listens for a connection from the Flash debugger
@@ -67,15 +65,11 @@ utility from the AIR SDK) to forward the device port to the desktop port.
                                             Breakpoint 1 at 0x5993: file DebugExample.as, line 14
                                             (fdb) continue
 
-<div>
-
 Note: Port number 7936 is used as the default for USB debugging by both the AIR
 runtime and FDB. You can specify different ports to use with the ADT -listen
 port parameter and the FDB -p port parameter. In this case you must use the
 Android Debug Bridge utility to forward the port number specified in ADT to the
 port specified in FDB: `adb forward tcp:adt_listen_port# tcp:fdb_port#`
-
-</div>
 
 **USB debugging procedure for iOS**
 
@@ -114,12 +108,8 @@ desktop port.
                                             Handle    UUID
                                                 1     91770d8381d12644df91fbcee1c5bbdacb735500
 
-    <div>
-
     Note: (AIR 3.4 and higher) You can use `adt ‑devices` instead of
     `idb ‑devices` to determine the device handle.
-
-    </div>
 
 7.  Forward a port on your desktop to the port specified in the
     `adt ‑listen`parameter (in this case, 16000; the default is 7936) using the
@@ -145,22 +135,6 @@ desktop port.
 11. When the remote connection is established, you can set breakpoints with the
     FDB `break` command and then start execution with the `continue` command:
 
-<div>
-
 Note: Port number 7936 is used as the default for USB debugging by both the AIR
 runtime and FDB. You can specify different ports to use with the IDB -listen
 port parameter and the FDB -p port parameter.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Localizing the ApplicationUpdaterUI interface
 
-<div>
-
 The ApplicationUpdaterUI class provides a default user interface for the update
 process. This includes dialog boxes that let the user start the process, cancel
 the process, and perform other related actions.
@@ -11,17 +9,17 @@ description of the application in multiple languages. Use multiple `text`
 elements that define `lang` attributes, as in the following:
 
     <?xml version="1.0" encoding="utf-8"?>
-         <update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
-           <version>1.1a1</version>
-           <url>http://example.com/updates/sample_1.1a1.air</url>
-           <description>
-               <text xml:lang="en">English description</text>
-               <text xml:lang="fr">French description</text>
-               <text xml:lang="ro">Romanian description</text>
-           </description>
-        </update>
+    <update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
+        <version>1.1a1</version>
+        <url>http://example.com/updates/sample_1.1a1.air</url>
+        <description>
+            <text xml:lang="en">English description</text>
+            <text xml:lang="fr">French description</text>
+            <text xml:lang="ro">Romanian description</text>
+        </description>
+    </update>
 
-The update framework uses the description that best fits the end user’s
+The update framework uses the description that best fits the end user's
 localization chain. For more information, see Defining the update descriptor
 file and adding the AIR file to your web server.
 
@@ -41,8 +39,6 @@ developers can use the ResourceManager to manage the locale chain.
 For example, the following JavaScript code defines resource bundles for Romanian
 and Hungarian:
 
-<div>
-
     appUpdater.addResources("ro_RO",
                         {titleCheck: "Titlu", msgCheck: "Mesaj", btnCheck: "Buton"});
     appUpdater.addResources("hu", {titleCheck: "Cím", msgCheck: "Üzenet"});
@@ -54,19 +50,5 @@ and Hungarian:
     sortedLanguages.push("en-US");
     appUpdater.localeChain = sortedLanguages;
 
-</div>
-
 For details, see the description of the `addResources()` method of the
 ApplicationUpdaterUI class in the language reference.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

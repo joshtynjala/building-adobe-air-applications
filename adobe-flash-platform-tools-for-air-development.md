@@ -1,13 +1,9 @@
 # Adobe Flash Platform tools for AIR development
 
-<div>
-
 You can develop AIR applications with the following Adobe Flash Platform
 development tools.
 
 For ActionScript 3.0 (Flash and Flex) developers:
-
-<div>
 
 - Adobe Flash Professional (see
   [Publishing for AIR](http://help.adobe.com/en_US/Flash/10.0_UsingFlash/WSF0126B20-BFF4-4c50-9978-BCA47C8C3C3F.html))
@@ -19,8 +15,6 @@ For ActionScript 3.0 (Flash and Flex) developers:
 - Adobe Flash Builder (see
   [Developing AIR Applications with Flash Builder](http://help.adobe.com/en_US/Flex/4.0/UsingFlashBuilder/WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-8000.html))
 
-</div>
-
 For HTML and Ajax developers:
 
 - Adobe AIR SDK (see
@@ -30,15 +24,7 @@ For HTML and Ajax developers:
 - Adobe Dreamweaver CS3, CS4, CS5 (see
   [AIR Extension for Dreamweaver](http://help.adobe.com/en_US/Dreamweaver/CS5/Using/WS6463f310bbfa3de2-1eb2a492126f73db0f1-8000.html))
 
-<!-- -->
-
-</div>
-
-<div>
-
 ## Installing the AIR SDK
-
-<div>
 
 The Adobe AIR SDK contains the following command-line tools that you use to
 launch and package applications:
@@ -57,26 +43,14 @@ newer). The Java JRE and the Java JDK are available at http://java.sun.com/.
 
 At least 2GB of computer memory is required to run the ADT tool.
 
-<div>
-
 Note: Java is not required for end users to run AIR applications.
-
-</div>
 
 For a quick overview of building an AIR application with the AIR SDK, see
 [Creating your first HTML-based AIR application with the AIR SDK](WS5b3ccc516d4fbf351e63e3d118666ade46-7ecc.html).
 
-</div>
-
-<div>
-
 ### Download and install the AIR SDK
 
-<div>
-
 You can download and install the AIR SDK using the following instructions:
-
-<div>
 
 #### Install the AIR SDK in Windows
 
@@ -89,10 +63,6 @@ You can download and install the AIR SDK using the following instructions:
 - The ADL and ADT tools are contained in the bin folder in the AIR SDK; add the
   path to this folder to your PATH environment variable.
 
-</div>
-
-<div>
-
 #### Install the AIR SDK in Mac OS X
 
 - Download the AIR SDK installation file.
@@ -104,10 +74,6 @@ You can download and install the AIR SDK using the following instructions:
 - The ADL and ADT tools are contained in the bin folder in the AIR SDK; add the
   path to this folder to your PATH environment variable.
 
-</div>
-
-<div>
-
 #### Install the AIR SDK in Linux
 
 - The SDK is available in tbz2 format.
@@ -118,21 +84,9 @@ You can download and install the AIR SDK using the following instructions:
 For information about getting started using the AIR SDK tools, see Creating an
 AIR application using the command-line tools.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ### What's included in the AIR SDK
 
-<div>
-
 The following table describes the purpose of the files contained in the AIR SDK:
-
-<div>
 
 <table>
 <colgroup>
@@ -209,19 +163,7 @@ each release version of AIR are also found in this folder.</p></td>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Setting up the Flex SDK
-
-<div>
 
 To develop Adobe® AIR® applications with Adobe® Flex™, you have the following
 options:
@@ -237,24 +179,14 @@ options:
 For a quick overview of building an AIR application with Flex SDK, see
 [Creating your first desktop AIR application with the Flex SDK](WS144092a96ffef7cc4c0afd1212601c9a36f-8000.html).
 
-</div>
-
-<div>
-
 ### Install the Flex SDK
-
-<div>
 
 Building AIR applications with the command-line tools requires that Java is
 installed on your computer. You can use the Java virtual machine from either the
 JRE or the JDK (version 1.5 or newer). The Java JRE and JDK are available at
 http://java.sun.com/.
 
-<div>
-
 Note: Java is not required for end users to run AIR applications.
-
-</div>
 
 The Flex SDK provides you with the AIR API and command-line tools that you use
 to package, compile, and debug your AIR applications.
@@ -266,8 +198,6 @@ to package, compile, and debug your AIR applications.
 
 3.  Copy the contents of the AIR SDK over the files in the Flex SDK.
 
-    <div>
-
     Note: On Mac computers, make sure that you copy or replace the individual
     files in the SDK folders — not entire directories. By default, copying a
     directory on the Mac to a directory of the same name removes the existing
@@ -275,21 +205,9 @@ to package, compile, and debug your AIR applications.
     directories. You can use the `ditto` command in a terminal window to merge
     the AIR SDK into the Flex SDK:`ditto air_sdk_folder flex_sdk_folder`
 
-    </div>
-
 4.  The command-line AIR utilities are located in the bin folder.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Setting up external SDKs
-
-<div>
 
 Developing applications for Android and iOS requires that you download
 provisioning files, SDKs or other development tools from the platform makers.
@@ -304,17 +222,3 @@ creating and running software emulators and taking device screenshots.
 An external SDK is not required for iOS development. However, special
 certificates and provisioning profiles are needed. For more information, see
 [Obtaining developer files from Apple](http://help.adobe.com/en_US/as3/iphone/WS789ea67d3e73a8b2-240138de1243a7725e7-7ffd.html).
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

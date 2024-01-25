@@ -1,7 +1,5 @@
 # Workflow for creating AIR applications for mobile devices
 
-<div>
-
 The workflow for creating an AIR application for mobile (or other) devices is,
 in general, very similar to that for creating a desktop application. The primary
 workflow differences occur when it is time to package, debug, and install an
@@ -9,13 +7,7 @@ application. For example, AIR for Android apps use the native Android APK
 package format rather than the AIR package format. Hence, they also use the
 standard Android install and update mechanisms.
 
-</div>
-
-<div>
-
 ## AIR for Android
-
-<div>
 
 The following steps are typical when developing an AIR application for Android:
 
@@ -41,15 +33,7 @@ command-line tools to accomplish these steps.
 Once your AIR app is finished and packaged as an APK file, you can submit it to
 the Android Market or distribute it through other means.
 
-</div>
-
-</div>
-
-<div>
-
 ## AIR for iOS
-
-<div>
 
 The following steps are typical when developing AIR applications for iOS:
 
@@ -87,17 +71,3 @@ The following steps are typical when developing AIR applications for iOS:
 Once your AIR app is finished, you can repackage it using a distribution
 certificate and provisioning profile. It is then ready to submit to the Apple
 App Store.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

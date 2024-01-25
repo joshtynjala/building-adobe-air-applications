@@ -1,7 +1,5 @@
 # Updating AIR applications
 
-<div>
-
 Users can install or update an AIR application by double-clicking an AIR file on
 their computer or from the browser (using the seamless install feature). The
 Adobe® AIR® installer application manages the installation, alerting the user if
@@ -10,7 +8,7 @@ they are updating an already existing application.
 However, you can also have an installed application update itself to a new
 version, using the Updater class. (An installed application may detect that a
 new version is available to be downloaded and installed.) The Updater class
-includes an `update()` method that lets you point to an AIR file on the user’s
+includes an `update()` method that lets you point to an AIR file on the user's
 computer and update to that version. Your application must be packaged as an AIR
 file in order to use the Updater class. Applications packaged as a native
 executable or package should use the update facilities provided by the native
@@ -53,10 +51,6 @@ installed, updated, or removed. You can consult these logs to help determine the
 cause of any installation problems. See
 [Installation logs](http://kb2.adobe.com/cps/839/cpsid_83989.html).
 
-<div>
-
-<div>
-
 Note: New versions of the Adobe AIR runtime may include updated versions of
 WebKit. An updated version of WebKit _may_ result in unexpected changes in HTML
 content in a deployed AIR application. These changes may require you to update
@@ -67,24 +61,8 @@ the application. For more information, see
 [About the HTML environment](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fb1.html)
 (for HTML developers).
 
-</div>
-
-</div>
-
 - [About updating applications](WS5b3ccc516d4fbf351e63e3d118666ade46-7c57.html)
 - [Presenting a custom application update user interface](WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html)
-- [Downloading an AIR file to the user’s computer](WS5b3ccc516d4fbf351e63e3d118666ade46-7c55.html)
+- [Downloading an AIR file to the user's computer](WS5b3ccc516d4fbf351e63e3d118666ade46-7c55.html)
 - [Checking to see if an application is running for the first time](WS5b3ccc516d4fbf351e63e3d118666ade46-7c54.html)
 - [Using the update framework](WS9CD40F06-4DD7-4230-B56A-88AA27541A1E.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

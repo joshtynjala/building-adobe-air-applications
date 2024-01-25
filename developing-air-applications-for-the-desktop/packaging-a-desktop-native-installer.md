@@ -1,7 +1,5 @@
 # Packaging a desktop native installer
 
-<div>
-
 As of AIR 2, you can use ADT to create native application installers for
 distributing AIR applications. For example, you can build an EXE installer file
 for distribution of an AIR application on Windows. You can build a DMG installer
@@ -20,16 +18,12 @@ desktop extended profile. You can restrict this profile using the
 You can build a native installer version of the AIR application in two basic
 ways:
 
-<div>
-
 - You can build the native installer based on the application descriptor file
   and other source files. (Other source files may include SWF files, HTML files,
   and other assets.)
 
 - You can build the native installer based on an AIR file or based on an AIRI
   file.
-
-</div>
 
 You must use ADT on the same operating system as that of the native installer
 file you want to generate. So, to create an EXE file for Windows, run ADT on
@@ -39,11 +33,7 @@ RPG file for Linux, run ADT from the AIR 2.6 SDK on Linux.
 When you create a native installer to distribute an AIR application, the
 application gains these capabilities:
 
-<div>
-
-- <div>
-
-  It can launch and interact with native processes, using the NativeProcess
+- It can launch and interact with native processes, using the NativeProcess
   class. For details, see one of the following:
 
   - [Communicating with native processes in AIR](http://help.adobe.com/en_US/as3/dev/WSb2ba3b1aad8a27b060d22f991220f00ad8a-8000.html)
@@ -52,8 +42,6 @@ application gains these capabilities:
   - [Communicating with native processes in AIR](http://help.adobe.com/en_US/air/html/dev/WSb2ba3b1aad8a27b060d22f991220f00ad8a-8000.html)
     (for HTML developers)
 
-  </div>
-
 - It can use native extensions.
 
 - It can use the `File.openWithDefaultApplication()` method to open any file
@@ -61,8 +49,6 @@ application gains these capabilities:
   type. (There are restrictions on applications that are _not_ installed with a
   native installer. For details, see the entry for the
   `File.openWithDefaultApplication()` entry in the language reference.)
-
-</div>
 
 However, when packaged as a native installer, the application loses some of the
 benefits of the AIR file format. A single file can no longer be distributed to
@@ -76,19 +62,9 @@ If there is no network connection from which to obtain the correct version of
 Adobe AIR (if necessary), installation fails. Also, the installation fails if
 the operating system is not supported in Adobe AIR 2.
 
-<div>
-
-<div>
-
 Note: If you want a file to be executable in your installed application, make
 sure that it's executable on the filesystem when you package your application.
 (On Mac and Linux, you can use chmod to set the executable flag, if needed.)
-
-</div>
-
-</div>
-
-<div>
 
 #### Creating a native installer from the application source files
 
@@ -104,8 +80,6 @@ To build a native installer out of the source files for the application, use the
 
 This syntax is similar to the syntax for packaging an AIR file (without a native
 installer). However there are a few differences:
-
-<div>
 
 - You add the `-target native` option to the command. (If you specify
   `-target air`, then ADT generates an AIR file instead of a native installer
@@ -124,14 +98,10 @@ installer). However there are a few differences:
   Windows Installer file from the web, Windows identifies the source of the
   file, based on the certificate.
 
-</div>
-
 For details on ADT options other than the `-target` option, see
 [AIR Developer Tool (ADT)](WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html).
 
 The following example creates a DMG file (a native installer file for Mac OS):
-
-<div>
 
     adt -package
         -storetype pkcs12
@@ -141,11 +111,7 @@ The following example creates a DMG file (a native installer file for Mac OS):
         application.xml
         index.html resources
 
-</div>
-
 The following example creates an EXE file (a native installer file for Windows):
-
-<div>
 
     adt -package
         -storetype pkcs12
@@ -154,13 +120,9 @@ The following example creates an EXE file (a native installer file for Windows):
         myApp.exe
         application.xml
         index.html resources
-
-</div>
 
 The following example creates an EXE file and signs it:
 
-<div>
-
     adt -package
         -storetype pkcs12
         -keystore myCert.pfx
@@ -170,12 +132,6 @@ The following example creates an EXE file and signs it:
         myApp.exe
         application.xml
         index.html resources
-
-</div>
-
-</div>
-
-<div>
 
 #### Creating a native installer for an application that uses native extensions
 
@@ -207,8 +163,6 @@ For details on ADT options, see
 The following example creates a DMG file (a native installer file for Mac OS)
 for an application that uses native extensions:
 
-<div>
-
     adt -package
         -storetype pkcs12
         -keystore myCert.pfx
@@ -217,12 +171,6 @@ for an application that uses native extensions:
         application.xml
         -extdir extensionsDir
         index.html resources
-
-</div>
-
-</div>
-
-<div>
 
 #### Creating a native installer from an AIR file or an AIRI file
 
@@ -239,14 +187,10 @@ AIRI file. To build a native installer based on an AIR file, use the ADT
 This syntax is similar to the syntax for creating a native installer based on
 the source files for the AIR application. However, there are a few differences:
 
-<div>
-
 - As the source, you specify an AIR file, rather than an application descriptor
   file and other source files for the AIR application.
 
 - Do not specify signing options for the AIR file, as it is already signed
-
-</div>
 
 To build a native installer based on an _AIRI_ file, use the ADT `-package`
 command with the following syntax (on a single command line):
@@ -261,77 +205,35 @@ command with the following syntax (on a single command line):
 This syntax is similar to the syntax for creating a native installer based on an
 AIR file. However there are a few of differences:
 
-<div>
-
 - As the source, you specify an AIRI file.
 
 - You specify signing options for the target AIR application.
 
-</div>
-
 The following example creates a DMG file (a native installer file for Mac OS)
 based on an AIR file:
-
-<div>
 
     adt -package -target native myApp.dmg myApp.air
 
-</div>
-
 The following example creates an EXE file (a native installer file for Windows)
 based on an AIR file:
 
-<div>
-
     adt -package -target native myApp.exe myApp.air
-
-</div>
 
 The following example creates an EXE file (based on an AIR file) and signs it:
 
-<div>
-
     adt -package -target native -storetype pkcs12 -keystore myCert.pfx myApp.exe myApp.air
-
-</div>
 
 The following example creates a DMG file (a native installer file for Mac OS)
 based on an AIRI file:
 
-<div>
-
     adt -storetype pkcs12 -keystore myCert.pfx -package -target native myApp.dmg myApp.airi
-
-</div>
 
 The following example creates an EXE file (a native installer file for Windows)
 based on an AIRI file:
 
-<div>
-
     adt -storetype pkcs12 -keystore myCert.pfx -package -target native myApp.exe myApp.airi
-
-</div>
 
 The following example creates an EXE file (based on an AIRI file) and signs it
 with both an AIR and a native Windows signature:
 
-<div>
-
     adt -package -storetype pkcs12 -keystore myCert.pfx -target native -storetype pkcs12 -keystore myCert.pfx myApp.exe myApp.airi
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

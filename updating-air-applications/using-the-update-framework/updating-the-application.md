@@ -1,7 +1,5 @@
 # Updating the application
 
-<div>
-
 The ApplicationUpdater object dispatches the `downloadComplete` event when the
 download of the update file is complete. If you cancel the default behavior, you
 can call the `installUpdate()` method to resume the update process:
@@ -22,15 +20,3 @@ of calling the `installUpdate()` method:
   installation until the next restart and no additional update process can be
   started. (These include updates that would result by calling the `checkNow()`
   method or because of the periodical check.)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

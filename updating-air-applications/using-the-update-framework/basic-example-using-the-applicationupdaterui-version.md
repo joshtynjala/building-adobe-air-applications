@@ -1,7 +1,5 @@
 # Basic example: Using the ApplicationUpdaterUI version
 
-<div>
-
 The ApplicationUpdaterUI version of the update framework provides a basic
 interface that you can easily use in your application. The following is a basic
 example.
@@ -31,7 +29,7 @@ First, create an AIR application that calls the update framework:
 
         <?xml version="1.0" encoding="utf-8"?>
         <configuration xmlns="http://ns.adobe.com/air/framework/update/configuration/1.0">
-             <url>http://example.com/updates/update.xml</url>
+            <url>http://example.com/updates/update.xml</url>
             <delay>1</delay>
         </configuration>
 
@@ -46,21 +44,13 @@ First, create an AIR application that calls the update framework:
     application.
 
 5.  Have the updater object reference the updateConfig.xml file, and call the
-    object’s `initialize()` method.
-
-    <div>
+    object's `initialize()` method.
 
     In ActionScript, use the following code: appUpdater.configurationFile = new
     File("app:/updateConfig.xml"); appUpdater.initialize();
 
-    </div>
-
-    <div>
-
     In JavaScript, use the following code: appUpdater.configurationFile = new
     air.File("app:/updateConfig.xml"); appUpdater.initialize();
-
-    </div>
 
 6.  Create a second version of the AIR application that has a different version
     than the first application. (The version is specified in the application
@@ -74,11 +64,11 @@ Next, add the update version of the AIR application to your web server:
     contents to it:
 
         <?xml version="1.0" encoding="utf-8"?>
-             <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
-               <versionNumber>1.1</versionNumber>
-               <url>http://example.com/updates/sample_1.1.air</url>
-               <description>This is the latest version of the Sample application.</description>
-            </update>
+        <update xmlns="http://ns.adobe.com/air/framework/update/description/2.5">
+            <versionNumber>1.1</versionNumber>
+            <url>http://example.com/updates/sample_1.1.air</url>
+            <description>This is the latest version of the Sample application.</description>
+        </update>
 
     Edit the `versionNumber`, `URL`, and `description` of the
     updateDescriptor.xml file to match your update AIR file. This update
@@ -89,23 +79,19 @@ Next, add the update version of the AIR application to your web server:
     contents to it:
 
         <?xml version="1.0" encoding="utf-8"?>
-             <update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
-               <version>1.1</version>
-               <url>http://example.com/updates/sample_1.1.air</url>
-               <description>This is the latest version of the Sample application.</description>
-            </update>
+        <update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
+            <version>1.1</version>
+            <url>http://example.com/updates/sample_1.1.air</url>
+            <description>This is the latest version of the Sample application.</description>
+        </update>
 
     Edit the `version`, `URL`, and `description` of the updateDescriptor.xml
     file to match your update AIR file. This update descriptor format is used by
     applications using the update framework included with the AIR 2 SDK (and
     earlier).
 
-    <div>
-
     Note: Creating this second update descriptor file is only necessary when you
     are supporting updates to applications created prior to AIR 2.5.
-
-    </div>
 
 4.  Add the updateDescriptor.2.5.xml and updateDescriptor.1.0.xml file to the
     same web server directory that contains the update AIR file.
@@ -117,20 +103,4 @@ update framework to best suit your needs.
 For another example of using the update framework, see the following sample
 application at the Adobe AIR developer center:
 
-<div>
-
 - [Update Framework in a Flash-based Application](http://www.adobe.com/go/learn_air_qs_update_framework_flash_en)(http://www.adobe.com/go/learn_air_qs_update_framework_flash_en)
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

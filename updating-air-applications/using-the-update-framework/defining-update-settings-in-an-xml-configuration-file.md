@@ -1,7 +1,5 @@
 # Defining update settings in an XML configuration file
 
-<div>
-
 The update configuration file is an XML file. It can contain the following
 elements:
 
@@ -50,8 +48,8 @@ framework:
 
     <?xml version="1.0" encoding="utf-8"?>
     <configuration xmlns="http://ns.adobe.com/air/framework/update/configuration/1.0">
-          <url>http://example.com/updates/update.xml</url>
-          <delay>1</delay>
+        <url>http://example.com/updates/update.xml</url>
+        <delay>1</delay>
     </configuration>
 
 Here is an example of the configuration file for the ApplicationUpdaterUI
@@ -59,20 +57,18 @@ framework, which includes a definition for the `defaultUI` element:
 
     <?xml version="1.0" encoding="utf-8"?>
     <configuration xmlns="http://ns.adobe.com/air/framework/update/configuration/1.0">
-          <url>http://example.com/updates/update.xml</url>
-          <delay>1</delay>
-          <defaultUI>
-             <dialog name="checkForUpdate" visible="false" />
-             <dialog name="downloadUpdate" visible="false" />
-             <dialog name="downloadProgress" visible="false" />
-          </defaultUI>
+        <url>http://example.com/updates/update.xml</url>
+        <delay>1</delay>
+        <defaultUI>
+            <dialog name="checkForUpdate" visible="false" />
+            <dialog name="downloadUpdate" visible="false" />
+            <dialog name="downloadProgress" visible="false" />
+        </defaultUI>
     </configuration>
 
 Point the `configurationFile` property to the location of that file:
 
 ActionScript example:
-
-<div>
 
     appUpdater.configurationFile = new File("app:/cfg/updateConfig.xml");
 
@@ -80,19 +76,5 @@ JavaScript example:
 
     appUpdater.configurationFile = new air.File("app:/cfg/updateConfig.xml");
 
-</div>
-
 The templates directory of the update framework includes a sample configuration
 file, config-template.xml.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

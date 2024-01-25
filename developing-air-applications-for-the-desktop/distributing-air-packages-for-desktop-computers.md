@@ -1,7 +1,5 @@
 # Distributing AIR packages for desktop computers
 
-<div>
-
 AIR applications can be distributed as an AIR package, which contains the
 application code and all assets. You can distribute this package through any of
 the typical means, such as by download, by e-mail, or by physical media such as
@@ -18,13 +16,7 @@ native package, you do lose some of the benefits of the AIR file format. Namely,
 a single install file can no longer be used on most platforms, the AIR update
 framework can no longer be used, and the in-browser API can no longer be used.
 
-</div>
-
-<div>
-
 ## Installing and running an AIR application on the desktop
-
-<div>
 
 You can simply send the AIR file to the recipient. For example, you can send the
 AIR file as an e-mail attachment or as a link in a web page.
@@ -70,41 +62,29 @@ For more information, see
 Once the AIR application is installed, a user simply double-clicks the
 application icon to run it, just like any other desktop application.
 
-- On Windows, double-click the application’s icon (which is either installed on
+- On Windows, double-click the application's icon (which is either installed on
   the desktop or in a folder) or select the application from the Start menu.
 
-- On Linux, double-click the application’s icon (which is either installed on
+- On Linux, double-click the application's icon (which is either installed on
   the desktop or in a folder) or select the application from the applications
   menu.
 
 - On Mac OS, double-click the application in the folder in which it was
   installed. The default installation directory is the /Applications directory.
 
-<div>
-
 Note: Only AIR applications developed for AIR 2.6 or earlier can be installed on
 Linux.
-
-</div>
 
 The AIR _seamless install_ feature lets a user install an AIR application by
 clicking a link in a web page. The AIR _browser invocation_ features lets a user
 run an installed AIR application by clicking a link in a web page. These
 features are described in the following section.
 
-</div>
-
-</div>
-
-<div>
-
 ## Installing and running desktop AIR applications from a web page
-
-<div>
 
 The AIR in-browser API lets you install and run AIR application from a web page.
 The AIR in-browser API is provided in a SWF library, _air.swf_, that is hosted
-by Adobe. The AIR SDK includes a sample “badge” application that uses this
+by Adobe. The AIR SDK includes a sample "badge" application that uses this
 library to install, update, or launch an AIR application (and the runtime, if
 necessary). You can modify the provided sample badge or create your own badge
 web application that uses the online air.swf library directly.
@@ -114,15 +94,7 @@ applications that include the
 `<allowBrowserInvocation>true</allowBrowserInvocation>` element in their
 application descriptor files can be launched by a web badge.
 
-</div>
-
-</div>
-
-<div>
-
 ## Enterprise deployment on desktop computers
-
-<div>
 
 IT administrators can install the Adobe AIR runtime and AIR applications
 silently using standard desktop deployment tools. IT administrators can do the
@@ -139,15 +111,7 @@ For more information, see the
 _[Adobe AIR Administrator's Guide](http://www.adobe.com/go/learn_air_admin_guide_en)
 (http://www.adobe.com/go/learn_air_admin_guide_en)._
 
-</div>
-
-</div>
-
-<div>
-
 ## Installation logs on desktop computers
-
-<div>
 
 Installation logs are recorded when either the AIR runtime itself or an AIR
 application is installed. You can examine the log files to help determine the
@@ -168,34 +132,8 @@ The log files are created in the following locations:
 
 - Linux: `/home/<username>/.appdata/Adobe/AIR/Logs/Install.log`
 
-<div>
-
 Note: These log files were not created in versions of AIR earlier than AIR 2.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
 
 More Help topics
 
-</div>
-
-<div>
-
 [AIR.SWF in-browser API](WSfffb011ac560372f-1c6efe05128cca667e7-8000.html)
-
-</div>
-
-<div>
-
-
-
-</div>
-
-</div>

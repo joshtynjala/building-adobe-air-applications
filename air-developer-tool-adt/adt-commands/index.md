@@ -1,7 +1,5 @@
 # ADT commands
 
-<div>
-
 The first argument passed to ADT specifies one of the following commands.
 
 - -package — packages an AIR application or AIR Native Extension (ANE).
@@ -57,8 +55,6 @@ of option are described in detail separately:
 
 - [Native extension options](WS901d38e593cd1bac1e63e3d128fc240122-7ff0.html)
 
-<!-- -->
-
 - [ADT package command](WS901d38e593cd1bac1e63e3d128cdca935b-8000.html)
 - [ADT prepare command](WS901d38e593cd1bac1e63e3d128fc240122-7fff.html)
 - [ADT sign command](WS901d38e593cd1bac1e63e3d128fc240122-7ffe.html)
@@ -74,15 +70,3 @@ of option are described in detail separately:
 - [ADT uninstallRuntime command](WS901d38e593cd1bac1e63e3d128fc240122-7ff4.html)
 - [ADT devices command](WSd6d4f896b3a8801b24e4e975138ba7d1658-8000.html)
 - [ADT help command](WS901d38e593cd1bac1e63e3d129194b1eff-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,38 +1,22 @@
 # Use push notifications
 
-<div>
-
 Push notifications let remote notification providers send notifications to
 applications running on a mobile device. AIR 3.4 supports push notifications for
 iOS devices using the Apple Push Notification service (APNs).
-
-<div>
 
 Note: To enable push notifications for an AIR for Android application, use a
 native extension, such as
 [as3c2dm](http://www.riaspace.com/2011/09/as3c2dm-air-native-extension-to-push-notifications-with-c2dm/),
 developed by Adobe evangelist Piotr Walczyszyn.
 
-</div>
-
 The remainder of this section describes how to enable push notifications in AIR
 for iOS applications.
-
-<div>
 
 Note: This discussion assumes that you have an Apple developer ID, are familiar
 with the iOS development workflow,and have deployed at least one application on
 an iOS device.
 
-</div>
-
-</div>
-
-<div>
-
 ## Overview of push notifications
-
-<div>
 
 The Apple Push Notification service (APNs) lets remote notification providers
 send notifications to applications running on iOS devices. APNs supports the
@@ -60,13 +44,7 @@ Using push notifications in your application involves multiple aspects:
 - **Remote notification provider** - Stores tokenId-client application
   information and pushes notifications to APNs.
 
-</div>
-
-<div>
-
 ### Regstration workflow
-
-<div>
 
 The workflow for registering push notifications with a server-side service is as
 follows:
@@ -83,15 +61,7 @@ follows:
     the tokenId to the remote notification provider, which stores the tokenId to
     use for push notifications.
 
-</div>
-
-</div>
-
-<div>
-
 ### Notification workflow
-
-<div>
 
 The notification workflow is as follows:
 
@@ -102,15 +72,7 @@ The notification workflow is as follows:
 
 3.  iOS pushes the notification payload to the application.
 
-</div>
-
-</div>
-
-<div>
-
 ### Push notification API
-
-<div>
 
 AIR 3.4 introduced a set of APIs that support iOS push notifications. These APIs
 are in the `flash.notifications` package, and inlude the following classes:
@@ -129,7 +91,7 @@ are in the `flash.notifications` package, and inlude the following classes:
 AIR 3.4 also includes `flash.events.RemoteNotificationEvent`, which is
 dispatched by `RemoteNotifier`, as follows:
 
-- When an application’s subscription is successfully created and a new tokenId
+- When an application's subscription is successfully created and a new tokenId
   is received from APNs.
 
 - Upon receiving a new remote notification.
@@ -137,17 +99,7 @@ dispatched by `RemoteNotifier`, as follows:
 Additionally, `RemoteNotifier` dispatches `flash.events.StatusEvent` if it
 encounters an error during the subscription process.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Manage push notifications in an application
-
-<div>
 
 To register your application for push notifications, you must perform the
 following steps:
@@ -343,13 +295,7 @@ push notification events:
                             }
                             }
 
-</div>
-
-<div>
-
 ### Enable push notifications in the application XML file
-
-<div>
 
 To use push notifications in your application, provide the following in the
 `Entitlements` tag (under the `iphone` tag):
@@ -375,15 +321,7 @@ example shows:
 
     <supportedLanguages>en de cs es fr it ja ko nl pl pt</supportedLanguages>
 
-</div>
-
-</div>
-
-<div>
-
 ### Create a provisioning profile and certificate that enable iOS Push Services
-
-<div>
 
 To enable application-APNs communication, you must package the application with
 a provisioning profile and certificate that enable iOS Push Services, as
@@ -437,15 +375,7 @@ follows:
 19. Click the Certificates tab and download a new certificate for the new
     provisioning profile.
 
-</div>
-
-</div>
-
-<div>
-
 ### Use sound for push notifications
-
-<div>
 
 To enable sound notifications for your application, bundle the sound files as
 you would any other asset, but in same directory as the SWF and app-xml files.
@@ -463,15 +393,7 @@ Apple supports the following sound data formats (in aiff, wav, or caf files):
 
 - aLaw
 
-</div>
-
-</div>
-
-<div>
-
 ### Use localized alert notifications
-
-<div>
 
 To use localized alert notifications in your application, bundle localized
 strings in the form of lproj folders. For example, you support alerts in
@@ -492,17 +414,7 @@ Spanish, as follows:
 5.  When the application receives an alert notification with this key value and
     the device language is Spanish, the translated alert text displays.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Configure a remote notification provider
-
-<div>
 
 You need a remote notification provider to send push notifications to your
 application. This server application acts as a provider, accepting your push
@@ -514,13 +426,7 @@ provider, see
 [Provider Communication with Apple Push Notification Service](http://developer.apple.com/library/mac/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/CommunicatingWIthAPS/CommunicatingWIthAPS.html#//apple_ref/doc/uid/TP40008194-CH101-SW1)
 in the Apple Developer Library.
 
-</div>
-
-<div>
-
 ### Remote notification provider options
-
-<div>
 
 Options for a remote notification provider include the following:
 
@@ -564,18 +470,10 @@ Options for a remote notification provider include the following:
 
   You can then send test notifications using Urban Airship tools.
 
-</div>
-
-</div>
-
-<div>
-
 ### Certificates for the remote notification provider
 
-<div>
-
 You must copy the SSL certificate and private key (generated earlier )to the
-appropriate location on the remote notification provider’s server. You typically
+appropriate location on the remote notification provider's server. You typically
 combine these two files into a single `.pem` file. To do this, perform the
 following steps:
 
@@ -603,17 +501,7 @@ For more information, see
 [Installing the SSL Certificate and Key on the Server](http://developer.apple.com/library/mac/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/ProvisioningDevelopment/ProvisioningDevelopment.html#//apple_ref/doc/uid/TP40008194-CH104-SW6)
 in the Apple Local and Push Notification Programming Guide.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Handle push notifications in an application
-
-<div>
 
 Handling push notifications in an application involves the following:
 
@@ -623,26 +511,16 @@ Handling push notifications in an application involves the following:
 
 - Handling push notifications and notification payload data
 
-</div>
-
-<div>
-
 ### Configuration and acceptance of push notifications
-
-<div>
 
 The first time a user launches a push notification-enabled application, iOS
 displays an **_appname_ Would Like to Send You Push Notifications** dialog with
-Don’t Allow and OK buttons. If the user selects OK, the application can receive
+Don't Allow and OK buttons. If the user selects OK, the application can receive
 all styles of notifications for which it has subscribed. If the user selects
-Don’t Allow, it receives no notifications.
-
-<div>
+Don't Allow, it receives no notifications.
 
 Note: Users can also go to Settings \> Notifications to control the specific
 notification types it can receive for each push-enabled application.
-
-</div>
 
 Apples recommends that each time an application activates it should subscribe
 for push notifications. When your application calls
@@ -656,15 +534,7 @@ Launch, iOS invokes the application and the application receives a
 `flash.events.RemoteNotificationEvent` of type `notification`, as described
 below.
 
-</div>
-
-</div>
-
-<div>
-
 ### Handling push notifications and payload data
-
-<div>
 
 When the remote notification provider sends a notification to a device (using
 the tokenID), your application receives a `flash.events.RemoteNotificationEvent`
@@ -672,19 +542,3 @@ of type `notification`, regardless of whether or not the application is running.
 At this point, your application performs app-specific notification processing.
 If your application handles notification data, you access it through the
 JSON-formatted `RemoteNotificationEvent.data` property.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

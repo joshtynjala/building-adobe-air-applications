@@ -1,7 +1,5 @@
 # ADT help command
 
-<div>
-
 The ADT -help command displays a terse reminder of the command-line options:
 
     adt -help
@@ -30,15 +28,3 @@ The help output uses the following symbolic conventions:
 
 - no symbol — If an item has no suffix symbol, then that item is required and
   only one instance can occur.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

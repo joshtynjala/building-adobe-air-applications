@@ -1,7 +1,5 @@
 # Debugger connection options
 
-<div>
-
 When the target of the package is apk-debug, ipa-debug, or
 ipa-debug-interpreter, the connection options can be used to specify whether the
 app will attempt to connect to a remote debugger (typically used for wifi
@@ -34,15 +32,3 @@ debugger.
 **port** (Optional) The port to listen on. By default, the runtime listens on
 port 7936. For more information on using the `-listen` option, see
 [Remote debugging with FDB over USB](WS901d38e593cd1bac7b2281cc12cd6bced97-8000.html).
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

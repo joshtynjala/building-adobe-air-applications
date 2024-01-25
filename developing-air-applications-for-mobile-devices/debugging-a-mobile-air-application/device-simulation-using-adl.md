@@ -1,7 +1,5 @@
 # Device simulation using ADL
 
-<div>
-
 The fastest, easiest way to test and debug most mobile application features is
 to run your application on your development computer using the Adobe Debug
 Launcher (ADL) utility. ADL uses the `supportedProfiles` element in the
@@ -27,17 +25,11 @@ menu commands. When you run ADL in the mobile device profile, the ADL displays a
 menu (in either the application window or the desktop menu bar) that allows you
 to enter device rotation or soft key input.
 
-<div>
-
 #### Soft key input
 
 ADL simulates the soft key buttons for Back, Menu, and Search buttons on a
 mobile device. You can send these keys to the simulated device using the menu
 displayed when ADL is launched using the mobile profile.
-
-</div>
-
-<div>
 
 #### Device rotation
 
@@ -48,10 +40,6 @@ right or the left.
 The rotation simulation only affects an application that enables
 auto-orientation. You can enable this feature by setting the `autoOrients`
 element to `true` in the application descriptor.
-
-</div>
-
-<div>
 
 #### Screen size
 
@@ -68,10 +56,6 @@ command would open ADL to simulate the screen used on the Motorola Droid:
 
 For a list of the predefined screen types, see
 [ADL usage](WS5b3ccc516d4fbf351e63e3d118666ade46-7f65.html).
-
-</div>
-
-<div>
 
 #### Limitations
 
@@ -111,17 +95,3 @@ which do not work on all types of mobile devices. These include:
 
 Be sure to test applications that use these features on the target devices since
 ADL does not entirely replicate the execution environment.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

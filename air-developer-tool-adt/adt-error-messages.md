@@ -1,13 +1,9 @@
 # ADT error messages
 
-<div>
-
 The following tables list the possible errors that can be reported by the ADT
 program and the probable causes:
 
 **Application descriptor validation errors**
-
-<div>
 
 <table>
 <colgroup>
@@ -134,18 +130,12 @@ supported value.</p></td>
 </tbody>
 </table>
 
-</div>
-
 See
 [AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 for information about the namespaces, elements, attributes, and their valid
 values.
 
-<div>
-
 **Application icon errors**
-
-<div>
 
 <table>
 <colgroup>
@@ -186,15 +176,7 @@ before packaging your application.</p></td>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 **Application file errors**
-
-<div>
 
 | Error code | Description                                                  | Notes                                                                                                                                                                                                                                                                                                                      |
 | ---------- | ------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -207,15 +189,7 @@ before packaging your application.</p></td>
 | 306        | Profile not supported.                                       | The profile you are specifying in the application descriptor file is not supported. See [supportedProfiles](WSfffb011ac560372f2fea1812938a6e463-7fe2.html).                                                                                                                                                                |
 | 307        | Namespace must be at least _nnn_.                            | Use the appropriate namespace for the features used in the application (such as the 2.0 namespace).                                                                                                                                                                                                                        |
 
-</div>
-
-</div>
-
-<div>
-
 **Exit codes for other errors**
-
-<div>
 
 <table>
 <colgroup>
@@ -324,15 +298,7 @@ system components are missing.</p></td>
 </tbody>
 </table>
 
-</div>
-
-</div>
-
-<div>
-
 **Android errors**
-
-<div>
 
 | Exit code | Description                                                       | Notes                                                                                                                                                                                                                            |
 | --------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -343,19 +309,3 @@ system components are missing.</p></td>
 | 404       | Android attribute is not allowed to be overridden                 | The application is attempting to override an Android manifest attribute that is reserved for use by AIR. See [Android settings](WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ffc.html).                                               |
 | 405       | Android tag %1 must be the first element in manifestAdditions tag | Move the specified tag to the required location.                                                                                                                                                                                 |
 | 406       | The attribute %1 of the android tag %2 has invalid value %3.      | Supply a valid value for the attribute.                                                                                                                                                                                          |
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

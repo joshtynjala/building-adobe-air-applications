@@ -1,15 +1,11 @@
 # Create your first AIR application for Android in Flash Professional
 
-<div>
-
 To develop AIR applications for Android, you must download the Flash
 Professional CS5 extension for Android from [Adobe Labs](http://labs.adobe.com).
 
 You must also download and install the Android SDK from the Android web site, as
 described in:
 [Android Developers: Installing the SDK](http://developer.android.com/sdk/installing.html).
-
-<div>
 
 #### Create a project
 
@@ -23,18 +19,10 @@ described in:
 
 3.  Save the document as HelloWorld.fla
 
-</div>
-
-<div>
-
 #### Write the code
 
 Since this tutorial isn't really about writing code, just use the Text tool to
 write, "Hello, World!" on the stage.
-
-</div>
-
-<div>
 
 #### Set the application properties
 
@@ -76,10 +64,6 @@ write, "Hello, World!" on the stage.
 
 5.  Save the file.
 
-</div>
-
-<div>
-
 #### Package and Install the application on the Android device
 
 1.  Make sure that USB debugging is enabled on your device. You can turn USB
@@ -98,17 +82,3 @@ write, "Hello, World!" on the stage.
 
     Flash Professional creates the APK file, installs the app on the connected
     Android device, and launches it.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -10,6 +10,8 @@ here: [www.adobe.com/go/air](http://www.adobe.com/go/air).
 
 ## Create an AIR project
 
+<div>
+
 Flash Builder includes tools to develop and package AIR applications.
 
 You begin to create AIR applications in Flash Builder or Flex Builder in the
@@ -40,7 +42,11 @@ specifies application properties.
 For more information, see
 [Developing AIR applications with Flash Builder](http://help.adobe.com/en_US/Flex/4.0/UsingFlashBuilder/WS6b84a753ecd210fd-7fb8a08d12114b6a4cf-8000.html).
 
+</div>
+
 ## Write the AIR application code
+
+<div>
 
 To write the "Hello World" application code, you edit the application MXML file
 (AIRHelloWorld.mxml), which is open in the editor. (If the file isn't open, use
@@ -116,6 +122,8 @@ The application code now looks like the following:
 Next, you will change some settings in the application descriptor to allow the
 application to be transparent:
 
+<div>
+
 1.  In the Flex Navigator pane, locate the application descriptor file in the
     source directory of the project. If you named your project AIRHelloWorld,
     this file is named AIRHelloWorld-app.xml.
@@ -138,7 +146,13 @@ application to be transparent:
 
 6.  Save the file.
 
+</div>
+
+</div>
+
 ## Test the AIR application
+
+<div>
 
 To test the application code that you've written, run it in debug mode.
 
@@ -149,17 +163,31 @@ To test the application code that you've written, run it in debug mode.
 
     The resulting AIR application should look like the following example:
 
+    <div xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    xmlns:fo="http://www.w3.org/1999/XSL/Format"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
     ![](../img/HelloWorldApolloScreenshot.png)
+
+    </div>
 
 2.  Using the `horizontalCenter` and `verticalCenter` properties of the Label
     control, the text is placed in the center of the window. Move or resize the
     window as you would any other desktop application.
 
+<div>
+
 Note: If the application does not compile, fix any syntax or spelling errors
 that you inadvertently entered into the code. Errors and warnings are displayed
 in the Problems view in Flash Builder.
 
+</div>
+
+</div>
+
 ## Package, sign, and run your AIR application
+
+<div>
 
 You are now ready to package the "Hello World" application into an AIR file for
 distribution. An AIR file is an archive file that contains the application
@@ -188,3 +216,9 @@ A required step in this process is to digitally sign it.
 
 You can now install and run the application from the Project Navigator in Flash
 Builder or from the file system by double-clicking the AIR file.
+
+</div>
+
+<div>
+
+</div>

@@ -1,20 +1,14 @@
 # Localizing the application name and description in the AIR application installer
 
-<div>
-
 You can specify multiple languages for the `name` and `description` elements in
 the application descriptor file. For example, the following specifies the
 application name in three languages (English, French, and German):
-
-<div>
 
     <name>
         <text xml:lang="en">Sample 1.0</text>
         <text xml:lang="fr">Échantillon 1.0</text>
         <text xml:lang="de">Stichprobe 1.0</text>
     </name>
-
-</div>
 
 The `xml:lang` attribute for each text element specifies a language code, as
 defined in RFC4646 (<http://www.ietf.org/rfc/rfc4646.txt>).
@@ -36,28 +30,8 @@ application installer.
 For more information, see
 [AIR application descriptor elements](WSfffb011ac560372f2fea1812938a6e463-8000.html).
 
-</div>
-
-<div>
-
-<div>
-
 More Help topics
 
-</div>
+[Building multilingual Flex applications on Adobe AIR](http://www.adobe.com/devnet/air/flex/articles/localizing_flex_air_apps.html)
 
-<div>
-
-</div>
-
-[Building multilingual Flex applications on Adobe AIR](http://www.adobe.com/devnet/air/flex/articles/localizing_flex_air_apps.html "http://www.adobe.com/devnet/air/flex/articles/localizing_flex_air_apps.html")
-
-[Building a multilingual HTML-based application](http://www.adobe.com/devnet/air/ajax/quickstart/articles/multilingual_air_apps.html "http://www.adobe.com/devnet/air/ajax/quickstart/articles/multilingual_air_apps.html")
-
-<div>
-
-
-
-</div>
-
-</div>
+[Building a multilingual HTML-based application](http://www.adobe.com/devnet/air/ajax/quickstart/articles/multilingual_air_apps.html)

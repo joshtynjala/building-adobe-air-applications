@@ -1,7 +1,5 @@
 # ADT code signing options
 
-<div>
-
 ADT uses the Java Cryptography Architecture (JCA) to access private keys and
 certificates for signing AIR applications. The signing options identify the
 keystore and the private key and certificate within that keystore.
@@ -17,17 +15,11 @@ Usage extension with the proper values for code signing. Constraints defined
 within the certificate are respected and could preclude the use of some
 certificates for signing AIR applications.
 
-<div>
-
 Note: ADT uses the Java runtime environment proxy settings, when appropriate,
 for connecting to Internet resources for checking certificate revocation lists
 and obtaining time-stamps. If you encounter problems connecting to these
 Internet resources when using ADT and your network requires specific proxy
 settings, you may need to configure the JRE proxy settings.
-
-</div>
-
-<div>
 
 #### AIR signing options syntax
 
@@ -74,8 +66,6 @@ type (on Windows). If other JCA providers have been installed and configured,
 additional keystore types might be available. If no keystore type is specified,
 the default type for the default JCA provider is used.
 
-<div>
-
 | Store type                 | Keystore format                | Minimum Java version |
 | -------------------------- | ------------------------------ | -------------------- |
 | JKS                        | Java keystore file (.keystore) | 1.2                  |
@@ -83,8 +73,6 @@ the default type for the default JCA provider is used.
 | PKCS11                     | Hardware token                 | 1.5                  |
 | KeychainStore              | Mac OS X Keychain              | 1.5                  |
 | Windows-MY or Windows-ROOT | MSCAPI                         | 1.6                  |
-
-</div>
 
 **-keystore** The path to the keystore file for file-based store types.
 
@@ -94,16 +82,12 @@ ADT prompts for the password.
 **-keypass** The password required to access the private key that is used to
 sign the AIR application. If not specified, ADT prompts for the password.
 
-<div>
-
 Note: If you enter a password as part of the ADT command, the password
 characters are saved in the command-line history. Therefore, using the -keypass
 or -storepass options is not recommended when the security of the certificate is
 important. Also note that when you omit the password options, the characters you
 type at the password prompts are not displayed (for the same security reasons).
 Simply type the password and press the Enter key.
-
-</div>
 
 **-providerName** The JCA provider for the specified keystore type. If not
 specified, then ADT uses the default provider for that type of keystore.
@@ -121,21 +105,13 @@ package is produced. Specify ` -``tsa none ` to disable time-stamping. However,
 an AIR application packaged without a timestamp ceases to be installable after
 the signing certificate expires.
 
-<div>
-
 Note: Many of the signing options are equivalent to the same option of the Java
 Keytool utility. You can use the Keytool utility to examine and manage keystores
 on Windows. The Apple® security utility can also be used for this purpose on Mac
 OS X.
 
-</div>
-
 **-provisioning-profile** The Apple iOS provisioning file. (Required for
 packaging iOS applications, only.)
-
-</div>
-
-<div>
 
 #### Signing option examples
 
@@ -159,7 +135,7 @@ Signing with the Windows system keystore:
 
     -alias cn=AIRCert -storeype Windows-MY
 
-Signing with a hardware token (refer to the token manufacturer’s instructions on
+Signing with a hardware token (refer to the token manufacturer's instructions on
 configuring Java to use the token and for the correct `providerName` value):
 
     -alias AIRCert -storetype pkcs11 -providerName tokenProviderName
@@ -167,17 +143,3 @@ configuring Java to use the token and for the correct `providerName` value):
 Signing without embedding a timestamp:
 
     -storetype pkcs12 -keystore cert.p12 -tsa none
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

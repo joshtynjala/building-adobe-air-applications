@@ -1,7 +1,5 @@
 # ActionScript compilers
 
-<div>
-
 Before ActionScript and MXML code can be included in an AIR application, it must
 be compiled. If you use an Integrated Development Environment (IDE), such as
 Adobe Flash Builder or Adobe Flash Professional, the IDE handles compilation
@@ -9,13 +7,7 @@ behind the scenes. However, you can also invoke the ActionScript compilers from
 the command line to create your SWF files when not using an IDE or when using a
 build script.
 
-</div>
-
-<div>
-
 ## About the AIR command-line tools in the Flex SDK
-
-<div>
 
 Each of the command-line tools you use to create an Adobe AIR application calls
 the corresponding tool used to build applications:
@@ -36,15 +28,7 @@ The Flex SDK tools are described here at a basic level to help you get started
 and to point out the differences between building Flex applications and building
 AIR applications.
 
-</div>
-
-</div>
-
-<div>
-
 ## Compiler setup
-
-<div>
 
 You typically specify compilation options both on the command line and with one
 or more configuration files. The global Flex SDK configuration file contains
@@ -61,24 +45,12 @@ more closely. You can supply project-specific values for the compiler options in
 a local configuration file that takes precedence over the global values for a
 given project.
 
-<div>
-
 Note: No compilation options are used specifically for AIR applications, but you
 must reference the AIR libraries when compiling an AIR application. Typically,
 these libraries are referenced in a project-level configuration file, in a file
 for a build tool such as Ant, or directly on the command line.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Compiling MXML and ActionScript source files for AIR
-
-<div>
 
 You can compile the Adobe® ActionScript® 3.0 and MXML assets of your AIR
 application with the command-line MXML compiler (amxmlc). (You do not need to
@@ -119,8 +91,6 @@ MXML file is `RunningMan.mxml`, then name the local configuration file:
 
 `RunningMan-config.xml` is loaded automatically since its filename matches that
 of the compiled MXML file.
-
-<div>
 
 #### amxmlc examples
 
@@ -201,17 +171,7 @@ mxmlc.jar):
         </java>
     </target>
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Compiling an AIR component or code library (Flex)
-
-<div>
 
 Use the component compiler, acompc, to compile AIR libraries and independent
 components. The acompc component compiler behaves like the amxmlc compiler, with
@@ -227,13 +187,7 @@ The acompc command invokes the standard Flex compc component compiler, but loads
 its configuration options from the `air-config.xml` file instead of the
 `flex-config.xml` file.
 
-</div>
-
-<div>
-
 ### Component compiler configuration file
-
-<div>
 
 Use a local configuration file to avoid typing (and perhaps incorrectly typing)
 the source path and class names on the command line. Add the -load-config option
@@ -269,15 +223,7 @@ To run the same command entirely on the command line, type:
 (Type the entire command on one line, or use the line continuation character for
 your command shell.)
 
-</div>
-
-</div>
-
-<div>
-
 ### acompc examples
-
-<div>
 
 These examples assume that you are using a configuration file named
 `myLib-config.xml`.
@@ -292,31 +238,9 @@ Compile a runtime-shared library:
 
 (Note, the folder lib must exist and be empty before running the command.)
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [Creating your first desktop AIR application with the Flex SDK](WS144092a96ffef7cc4c0afd1212601c9a36f-8000.html)
 
-</div>
-
 ![](./img/flexLinkIndicator.png) 
-[Flex compilers](http://help.adobe.com/en_US/Flex/4.5/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ffd.html "http://help.adobe.com/en_US/Flex/4.5/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ffd.html")
-
-<div>
-
-</div>
-
-</div>
+[Flex compilers](http://help.adobe.com/en_US/Flex/4.5/UsingSDK/WS2db454920e96a9e51e63e3d11c0bf69084-7ffd.html)

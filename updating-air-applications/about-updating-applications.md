@@ -1,7 +1,5 @@
 # About updating applications
 
-<div>
-
 The
 [Updater](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/desktop/Updater.html)
 class (in the flash.desktop package) includes one method, `update()`, which you
@@ -26,15 +24,9 @@ JavaScript example:
 Before an application uses the Updater class, the user or the application must
 download the updated version of the AIR file to the computer. For more
 information, see
-[Downloading an AIR file to the user’s computer](WS5b3ccc516d4fbf351e63e3d118666ade46-7c55.html).
-
-</div>
-
-<div>
+[Downloading an AIR file to the user's computer](WS5b3ccc516d4fbf351e63e3d118666ade46-7c55.html).
 
 ## Results of the Updater.update() method call
-
-<div>
 
 When an application in the runtime calls the `update()` method, the runtime
 closes the application, and it then attempts to install the new version from the
@@ -59,15 +51,7 @@ must have administrative privileges for the computer.
 When testing an application using ADL, calling the `update()` method results in
 a runtime exception.
 
-</div>
-
-</div>
-
-<div>
-
 ## About the version string
-
-<div>
 
 The string that is specified as the `version` parameter of the `update()` method
 must match the string in the `version` or `versionNumber` element in the
@@ -83,7 +67,7 @@ downgrade attacks.
 Prior to AIR 2.5, the version string can be of any format. For example, it can
 be "2.01" or "version 2". In AIR 2.5, or later, the version string must be a
 sequence of up to three, three-digit numbers separated by periods. For example,
-“.0”, “1.0”, and “67.89.999” are all valid version numbers. You should validate
+".0", "1.0", and "67.89.999" are all valid version numbers. You should validate
 the update version string before updating the application.
 
 If an Adobe AIR application downloads an AIR file via the web, it is a good
@@ -98,15 +82,7 @@ descriptor file is the second record in the archive.)
 For details on the application descriptor file, see
 [AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Signing workflow for application updates
-
-<div>
 
 Publishing updates in an ad-hoc manner complicates the tasks of managing
 multiple application versions and also makes tracking certificate expiry dates
@@ -138,17 +114,3 @@ signatures:
 
 - Apply a migration signature to the updated application with the certificate
   used to sign the previous version located at a different URL.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # ADT installRuntime command
 
-<div>
-
 The -installRuntime command installs the AIR runtime on a device.
 
 You must uninstall an existing version of the AIR runtime before reinstalling
@@ -37,15 +35,3 @@ devices and running emulators:
 an APK package. If no package is specified, the appropriate runtime for the
 device or emulator is chosen from those available in the AIR SDK. If the runtime
 is already installed, ADT returns error code 14:Device error.
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

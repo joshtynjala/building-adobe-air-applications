@@ -1,7 +1,5 @@
 # Digitally signing an AIR file
 
-<div>
-
 Digitally signing your AIR installation files with a certificate issued by a
 recognized certification authority (CA) provides significant assurance to your
 users that the application they are installing has not been accidentally or
@@ -24,20 +22,10 @@ this additional risk:
 Installation confirmation dialog for application signed by a self-signed
 certificate
 
-<div>
-
 Important: A malicious entity could forge an AIR file with your identity if it
 somehow obtains your signing keystore file or discovers your private key.
 
-</div>
-
-</div>
-
-<div>
-
 ## Code-signing certificates
-
-<div>
 
 The security assurances, limitations, and legal obligations involving the use of
 code-signing certificates are outlined in the Certificate Practice Statements
@@ -66,15 +54,7 @@ authorities that currently issue AIR code signing certificates, refer to:
 [VeriSign Subscriber's Agreement](https://www.verisign.com/repository/subscriber/SUBAGR.html)
 (https://www.verisign.com/repository/subscriber/SUBAGR.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## About AIR code signing
-
-<div>
 
 When an AIR file is signed, a digital signature is included in the installation
 file. The signature includes a digest of the package, which is used to verify
@@ -83,7 +63,7 @@ information about the signing certificate, which is used to verify the publisher
 identity.
 
 AIR uses the public key infrastructure (PKI) supported through the operating
-system’s certificate store to establish whether a certificate can be trusted.
+system's certificate store to establish whether a certificate can be trusted.
 The computer on which an AIR application is installed must either directly trust
 the certificate used to sign the AIR application, or it must trust a chain of
 certificates linking the certificate to a trusted certification authority in
@@ -95,8 +75,6 @@ certificates), then the publisher information cannot be verified. While AIR can
 determine that the AIR package has not been altered since it was signed, there
 is no way to know who actually created and signed the file.
 
-<div>
-
 Note: A user can choose to trust a self-signed certificate and then any AIR
 applications signed with the certificate displays the value of the common name
 field in the certificate as the publisher name. AIR does not provide any means
@@ -105,26 +83,12 @@ the private key) must be provided to the user separately and the user must use
 one of the mechanisms provided by the operating system or an appropriate tool to
 import the certificate into the proper location in system certificate store.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## About AIR publisher identifiers
-
-<div>
-
-<div>
 
 Important: As of AIR 1.5.3 the publisher ID is deprecated and no longer computed
 based on the code signing certificate. New applications do not need and should
 not use a publisher ID. When updating existing applications, you must specify
 the original publisher ID in the application descriptor file.
-
-</div>
 
 Prior to AIR 1.5.3, the AIR application installer generated a publisher ID
 during the installation of an AIR file. This was an identifier that is unique to
@@ -167,15 +131,7 @@ ID for an installed application cannot change in AIR 1.5.3 or later. If you use
 a different publisher ID when publishing an AIR package, the installer treats
 the new package as a different application rather than as an update.
 
-</div>
-
-</div>
-
-<div>
-
 ## About Certificate formats
-
-<div>
 
 The AIR signing tools accept any keystores accessible through the Java
 Cryptography Architecture (JCA). This includes file-based keystores such as
@@ -217,22 +173,10 @@ ChosenSecurity can be used:
 
   - Sun Java Signing Digital ID
 
-<div>
-
 Note: The certificate must be created for code signing. You cannot use an SSL or
 other type of certificate to sign AIR files.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Time stamps
-
-<div>
 
 When you sign an AIR file, the packaging tool queries the server of a timestamp
 authority to obtain an independently verifiable date and time of signing. The
@@ -249,18 +193,10 @@ include a time stamp.
 
 The default time-stamp authority used by the AIR packaging tools is Geotrust.
 
-</div>
-
-</div>
-
-<div>
-
 ## Obtaining a certificate
 
-<div>
-
 To obtain a certificate, you would normally visit the certification authority
-web site and complete the company’s procurement process. The tools used to
+web site and complete the company's procurement process. The tools used to
 produce the keystore file needed by the AIR tools depend on the type of
 certificate purchased, how the certificate is stored on the receiving computer,
 and, in some cases, the browser used to obtain the certificate. For example, to
@@ -268,15 +204,11 @@ obtain and export an Adobe Developer certificate certificate from Thawte you
 must use Mozilla Firefox. The certificate can then be exported as a .p12 or .pfx
 file directly from the Firefox user interface.
 
-<div>
-
 Note: Java versions 1.5 and above do not accept high-ASCII characters in
 passwords used to protect PKCS12 certificate files. Java is used by the AIR
 development tools to create the signed AIR packages. When you export the
 certificate as a .p12 or .pfx file, use only regular ASCII characters in the
 password.
-
-</div>
 
 You can generate a self-signed certificate using the Air Development Tool (ADT)
 used to package AIR installation files. Some third-party tools can also be used.
@@ -290,25 +222,15 @@ update for Flash.
 The following example describes how to obtain an AIR Developer Certificate from
 the Thawte Certification Authority and prepare it for use with ADT.
 
-</div>
-
-<div>
-
 ### Example: Getting an AIR Developer Certificate from Thawte
-
-<div>
-
-<div>
 
 Note: This example illustrates only one of the many ways to obtain and prepare a
 code signing certificate for use. Each certification authority has its own
 policies and procedures.
 
-</div>
-
 To purchase an AIR Developer Certificate, the Thawte web site requires you to
 use the Mozilla Firefox browser. The private key for the certificate is stored
-within the browser’s keystore. Ensure that the Firefox keystore is secured with
+within the browser's keystore. Ensure that the Firefox keystore is secured with
 a master password and that the computer itself is physically secure. (You can
 export and remove the certificate and private key from the browser keystore once
 the procurement process is complete.)
@@ -316,7 +238,7 @@ the procurement process is complete.)
 As part of the certificate enrollment process a private/public key pair is
 generated. The private key is automatically stored within the Firefox keystore.
 You must use the same computer and browser to both request and retrieve the
-certificate from Thawte’s web site.
+certificate from Thawte's web site.
 
 1.  Visit the Thawte web site and navigate to the
     [Product page for Code Signing Certificates](https://www.thawte.com/process/retail/new_devel?language=en&productInfo.productType=devel2).
@@ -330,13 +252,9 @@ certificate from Thawte’s web site.
     verification is complete, Thawte will send you e-mail with instructions on
     how to retrieve the certificate.
 
-    <div>
-
     Note: Additional information about the type of documentation required can be
     found here:
     <https://www.thawte.com/ssl-digital-certificates/free-guides-whitepapers/pdf/enroll_codesign_eng.pdf>_._
-
-    </div>
 
 4.  Retrieve the issued certificate from the Thawte site. The certificate is
     automatically saved to the Firefox keystore.
@@ -344,12 +262,8 @@ certificate from Thawte’s web site.
 5.  Export a keystore file containing the private key and certificate from the
     Firefox keystore using the following steps:
 
-    <div>
-
     Note: When exporting the private key/cert from Firefox, it is exported in a
     .p12 (pfx) format which ADT, Flex, Flash, and Dreamweaver can use.
-
-    </div>
 
     1.  Open the Firefox _Certificate Manager_ dialog:
 
@@ -375,13 +289,9 @@ certificate from Thawte’s web site.
     8.  On the _Choose a Certificate Backup Password_ dialog box, create a
         password for the keystore file.
 
-        <div>
-
         Important: This password protects the keystore file and is required when
         the file is used for signing AIR applications.A secure password should
         be chosen.
-
-        </div>
 
     9.  Click OK. You should receive a successful backup password message. The
         keystore file containing the private key and certificate is saved with a
@@ -391,26 +301,12 @@ certificate from Thawte’s web site.
     or Dreamweaver. The password created for the file is required whenever an
     AIR application is signed.
 
-<div>
-
 Important: The private key and certificate are still stored within the Firefox
 keystore. While this permits you to export an additional copy of the certificate
 file, it also provides another point of access that must be protected to
 maintain the security of your certificate and private key.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Changing certificates
-
-<div>
 
 In some circumstances, you must change the certificate you use to sign updates
 for your AIR application. Such circumstances include:
@@ -437,8 +333,6 @@ becomes the primary certificate. Subsequent updates do not require a migration
 signature. However, you should apply migration signatures for as long as
 possible to accommodate users who skip updates.
 
-<div>
-
 Important: You must change the certificate and apply a migration signature to
 the update with the original certificate before it expires. Otherwise, users
 must uninstall their existing version of your application before installing a
@@ -446,8 +340,6 @@ new version. For AIR 1.5.3 or later, you can apply a migration signature using
 an expired certificate within a grace period of 365 days after it expires.
 However, you cannot use the expired certificate to apply the main application
 signature.
-
-</div>
 
 To change certificates:
 
@@ -462,20 +354,14 @@ An AIR file with a migration signature is, in other respects, a normal AIR file.
 If the application is installed on a system without the original version, AIR
 installs the new version in the usual manner.
 
-<div>
-
 Note: Prior to AIR 1.5.3, signing an AIR application with a renewed certificate
 did not always require a migration signature. Starting with AIR 1.5.3, a
 migration signature is always required for renewed certificates.
-
-</div>
 
 To apply a migration signature use the
 [ADT migrate command](WS901d38e593cd1bac1e63e3d128fc240122-7ffd.html), as
 described in
 [Signing an updated version of an AIR application](WS13ACB483-1711-43c0-9049-0A7251630A7D.html).
-
-<div>
 
 Note: The ADT migrate command cannot be used with AIR desktop applications that
 include native extensions, because those applications are packaged as native
@@ -484,17 +370,11 @@ application that includes a native extension, package the application using the
 [ADT package command](WS901d38e593cd1bac1e63e3d128cdca935b-8000.html) with the
 -migrate flag.
 
-</div>
-
-<div>
-
 #### Application identity changes
 
 Prior to AIR 1.5.3, the identity of an AIR application changed when an update
 signed with a migration signature was installed. Changing the identity of an
 application has the several repercussions, including:
-
-<div>
 
 - The new application version cannot access data in the existing encrypted local
   store.
@@ -511,37 +391,19 @@ application has the several repercussions, including:
 - The OSID of the application changes. (The OSID is used when writing custom
   install/uninstall programs.)
 
-</div>
-
 When publishing an update with AIR 1.5.3 or later, the application identity
 cannot change. The original application and publisher IDs must be specified in
 the application descriptor of the update AIR file. Otherwise, the new package is
 not recognized as an update.
 
-<div>
-
 Note: When publishing a new AIR application with AIR 1.5.3 or later, you should
 not specify a publisher ID.
 
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Terminology
-
-<div>
 
 This section provides a glossary of some of the key terminology you should
 understand when making decisions about how to sign your application for public
 distribution.
-
-<div>
 
 | Term                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -549,7 +411,7 @@ distribution.
 | Certificate Practice Statement (CPS) | Sets forth the practices and policies of the certification authority in issuing and verifying certificates. The CPS is part of the contract between the CA and its subscribers and relying parties. It also outlines the policies for identity verification and the level of assurances offered by the certificates they provide.                                                                                                                                                                                                                      |
 | Certificate Revocation List (CRL)    | A list of issued certificates that have been revoked and should no longer be relied upon. AIR checks the CRL at the time an AIR application is signed, and, if no timestamp is present, again when the application is installed.                                                                                                                                                                                                                                                                                                                       |
 | Certificate chain                    | A certificate chain is a sequence of certificates in which each certificate in the chain has been signed by the next certificate.                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Digital Certificate                  | A digital document that contains information about the identity of the owner, the owner’s public key, and the identity of the certificate itself. A certificate issued by a certification authority is itself signed by a certificate belonging to the issuing CA.                                                                                                                                                                                                                                                                                     |
+| Digital Certificate                  | A digital document that contains information about the identity of the owner, the owner's public key, and the identity of the certificate itself. A certificate issued by a certification authority is itself signed by a certificate belonging to the issuing CA.                                                                                                                                                                                                                                                                                     |
 | Digital Signature                    | An encrypted message or digest that can only be decrypted with the public key half of a public-private key pair. In a PKI, a digital signature contains one or more digital certificates that are ultimately traceable to the certification authority. A digital signature can be used to validate that a message (or computer file) has not been altered since it was signed (within the limits of assurance provided by the cryptographic algorithm used), and, assuming one trusts the issuing certification authority, the identity of the signer. |
 | Keystore                             | A database containing digital certificates and, in some cases, the related private keys.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Java Cryptography Architecture (JCA) | An extensible architecture for managing and accessing keystores. See the [Java Cryptography Architecture Reference Guide](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html) for more information.                                                                                                                                                                                                                                                                                                                    |
@@ -561,17 +423,7 @@ distribution.
 | Time stamp                           | A digitally signed datum containing the date and time an event occurred. ADT can include a time stamp from an [RFC 3161](http://tools.ietf.org/html/rfc3161) compliant time server in an AIR package. When present, AIR uses the time stamp to establish the validity of a certificate at the time of signing. This allows an AIR application to be installed after its signing certificate has expired.                                                                                                                                               |
 | Time stamp authority                 | An authority that issues time stamps. To be recognized by AIR, the time stamp must conform to RFC 3161 and the time stamp signature must chain to a trusted root certificate on the installation machine.                                                                                                                                                                                                                                                                                                                                              |
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## iOS Certificates
-
-<div>
 
 The code signing certificates issued by Apple are used for signing iOS
 applications, including those developed with Adobe AIR. Applying a signature
@@ -586,13 +438,7 @@ Information Exchange file (.p12 or .pfx) that contains both the certificate and
 the private key. See
 [Converting a developer certificate into a P12 keystore file](WSfffb011ac560372f46768d8712cd1d13954-7ffc.html).
 
-</div>
-
-<div>
-
 ### Generating a certificate signing request
-
-<div>
 
 To obtain a developer certificate, you generate a certificate signing request,
 which you submit at the Apple iOS Provisioning Portal.
@@ -603,8 +449,6 @@ the public key and your identifying information to Apple, who is acting in the
 role of a Certificate Authority. Apple signs your certificate with their own
 World Wide Developer Relations certificate.
 
-<div>
-
 #### Generate a certificate signing request on Mac OS
 
 On Mac OS, you can use the Keychain Access application to generate a code
@@ -612,18 +456,12 @@ signing request. The Keychain Access application is in the Utilities
 subdirectory of the Applications directory. Instructions for generating the
 certificate signing request are available at the Apple iOS Provisioning Portal.
 
-</div>
-
-<div>
-
 #### Generate a certificate signing request on Windows
 
 For Windows developers, it may be easiest to obtain the iPhone developer
 certificate on a Mac computer. However, it is possible to obtain a certificate
 on a Windows computer. First, you create a certificate signing request (a CSR
 file) using OpenSSL:
-
-<div>
 
 1.  Install OpenSSL on your Windows computer. (Go to
     <http://www.openssl.org/related/binaries.html>.)
@@ -653,29 +491,15 @@ file) using OpenSSL:
     with your own.
 
 5.  Upload the CSR file to Apple at the
-    [iPhone developer site](http://developer.apple.com/iphone/). (See “Apply for
-    an iPhone developer certificate and create a provisioning profile”.)
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
+    [iPhone developer site](http://developer.apple.com/iphone/). (See "Apply for
+    an iPhone developer certificate and create a provisioning profile".)
 
 ### Converting a developer certificate into a P12 keystore file
-
-<div>
 
 To create a P12 keystore, you must combine your Apple developer certificate and
 the associated private key in a single file. The process for creating the
 keystore file depends on the method that you used to generate the original
 certificate signing request and where the private key is stored.
-
-<div>
 
 #### Convert the iPhone developer certificate to a P12 file on Mac OS
 
@@ -695,18 +519,14 @@ the P12 keystore format. To do this on Mac® OS:
     The private key is identified by the iPhone Developer: \<First Name\> \<Last
     Name\> public certificate that is paired with it.
 
-5.  Command-click the iPhone Developer certificate and select, _Export “iPhone
-    Developer: Name...”_.
+5.  Command-click the iPhone Developer certificate and select, _Export "iPhone
+    Developer: Name..."_.
 
 6.  Save your keystore in the Personal Information Exchange (.p12) file format.
 
 7.  You will be prompted to create a password that is used when you use the
     keystore to sign applications or transfer the key and certificate in this
     keystore to another keystore.
-
-</div>
-
-<div>
 
 #### Convert an Apple developer certificate to a P12 file on Windows
 
@@ -723,11 +543,7 @@ you receive from Apple.
 2.  If you are using the private key from the keychain on a Mac computer,
     convert it into a PEM key:
 
-    <div>
-
         openssl pkcs12 -nocerts -in mykey.p12 -out mykey.pem
-
-    </div>
 
 3.  You can now generate a valid P12 file, based on the key and the PEM version
     of the iPhone developer certificate:
@@ -737,19 +553,3 @@ you receive from Apple.
     If you are using a key from the Mac OS keychain, use the PEM version you
     generated in the previous step. Otherwise, use the OpenSSL key you generated
     earlier (on Windows).
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

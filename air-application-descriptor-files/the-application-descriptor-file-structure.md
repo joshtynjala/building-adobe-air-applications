@@ -1,7 +1,5 @@
 # The application descriptor file structure
 
-<div>
-
 The application descriptor file is an XML document with the following structure:
 
     <application xmlns="http://ns.adobe.com/air/application/3.0">
@@ -78,15 +76,3 @@ The application descriptor file is an XML document with the following structure:
         <versionNumber>...</versionNumber>
         <versionLabel>...</versionLabel>
     </application>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # Creating your first desktop AIR application with the Flex SDK
 
-<div>
-
 For a quick, hands-on illustration of how Adobe® AIR® works, use these
 instructions to create a simple SWF-based AIR "Hello World" application using
 the Flex SDK. This tutorial shows how to compile, test, and package an AIR
@@ -14,13 +12,7 @@ _AIR Developer Tool_ (ADT). These programs can be found in the `bin` directory
 of the Flex SDK (see
 [Setting up the Flex SDK](WS2d8d13466044a733190f0432124114d9a19-8000.html)).
 
-</div>
-
-<div>
-
 ## Create the AIR application descriptor file
-
-<div>
 
 This section describes how to create the application descriptor, which is an XML
 file with the following structure:
@@ -43,7 +35,7 @@ file with the following structure:
 2.  Add the `<application>` element, including the AIR namespace attribute:
 
     **\<application xmlns="http://ns.adobe.com/air/application/2.7"\>** The last
-    segment of the namespace, “2.7,” specifies the version of the runtime
+    segment of the namespace, "2.7," specifies the version of the runtime
     required by the application.
 
 3.  Add the `<id>` element:
@@ -61,12 +53,8 @@ file with the following structure:
     **\<versionNumber\>1.0\</versionNumber\>** Helps users to determine which
     version of your application they are installing.
 
-    <div>
-
     Note: If you are using AIR 2, or earlier, you must use the `<version>`
     element instead of the `<versionNumber>` element.
-
-    </div>
 
 5.  Add the `<filename>` element:
 
@@ -108,17 +96,7 @@ window chrome, window size, transparency, default installation directory,
 associated file types, and application icons, see
 [AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html)
 
-</div>
-
-</div>
-
-<div>
-
 ## Write the application code
-
-<div>
-
-<div>
 
 Note: SWF-based AIR applications can use a main class defined either with MXML
 or with Adobe® ActionScript® 3.0. This example uses an MXML file to define its
@@ -127,14 +105,12 @@ class is similar. Instead of compiling an MXML file into the SWF file, you
 compile the ActionScript class file. When using ActionScript, the main class
 must extend flash.display.Sprite.
 
-</div>
-
 Like all Flex-based applications, AIR applications built with the Flex framework
 contain a main MXML file. Desktop AIR applications, use the
 _WindowedApplication_ component as the root element instead of the Application
 component. The WindowedApplication component provides properties, methods, and
 events for controlling your application and its initial window. On platforms and
-profiles for which AIR doesn’t support multiple windows, continue to use the
+profiles for which AIR doesn't support multiple windows, continue to use the
 Application component. In mobile Flex applications, you can also use the View or
 TabbedViewNavigatorApplication components.
 
@@ -168,15 +144,7 @@ The following procedure creates the Hello World application:
             <s:Label text="Hello AIR" horizontalCenter="0" verticalCenter="0"/>
         </s:WindowedApplication>
 
-</div>
-
-</div>
-
-<div>
-
 ## Compile the application
-
-<div>
 
 Before you can run and debug the application, compile the MXML code into a SWF
 file using the amxmlc compiler. The amxmlc compiler can be found in the `bin`
@@ -194,32 +162,18 @@ to run the utilities on the command line.
 Running `amxmlc` produces `HelloWorld.swf`, which contains the compiled code of
 the application.
 
-<div>
-
 Note: If the application does not compile, fix syntax or spelling errors. Errors
 and warnings are displayed in the console window used to run the amxmlc
 compiler.
 
-</div>
-
 For more information, see
 [Compiling MXML and ActionScript source files for AIR](WS2d929364fa0b8137-4622b98b129dc3cff3f-7ffe.html).
 
-</div>
-
-</div>
-
-<div>
-
 ## Test the application
-
-<div>
 
 To run and test the application from the command line, use the AIR Debug
 Launcher (ADL) to launch the application using its application descriptor file.
 (ADL can be found in the bin directory of the Flex SDK.)
-
-<div>
 
 ![](../img/dingbat.png) From the command prompt, enter the following command:
 
@@ -236,17 +190,7 @@ would any other desktop application.
 For more information, see
 [AIR Debug Launcher (ADL)](WSfffb011ac560372f-6fa6d7e0128cca93d31-8000.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Create the AIR installation file
-
-<div>
 
 When your application runs successfully, you can use the ADT utility to package
 the application into an AIR installation file. An AIR installation file is an
@@ -258,7 +202,7 @@ signed. For development purposes, you can generate a basic, self-signed
 certificate with ADT or another certificate generation tool. You can also buy a
 commercial code-signing certificate from a commercial certification authority.
 When users install a self-signed AIR file, the publisher is displayed as
-“unknown” during the installation process. This is because a self-signed
+"unknown" during the installation process. This is because a self-signed
 certificate only guarantees that the AIR file has not been changed since it was
 created. There is nothing to prevent someone from self-signing a masquerade AIR
 file and presenting it as your application. For publicly released AIR files, a
@@ -269,11 +213,7 @@ AIR security issues, see
 [AIR security](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118a9b90204-7d23.html)
 (for HTML developers).
 
-<div>
-
 #### Generate a self-signed certificate and key pair
-
-<div>
 
 ![](../img/dingbat.png) From the command prompt, enter the following command
 (the ADT executable can be found in the `bin` directory of the Flex SDK):
@@ -284,15 +224,7 @@ This example uses the minimum number of attributes that can be set for a
 certificate. The key type must be either _1024-RSA_ or _2048-RSA_ (see
 [Signing AIR applications](WSfffb011ac560372f-19aa73f128cc9f05e8-8000.html)).
 
-</div>
-
-</div>
-
-<div>
-
 #### Create the AIR package
-
-<div>
 
 ![](../img/dingbat.png) From the command prompt, enter the following command (on
 a single line):
@@ -314,19 +246,3 @@ command in a shell or command window.
 
 For more information, see
 [Packaging a desktop AIR installation file](WS5b3ccc516d4fbf351e63e3d118666ade46-7f66.html).
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

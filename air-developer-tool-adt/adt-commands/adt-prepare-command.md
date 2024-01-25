@@ -1,7 +1,5 @@
 # ADT prepare command
 
-<div>
-
 The -prepare command creates an unsigned AIRI package. An AIRI package cannot be
 used on its own. Use the -sign command to convert an AIRI file to a signed AIR
 package, or the package command to convert the AIRI file to a native package.
@@ -19,15 +17,3 @@ application descriptor file is renamed as _application.xml_ in the AIR file.)
 **FILE_OPTIONS** Identifies the application files to include in the package. The
 file options are fully described in
 [File and path options](WS901d38e593cd1bac1e63e3d128fc240122-7ff2.html).
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

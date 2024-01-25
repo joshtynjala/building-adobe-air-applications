@@ -1,7 +1,5 @@
 # AIR Developer Tool (ADT)
 
-<div>
-
 The AIR Developer Tool (ADT) is a multi-purpose, command-line tool for
 developing AIR applications. You can use ADT to perform the following tasks:
 
@@ -45,8 +43,6 @@ variable, you can run ADT using the following basic syntax:
 
     adt -command options
 
-<div>
-
 Note: Most integrated development environments, including Adobe Flash Builder
 and Adobe Flash Professional can package and sign AIR applications for you. You
 typically do not need to use ADT for these common tasks when you already use
@@ -55,21 +51,7 @@ command-line tool for functions that are not supported by your integrated
 development environment. In addition, you can use ADT as a command-line tool as
 part of an automated build process.
 
-</div>
-
 - [ADT commands](WS901d38e593cd1bac1e63e3d128fc240122-8000.html)
 - [ADT option sets](WS901d38e593cd1bac1e63e3d128fc240122-7ff3.html)
 - [ADT error messages](WSBE9908A0-8E3A-4329-8ABD-12F2A19AB5E9.html)
 - [ADT environment variables](WS901d38e593cd1bac1e63e3d129cf8c19f1-8000.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

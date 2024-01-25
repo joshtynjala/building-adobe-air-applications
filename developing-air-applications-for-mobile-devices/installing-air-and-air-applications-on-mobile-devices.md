@@ -1,7 +1,5 @@
 # Installing AIR and AIR applications on mobile devices
 
-<div>
-
 End users of your app can install the AIR runtime and AIR applications using the
 normal application and distribution mechanism for their device.
 
@@ -9,7 +7,7 @@ On Android, for example, users can install applications from the Android Market.
 Or, if they have allowed the installation of apps from unknown sources in the
 Application settings, users can install an app by clicking a link on a web page,
 or by copying the application package to their device and opening it. If a user
-attempts to install an Android app, but doesn’t have the AIR runtime installed
+attempts to install an Android app, but doesn't have the AIR runtime installed
 yet, then they will be automatically directed to the Market where they can
 install the runtime.
 
@@ -18,13 +16,7 @@ distribution channel is the Apple App Store. You can also use ad hoc
 distribution to allow a limited number of users to install your application
 without going though the App Store.
 
-</div>
-
-<div>
-
 ## Install the AIR runtime and applications for development
-
-<div>
 
 Since AIR applications on mobile devices are installed as native packages, you
 can use the normal platform facilities for installing applications for testing.
@@ -36,8 +28,6 @@ must be signed with an Apple code-signing certificate issued specifically for
 application development and packaged with a development provisioning profile. An
 AIR application is a self-contained package on iOS. A separate runtime is not
 used.
-
-<div>
 
 #### Installing AIR applications using ADT
 
@@ -62,16 +52,8 @@ similar `-installApp` command:
 The value set for the `-platform` argument should match the device on which you
 are installing.
 
-<div>
-
 Note: Existing versions of the AIR runtime or the AIR application must be
 removed before reinstalling.
-
-</div>
-
-</div>
-
-<div>
 
 #### Installing AIR applications on iOS devices using iTunes
 
@@ -105,17 +87,7 @@ list of applications in iTunes, and then redo this procedure. This may be the
 case if the currently installed version uses the same application ID and
 version.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Running AIR applications on a device
-
-<div>
 
 You can launch installed AIR applications using the device user interface. Where
 supported, you can also launch applications remotely using the AIR ADT utility:
@@ -131,15 +103,7 @@ the `-device` flag. The value set for the `-platform` argument should match the
 device on which you are installing. Currently, the only supported value is
 _android_.
 
-</div>
-
-</div>
-
-<div>
-
 ## Removing the AIR runtime and applications
-
-<div>
 
 You can use the normal means for removing applications provided by the device
 operating system. Where supported, you can also use the AIR ADT utility to
@@ -157,15 +121,7 @@ the `-device` flag. The value set for the `-platform` argument should match the
 device on which you are installing. Currently, the only supported value is
 _android_.
 
-</div>
-
-</div>
-
-<div>
-
 ## Setting up an emulator
-
-<div>
 
 To run your AIR application on a device emulator, you must typically use the SDK
 for the device to create and run an emulator instance on your development
@@ -173,13 +129,7 @@ computer. You can then install the emulator version of the AIR runtime and your
 AIR application on the emulator. Note that applications on an emulator typically
 run much slower than they do on an actual device.
 
-</div>
-
-<div>
-
 ### Create an Android emulator
-
-<div>
 
 1.  Launch the Android SDK and AVD Manager application:
 
@@ -229,36 +179,12 @@ initialize. You can install applications packaged with the _apk-debug_ and
 _apk-emulator_ on an emulator. Applications packaged with the _apk_ target do
 not work on an emulator.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
 More Help topics
-
-</div>
-
-<div>
 
 [ADT installRuntime command](WS901d38e593cd1bac1e63e3d128fc240122-7ff6.html)
 
 [ADT installApp command](WS901d38e593cd1bac1e63e3d128fc240122-7ffa.html)
 
-</div>
-
 <http://developer.android.com/guide/developing/tools/othertools.html#android>
 
 <http://developer.android.com/guide/developing/tools/emulator.html>
-
-<div>
-
-
-
-</div>
-
-</div>

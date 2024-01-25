@@ -1,7 +1,5 @@
 # Path environment variables
 
-<div>
-
 The AIR SDK contains a few programs that can be launched from a command line or
 terminal. Running these programs can often be more convenient when the path to
 the SDK bin directory is included in the path environment variable.
@@ -12,13 +10,7 @@ configurations vary widely, so the procedure does not work for every system. In
 these cases, you should be able to find the necessary information from your
 operating system documentation or the Internet.
 
-</div>
-
-<div>
-
 ## Setting the PATH on Linux and Mac OS using the Bash shell
-
-<div>
 
 When you type a command in a terminal window, the shell, a program that reads
 what you typed and tries to respond appropriately, must first locate the command
@@ -40,12 +32,8 @@ directories to the path:
 
     export PATH=$PATH:/Users/fred/SDKs/AIR/bin:/Users/fred/SDKs/android/tools
 
-<div>
-
 Note: If your path contains blank space characters, escape them with a
 backslash, as in the following:
-
-</div>
 
     /Users/fred\ jones/SDKs/AIR\ 2.5\ SDK/bin
 
@@ -80,7 +68,7 @@ To add the command to the shell start-up script:
         cd
 
 2.  Create the shell configuration profile (if necessary) and redirect the text
-    you type to the end of the file with “`cat >>`”. Use the appropriate file
+    you type to the end of the file with "`cat >>`". Use the appropriate file
     for your operating system and shell. You can use `.bash_profile` on Mac OS
     and `.bashrc` on Ubuntu, for example.
 
@@ -106,15 +94,7 @@ If you later create a new version of one of the SDKs into different directory,
 be sure to update the path command in the configuration file. Otherwise, the
 shell will continue to use the old version.
 
-</div>
-
-</div>
-
-<div>
-
 ## Setting the Path on Windows
-
-<div>
 
 When you open a command window on Windows, that window inherits the global
 environment variables defined in the system properties. One of the important
@@ -161,17 +141,3 @@ the paths are set up correctly:
 
 If you later change the location of the AIR SDK, or add a new version, remember
 to update the path variable.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

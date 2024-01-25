@@ -1,7 +1,5 @@
 # Installing and running the AIR sample applications
 
-<div>
-
 To install or update an AIR application, a user must have administrative
 privileges for the computer.
 
@@ -25,21 +23,5 @@ access and install them using the following instructions:
       Applications folder of your user directory (for example, in Macintosh
       HD/Users/JoeUser/Applications/) by default.
 
-<div>
-
 Note: Check the AIR release notes for updates to these instructions, which are
 located here: <http://www.adobe.com/go/learn_air_relnotes>.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

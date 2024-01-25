@@ -1,14 +1,6 @@
 # AIR.SWF in-browser API
 
-<div>
-
-</div>
-
-<div>
-
 ## Customizing the seamless install badge.swf
-
-<div>
 
 In addition to using the badge.swf file provided with the SDK, you can create
 your own SWF file for use in a browser page. Your custom SWF file can interact
@@ -23,7 +15,7 @@ with the runtime in the following ways:
 - It can check to see if the runtime is installed. See
   [Checking if the runtime is installed](WS5b3ccc516d4fbf351e63e3d118666ade46-7c98.html).
 
-- It can launch an installed AIR application on the user’s system. See
+- It can launch an installed AIR application on the user's system. See
   [Launching an installed AIR application from the browser](WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html).
 
 These capabilities are all provided by calling APIs in a SWF file hosted at
@@ -37,8 +29,6 @@ AIR application by using the LocalConnection class. For more information, see
 [Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
-<div>
-
 Important: The features described in this section (and the APIs in the air.swf
 file) require the end user to have Adobe® Flash® Player 9 update 3, or later,
 installed in the web browser on Windows or Mac OS. On Linux, the seamless
@@ -49,24 +39,12 @@ installed. For example, if an older version of Flash Player is installed, you
 could provide a link to the download version of the AIR file (instead of using
 the badge.swf file or the air.swf API to install an application).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Using the badge.swf file to install an AIR application
-
-<div>
 
 Included in the AIR SDK and the Flex SDK is a badge.swf file which lets you
 easily use the seamless install feature. The badge.swf can install the runtime
 and an AIR application from a link in a web page. The badge.swf file and its
 source code are provided to you for distribution on your website.
-
-<div>
 
 #### Embed the badge.swf file in a web page
 
@@ -84,8 +62,6 @@ source code are provided to you for distribution on your website.
 3.  In the default_badge.html page, in the `AC_FL_RunContent()` JavaScript
     function, adjust the `FlashVars` parameter definitions for the following:
 
-    <div>
-
     | Parameter      | Description                                                                                                                              |
     | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
     | `appname`      | The name of the application, displayed by the SWF file when the runtime is not installed.                                                |
@@ -95,8 +71,6 @@ source code are provided to you for distribution on your website.
     | `buttoncolor`  | The color of the download button (specified as a hex value, such as `FFCC00`).                                                           |
     | `messagecolor` | The color of the text message displayed below the button when the runtime is not installed (specified as a hex value, such as `FFCC00`). |
 
-    </div>
-
 4.  The minimum size of the badge.swf file is 217 pixels wide by 180 pixels
     high. Adjust the values of the `width` and `height` parameters of the
     `AC_FL_RunContent()` function to suit your needs.
@@ -104,32 +78,16 @@ source code are provided to you for distribution on your website.
 5.  Rename the default_badge.html file and adjust its code (or include it in
     another HTML page) to suit your needs.
 
-<div>
-
-<div>
-
 Note: For the HTML `embed` tag that loads the badge.swf file, do not set the
 `wmode` attribute; leave it set to the default setting (`"window"`). Other
 `wmode` settings will prevent installation on some systems. Also, using other
-`wmode` settings produces an error: “Error \#2044: Unhandled ErrorEvent:.
-text=Error \#2074: The stage is too small to fit the download ui.”
-
-</div>
-
-</div>
+`wmode` settings produces an error: "Error \#2044: Unhandled ErrorEvent:.
+text=Error \#2074: The stage is too small to fit the download ui."
 
 You can also edit and recompile the badge.swf file. For details, see
 [Modify the badge.swf file](WS5b3ccc516d4fbf351e63e3d118666ade46-7c7d.html).
 
-</div>
-
-</div>
-
-<div>
-
 ### Install the AIR application from a seamless install link in a web page
-
-<div>
 
 Once you have added the seamless install link to a page, the user can install
 the AIR application by clicking the link in the SWF file.
@@ -176,27 +134,15 @@ the AIR application by clicking the link in the SWF file.
 
 5.  When the installation is complete, click Finish.
 
-</div>
-
-</div>
-
-<div>
-
 ### Modify the badge.swf file
-
-<div>
 
 The Flex SDK and AIR SDK provides the source files for the badge.swf file. These
 files are included in the samples/badge folder of the SDK:
-
-<div>
 
 | Source files | Description                                                                                                                                    |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | badge.fla    | The source Flash file used to compile the badge.swf file. The badge.fla file compiles into a SWF 9 file (which can be loaded in Flash Player). |
 | AIRBadge.as  | An ActionScript 3.0 class that defines the base class used in the basdge.fla file.                                                             |
-
-</div>
 
 You can use Flash Professional to redesign the visual interface of the badge.fla
 file.
@@ -238,8 +184,6 @@ The code sets the global `_air` variable to the main class of the loaded air.swf
 file. This class includes the following public methods, which the badge.swf file
 accesses to call seamless install functionality:
 
-<div>
-
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -268,12 +212,10 @@ to be installed.</p></li>
 </tr>
 <tr class="even">
 <td><p><samp>installApplication()</samp></p></td>
-<td><p>Installs the specified application on the user’s machine. For
+<td><p>Installs the specified application on the user's machine. For
 details, see <a
 href="WS5b3ccc516d4fbf351e63e3d118666ade46-7c97.html">Installing an AIR
-application from the browser</a>.</p>
-<div>
-<ul class="incremental">
+application from the browser</a>.</p><ul class="incremental">
 <li><p><samp>url</samp>—A string defining the URL. You must use an
 absolute, not relative, URL path.</p></li>
 <li><p><samp>runtimeVersion</samp>—A string indicating the version of
@@ -287,7 +229,7 @@ information on the application descriptor file, see <a
 href="WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html">AIR application
 descriptor files</a>.) If the application is launched as the result of a
 seamless install from the browser (with the user choosing to launch upon
-installation), the application’s NativeApplication object dispatches a
+installation), the application's NativeApplication object dispatches a
 BrowserInvokeEvent object only if arguments are passed. Consider the
 security implications of data that you pass to the application. For
 details, see <a
@@ -298,8 +240,6 @@ installed AIR application from the browser</a>.</p></li>
 </tr>
 </tbody>
 </table>
-
-</div>
 
 The settings for `url` and `runtimeVersion` are passed into the SWF file via the
 FlashVars settings in the container HTML page.
@@ -318,17 +258,7 @@ application installation process or after the installation is started. For
 details, see
 [Checking from a web page if an AIR application is installed](WS5b3ccc516d4fbf351e63e3d118666ade46-7c85.html).
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Loading the air.swf file
-
-<div>
 
 You can create your own SWF file that uses the APIs in the air.swf file to
 interact with the runtime and AIR applications from a web page in a browser. The
@@ -353,11 +283,9 @@ loading the air.swf file into the application domain of the loading SWF file:
         airSWF = e.target.content;
     }
 
-Once the air.swf file is loaded (when the Loader object’s `contentLoaderInfo`
+Once the air.swf file is loaded (when the Loader object's `contentLoaderInfo`
 object dispatches the `init` event), you can call any of the air.swf APIs,
 described in the sections that follow.
-
-<div>
 
 Note: The badge.swf file, provided with the AIR SDK and the Flex SDK,
 automatically loads the air.swf file. See
@@ -365,24 +293,14 @@ automatically loads the air.swf file. See
 The instructions in this section apply to creating your own SWF file that loads
 the air.swf file.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Checking if the runtime is installed
-
-<div>
 
 A SWF file can check if the runtime is installed by calling the `getStatus(`)
 method in the air.swf file loaded from
 http://airdownload.adobe.com/air/browserapi/air.swf. For details, see
 [Loading the air.swf file](WS5b3ccc516d4fbf351e63e3d118666ade46-7c87.html).
 
-Once the air.swf file is loaded, the SWF file can call the air.swf file’s
+Once the air.swf file is loaded, the SWF file can call the air.swf file's
 `getStatus(`) method as in the following:
 
     var status:String = airSWF.getStatus();
@@ -390,29 +308,17 @@ Once the air.swf file is loaded, the SWF file can call the air.swf file’s
 The `getStatus()` method returns one of the following string values, based on
 the status of the runtime on the computer:
 
-<div>
-
 | String value    | Description                                                                      |
 | --------------- | -------------------------------------------------------------------------------- |
 | `"available"`   | The runtime can be installed on this computer but currently it is not installed. |
 | `"unavailable"` | The runtime cannot be installed on this computer.                                |
 | `"installed"`   | The runtime is installed on this computer.                                       |
 
-</div>
-
 The `getStatus()` method throws an error if the required version of Flash Player
 (version 9 update 3 or later on Windows and Mac OS, or version 10 on Linux) is
 not installed in the browser.
 
-</div>
-
-</div>
-
-<div>
-
 ## Checking from a web page if an AIR application is installed
-
-<div>
 
 A SWF file can check if an AIR application (with a matching application ID and
 publisher ID) is installed by calling the `getApplicationVersion(`) method in
@@ -420,7 +326,7 @@ the air.swf file loaded from
 http://airdownload.adobe.com/air/browserapi/air.swf. For details, see
 [Loading the air.swf file](WS5b3ccc516d4fbf351e63e3d118666ade46-7c87.html).
 
-Once the air.swf file is loaded, the SWF file can call the air.swf file’s
+Once the air.swf file is loaded, the SWF file can call the air.swf file's
 `getApplicationVersion(`) method as in the following:
 
     var appID:String = "com.example.air.myTestApplication";
@@ -445,44 +351,28 @@ Once the air.swf file is loaded, the SWF file can call the air.swf file’s
 
 The `getApplicationVersion()` method has the following parameters:
 
-<div>
-
 | Parameters | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `appID`    | The application ID for the application. For details, see [id](WSfffb011ac560372f2fea1812938a6e463-7ffe.html).                                                                                                                                                                                                                                                                                                                                                                                 |
-| `pubID`    | The publisher ID for the application. For details, see [publisherID](WS901d38e593cd1bac1e63e3d12939cc14ab-8000.html). If the application in question does not have a publisher ID, set the `pubID` parameter to an empty string (“”).                                                                                                                                                                                                                                                         |
+| `pubID`    | The publisher ID for the application. For details, see [publisherID](WS901d38e593cd1bac1e63e3d12939cc14ab-8000.html). If the application in question does not have a publisher ID, set the `pubID` parameter to an empty string ("").                                                                                                                                                                                                                                                         |
 | `callback` | A callback function to serve as the handler function. The getApplicationVersion() method operates asynchronously, and upon detecting the installed version (or lack of an installed version), this callback method is invoked. The callback method definition must include one parameter, a string, which is set to the version string of the installed application. If the application is not installed, a null value is passed to the function, as illustrated in the previous code sample. |
-
-</div>
 
 The `getApplicationVersion()` method throws an error if the required version of
 Flash Player (version 9 update 3 or later on Windows and Mac OS, or version 10
 on Linux) is not installed in the browser.
 
-<div>
-
 Note: As of AIR 1.5.3, the publisher ID is deprecated. Publisher IDs are no
 longer assigned to an application automatically. For backward compatibility,
 applications can continue to specify a publisher ID.
 
-</div>
-
-</div>
-
-</div>
-
-<div>
-
 ## Installing an AIR application from the browser
-
-<div>
 
 A SWF file can install an AIR application by calling the `installApplication(`)
 method in the air.swf file loaded from
 `http://airdownload.adobe.com/air/browserapi/air.swf`. For details, see
 [Loading the air.swf file](WS5b3ccc516d4fbf351e63e3d118666ade46-7c87.html).
 
-Once the air.swf file is loaded, the SWF file can call the air.swf file’s
+Once the air.swf file is loaded, the SWF file can call the air.swf file's
 `installApplication(`) method, as in the following code:
 
     var url:String = "http://www.example.com/myApplication.air";
@@ -491,9 +381,7 @@ Once the air.swf file is loaded, the SWF file can call the air.swf file’s
     airSWF.installApplication(url, runtimeVersion, arguments);
 
 The `installApplication()` method installs the specified application on the
-user’s machine. This method has the following parameters:
-
-<div>
+user's machine. This method has the following parameters:
 
 <table>
 <colgroup>
@@ -530,7 +418,7 @@ application descriptor file, see <a
 href="WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html">AIR application
 descriptor files</a>.) If the application is launched as the result of a
 seamless install from the browser (with the user choosing to launch upon
-installation), the application’s NativeApplication object dispatches a
+installation), the application's NativeApplication object dispatches a
 BrowserInvokeEvent object only if arguments have been passed. For
 details, see <a
 href="WS5b3ccc516d4fbf351e63e3d118666ade46-7cd2.html">Launching an
@@ -538,8 +426,6 @@ installed AIR application from the browser</a>.</p></td>
 </tr>
 </tbody>
 </table>
-
-</div>
 
 The `installApplication()` method can only operate when called in the event
 handler for a user event, such as a mouse click.
@@ -565,15 +451,7 @@ browser by using the LocalConnection class. For more information, see
 [Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
-</div>
-
-</div>
-
-<div>
-
 ## Launching an installed AIR application from the browser
-
-<div>
 
 To use the browser invocation feature (allowing it to be launched from the
 browser), the application descriptor file of the target application must include
@@ -589,7 +467,7 @@ A SWF file in the browser can launch an AIR application by calling the
 http://airdownload.adobe.com/air/browserapi/air.swf. For details, see
 [Loading the air.swf file](WS5b3ccc516d4fbf351e63e3d118666ade46-7c87.html).
 
-Once the air.swf file is loaded, the SWF file can call the air.swf file’s
+Once the air.swf file is loaded, the SWF file can call the air.swf file's
 `launchApplication(`) method, as in the following code:
 
     var appID:String = "com.example.air.myTestApplication";
@@ -604,15 +482,11 @@ installed and browser invocation is allowed, via the `allowBrowserInvocation`
 setting in the application descriptor file). The method has the following
 parameters:
 
-<div>
-
 | Parameter   | Description                                                                                                                                                                                                                                                                                                                    |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `appID`     | The application ID for the application to launch. For details, see [id](WSfffb011ac560372f2fea1812938a6e463-7ffe.html).                                                                                                                                                                                                        |
-| `pubID`     | The publisher ID for the application to launch. For details, see [publisherID](WS901d38e593cd1bac1e63e3d12939cc14ab-8000.html). If the application in question does not have a publisher ID, set the `pubID` parameter to an empty string (“”)                                                                                 |
+| `pubID`     | The publisher ID for the application to launch. For details, see [publisherID](WS901d38e593cd1bac1e63e3d12939cc14ab-8000.html). If the application in question does not have a publisher ID, set the `pubID` parameter to an empty string ("")                                                                                 |
 | `arguments` | An array of arguments to pass to the application. The NativeApplication object of the application dispatches a BrowserInvokeEvent event that has an arguments property set to this array. Only alphanumerical characters are recognized in the arguments. If you need to pass other values, consider using an encoding scheme. |
-
-</div>
 
 The `launchApplication()` method can only operate when called in the event
 handler for a user event, such as a mouse click.
@@ -629,7 +503,7 @@ call the `getApplicationVersion(`) method in the air.swf file. For details, see
 [Checking from a web page if an AIR application is installed](WS5b3ccc516d4fbf351e63e3d118666ade46-7c85.html).
 
 When the application is invoked via the browser invocation feature, the
-application’s NativeApplication object dispatches a BrowserInvokeEvent object.
+application's NativeApplication object dispatches a BrowserInvokeEvent object.
 For details, see
 [Invoking an AIR application from the browser](http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118676a5d46-8000.html#WS5b3ccc516d4fbf351e63e3d118666ade46-7e19)
 (for ActionScript developers) or
@@ -650,24 +524,6 @@ browser by using the LocalConnection class. For more information, see
 [Communicating with other Flash Player and AIR instances](http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
-<div>
-
 Note: As of AIR 1.5.3, the publisher ID is deprecated. Publisher IDs are no
 longer assigned to an application automatically. For backward compatibility,
 applications can continue to specify a publisher ID.
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

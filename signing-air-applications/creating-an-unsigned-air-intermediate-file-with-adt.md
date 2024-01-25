@@ -1,7 +1,5 @@
 # Creating an unsigned AIR intermediate file with ADT
 
-<div>
-
 Use the `-prepare` command to create an unsigned AIR intermediate file. An AIR
 intermediate file must be signed with the ADT `-sign` command to produce a valid
 AIR installation file.
@@ -14,22 +12,6 @@ extension: `airi`.
 To sign an AIR intermediate file, use the ADT `-sign` command. (See
 [ADT prepare command](WS901d38e593cd1bac1e63e3d128fc240122-7fff.html).)
 
-<div>
-
 #### ADT -prepare command example
 
     adt -prepare unsignedMyApp.airi myApp.xml myApp.swf components.swc
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

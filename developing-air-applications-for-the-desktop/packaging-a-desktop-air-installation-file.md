@@ -1,7 +1,5 @@
 # Packaging a desktop AIR installation file
 
-<div>
-
 Every AIR application must, at a minimum, have an application descriptor file
 and a main SWF or HTML file. Any other assets to be installed with the
 application must be packaged in the AIR file as well.
@@ -9,8 +7,6 @@ application must be packaged in the AIR file as well.
 This article discusses packaging an AIR application using the command-line tools
 included with the SDK. For information about package an application using one of
 the Adobe authoring tools, see the following:
-
-<div>
 
 - Adobe® Flex® Builder™, see
   [Packaging AIR applications with Flex Builder](http://livedocs.adobe.com/flex/3/html/UsingFB_1.html#1084848).
@@ -21,12 +17,8 @@ the Adobe authoring tools, see the following:
 - Adobe® Flash® Professional, see
   [Publishing for Adobe AIR](http://help.adobe.com/en_US/Flash/CS5/Using/WSF0126B20-BFF4-4c50-9978-BCA47C8C3C3F.html).
 
-<!-- -->
-
 - Adobe® Dreamweaver® see
   [Creating an AIR application in Dreamweaver](http://help.adobe.com/en_US/Dreamweaver/CS5/Using/WS6463f310bbfa3de2-1eb2a492126f73db0f1-8000.html#WS6463f310bbfa3de2-1eb2a492126f73db0f1-7fff).
-
-</div>
 
 All AIR installer files must be signed using a digital certificate. The AIR
 installer uses the signature to verify that your application file has not been
@@ -44,9 +36,9 @@ Installation confirmation dialog for application signed by a trusted certificate
 
 When you use a self-signed certificate, users cannot verify your identity as the
 signer. A self-signed certificate also weakens the assurance that the package
-hasn’t been altered. (This is because a legitimate installation file could be
+hasn't been altered. (This is because a legitimate installation file could be
 substituted with a forgery before it reaches the user.) The installation dialog
-reflects the fact that the publisher’s identity cannot be verified. Users are
+reflects the fact that the publisher's identity cannot be verified. Users are
 taking a greater security risk when they install your application:
 
 ![](../img/SelfSigned.png)
@@ -59,14 +51,10 @@ command. You can also create an intermediate, unsigned package with the
 `-prepare` command, and sign the intermediate package with the `-sign` command
 in a separate step.
 
-<div>
-
 Note: Java versions 1.5 and above do not accept high-ASCII characters in
 passwords used to protect PKCS12 certificate files. When you create or export
 your code signing certificate file, use only regular ASCII characters in the
 password.
-
-</div>
 
 When signing the installation package, ADT automatically contacts a time-stamp
 authority server to verify the time. The time-stamp information is included in
@@ -85,16 +73,12 @@ both the new and the old certificate. Use the `-migrate` command to apply the
 migration signature as described in
 [ADT migrate command](WS901d38e593cd1bac1e63e3d128fc240122-7ffd.html).
 
-<div>
-
 Important: There is a strict 180 day grace period for applying a migration
 signature after the original certificate expires. Without a migration signature,
 existing users must uninstall their existing application before installing your
 new version. The grace period only applies to applications that specify AIR
 version 1.5.3, or above, in the application descriptor namespace. There is no
 grace period when targeting earlier versions of the AIR runtime.
-
-</div>
 
 Before AIR 1.1, migration signatures were not supported. You must package an
 application with an SDK of version 1.1 or later to apply a migration signature.
@@ -107,15 +91,9 @@ descriptor file. See
 [Device profiles](WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html) and
 [supportedProfiles](WSfffb011ac560372f2fea1812938a6e463-7fe2.html).
 
-<div>
-
 Note: The settings in the application descriptor file determine the identity of
 an AIR application and its default installation path. See
 [AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html).
-
-</div>
-
-<div>
 
 #### Publisher IDs
 
@@ -169,15 +147,7 @@ and is only assigned if the publisherID tag is included in the application
 descriptor. An application cannot be updated if the publisher ID specified for
 the update AIR package does not match its current publisher ID.
 
-</div>
-
-</div>
-
-<div>
-
 ## Packaging with ADT
-
-<div>
 
 You can use the AIR ADT command-line tool to package an AIR application. Before
 packaging, all your ActionScript, MXML, and any extension code must be compiled.
@@ -185,8 +155,6 @@ You must also have a code signing certificate.
 
 For a detailed reference on ADT commands and options see
 [AIR Developer Tool (ADT)](WS5b3ccc516d4fbf351e63e3d118666ade46-7fd9.html).
-
-<div>
 
 #### Creating an AIR package
 
@@ -196,7 +164,7 @@ to _air_ for release builds.
     adt -package -target air -storetype pkcs12 -keystore ../codesign.p12 myApp.air myApp-app.xml myApp.swf icons
 
 The example assumes that the path to the ADT tool is on your command-line
-shell’s path definition. (See
+shell's path definition. (See
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
 for help.)
 
@@ -208,26 +176,8 @@ When you run the command as shown, ADT will prompt you for the keystore
 password. (The password characters you type are not always displayed; just press
 Enter when you are done typing.)
 
-</div>
-
-<div>
-
 #### Creating an AIR package from an AIRI file
 
 You can create sign an AIRI file to create an installable AIR package:
 
     adt -sign -storetype pkcs12 -keystore ../codesign.p12 myApp.airi myApp.air
-
-</div>
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-</div>
-
-</div>

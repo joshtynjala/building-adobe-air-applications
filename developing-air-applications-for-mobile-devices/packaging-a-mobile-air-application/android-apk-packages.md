@@ -1,9 +1,5 @@
 # Android APK packages
 
-<div>
-
-<div>
-
 #### Creating an APK package
 
 To create an APK package, use the ADT package command, setting the target type
@@ -19,7 +15,7 @@ release-mode builds for running on an emulator.
 
 Type the entire command on a single line; line breaks in the above example are
 only present to make it easier to read. Also, the example assumes that the path
-to the ADT tool is on your command-line shell’s path definition. (See
+to the ADT tool is on your command-line shell's path definition. (See
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
 for help.)
 
@@ -31,17 +27,9 @@ When you run the command as shown, ADT will prompt you for the keystore
 password. (The password characters you type are not displayed; just press Enter
 when you are done typing.)
 
-<div>
-
 Note: By default, all AIR Android applications have the `air.` prefix in the
 package name. To opt out of this default behavior, set the environment variable,
 `AIR_NOANDROIDFLAIR` to _true_, on your computer.
-
-</div>
-
-</div>
-
-<div>
 
 #### Creating an APK package for an application that uses native extensions
 
@@ -59,10 +47,6 @@ application uses. For example:
                                     myApp-app.xml
                                     -extdir extensionsDir
                                     myApp.swf icons
-
-</div>
-
-<div>
 
 #### Creating an APK package that includes its own version of the AIR runtime
 
@@ -85,17 +69,9 @@ Possible drawbacks of this technique include:
 
 - Larger application RAM footprint
 
-<div>
-
 Note: When you bundle the runtime, ADT adds the `INTERNET` and
 `BROADCAST_STICKY` permissions to your application. These permissions are
 required by the AIR runtime.
-
-</div>
-
-</div>
-
-<div>
 
 #### Creating a debug APK package
 
@@ -127,22 +103,14 @@ and SWCs with debugging enabled. See
 [Debugger connection options](WS901d38e593cd1bac1e63e3d128fc240122-7ff1.html)
 for a full description of the `-connect` and `-listen` flags.
 
-<div>
-
 Note: By default, ADT packages a captive copy of the AIR runtime with your
 Android app while packaging app with apk-debug target. To force ADT to create an
 APK that uses an external runtime, set the `AIR_ANDROID_SHARED_RUNTIME`
 environment variable to `true`.
 
-</div>
-
 On Android, the app must also have permission to access the Internet in order
 for it to connect to the computer running the debugger over the network. See
 [Android permissions](WS901d38e593cd1bac1e63e3d129d39606f2-8000.html).
-
-</div>
-
-<div>
 
 #### Creating an APK package for use on an Android emulator
 
@@ -153,13 +121,9 @@ ADT package command, setting the target type to _apk-emulator_:
     adt -package -target apk-emulator -storetype pkcs12 -keystore ../codesign.p12 myApp.apk myApp-app.xml myApp.swf icons
 
 The example assumes that the path to the ADT tool is on your command-line
-shell’s path definition. (See
+shell's path definition. (See
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
 for help.)
-
-</div>
-
-<div>
 
 #### Creating an APK package from an AIR or AIRI file
 
@@ -169,10 +133,6 @@ You can create an APK package directly from an existing AIR or AIRI file:
 
 The AIR file must use the AIR 2.5 (or later) namespace in the application
 descriptor file.
-
-</div>
-
-<div>
 
 #### Creating an APK package for the Android x86 platform
 
@@ -187,17 +147,3 @@ Android x86 platform. For example:
                                     myApp.apk
                                     myApp-app.xml
                                     myApp.swf icons
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

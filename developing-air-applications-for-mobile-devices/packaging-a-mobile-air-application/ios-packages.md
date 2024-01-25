@@ -1,7 +1,5 @@
 # iOS packages
 
-<div>
-
 On iOS, ADT converts the SWF file byte code and other source files into a native
 iOS application.
 
@@ -102,12 +100,8 @@ iOS application.
     information on the P12 certificate file, see
     [Converting a developer certificate into a P12 keystore file](WSfffb011ac560372f46768d8712cd1d13954-7ffc.html).
 
-    <div>
-
     Note: You can use a self-signed certificate when packaging for the iOS
     Simulator.
-
-    </div>
 
     Replace the _`APP_DESCRIPTOR`_ to reference the application descriptor file.
 
@@ -121,16 +115,10 @@ iOS application.
     that contains the ANE files (native extensions) that the application uses.
     If the application uses no native extensions, do not include this option.
 
-    <div>
-
     Important: Do not create a subdirectory in your application directory named
     `Resources`. The runtime automatically creates a folder with this name to
     conform to the IPA package structure. Creating your own Resources folder
     results in a fatal conflict.
-
-    </div>
-
-<div>
 
 #### Creating an iOS package for debugging
 
@@ -148,16 +136,12 @@ provisioning profile from Apple.
                                     myApp-app.xml
                                     myApp.swf icons Default.png
 
-<div>
-
 Note: You can also use `ipa-debug-interpreter` for faster compilation or
 `ipa-debug-interpreter-simulator` to run in the iOS Simulator
 
-</div>
-
 Type the entire command on a single line; line breaks in the above example are
 only present to make it easier to read. Also, the example assumes that the path
-to the ADT tool is on your command-line shell’s path definition. (See
+to the ADT tool is on your command-line shell's path definition. (See
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
 for help.)
 
@@ -176,10 +160,6 @@ application. See
 [Connecting to the Flash debugger](WSfffb011ac560372f-5d0f4f25128cc9cd0cb-7ff7.html)
 for more information.
 
-</div>
-
-<div>
-
 #### Creating an iOS package for Apple App Store submission
 
 To create an iOS package for submission to the Apple App store, use the ADT
@@ -197,7 +177,7 @@ and provisioning profile from Apple.
 
 Type the entire command on a single line; line breaks in the above example are
 only present to make it easier to read. Also, the example assumes that the path
-to the ADT tool is on your command-line shell’s path definition. (See
+to the ADT tool is on your command-line shell's path definition. (See
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
 for help.)
 
@@ -208,20 +188,12 @@ descriptor file), myApp.swf, an icons directory, and the Default.png file.
 You must sign the application using the correct distribution certificate issued
 by Apple; other code signing certificates cannot be used.
 
-<div>
-
 Important: Apple requires that you use the Apple _Application Loader_ program in
 order to upload applications to the App Store. Apple only publishes _Application
 Loader_ for Mac OS X. Thus, while you can develop an AIR application for the
 iPhone using a Windows computer, you must have access to a computer running OS X
 (version 10.5.3, or later) to submit the application to the App Store. You can
 get the Application Loader program from the Apple iOS Developer Center.
-
-</div>
-
-</div>
-
-<div>
 
 #### Creating an iOS package for ad hoc distribution
 
@@ -240,7 +212,7 @@ certificate and provisioning profile from Apple.
 
 Type the entire command on a single line; line breaks in the above example are
 only present to make it easier to read. Also, the example assumes that the path
-to the ADT tool is on your command-line shell’s path definition. (See
+to the ADT tool is on your command-line shell's path definition. (See
 [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html)
 for help.)
 
@@ -250,10 +222,6 @@ descriptor file), myApp.swf, an icons directory, and the Default.png file.
 
 You must sign the application using the correct distribution certificate issued
 by Apple; other code signing certificates cannot be used.
-
-</div>
-
-<div>
 
 #### Creating an iOS package for an application that uses native extensions
 
@@ -277,10 +245,6 @@ only present to make it easier to read.
 Regarding native extensions, the example assumes that the directory named
 `extensionsDir` is in the directory in which you run the command. The
 `extensionsDir` directory contains the ANE files that the application uses.
-
-</div>
-
-<div>
 
 #### To create an iOS/tvOS package with Assets.car
 
@@ -308,17 +272,3 @@ for help). You must run the command from the directory containing the
 application files. The application files in the example are `myApp-app xml`(the
 application descriptor file), `myApp.swf`, icons directory, the `Default.png`
 file and `Assets.car`.
-
-</div>
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>

@@ -1,7 +1,5 @@
 # AIR update framework files
 
-<div>
-
 The AIR update framework is included in the frameworks/libs/air directory of the
 AIR 2 SDK. It includes the following files:
 
@@ -26,15 +24,3 @@ For more information, see these sections:
 - [Including framework files in an HTML-based AIR application](WSF03EE194-4501-482d-BB53-99E6F51C6D44.html)
 
 - [Basic example: Using the ApplicationUpdaterUI version](WS96E10DFB-39A5-4488-A666-15B9B46C5EE8.html)
-
-</div>
-
-<div>
-
-<div>
-
-
-
-</div>
-
-</div>
