@@ -8,12 +8,12 @@ For more information about packaging AIR applications with a migration
 signature, see
 [Signing an updated version of an AIR application](WS13ACB483-1711-43c0-9049-0A7251630A7D.html).
 
-Note: The migration certificate must be applied within 365 days from the
-expiration of the certificate. Once this grace period has elapsed, your
-application updates can no longer be signed with a migration signature. Users
-can first update to a version of your application that was signed with a
-migration signature and then install the latest update, or they can uninstall
-the original application and install the new AIR package.
+> **Note:** The migration certificate must be applied within 365 days from the
+> expiration of the certificate. Once this grace period has elapsed, your
+> application updates can no longer be signed with a migration signature. Users
+> can first update to a version of your application that was signed with a
+> migration signature and then install the latest update, or they can uninstall
+> the original application and install the new AIR package.
 
 To use a migration signature, first sign your AIR application using the new or
 renewed certificate (using the -package or -sign commands), and then apply the
@@ -35,9 +35,10 @@ and the old certificates.
 
 The file names used for the input and output AIR files must be different.
 
-Note: The ADT migrate command cannot be used with AIR desktop applications that
-include native extensions, because those applications are packaged as native
-installers, not as .air files. To change certificates for an AIR desktop
-application that includes a native extension, package the application using the
-[ADT package command](WS901d38e593cd1bac1e63e3d128cdca935b-8000.html) with the
--migrate flag.
+> **Note:** The ADT migrate command cannot be used with AIR desktop applications
+> that include native extensions, because those applications are packaged as
+> native installers, not as .air files. To change certificates for an AIR
+> desktop application that includes a native extension, package the application
+> using the
+> [ADT package command](WS901d38e593cd1bac1e63e3d128cdca935b-8000.html) with the
+> -migrate flag.

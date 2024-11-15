@@ -15,11 +15,12 @@ Usage extension with the proper values for code signing. Constraints defined
 within the certificate are respected and could preclude the use of some
 certificates for signing AIR applications.
 
-Note: ADT uses the Java runtime environment proxy settings, when appropriate,
-for connecting to Internet resources for checking certificate revocation lists
-and obtaining time-stamps. If you encounter problems connecting to these
-Internet resources when using ADT and your network requires specific proxy
-settings, you may need to configure the JRE proxy settings.
+> **Note:** ADT uses the Java runtime environment proxy settings, when
+> appropriate, for connecting to Internet resources for checking certificate
+> revocation lists and obtaining time-stamps. If you encounter problems
+> connecting to these Internet resources when using ADT and your network
+> requires specific proxy settings, you may need to configure the JRE proxy
+> settings.
 
 #### AIR signing options syntax
 
@@ -82,12 +83,12 @@ ADT prompts for the password.
 **-keypass** The password required to access the private key that is used to
 sign the AIR application. If not specified, ADT prompts for the password.
 
-Note: If you enter a password as part of the ADT command, the password
-characters are saved in the command-line history. Therefore, using the -keypass
-or -storepass options is not recommended when the security of the certificate is
-important. Also note that when you omit the password options, the characters you
-type at the password prompts are not displayed (for the same security reasons).
-Simply type the password and press the Enter key.
+> **Note:** If you enter a password as part of the ADT command, the password
+> characters are saved in the command-line history. Therefore, using the
+> -keypass or -storepass options is not recommended when the security of the
+> certificate is important. Also note that when you omit the password options,
+> the characters you type at the password prompts are not displayed (for the
+> same security reasons). Simply type the password and press the Enter key.
 
 **-providerName** The JCA provider for the specified keystore type. If not
 specified, then ADT uses the default provider for that type of keystore.
@@ -105,10 +106,10 @@ package is produced. Specify ` -``tsa none ` to disable time-stamping. However,
 an AIR application packaged without a timestamp ceases to be installable after
 the signing certificate expires.
 
-Note: Many of the signing options are equivalent to the same option of the Java
-Keytool utility. You can use the Keytool utility to examine and manage keystores
-on Windows. The Apple® security utility can also be used for this purpose on Mac
-OS X.
+> **Note:** Many of the signing options are equivalent to the same option of the
+> Java Keytool utility. You can use the Keytool utility to examine and manage
+> keystores on Windows. The Apple® security utility can also be used for this
+> purpose on Mac OS X.
 
 **-provisioning-profile** The Apple iOS provisioning file. (Required for
 packaging iOS applications, only.)

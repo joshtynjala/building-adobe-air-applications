@@ -43,7 +43,7 @@ newer). The Java JRE and the Java JDK are available at <https://adoptium.net/>.
 
 At least 2GB of computer memory is required to run the ADT tool.
 
-Note: Java is not required for end users to run AIR applications.
+> **Note:** Java is not required for end users to run AIR applications.
 
 For a quick overview of building an AIR application with the AIR SDK, see
 [Creating your first HTML-based AIR application with the AIR SDK](WS5b3ccc516d4fbf351e63e3d118666ade46-7ecc.html).
@@ -186,7 +186,7 @@ installed on your computer. You can use the Java virtual machine from either the
 JRE or the JDK (version 1.5 or newer). The Java JRE and JDK are available at
 <https://adoptium.net/>.
 
-Note: Java is not required for end users to run AIR applications.
+> **Note:** Java is not required for end users to run AIR applications.
 
 The Flex SDK provides you with the AIR API and command-line tools that you use
 to package, compile, and debug your AIR applications.
@@ -198,12 +198,13 @@ to package, compile, and debug your AIR applications.
 
 3.  Copy the contents of the AIR SDK over the files in the Flex SDK.
 
-    Note: On Mac computers, make sure that you copy or replace the individual
-    files in the SDK folders — not entire directories. By default, copying a
-    directory on the Mac to a directory of the same name removes the existing
-    files in the target directory; it does not merge the contents of the two
-    directories. You can use the `ditto` command in a terminal window to merge
-    the AIR SDK into the Flex SDK:`ditto air_sdk_folder flex_sdk_folder`
+    > **Note:** On Mac computers, make sure that you copy or replace the
+    > individual files in the SDK folders — not entire directories. By default,
+    > copying a directory on the Mac to a directory of the same name removes the
+    > existing files in the target directory; it does not merge the contents of
+    > the two directories. You can use the `ditto` command in a terminal window
+    > to merge the AIR SDK into the Flex
+    > SDK:`ditto air_sdk_folder flex_sdk_folder`
 
 4.  The command-line AIR utilities are located in the bin folder.
 

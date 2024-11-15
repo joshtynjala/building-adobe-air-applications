@@ -3,11 +3,11 @@
 To use the Updater class, the user or the application must first save an AIR
 file locally to the user's computer.
 
-Note: AIR 1.5 includes an update framework, which assists developers in
-providing good update capabilities in AIR applications. Using this framework may
-be much easier than using the `update()` method of the Update class directly.
-For details, see
-[Using the update framework](WS9CD40F06-4DD7-4230-B56A-88AA27541A1E.html).
+> **Note:** AIR 1.5 includes an update framework, which assists developers in
+> providing good update capabilities in AIR applications. Using this framework
+> may be much easier than using the `update()` method of the Update class
+> directly. For details, see
+> [Using the update framework](WS9CD40F06-4DD7-4230-B56A-88AA27541A1E.html).
 
 The following code reads an AIR file from a URL
 (`http://example.com/air/updates/Sample_App_v2.air`) and saves the AIR file to

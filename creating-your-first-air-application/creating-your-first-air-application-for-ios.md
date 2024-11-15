@@ -57,12 +57,12 @@ SDK.
 
     A SWF file, _HelloWorld.swf_, is created in the same folder.
 
-    Note: This example assumes that you have set up your environment path
-    variable to include the directory containing amxmlc. For information on
-    setting the path, see
-    [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html).
-    Alternately, you can type the full path to amxmlc and the other command-line
-    tools used in this example.
+    > **Note:** This example assumes that you have set up your environment path
+    > variable to include the directory containing amxmlc. For information on
+    > setting the path, see
+    > [Path environment variables](WSfffb011ac560372f-71994050128cca87097-8000.html).
+    > Alternately, you can type the full path to amxmlc and the other
+    > command-line tools used in this example.
 
 ## Create icon art and initial screen art for the application
 
@@ -78,9 +78,9 @@ application and on the device screen.
     must be 29-by-29 pixels, 57-by-57 pixels, and 512-by-512 pixels. For this
     test, you can simply use solid color squares as the art.
 
-    Note: When you submit an application to the Apple App Store, you use a JPG
-    version (not a PNG version) of the 512-pixel file. You use the PNG version
-    while testing development versions of an application.
+    > **Note:** When you submit an application to the Apple App Store, you use a
+    > JPG version (not a PNG version) of the 512-pixel file. You use the PNG
+    > version while testing development versions of an application.
 
 All iPhone applications display an initial image while the application loads on
 the iPhone. You define the initial image in a PNG file:
@@ -127,8 +127,8 @@ or a text editor.
     For the sake of simplicity, this example only sets a few of the available
     properties.
 
-    Note: If you are using AIR 2, or earlier, you must use the `<version>`
-    element instead of the `<versionNumber>` element.
+    > **Note:** If you are using AIR 2, or earlier, you must use the `<version>`
+    > element instead of the `<versionNumber>` element.
 
 3.  Change the application ID to match the application ID specified in the iOS
     Provisioning Portal. (Do not include the random bundle seed portion at the
@@ -260,6 +260,6 @@ You should change this image to match the startup screen of your application
 
 The application now uses the new startup screen as it loads.
 
-Note: You can create any art you'd like for the Default.png file, as long as it
-is the correct dimensions (320 by 480 pixels). However, it is often best to have
-the Default.png image match the initial state of your application.
+> **Note:** You can create any art you'd like for the Default.png file, as long
+> as it is the correct dimensions (320 by 480 pixels). However, it is often best
+> to have the Default.png image match the initial state of your application.

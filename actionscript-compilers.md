@@ -45,10 +45,10 @@ more closely. You can supply project-specific values for the compiler options in
 a local configuration file that takes precedence over the global values for a
 given project.
 
-Note: No compilation options are used specifically for AIR applications, but you
-must reference the AIR libraries when compiling an AIR application. Typically,
-these libraries are referenced in a project-level configuration file, in a file
-for a build tool such as Ant, or directly on the command line.
+> **Note:** No compilation options are used specifically for AIR applications,
+> but you must reference the AIR libraries when compiling an AIR application.
+> Typically, these libraries are referenced in a project-level configuration
+> file, in a file for a build tool such as Ant, or directly on the command line.
 
 ## Compiling MXML and ActionScript source files for AIR
 

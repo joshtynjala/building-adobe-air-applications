@@ -27,8 +27,8 @@ The SourceViewer class defines three methods: `getDefault()`, `setup()`, and
 | `setup()`      | Applies configuration settings to the Source Viewer. For details, see [Configuring the Source Viewer](WS5b3ccc516d4fbf351e63e3d118666ade46-7c4e.html) |
 | `viewSource()` | Opens a new window in which the user can browse and open source files of the host application.                                                        |
 
-Note: Code using the Source Viewer must be in the application security sandbox
-(in a file in the application directory).
+> **Note:** Code using the Source Viewer must be in the application security
+> sandbox (in a file in the application directory).
 
 For example, the following JavaScript code instantiates a Source Viewer object
 and opens the Source Viewer window listing all source files:

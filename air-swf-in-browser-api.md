@@ -78,11 +78,11 @@ source code are provided to you for distribution on your website.
 5.  Rename the default_badge.html file and adjust its code (or include it in
     another HTML page) to suit your needs.
 
-Note: For the HTML `embed` tag that loads the badge.swf file, do not set the
-`wmode` attribute; leave it set to the default setting (`"window"`). Other
-`wmode` settings will prevent installation on some systems. Also, using other
-`wmode` settings produces an error: "Error \#2044: Unhandled ErrorEvent:.
-text=Error \#2074: The stage is too small to fit the download ui."
+> **Note:** For the HTML `embed` tag that loads the badge.swf file, do not set
+> the `wmode` attribute; leave it set to the default setting (`"window"`). Other
+> `wmode` settings will prevent installation on some systems. Also, using other
+> `wmode` settings produces an error: "Error \#2044: Unhandled ErrorEvent:.
+> text=Error \#2074: The stage is too small to fit the download ui."
 
 You can also edit and recompile the badge.swf file. For details, see
 [Modify the badge.swf file](WS5b3ccc516d4fbf351e63e3d118666ade46-7c7d.html).
@@ -287,11 +287,11 @@ Once the air.swf file is loaded (when the Loader object's `contentLoaderInfo`
 object dispatches the `init` event), you can call any of the air.swf APIs,
 described in the sections that follow.
 
-Note: The badge.swf file, provided with the AIR SDK and the Flex SDK,
-automatically loads the air.swf file. See
-[Using the badge.swf file to install an AIR application](WS5b3ccc516d4fbf351e63e3d118666ade46-7c88.html).
-The instructions in this section apply to creating your own SWF file that loads
-the air.swf file.
+> **Note:** The badge.swf file, provided with the AIR SDK and the Flex SDK,
+> automatically loads the air.swf file. See
+> [Using the badge.swf file to install an AIR application](WS5b3ccc516d4fbf351e63e3d118666ade46-7c88.html).
+> The instructions in this section apply to creating your own SWF file that
+> loads the air.swf file.
 
 ## Checking if the runtime is installed
 
@@ -361,9 +361,9 @@ The `getApplicationVersion()` method throws an error if the required version of
 Flash Player (version 9 update 3 or later on Windows and Mac OS, or version 10
 on Linux) is not installed in the browser.
 
-Note: As of AIR 1.5.3, the publisher ID is deprecated. Publisher IDs are no
-longer assigned to an application automatically. For backward compatibility,
-applications can continue to specify a publisher ID.
+> **Note:** As of AIR 1.5.3, the publisher ID is deprecated. Publisher IDs are
+> no longer assigned to an application automatically. For backward
+> compatibility, applications can continue to specify a publisher ID.
 
 ## Installing an AIR application from the browser
 
@@ -524,6 +524,6 @@ browser by using the LocalConnection class. For more information, see
 [Communicating with other Flash Player and AIR instances](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7c7e.html)
 (for HTML developers).
 
-Note: As of AIR 1.5.3, the publisher ID is deprecated. Publisher IDs are no
-longer assigned to an application automatically. For backward compatibility,
-applications can continue to specify a publisher ID.
+> **Note:** As of AIR 1.5.3, the publisher ID is deprecated. Publisher IDs are
+> no longer assigned to an application automatically. For backward
+> compatibility, applications can continue to specify a publisher ID.

@@ -100,8 +100,8 @@ iOS application.
     information on the P12 certificate file, see
     [Converting a developer certificate into a P12 keystore file](WSfffb011ac560372f46768d8712cd1d13954-7ffc.html).
 
-    Note: You can use a self-signed certificate when packaging for the iOS
-    Simulator.
+    > **Note:** You can use a self-signed certificate when packaging for the iOS
+    > Simulator.
 
     Replace the _`APP_DESCRIPTOR`_ to reference the application descriptor file.
 
@@ -136,8 +136,8 @@ provisioning profile from Apple.
                                     myApp-app.xml
                                     myApp.swf icons Default.png
 
-Note: You can also use `ipa-debug-interpreter` for faster compilation or
-`ipa-debug-interpreter-simulator` to run in the iOS Simulator
+> **Note:** You can also use `ipa-debug-interpreter` for faster compilation or
+> `ipa-debug-interpreter-simulator` to run in the iOS Simulator
 
 Type the entire command on a single line; line breaks in the above example are
 only present to make it easier to read. Also, the example assumes that the path

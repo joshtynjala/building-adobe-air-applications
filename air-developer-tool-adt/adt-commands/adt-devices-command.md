@@ -7,4 +7,4 @@ devices and emulators:
 
 **-platform** The name of the platform to check. Specify `android` or `iOS`.
 
-Note: On iOS, this command requires iTunes 10.5.0 or higher.
+> **Note:** On iOS, this command requires iTunes 10.5.0 or higher.

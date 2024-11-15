@@ -32,10 +32,10 @@ directories to the path:
 
     export PATH=$PATH:/Users/fred/SDKs/AIR/bin:/Users/fred/SDKs/android/tools
 
-Note: If your path contains blank space characters, escape them with a
-backslash, as in the following:
-
-    /Users/fred\ jones/SDKs/AIR\ 2.5\ SDK/bin
+> **Note:** If your path contains blank space characters, escape them with a
+> backslash, as in the following:
+>
+>     /Users/fred\ jones/SDKs/AIR\ 2.5\ SDK/bin
 
 You can use the `echo` command again to make sure it worked:
 

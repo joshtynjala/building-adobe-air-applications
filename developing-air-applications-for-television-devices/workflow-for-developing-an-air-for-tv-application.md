@@ -104,8 +104,8 @@ Make sure that your application:
   Important: AIR for TV applications do not support the `WindowedApplication`
   element.
 
-  Note: You do not have to use an MXML file at all. You can instead create an
-  ActionScript 3.0 project.
+  > **Note:** You do not have to use an MXML file at all. You can instead create
+  > an ActionScript 3.0 project.
 
 - Uses only ActionScript 3.0 classes and methods that the `tv` and `extendedTV`
   AIR profiles support. For details, see

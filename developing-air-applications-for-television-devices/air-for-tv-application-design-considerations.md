@@ -20,11 +20,11 @@ guidelines:
 Adobe recommends that you use the H.264 codec for video delivered to AIR for TV
 devices.
 
-Note: AIR for TV also supports video that is encoded with Sorenson Spark or On2
-VP6 codecs. However, the hardware does not decode and present these codecs.
-Instead, the runtime decodes and presents these codecs using software, and
-therefore, the video plays at a much lower frame rate. Therefore, use H.264 if
-at all possible.
+> **Note:** AIR for TV also supports video that is encoded with Sorenson Spark
+> or On2 VP6 codecs. However, the hardware does not decode and present these
+> codecs. Instead, the runtime decodes and presents these codecs using software,
+> and therefore, the video plays at a much lower frame rate. Therefore, use
+> H.264 if at all possible.
 
 #### The StageVideo class
 
@@ -194,9 +194,10 @@ encoded videos.</p></td>
 </tbody>
 </table>
 
-Note: Some video files contain two audio streams. For example, a video file can
-contain both an AAC stream and an AC3 stream. AIR for TV does not support such
-video files, and using such a file can result in no sound for the video.
+> **Note:** Some video files contain two audio streams. For example, a video
+> file can contain both an AAC stream and an AC3 stream. AIR for TV does not
+> support such video files, and using such a file can result in no sound for the
+> video.
 
 ## Graphics hardware acceleration
 
@@ -252,10 +253,10 @@ types of operations, use one of the following techniques:
   runtime software redraws the display object, but only once, and it renders a
   high-quality image.
 
-  Note: Typically, AIR for TV devices do not support hardware-accelerated
-  rotation and skewing. Therefore, if you specify rotation and skewing in the
-  Matrix class, AIR for TV performs all the Matrix operations in the software.
-  These software operations can have a detrimental impact to performance.
+  > **Note:** Typically, AIR for TV devices do not support hardware-accelerated
+  > rotation and skewing. Therefore, if you specify rotation and skewing in the
+  > Matrix class, AIR for TV performs all the Matrix operations in the software.
+  > These software operations can have a detrimental impact to performance.
 
 - Use the BitmapData class to create custom bitmap caching behavior.
 
@@ -282,9 +283,10 @@ To manage your application's use of graphics memory:
 
       myBitmap.bitmapData.dispose();
 
-  Note: Releasing the reference to the BitmapData object does not immediately
-  free the graphics memory. The runtime's garbage collector eventually frees the
-  graphics memory, but calling `dispose()`gives your application more control.
+  > **Note:** Releasing the reference to the BitmapData object does not
+  > immediately free the graphics memory. The runtime's garbage collector
+  > eventually frees the graphics memory, but calling `dispose()`gives your
+  > application more control.
 
 - Use PerfMaster Deluxe, an AIR application that Adobe provides, to better
   understand hardware graphics acceleration on your target device. This
@@ -441,9 +443,9 @@ window changes size. Therefore, you have full control over how to adjust the
 application's contents when the application begins and when the application
 window resizes.
 
-Note: The `NO_SCALE` behavior is the same as with any AIR application. In AIR
-for TV applications, however, using this setting is critical to using the safe
-viewing area.
+> **Note:** The `NO_SCALE` behavior is the same as with any AIR application. In
+> AIR for TV applications, however, using this setting is critical to using the
+> safe viewing area.
 
 #### Stage alignment
 
@@ -504,13 +506,14 @@ When the stage dimensions equal `Capabilities.screenResolutionX` and
 `screenResolutionY`, AIR for TV causes the hardware to deliver the best possible
 fidelity for your video and graphics.
 
-Note: The fidelity at which graphics and video are displayed on a TV screen can
-differ from the `Capabilities.screenResolutionX` and `screenResolutionY` values,
-which depend on the device running AIR for TV. For example, a set-top box
-running AIR for TV can have a screen resolution of 1280 x 720 and the connected
-TV can have a screen resolution of 1920 x 1080. However, AIR for TV causes the
-hardware to deliver the best possible fidelity. Therefore, in this example, the
-hardware displays a 1080p video using a 1920 x 1080 screen resolution.
+> **Note:** The fidelity at which graphics and video are displayed on a TV
+> screen can differ from the `Capabilities.screenResolutionX` and
+> `screenResolutionY` values, which depend on the device running AIR for TV. For
+> example, a set-top box running AIR for TV can have a screen resolution of 1280
+> x 720 and the connected TV can have a screen resolution of 1920 x 1080.
+> However, AIR for TV causes the hardware to deliver the best possible fidelity.
+> Therefore, in this example, the hardware displays a 1080p video using a 1920 x
+> 1080 screen resolution.
 
 #### Designing for multiple screen sizes
 
@@ -675,12 +678,12 @@ possible.
   performance, see
   [Optimizing Performance for the Adobe Flash Platform](https://web.archive.org/web/20160315010039/http://help.adobe.com/en_US/as3/mobile/index.html).
 
-  Note: The graphics hardware on AIR for TV devices typically updates the screen
-  at a rate of 60 Hz or 120 Hz (60 or 120 times per second). The hardware scans
-  the stage for updates at, for example, 30 frames per second or 60 frames per
-  second for display on the 60-Hz or 120-Hz screen. However, whether the user
-  experiences these higher frame rates depends on the complexity of the
-  application's graphics operations.
+  > **Note:** The graphics hardware on AIR for TV devices typically updates the
+  > screen at a rate of 60 Hz or 120 Hz (60 or 120 times per second). The
+  > hardware scans the stage for updates at, for example, 30 frames per second
+  > or 60 frames per second for display on the 60-Hz or 120-Hz screen. However,
+  > whether the user experiences these higher frame rates depends on the
+  > complexity of the application's graphics operations.
 
 - Update the screen within 100 - 200 milliseconds of user input.
 
@@ -777,9 +780,9 @@ These AIR for TV device fonts are:
 
 - Are font outlines, not bitmap fonts
 
-Note: Device manufacturers often include other device fonts on the device. These
-manufacturer-provided device fonts are installed in addition to the AIR for TV
-device fonts.
+> **Note:** Device manufacturers often include other device fonts on the device.
+> These manufacturer-provided device fonts are installed in addition to the AIR
+> for TV device fonts.
 
 Adobe provides an application called FontMaster Deluxe that displays all the
 device fonts on the device. The application is available at
@@ -812,9 +815,10 @@ Adobe recommends the following regarding using TLF text fields:
   settings provide an easy way for you to automatically use the correct font for
   the four major Asian locales and English.
 
-Note: If you use classic text fields for Asian language text, specify a font
-name of an AIR for TV device font to guarantee proper rendering. If you know
-that another font is installed on your target device, you can also specify it.
+> **Note:** If you use classic text fields for Asian language text, specify a
+> font name of an AIR for TV device font to guarantee proper rendering. If you
+> know that another font is installed on your target device, you can also
+> specify it.
 
 Regarding application performance, consider the following:
 
@@ -885,9 +889,9 @@ stores each AIR application's cookies in an application-specific directory:
 
 The cookie file is named `cookies`.
 
-Note: AIR on other devices, such as desktop devices, does not store cookies
-separately for each application. Application-specific cookie storage supports
-the application and system security model of AIR for TV.
+> **Note:** AIR on other devices, such as desktop devices, does not store
+> cookies separately for each application. Application-specific cookie storage
+> supports the application and system security model of AIR for TV.
 
 Use the ActionScript property` URLRequest.manageCookies` as follows:
 
@@ -895,11 +899,11 @@ Use the ActionScript property` URLRequest.manageCookies` as follows:
   for TV automatically adds cookies to HTTP requests and remembers cookies in
   the HTTP response.
 
-  Note: Even when `manageCookies` is `true`, the application can manually add a
-  cookie to an HTTP request using `URLRequest.requestHeaders`. If this cookie
-  has the same name as a cookie that AIR for TV is managing, the request
-  contains two cookies with the same name. The values of the two cookies can be
-  different.
+  > **Note:** Even when `manageCookies` is `true`, the application can manually
+  > add a cookie to an HTTP request using `URLRequest.requestHeaders`. If this
+  > cookie has the same name as a cookie that AIR for TV is managing, the
+  > request contains two cookies with the same name. The values of the two
+  > cookies can be different.
 
 - Set `manageCookies` to `false`. This value means that the application is
   responsible for sending cookies in HTTP requests, and for remembering the

@@ -155,9 +155,9 @@ To test the application code that you've written, run it in debug mode.
     control, the text is placed in the center of the window. Move or resize the
     window as you would any other desktop application.
 
-Note: If the application does not compile, fix any syntax or spelling errors
-that you inadvertently entered into the code. Errors and warnings are displayed
-in the Problems view in Flash Builder.
+> **Note:** If the application does not compile, fix any syntax or spelling
+> errors that you inadvertently entered into the code. Errors and warnings are
+> displayed in the Problems view in Flash Builder.
 
 ## Package, sign, and run your AIR application
 

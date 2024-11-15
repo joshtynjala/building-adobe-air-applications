@@ -62,9 +62,10 @@ If there is no network connection from which to obtain the correct version of
 Adobe AIR (if necessary), installation fails. Also, the installation fails if
 the operating system is not supported in Adobe AIR 2.
 
-Note: If you want a file to be executable in your installed application, make
-sure that it's executable on the filesystem when you package your application.
-(On Mac and Linux, you can use chmod to set the executable flag, if needed.)
+> **Note:** If you want a file to be executable in your installed application,
+> make sure that it's executable on the filesystem when you package your
+> application. (On Mac and Linux, you can use chmod to set the executable flag,
+> if needed.)
 
 #### Creating a native installer from the application source files
 

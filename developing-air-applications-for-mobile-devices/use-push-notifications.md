@@ -4,17 +4,17 @@ Push notifications let remote notification providers send notifications to
 applications running on a mobile device. AIR 3.4 supports push notifications for
 iOS devices using the Apple Push Notification service (APNs).
 
-Note: To enable push notifications for an AIR for Android application, use a
-native extension, such as
-[as3c2dm](https://web.archive.org/web/20120112184645/http://www.riaspace.com/2011/09/as3c2dm-air-native-extension-to-push-notifications-with-c2dm/),
-developed by Adobe evangelist Piotr Walczyszyn.
+> **Note:** To enable push notifications for an AIR for Android application, use
+> a native extension, such as
+> [as3c2dm](https://web.archive.org/web/20120112184645/http://www.riaspace.com/2011/09/as3c2dm-air-native-extension-to-push-notifications-with-c2dm/),
+> developed by Adobe evangelist Piotr Walczyszyn.
 
 The remainder of this section describes how to enable push notifications in AIR
 for iOS applications.
 
-Note: This discussion assumes that you have an Apple developer ID, are familiar
-with the iOS development workflow,and have deployed at least one application on
-an iOS device.
+> **Note:** This discussion assumes that you have an Apple developer ID, are
+> familiar with the iOS development workflow,and have deployed at least one
+> application on an iOS device.
 
 ## Overview of push notifications
 
@@ -519,8 +519,8 @@ Don't Allow and OK buttons. If the user selects OK, the application can receive
 all styles of notifications for which it has subscribed. If the user selects
 Don't Allow, it receives no notifications.
 
-Note: Users can also go to Settings \> Notifications to control the specific
-notification types it can receive for each push-enabled application.
+> **Note:** Users can also go to Settings \> Notifications to control the
+> specific notification types it can receive for each push-enabled application.
 
 Apples recommends that each time an application activates it should subscribe
 for push notifications. When your application calls

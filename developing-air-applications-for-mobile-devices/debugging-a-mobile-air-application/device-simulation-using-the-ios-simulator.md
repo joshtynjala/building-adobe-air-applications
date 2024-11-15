@@ -36,8 +36,8 @@ device, do the following:
 Restart the process after setting the environment variable and run the
 application on the simulator device of your choice.
 
-Note: When using ADT with the iOS Simulator, you must always include the
-`‑platformsdk` option, specifying the path to the iOS Simulator SDK.
+> **Note:** When using ADT with the iOS Simulator, you must always include the
+> `‑platformsdk` option, specifying the path to the iOS Simulator SDK.
 
 To run an application in the iOS Simulator:
 
@@ -54,9 +54,9 @@ To run an application in the iOS Simulator:
                                         myApp.swf
                                         -platformsdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
 
-    Note: Signing options are no longer required in case of simulators now, so
-    any value can be provided in `-keystore` flag as it will not be honored by
-    ADT.
+    > **Note:** Signing options are no longer required in case of simulators
+    > now, so any value can be provided in `-keystore` flag as it will not be
+    > honored by ADT.
 
 2.  Use the adt ‑installApp command to install the application in the iOS
     Simulator, as the following example shows:
@@ -70,10 +70,10 @@ To run an application in the iOS Simulator:
 3.  Use the adt ‑launchApp command to run the application in the iOS Simulator,
     as the following example shows:
 
-    Note: By default, the command `adt -launchApp` runs the application in the
-    iPhone simulator. To run the application in the iPad simulator, export the
-    environment variable, `AIR_IOS_SIMULATOR_DEVICE` = "iPad" and then use the
-    command `adt -launchApp`.
+    > **Note:** By default, the command `adt -launchApp` runs the application in
+    > the iPhone simulator. To run the application in the iPad simulator, export
+    > the environment variable, `AIR_IOS_SIMULATOR_DEVICE` = "iPad" and then use
+    > the command `adt -launchApp`.
 
         adt     -launchApp
                                         -platform ios
@@ -99,6 +99,6 @@ name in the extension.xml file and specify `library.a` (static library) in the
                               </platforms>
                             </extension>
 
-Note: When testing a native extension in the iOS Simulator, do not use the
-static library (`.a` file) that is compiled for the device. Instead, be sure to
-use the static library that is compiled for the simulator.
+> **Note:** When testing a native extension in the iOS Simulator, do not use the
+> static library (`.a` file) that is compiled for the device. Instead, be sure
+> to use the static library that is compiled for the simulator.

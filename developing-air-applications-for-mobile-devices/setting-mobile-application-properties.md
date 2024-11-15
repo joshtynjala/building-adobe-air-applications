@@ -38,17 +38,20 @@ Specify the namespace using the xmlns attribute of the root `application`
 element. The following namespaces should be used for mobile applications
 (depending on which mobile platform you are targeting):
 
-    iOS 4+ and iPhone 3Gs+ or Android:
-                                <application xmlns="http://ns.adobe.com/air/application/2.7">
-                                iOS only:
-                                <application xmlns="http://ns.adobe.com/air/application/2.0">
+iOS 4+ and iPhone 3Gs+ or Android:
 
-Note: Support for iOS 3 devices is provided by the Packager for iPhone SDK,
-based on the AIR 2.0 SDK. For information about building AIR applications for
-iOS 3, see
-[Building iPhone apps](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/index.html).
-The AIR 2.6 SDK (and later) support iOS 4, and above on iPhone 3Gs, iPhone 4,
-and iPad devices.
+    <application xmlns="http://ns.adobe.com/air/application/2.7">
+
+iOS only:
+
+    <application xmlns="http://ns.adobe.com/air/application/2.0">
+
+> **Note:** Support for iOS 3 devices is provided by the Packager for iPhone
+> SDK, based on the AIR 2.0 SDK. For information about building AIR applications
+> for iOS 3, see
+> [Building iPhone apps](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/index.html).
+> The AIR 2.6 SDK (and later) support iOS 4, and above on iPhone 3Gs, iPhone 4,
+> and iPad devices.
 
 ### Application identity
 
@@ -71,11 +74,11 @@ underscores and leading digits in any ID component are preceded by a capital
 "A". For example, the ID: _3-goats.1-boat_, is transformed to the package name:
 _air.A3_goats.A1_boat_.
 
-Note: The prefix added to the application ID can be used to identify AIR
-applications in the Android Market. If you do not want your application to
-identified as an AIR application because of the prefix, you must unpackage the
-APK file, change the application ID, and repackage it as described in,
-[Opt-out of AIR application analytics for Android](https://web.archive.org/web/20120825013033/http://helpx.adobe.com/air/kb/opt-out-air-application-analytics.html).
+> **Note:** The prefix added to the application ID can be used to identify AIR
+> applications in the Android Market. If you do not want your application to
+> identified as an AIR application because of the prefix, you must unpackage the
+> APK file, change the application ID, and repackage it as described in,
+> [Opt-out of AIR application analytics for Android](https://web.archive.org/web/20120825013033/http://helpx.adobe.com/air/kb/opt-out-air-application-analytics.html).
 
 #### iOS application IDs
 
@@ -136,8 +139,8 @@ Specify the main application SWF file in the `content` child of the
 use a SWF file (HTML-based applications are not supported).
 
     <initialWindow>
-                                <content>MyApplication.swf</content>
-                                </initialWindow>
+        <content>MyApplication.swf</content>
+    </initialWindow>
 
 You must include the file in the AIR package (using ADT or your IDE). Simply
 referencing the name in the application descriptor does not cause the file to be
@@ -186,17 +189,17 @@ appearance and behavior of the main application screen.
   You can set the render mode to _gpu_, _cpu_, _direct_, or _auto_. The default
   value is _auto_, which currently falls back to cpu mode.
 
-  Note: In order to leverage GPU acceleration of Flash content with AIR for
-  mobile platforms, Adobe recommends that you use renderMode="direct" (that is,
-  Stage3D) rather than renderMode="gpu". Adobe officially supports and
-  recommends the following Stage3D based frameworks: Starling (2D) and Away3D
-  (3D). For more details on Stage3D and Starling/Away3D, see
-  <http://gaming.adobe.com/getstarted/>.
+  > **Note:** In order to leverage GPU acceleration of Flash content with AIR
+  > for mobile platforms, Adobe recommends that you use renderMode="direct"
+  > (that is, Stage3D) rather than renderMode="gpu". Adobe officially supports
+  > and recommends the following Stage3D based frameworks: Starling (2D) and
+  > Away3D (3D). For more details on Stage3D and Starling/Away3D, see
+  > <http://gaming.adobe.com/getstarted/>.
 
       <renderMode>direct</renderMode>
 
-  Note: You cannot use renderMode="direct" for applications that run in the
-  background.
+  > **Note:** You cannot use renderMode="direct" for applications that run in
+  > the background.
 
   The limitations of GPU mode are:
 
@@ -220,9 +223,9 @@ appearance and behavior of the main application screen.
     all. For example, if a filter is applied to a display object, the object is
     not shown.
 
-  Note: The GPU implementation for iOS in AIR 2.6+ is much different than the
-  implementation used in the earlier, AIR 2.0 version. Different optimization
-  considerations apply.
+  > **Note:** The GPU implementation for iOS in AIR 2.6+ is much different than
+  > the implementation used in the earlier, AIR 2.0 version. Different
+  > optimization considerations apply.
 
 ### Supported profiles
 
@@ -250,9 +253,9 @@ descriptor. The following example illustrates the syntax for specifying two
 required native extensions:
 
     <extensions>
-                                <extensionID>com.example.extendedFeature</extensionID>
-                                <extensionID>com.example.anotherFeature</extensionID>
-                                </extensions>
+        <extensionID>com.example.extendedFeature</extensionID>
+        <extensionID>com.example.anotherFeature</extensionID>
+    </extensions>
 
 The `extensionID` element has the same value as the `id` element in the
 extension descriptor file. The extension descriptor file is an XML file called
@@ -277,7 +280,7 @@ To enable the automatic behavior, set the element value to `pan`:
 Since `pan` is the default value, omitting the `softKeyboardBehavior` element
 also enables the automatic keyboard behavior.
 
-Note: When you also use GPU rendering, the pan behavior is not supported.
+> **Note:** When you also use GPU rendering, the pan behavior is not supported.
 
 ## Android settings
 
@@ -289,17 +292,18 @@ package. AIR sets a few properties to the values required for certain features
 to work. Any other properties set in the android section of the AIR application
 descriptor are added to the corresponding section of the Manifest.xml file.
 
-Note: For most AIR applications, you must set the Android permissions needed by
-your application within the `android` element, but you generally will not need
-to set any other properties.
+> **Note:** For most AIR applications, you must set the Android permissions
+> needed by your application within the `android` element, but you generally
+> will not need to set any other properties.
 
 You can only set attributes that take string, integer, or boolean values.
 Setting references to resources in the application package is not supported.
 
-Note: The runtime requires a minimum SDK version equal to or greater than 14. If
-you wish to create an application only for higher versions, you should ensure
-that the Manifest includes `<uses-sdk android:minSdkVersion=""></uses-sdk>` with
-correct version, accordingly.
+> **Note:** The runtime requires a minimum SDK version equal to or greater
+> than 14. If you wish to create an application only for higher versions, you
+> should ensure that the Manifest includes
+> `<uses-sdk android:minSdkVersion=""></uses-sdk>` with correct version,
+> accordingly.
 
 ### Reserved Android manifest settings
 
@@ -362,78 +366,79 @@ application descriptor. The following format is used for adding permissions
 (where PERMISSION_NAME is the name of an Android permission):
 
     <android>
-                                <manifestAdditions>
-                                <![CDATA[
-                                <manifest>
-                                <uses-permission android:name="android.permission.PERMISSION_NAME" />
-                                </manifest>
-                                ]]>
-                                </manifestAdditions>
-                                </android>
+        <manifestAdditions>
+            <![CDATA[
+                <manifest>
+                    <uses-permission android:name="android.permission.PERMISSION_NAME" />
+                </manifest>
+            ]]>
+        </manifestAdditions>
+    </android>
 
 The uses-permissions statements inside the `manifest` element are added directly
 to the Android manifest document.
 
 The following permissions are required to use various AIR features:
 
-ACCESS_COARSE_LOCATION  
+**ACCESS_COARSE_LOCATION**  
 Allows the application to access WIFI and cellular network location data through
 the Geolocation class.
 
-ACCESS_FINE_LOCATION  
+**ACCESS_FINE_LOCATION**  
 Allows the application to access GPS data through the Geolocation class.
 
-ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE  
+**ACCESS_NETWORK_STATE** and **ACCESS_WIFI_STATE**  
 Allows the application to access network information the NetworkInfo class.
 
-CAMERA  
+**CAMERA**  
 Allows the application to access the camera.
 
-Note: When you ask for permission to use the camera feature, Android assumes
-that your application also requires the camera. If the camera is an optional
-feature of your application, then you should add a `uses-feature` element to the
-manifest for the camera, setting the required attribute to `false`. See
-[Android compatibility filtering](WS2d929364fa0b81373f2c6cba12a3522f10c-7fff.html).
+> **Note:** When you ask for permission to use the camera feature, Android
+> assumes that your application also requires the camera. If the camera is an
+> optional feature of your application, then you should add a `uses-feature`
+> element to the manifest for the camera, setting the required attribute to
+> `false`. See
+> [Android compatibility filtering](WS2d929364fa0b81373f2c6cba12a3522f10c-7fff.html).
 
-INTERNET  
+**INTERNET**  
 Allows the application to make network requests. Also allows remote debugging.
 
-READ_PHONE_STATE  
+**READ_PHONE_STATE**  
 Allows the AIR runtime to mute audio during phone calls. You should set this
 permission if your app plays audio while in the background.
 
-RECORD_AUDIO  
+**RECORD_AUDIO**  
 Allows the application to access the microphone.
 
-WAKE_LOCK and DISABLE_KEYGUARD  
+**WAKE_LOCK** and **DISABLE_KEYGUARD**  
 Allows the application to prevent the device from going to sleep using the
 SystemIdleMode class settings.
 
-WRITE_EXTERNAL_STORAGE  
+**WRITE_EXTERNAL_STORAGE**  
 Allows the application to write to the external memory card on the device.
 
 For example, to set the permissions for an app that impressively requires every
 permission, you could add the following to the application descriptor:
 
     <android>
-                                <manifestAdditions>
-                                <![CDATA[
-                                <manifest>
-                                <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-                                <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-                                <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-                                <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-                                <uses-permission android:name="android.permission.CAMERA" />
-                                <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-                                <uses-permission android:name="android.permission.INTERNET" />
-                                <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-                                <uses-permission android:name="android.permission.RECORD_AUDIO" />
-                                <uses-permission android:name="android.permission.WAKE_LOCK" />
-                                <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-                                </manifest>
-                                ]]>
-                                </manifestAdditions>
-                                </android>
+        <manifestAdditions>
+            <![CDATA[
+                <manifest>
+                    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+                    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+                    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+                    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+                    <uses-permission android:name="android.permission.CAMERA" />
+                    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+                    <uses-permission android:name="android.permission.INTERNET" />
+                    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+                    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+                    <uses-permission android:name="android.permission.WAKE_LOCK" />
+                    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+                </manifest>
+            ]]>
+        </manifestAdditions>
+    </android>
 
 ### Android custom URI schemes
 
@@ -448,27 +453,27 @@ must be specified. Edit the `<data android:scheme="`_`my-customuri`_`"/>`
 statement to reflect the URI string for your custom scheme.
 
     <android>
-                                <manifestAdditions>
-                                <![CDATA[
-                                <manifest>
-                                <application>
-                                <activity>
-                                <intent-filter>
+        <manifestAdditions>
+            <![CDATA[
+                <manifest>
+                    <application>
+                        <activity>
+                            <intent-filter>
                                 <action android:name="android.intent.action.MAIN"/>
                                 <category android:name="android.intent.category.LAUNCHER"/>
-                                </intent-filter>
-                                <intent-filter>
+                            </intent-filter>
+                            <intent-filter>
                                 <action android:name="android.intent.action.VIEW"/>
                                 <category android:name="android.intent.category.BROWSABLE"/>
                                 <category android:name="android.intent.category.DEFAULT"/>
                                 <data android:scheme="my-customuri"/>
-                                </intent-filter>
-                                </activity>
-                                </application>
-                                </manifest>
-                                ]]>
-                                </manifestAdditions>
-                                </android>
+                            </intent-filter>
+                        </activity>
+                    </application>
+                </manifest>
+            ]]>
+        </manifestAdditions>
+    </android>
 
 An intent filter informs the Android operating system that your application is
 available to perform a given action. In the case of a custom URI, this means
@@ -480,8 +485,8 @@ object dispatches an `invoke` event. The URL of the link, including query
 parameters, is placed in the `arguments` array of the InvokeEvent object. You
 can use any number of intent-filters.
 
-Note: Links in a StageWebView instance cannot open URLs that use a custom URI
-scheme.
+> **Note:** Links in a StageWebView instance cannot open URLs that use a custom
+> URI scheme.
 
 ### Android compatibility filtering
 
@@ -516,17 +521,17 @@ The following example illustrates how to request permission for the camera and
 make all camera features optional:
 
     <android>
-                                    <manifestAdditions>
-                                    <![CDATA[
-                                    <manifest>
-                                    <uses-permission android:name="android.permission.CAMERA" />
-                                    <uses-feature android:name="android.hardware.camera" android:required="false"/>
-                                    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
-                                    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
-                                    </manifest>
-                                    ]]>
-                                    </manifestAdditions>
-                                    </android>
+        <manifestAdditions>
+            <![CDATA[
+                <manifest>
+                    <uses-permission android:name="android.permission.CAMERA" />
+                    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+                    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+                    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+                </manifest>
+            ]]>
+        </manifestAdditions>
+    </android>
 
 #### Audio recording applications
 
@@ -540,15 +545,15 @@ The following example illustrates how to request permission to use the
 microphone while still making the microphone hardware optional:
 
     <android>
-                                    <manifestAdditions>
-                                    <![CDATA[
-                                    <manifest>
-                                    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-                                    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
-                                    </manifest>
-                                    ]]>
-                                    </manifestAdditions>
-                                    </android>
+        <manifestAdditions>
+            <![CDATA[
+                <manifest>
+                    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+                    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+                </manifest>
+            ]]>
+        </manifestAdditions>
+    </android>
 
 ### Install location
 
@@ -557,12 +562,12 @@ card by setting the `installLocation` attribute of the Android `manifest`
 element to either `auto` or `preferExternal`:
 
     <android>
-                                <manifestAdditions>
-                                <![CDATA[
-                                <manifest android:installLocation="preferExternal"/>
-                                ]]>
-                                </manifestAdditions>
-                                </android>
+        <manifestAdditions>
+            <![CDATA[
+                <manifest android:installLocation="preferExternal"/>
+            ]]>
+        </manifestAdditions>
+    </android>
 
 The Android operating system doesn't guarantee that your app will be installed
 to the external memory. A user can also move the app between internal and
@@ -584,14 +589,14 @@ StageWebView object. To enable plug-in rendering, set the
 `android:hardwareAccelerated` attribute of the `application` element to `true`:
 
     <android>
-                                <manifestAdditions>
-                                <![CDATA[
-                                <manifest>
-                                <application android:hardwareAccelerated="true"/>
-                                </manifest>
-                                ]]>
-                                </manifestAdditions>
-                                </android>
+        <manifestAdditions>
+            <![CDATA[
+                <manifest>
+                    <application android:hardwareAccelerated="true"/>
+                </manifest>
+            ]]>
+        </manifestAdditions>
+    </android>
 
 ### Color depth
 
@@ -601,9 +606,9 @@ runtime to use 16-bit color using the \<colorDepth\> element of the application
 descriptor:
 
     <android>
-                                <colorDepth>16bit</colorDepth>
-                                <manifestAdditions>...</manifestAdditions>
-                                </android>
+        <colorDepth>16bit</colorDepth>
+        <manifestAdditions>...</manifestAdditions>
+    </android>
 
 Using the 16-bit color depth can increase rendering performance, but at the
 expense of color fidelity.
@@ -622,13 +627,13 @@ values set the status bar style of the application and state that the
 application does not require persistent Wi-Fi access.
 
     <InfoAdditions>
-                                <![CDATA[
-                                <key>UIStatusBarStyle</key>
-                                <string>UIStatusBarStyleBlackOpaque</string>
-                                <key>UIRequiresPersistentWiFi</key>
-                                <string>NO</string>
-                                ]]>
-                                </InfoAdditions>
+        <![CDATA[
+            <key>UIStatusBarStyle</key>
+            <string>UIStatusBarStyleBlackOpaque</string>
+            <key>UIRequiresPersistentWiFi</key>
+            <string>NO</string>
+        ]]>
+    </InfoAdditions>
 
 The InfoAdditions settings are enclosed in a `CDATA` tag.
 
@@ -653,21 +658,21 @@ background behaviors:
 
 - Opting out of background app execution
 
-Note: With swf-version 21 and its earlier versions, AIR does not support
-background execution on iOS and Android when render mode direct is set. Due to
-this restriction, Stage3D based apps cannot execute background tasks like audio
-playback, location updates, network upload or download, etc. iOS does not allow
-OpenGLES or rendering of calls in the background. Applications which attempt to
-make OpenGL calls in the background are terminated by iOS. Android does not
-restrict applications from either making OpenGLES calls in the background or
-performing other background tasks like audio playback. With swf-version 22 and
-later, AIR mobile applications can execute in the background when renderMode
-direct is set. The AIR iOS runtime results in an ActionScript error (3768 - The
-Stage3D API may not be used during background execution) if OpenGLES calls are
-made in the background. However, there are no errors on Android because its
-native applications are allowed to make OpenGLES calls in the background. For
-optimal utilization of mobile resource, do not make rendering calls while an
-application is executing in the background.
+> **Note:** With swf-version 21 and its earlier versions, AIR does not support
+> background execution on iOS and Android when render mode direct is set. Due to
+> this restriction, Stage3D based apps cannot execute background tasks like
+> audio playback, location updates, network upload or download, etc. iOS does
+> not allow OpenGLES or rendering of calls in the background. Applications which
+> attempt to make OpenGL calls in the background are terminated by iOS. Android
+> does not restrict applications from either making OpenGLES calls in the
+> background or performing other background tasks like audio playback. With
+> swf-version 22 and later, AIR mobile applications can execute in the
+> background when renderMode direct is set. The AIR iOS runtime results in an
+> ActionScript error (3768 - The Stage3D API may not be used during background
+> execution) if OpenGLES calls are made in the background. However, there are no
+> errors on Android because its native applications are allowed to make OpenGLES
+> calls in the background. For optimal utilization of mobile resource, do not
+> make rendering calls while an application is executing in the background.
 
 #### Background audio
 
@@ -675,13 +680,13 @@ To enable background audio playback and recording, include the following
 key-value pair in the `InfoAdditions` element:
 
     <InfoAdditions>
-                                    <![CDATA[
-                                    <key>UIBackgroundModes</key>
-                                    <array>
-                                    <string>audio</string>
-                                    </array>
-                                    ]]>
-                                    </InfoAdditions>
+        <![CDATA[
+            <key>UIBackgroundModes</key>
+            <array>
+                <string>audio</string>
+            </array>
+        ]]>
+    </InfoAdditions>
 
 #### Background location updates
 
@@ -689,16 +694,16 @@ To enable background location updates, include the following key-value pair in
 the `InfoAdditions` element:
 
     <InfoAdditions>
-                                    <![CDATA[
-                                    <key>UIBackgroundModes</key>
-                                    <array>
-                                    <string>location</string>
-                                    </array>
-                                    ]]>
-                                    </InfoAdditions>
+        <![CDATA[
+            <key>UIBackgroundModes</key>
+            <array>
+                <string>location</string>
+            </array>
+        ]]>
+    </InfoAdditions>
 
-Note: Use this feature only when necessary, as location APIs are a significant
-drain on the battery.
+> **Note:** Use this feature only when necessary, as location APIs are a
+> significant drain on the battery.
 
 #### Background networking
 
@@ -766,8 +771,8 @@ settings:
 </tbody>
 </table>
 
-Note: You can define the MinimumOSVersion. The MinimumOSVersion definition is
-honoured in Air 3.3 and later.
+> **Note:** You can define the MinimumOSVersion. The MinimumOSVersion definition
+> is honoured in Air 3.3 and later.
 
 ### Supporting different iOS device models
 
@@ -780,38 +785,38 @@ for the tvOS. If you specify only one of these strings, only that device family
 is supported. For example, the following setting limits support to the iPad:
 
     <key>UIDeviceFamily</key>
-                                <array>
-                                <string>2</string>
-                                </array>>
+    <array>
+        <string>2</string>
+    </array>>
 
 The following setting supports both device families (iPhone/iPod Touch and
 iPad):
 
     <key>UIDeviceFamily</key>
-                                <array>
-                                <string>1</string>
-                                <string>2</string>
-                                </array>
+    <array>
+        <string>1</string>
+        <string>2</string>
+    </array>
 
 The following setting limits support for tvOS:
 
     <key>UIDeviceFamily</key>
-                                <array>
-                                <string>3</string>
-                                </array>
+    <array>
+      <string>3</string>
+    </array>
 
-Note: If UIDeviceFamily is not provided and tvOS provisioning is given, then the
-UIDeviceFamily value equal to 3 is added automatically in the final IPA that is
-generated.
+> **Note:** If UIDeviceFamily is not provided and tvOS provisioning is given,
+> then the UIDeviceFamily value equal to 3 is added automatically in the final
+> IPA that is generated.
 
-Note: Following warnings appear if there is a mismatch between the provisioning
-profile and the UIDeviceFamily value:
-
-- Warning: Provisioning profile specified for tvOS, ignoring iOS UIDeviceFamily
-  value(s).
-
-- Warning: Provisioning profile specified for iOS, ignoring tvOS UIDeviceFamily
-  value(s).
+> **Note:** Following warnings appear if there is a mismatch between the
+> provisioning profile and the UIDeviceFamily value:
+>
+> - Warning: Provisioning profile specified for tvOS, ignoring iOS
+>   UIDeviceFamily value(s).
+>
+> - Warning: Provisioning profile specified for iOS, ignoring tvOS
+>   UIDeviceFamily value(s).
 
 Additionally, in AIR 3.7 and higher, you can use the
 `forceCPURenderModeForDevices` tag to force CPU render mode for a specified set
@@ -825,13 +830,13 @@ For example, to use CPU mode in old iPods, iPhones, and iPads and enable GPU
 mode for all other devices, specify the following in the application descriptor:
 
     ...
-                                <renderMode>GPU</renderMode>
-                                ...
-                                <iPhone>
-                                ...
-                                   <forceCPURenderModeForDevices>iPad1,1 iPhone1,1 iPhone1,2 iPod1,1
-                                   </forceCPURenderModeForDevices>
-                                </iPhone>
+    <renderMode>GPU</renderMode>
+    ...
+    <iPhone>
+        ...
+        <forceCPURenderModeForDevices>iPad1,1 iPhone1,1 iPhone1,2 iPod1,1
+        </forceCPURenderModeForDevices>
+    </iPhone>
 
 ### High-resolution displays
 
@@ -870,27 +875,28 @@ following example registers a URI scheme named _com.example.app_ to allow an
 application to be invoked by URLs with the form: _example://foo_.
 
     <key>CFBundleURLTypes</key>
-                                <array>
-                                <dict>
-                                <key>CFBundleURLSchemes</key>
-                                <array>
-                                <string>example</string>
-                                </array>
-                                <key>CFBundleURLName</key>
-                                <string>com.example.app</string>
-                                </dict>
-                                </array>
+    <array>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>example</string>
+            </array>
+            <key>CFBundleURLName</key>
+            <string>com.example.app</string>
+        </dict>
+    </array>
 
 When your application is invoked through a custom URI, the NativeApplication
 object dispatches an `invoke` event. The URL of the link, including query
 parameters, is placed in the `arguments` array of the InvokeEvent object. You
 can use any number of custom URI schemes.
 
-Note: Links in a StageWebView instance cannot open URLs that use a custom URI
-scheme.
+> **Note:** Links in a StageWebView instance cannot open URLs that use a custom
+> URI scheme.
 
-Note: If another application has already registered a scheme, then your
-application cannot replace it as the application registered for that URI scheme.
+> **Note:** If another application has already registered a scheme, then your
+> application cannot replace it as the application registered for that URI
+> scheme.
 
 ### iOS compatibility filtering
 
@@ -900,10 +906,10 @@ hardware or software capabilities. For example, the following entry indicates
 that an application requires a still camera and a microphone:
 
     <key>UIRequiredDeviceCapabilities</key>
-                                <array>
-                                <string>microphone</string>
-                                <string>still-camera</string>
-                                </array>
+    <array>
+        <string>microphone</string>
+        <string>still-camera</string>
+    </array>
 
 If a device lacks the corresponding capability, the application cannot be
 installed. The capability settings relevant to AIR applications include:
@@ -934,10 +940,10 @@ installed. The capability settings relevant to AIR applications include:
 AIR 2.6+ automatically adds _armv7_ and _opengles-2_ to the list of required
 capabilities.
 
-Note: You do not need to include these capabilities in the application
-descriptor in order for your application to use them. Use the
-UIRequiredDeviceCapabilities settings only to prevent users from installing your
-application on devices on which it cannot function properly.
+> **Note:** You do not need to include these capabilities in the application
+> descriptor in order for your application to use them. Use the
+> UIRequiredDeviceCapabilities settings only to prevent users from installing
+> your application on devices on which it cannot function properly.
 
 ### Exiting instead of pausing
 
@@ -946,7 +952,7 @@ pauses. If you want your application to exit completely instead of pausing, set
 the `UIApplicationExitsOnSuspend` property to `YES`:
 
     <key>UIApplicationExitsOnSuspend</key>
-                                <true/>
+    <true/>
 
 ### Minimize download size by loading external, asset-only SWFs
 
@@ -966,9 +972,9 @@ SWFs):
   time:
 
       <iPhone>
-                                             ...
-                                             <externalSwfs>FilewithPathsOfSWFsThatAreToNotToBePackaged.txt</externalSwfs>
-                                          </iPhone>
+         ...
+         <externalSwfs>FilewithPathsOfSWFsThatAreToNotToBePackaged.txt</externalSwfs>
+      </iPhone>
 
 - Transfers the ABC code from each externally loaded SWF to the main executable.
 
@@ -982,16 +988,16 @@ You indicate the SWF files to be loaded at runtime by specifying their names,
 one per line in a text file, as the following example shows:
 
     assets/Level1/Level1.swf
-                                assets/Level2/Level2.swf
-                                assets/Level3/Level3.swf
-                                assets/Level4/Level4.swf
+    assets/Level2/Level2.swf
+    assets/Level3/Level3.swf
+    assets/Level4/Level4.swf
 
 The file path specified is relative to the application descriptor file.
 Additionally, you must specify these swfs as assets in the `adt` command.
 
-Note: This feature applies to standard packaging only. For fast packaging (using
-for example, using interpreter, simulator, or debug) ADT does not create
-stripped SWFs.
+> **Note:** This feature applies to standard packaging only. For fast packaging
+> (using for example, using interpreter, simulator, or debug) ADT does not
+> create stripped SWFs.
 
 ![](../img/byline.png) For more information on this feature, including sample
 code, see
@@ -1004,15 +1010,15 @@ For Geolocation support, add one of the following key-value pairs to the
 `InfoAdditions` element:
 
     <InfoAdditions>
-                                <![CDATA[
-                                <key>NSLocationAlwaysUsageDescription</key>
-                                <string>Sample description to allow geolocation always</string>
-                                <key>NSLocationWhenInUseUsageDescription</key>
-                                <string>Sample description to allow geolocation when application is in foreground</string>
-                                <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-                                <string>Sample description to allow geolocation always and when application is in foreground</string>
-                                ]]>
-                                </InfoAdditions>
+        <![CDATA[
+            <key>NSLocationAlwaysUsageDescription</key>
+            <string>Sample description to allow geolocation always</string>
+            <key>NSLocationWhenInUseUsageDescription</key>
+            <string>Sample description to allow geolocation when application is in foreground</string>
+            <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+            <string>Sample description to allow geolocation always and when application is in foreground</string>
+        ]]>
+    </InfoAdditions>
 
 ## Application icons
 
@@ -1049,10 +1055,10 @@ Specify the path to the icon files in the icon element of the application
 descriptor file:
 
     <icon>
-                            <image36x36>assets/icon36.png</image36x36>
-                            <image48x48>assets/icon48.png</image48x48>
-                            <image72x72>assets/icon72.png</image72x72>
-                            </icon>
+        <image36x36>assets/icon36.png</image36x36>
+        <image48x48>assets/icon48.png</image48x48>
+        <image72x72>assets/icon72.png</image72x72>
+    </icon>
 
 If you do not supply an icon of a given size, the next largest size is used and
 scaled to fit.
@@ -1121,21 +1127,21 @@ source image. To remove this default glare effect, add the following to the
 `InfoAdditions` element in the application descriptor file:
 
     <InfoAdditions>
-                                    <![CDATA[
-                                    <key>UIPrerenderedIcon</key>
-                                    <true/>
-                                    ]]>
-                                    </InfoAdditions>
+        <![CDATA[
+            <key>UIPrerenderedIcon</key>
+            <true/>
+        ]]>
+    </InfoAdditions>
 
-Note: 1. Starting AIR 28, Assets.car needs to be packaged along with application
-xml and swf file for the icons to be visible on devices having iOS 11 and
-above. 2. On iOS, application metadata is inserted as png metadata into the
-application icons so that Adobe can track the number of AIR applications
-available in the Apple iOS app store. If you do not want your application to
-identified as an AIR application because of this icon metadata, you must
-unpackage the IPA file, remove the icon metadata, and repackage it. This
-procedure is described in the article
-[Opt-out of AIR application analytics for iOS](https://web.archive.org/web/20120727040525/http://helpx.adobe.com/air/kb/opt-out-air-app-analytics.html).
+> **Note:** 1. Starting with AIR 28, Assets.car needs to be packaged along with
+> application xml and swf file for the icons to be visible on devices having iOS
+> 11 and above. 2. On iOS, application metadata is inserted as png metadata into
+> the application icons so that Adobe can track the number of AIR applications
+> available in the Apple iOS app store. If you do not want your application to
+> identified as an AIR application because of this icon metadata, you must
+> unpackage the IPA file, remove the icon metadata, and repackage it. This
+> procedure is described in the article
+> [Opt-out of AIR application analytics for iOS](https://web.archive.org/web/20120727040525/http://helpx.adobe.com/air/kb/opt-out-air-app-analytics.html).
 
 ### iOS launch images
 

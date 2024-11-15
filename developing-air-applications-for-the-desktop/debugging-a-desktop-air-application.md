@@ -29,11 +29,11 @@ For example:
 To print trace statements to the console used to run ADL, add trace statements
 to your code with the `trace()` function.
 
-Note: If your `trace()` statements do not display on the console, ensure that
-you have not specified `ErrorReportingEnable` or `TraceOutputFileEnable` in the
-mm.cfg file. For more information on the platform-specific location of this
-file, see
-[Editing the mm.cfg file](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html).
+> **Note:** If your `trace()` statements do not display on the console, ensure
+> that you have not specified `ErrorReportingEnable` or `TraceOutputFileEnable`
+> in the mm.cfg file. For more information on the platform-specific location of
+> this file, see
+> [Editing the mm.cfg file](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html).
 
 ActionScript example:
 
@@ -50,18 +50,18 @@ display debugging messages from your application. In addition, the line numbers
 for syntax errors as well as any uncaught JavaScript exceptions are printed to
 the console.
 
-Note: To use the air prefix shown in the JavaScript example, you must import the
-AIRAliases.js file into the page. This file is located inside the frameworks
-directory of the AIR SDK.
+> **Note:** To use the air prefix shown in the JavaScript example, you must
+> import the AIRAliases.js file into the page. This file is located inside the
+> frameworks directory of the AIR SDK.
 
 ## Connecting to the Flash Debugger (FDB)
 
 To debug AIR applications with the Flash Debugger, start an FDB session and then
 launch your application using ADL.
 
-Note: In SWF-based AIR applications, the ActionScript source files must be
-compiled with the `-debug` flag. (In Flash Professional, check the Permit
-debugging option in the Publish Settings dialog.)
+> **Note:** In SWF-based AIR applications, the ActionScript source files must be
+> compiled with the `-debug` flag. (In Flash Professional, check the Permit
+> debugging option in the Publish Settings dialog.)
 
 1.  Start FDB. The FDB program can be found in the `bin` directory of the Flex
     SDK.

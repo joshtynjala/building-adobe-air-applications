@@ -35,8 +35,8 @@ not connected, ADT returns exit code 14: Device error (Android) or Invalid
 device specified (iOS). If more than one device or emulator is connected and a
 device is not specified, ADT returns exit code 2: Usage error.
 
-Note: Installing an IPA file directly to an iOS device is available in AIR 3.4
-and higher and requires iTunes 10.5.0 or higher.
+> **Note:** Installing an IPA file directly to an iOS device is available in AIR
+> 3.4 and higher and requires iTunes 10.5.0 or higher.
 
 Use the `adt ‑devices` command (available in AIR 3.4 and higher) to determine
 the handle or serial number of connected devices. Note that on iOS, you use the

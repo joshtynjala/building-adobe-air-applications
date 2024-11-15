@@ -23,5 +23,5 @@ access and install them using the following instructions:
       Applications folder of your user directory (for example, in Macintosh
       HD/Users/JoeUser/Applications/) by default.
 
-Note: Check the AIR release notes for updates to these instructions, which are
-located here: <https://airsdk.harman.com/release_notes>.
+> **Note:** Check the AIR release notes for updates to these instructions, which
+> are located here: <https://airsdk.harman.com/release_notes>.

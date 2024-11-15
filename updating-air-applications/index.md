@@ -51,15 +51,15 @@ installed, updated, or removed. You can consult these logs to help determine the
 cause of any installation problems. See
 [Installation logs](https://web.archive.org/web/20150520002006/http://kb2.adobe.com/cps/839/cpsid_83989.html).
 
-Note: New versions of the Adobe AIR runtime may include updated versions of
-WebKit. An updated version of WebKit _may_ result in unexpected changes in HTML
-content in a deployed AIR application. These changes may require you to update
-your application. An update mechanism can inform the user of the new version of
-the application. For more information, see
-[About the HTML environment](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fb1.html)
-(for ActionScript developers) or
-[About the HTML environment](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fb1.html)
-(for HTML developers).
+> **Note:** New versions of the Adobe AIR runtime may include updated versions
+> of WebKit. An updated version of WebKit _may_ result in unexpected changes in
+> HTML content in a deployed AIR application. These changes may require you to
+> update your application. An update mechanism can inform the user of the new
+> version of the application. For more information, see
+> [About the HTML environment](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fb1.html)
+> (for ActionScript developers) or
+> [About the HTML environment](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/air/html/dev/WS5b3ccc516d4fbf351e63e3d118666ade46-7fb1.html)
+> (for HTML developers).
 
 - [About updating applications](WS5b3ccc516d4fbf351e63e3d118666ade46-7c57.html)
 - [Presenting a custom application update user interface](WS5b3ccc516d4fbf351e63e3d118666ade46-7ccd.html)

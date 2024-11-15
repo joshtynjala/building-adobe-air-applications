@@ -84,8 +84,8 @@ codecs:
 
 - DTS-HD Master Audio
 
-Note: Support for multichannel audio in videos streamed from an Adobe Flash
-Media Server is not yet available.
+> **Note:** Support for multichannel audio in videos streamed from an Adobe
+> Flash Media Server is not yet available.
 
 ## Game input
 

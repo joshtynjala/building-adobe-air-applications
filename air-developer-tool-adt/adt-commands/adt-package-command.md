@@ -59,8 +59,8 @@ Create a native extension package from the component native extension files:
         output
         ANE_OPTIONS
 
-Note: You do not have to sign an ANE file, so the `AIR_SIGNING_OPTIONS`
-parameters are optional in this example.
+> **Note:** You do not have to sign an ANE file, so the `AIR_SIGNING_OPTIONS`
+> parameters are optional in this example.
 
 **AIR_SIGNING_OPTIONS** The AIR signing options identify the certificate used to
 sign an AIR installation file. The signing options are fully described in
@@ -288,11 +288,11 @@ Package all files and subdirectories in the current working directory:
 
     adt –package -storetype pkcs12 -keystore ../cert.p12 myApp.air myApp.xml .
 
-Note: The keystore file contains the private key used to sign your application.
-Never include the signing certificate inside the AIR package! If you use
-wildcards in the ADT command, place the keystore file in a different location so
-that it is not included in the package. In this example the keystore file,
-cert.p12, resides in the parent directory.
+> **Note:** The keystore file contains the private key used to sign your
+> application. Never include the signing certificate inside the AIR package! If
+> you use wildcards in the ADT command, place the keystore file in a different
+> location so that it is not included in the package. In this example the
+> keystore file, cert.p12, resides in the parent directory.
 
 Package only the main files and an images subdirectory:
 
@@ -394,9 +394,9 @@ Windows:
         </java>
     </target>
 
-Note: On some computer systems, double-byte characters in the file system paths
-can be misinterpreted. If this occurs, try setting the JRE used to run ADT to
-use the UTF-8 character set. This is done by default in the script used to
-launch ADT on Mac and Linux. In the Windows adt.bat file, or when you run ADT
-directly from Java, specify the `‑Dfile.encoding=UTF-8` option on the Java
-command line.
+> **Note:** On some computer systems, double-byte characters in the file system
+> paths can be misinterpreted. If this occurs, try setting the JRE used to run
+> ADT to use the UTF-8 character set. This is done by default in the script used
+> to launch ADT on Mac and Linux. In the Windows adt.bat file, or when you run
+> ADT directly from Java, specify the `‑Dfile.encoding=UTF-8` option on the Java
+> command line.

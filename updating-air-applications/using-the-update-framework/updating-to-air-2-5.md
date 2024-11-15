@@ -23,9 +23,10 @@ namespace and has new features implemented using AIR 2.5 APIs.
     1.  Use AIR 2.5 Application Updater framework while creating the
         application.
 
-        Note: Use `applicationupdater.swc` or `applicationupdater_ui.swc` for
-        AIR applications based on Flash technology and `applicationupdater.swf`
-        or `applicationupdater_ui.swf` for HTML-based AIR applications.
+        > **Note:** Use `applicationupdater.swc` or `applicationupdater_ui.swc`
+        > for AIR applications based on Flash technology and
+        > `applicationupdater.swf` or `applicationupdater_ui.swf` for HTML-based
+        > AIR applications.
 
     2.  Create an update descriptor file for version 1.0.1 by using the old
         namespace and the version as shown below:

@@ -15,9 +15,9 @@ extensions required by an application. This list of directories is searched in
 order after any native extension directories specified on the ADT command line.
 The ADL command also uses this environment variable.
 
-Note: On some computer systems, double-byte characters in the file system paths
-stored in these environment variables can be misinterpreted. If this occurs, try
-setting the JRE used to run ADT to use the UTF-8 character set. This is done by
-default in the script used to launch ADT on Mac and Linux. In the Windows
-adt.bat file, or when you run ADT directly from Java, specify the
-`-Dfile.encoding=UTF-8` option on the Java command line.
+> **Note:** On some computer systems, double-byte characters in the file system
+> paths stored in these environment variables can be misinterpreted. If this
+> occurs, try setting the JRE used to run ADT to use the UTF-8 character set.
+> This is done by default in the script used to launch ADT on Mac and Linux. In
+> the Windows adt.bat file, or when you run ADT directly from Java, specify the
+> `-Dfile.encoding=UTF-8` option on the Java command line.

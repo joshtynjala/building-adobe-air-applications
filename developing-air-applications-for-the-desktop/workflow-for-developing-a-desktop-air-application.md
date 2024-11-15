@@ -66,10 +66,10 @@ installer file.
 
 6.  Package the application on each target platform using the _native_ target.
 
-Note: The native installer for a target platform must be created on that
-platform. You cannot, for example, create a Windows installer on a Mac. You can
-use a virtual machine such as VMWare to run multiple platforms on the same
-computer hardware.
+> **Note:** The native installer for a target platform must be created on that
+> platform. You cannot, for example, create a Windows installer on a Mac. You
+> can use a virtual machine such as VMWare to run multiple platforms on the same
+> computer hardware.
 
 ## Creating AIR applications with a captive runtime bundle
 
@@ -89,6 +89,7 @@ computer hardware.
     provide tools for creating such an installer, but many third-party toolkits
     are available.)
 
-Note: The bundle for a target platform must be created on that platform. You
-cannot, for example, create a Windows bundle on a Mac. You can use a virtual
-machine such as VMWare to run multiple platforms on the same computer hardware.
+> **Note:** The bundle for a target platform must be created on that platform.
+> You cannot, for example, create a Windows bundle on a Mac. You can use a
+> virtual machine such as VMWare to run multiple platforms on the same computer
+> hardware.

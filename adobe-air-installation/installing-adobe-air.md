@@ -26,8 +26,8 @@ the computer.
 
 #### Install the runtime on a Linux computer
 
-Note: At this time, AIR 2.7 and later are not supported on Linux. AIR
-applications deployed to Linux should continue to use the AIR 2.6 SDK.
+> **Note:** At this time, AIR 2.7 and later are not supported on Linux. AIR
+> applications deployed to Linux should continue to use the AIR 2.6 SDK.
 
 _Using the binary installer:_
 

@@ -64,10 +64,10 @@ As an AIR application developer, you use the ANE file as follows:
   include a SWC file in the library path. This action allows the application to
   reference the extension's ActionScript classes.
 
-  Note: When compiling your application, be sure to use dynamic linking for the
-  ANE. If you use Flash Builder, specify External on the ActionScript Builder
-  Path Properties panel; if you use the command line, specify
-  -external-library-path.
+  > **Note:** When compiling your application, be sure to use dynamic linking
+  > for the ANE. If you use Flash Builder, specify External on the ActionScript
+  > Builder Path Properties panel; if you use the command line, specify
+  > -external-library-path.
 
 - Package the ANE file with the AIR application.
 
@@ -106,10 +106,10 @@ an ActionScript class library, containing a SWF file and other resource files in
 an archive format. However, the most important difference between an ANE file
 and a SWC file is that only an ANE file can contain a native code library.
 
-Note: When compiling your application, be sure to use dynamic linking for the
-ANE file. If you use Flash Builder, specify External on the ActionScript Builder
-Path Properties panel; if you use the command line, specify
--external-library-path.
+> **Note:** When compiling your application, be sure to use dynamic linking for
+> the ANE file. If you use Flash Builder, specify External on the ActionScript
+> Builder Path Properties panel; if you use the command line, specify
+> -external-library-path.
 
 ## Supported devices
 

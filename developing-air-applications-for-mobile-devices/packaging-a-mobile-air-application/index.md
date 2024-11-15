@@ -32,8 +32,8 @@ for more information.
 By default, ADT packages Android application with shared runtime. So to run the
 application, user should install separate AIR runtime on the device.
 
-Note: To force ADT to create an APK that uses captive runtime, use
-`target apk-captive-runtime`.
+> **Note:** To force ADT to create an APK that uses captive runtime, use
+> `target apk-captive-runtime`.
 
 #### iOS packages
 

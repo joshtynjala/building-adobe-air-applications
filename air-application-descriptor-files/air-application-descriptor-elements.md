@@ -306,7 +306,8 @@ Using 16-bit color can increase rendering performance at the expense of color
 fidelity. Prior to AIR 3, 16-bit color is always used on Android. In AIR 3,
 32-bit color is used by default.
 
-Note: If your application uses the StageVideo class, you must use 32-bit color.
+> **Note:** If your application uses the StageVideo class, you must use 32-bit
+> color.
 
 **Parent element:** [android](WSfffb011ac560372f-6fd06f0f1293d3b33ea-8000.html)
 
@@ -431,12 +432,12 @@ determine how to proceed with the update operation. (The application ID and
 publisher ID in the AIR file must match the values in the installed application
 for an upgrade to proceed.)
 
-Note: The `customUpdateUI` mechanism only comes into play when the application
-is already installed and the user double-clicks the AIR installation file
-containing an update or installs an update of the application using the seamless
-install feature. You can download and start an update through your own
-application logic, displaying your custom UI as necessary, whether or not
-`customUpdateUI` is `true`.
+> **Note:** The `customUpdateUI` mechanism only comes into play when the
+> application is already installed and the user double-clicks the AIR
+> installation file containing an update or installs an update of the
+> application using the seamless install feature. You can download and start an
+> update through your own application logic, displaying your custom UI as
+> necessary, whether or not `customUpdateUI` is `true`.
 
 For more information, see
 [Updating AIR applications](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff2.html).
@@ -784,8 +785,8 @@ an existing association between a file type and another application, use the
 `NativeApplication.setAsDefaultApplication()` method at run time (preferably
 with the user's permission).
 
-Note: The runtime methods can only manage associations for the file types
-declared in the application descriptor.
+> **Note:** The runtime methods can only manage associations for the file types
+> declared in the application descriptor.
 
 The `fileTypes` element is optional.
 
@@ -970,9 +971,9 @@ If an element for a given size is present, the image in the file must be exactly
 the size specified. If all sizes are not provided, the closest size is scaled to
 fit for a given use of the icon by the operating system.
 
-Note: The icons specified are not automatically added to the AIR package. The
-icon files must be included in their correct relative locations when the
-application is packaged.
+> **Note:** The icons specified are not automatically added to the AIR package.
+> The icon files must be included in their correct relative locations when the
+> application is packaged.
 
 For best results, provide an image for each of the available sizes. In addition,
 make sure that the icons look presentable in both 16- and 32-bit color modes.
@@ -1343,9 +1344,9 @@ You cannot set the following attributes of the application element:
 
 Specifies whether the window can be maximized.
 
-Note: On operating systems, such as Mac OS X, for which maximizing windows is a
-resizing operation, both maximizable and resizable must be set to `false` to
-prevent the window from being zoomed or resized.
+> **Note:** On operating systems, such as Mac OS X, for which maximizing windows
+> is a resizing operation, both maximizable and resizable must be set to `false`
+> to prevent the window from being zoomed or resized.
 
 **Parent element:**
 [initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
@@ -1375,9 +1376,9 @@ determined by the operating system.
 Two integers representing the maximum width and height, separated by whites
 pace.
 
-Note: The maximum window size supported by AIR increased from 2048x2048 pixels
-to 4096x4096 pixels in AIR 2. (Because the screen coordinates are zero-based,
-the maximum value you can use for width or height is 4095.)
+> **Note:** The maximum window size supported by AIR increased from 2048x2048
+> pixels to 4096x4096 pixels in AIR 2. (Because the screen coordinates are
+> zero-based, the maximum value you can use for width or height is 4095.)
 
 #### Example
 
@@ -1570,12 +1571,12 @@ One of the following values:
 - `direct` — rendering composition occurs in the CPU; blitting uses the GPU.
   Available in AIR 3+.
 
-  Note: In order to leverage GPU acceleration of Flash content with AIR for
-  mobile platforms, Adobe recommends that you use renderMode="direct" (that is,
-  Stage3D) rather than renderMode="gpu". Adobe officially supports and
-  recommends the following Stage3D based frameworks: Starling (2D) and Away3D
-  (3D). For more details on Stage3D and Starling/Away3D, see
-  <http://gaming.adobe.com/getstarted/>.
+  > **Note:** In order to leverage GPU acceleration of Flash content with AIR
+  > for mobile platforms, Adobe recommends that you use renderMode="direct"
+  > (that is, Stage3D) rather than renderMode="gpu". Adobe officially supports
+  > and recommends the following Stage3D based frameworks: Starling (2D) and
+  > Away3D (3D). For more details on Stage3D and Starling/Away3D, see
+  > <http://gaming.adobe.com/getstarted/>.
 
 - `gpu` — hardware acceleration is used, if available.
 
@@ -1658,9 +1659,9 @@ iOS:
 
 Specifies whether the window can be resized.
 
-Note: On operating systems, such as Mac OS X, for which maximizing windows is a
-resizing operation, both maximizable and resizable must be set to `false` to
-prevent the window from being zoomed or resized.
+> **Note:** On operating systems, such as Mac OS X, for which maximizing windows
+> is a resizing operation, both maximizable and resizable must be set to `false`
+> to prevent the window from being zoomed or resized.
 
 **Parent element:**
 [initialWindow](WSfffb011ac560372f2fea1812938a6e463-7ff5.html)
@@ -1733,11 +1734,11 @@ ISO 639‑1 values for the languages supported by the AIR runtime: `en`, `de`,
 The packager generates an error for an empty value for the
 `<supportedLanguages>` element.
 
-Note: Localized tags (such as the name tag) ignore the value of a language if
-you use the `<supportedLanguages>` tag and it does not contain that language. If
-a native extension has resources for a language which is not specified by the
-`<supportedLangauges>` tag, a warning is issued and the resources are ignored
-for that language.
+> **Note:** Localized tags (such as the name tag) ignore the value of a language
+> if you use the `<supportedLanguages>` tag and it does not contain that
+> language. If a native extension has resources for a language which is not
+> specified by the `<supportedLangauges>` tag, a warning is issued and the
+> resources are ignored for that language.
 
 #### Example
 
@@ -1780,10 +1781,10 @@ desktop and extended profiles:
 
     <supportedProfiles>desktop extendedDesktop</supportedProfiles>
 
-Note: When you run an application with ADL and do not specify a value for the
-ADL `-profile` option, then the first profile in the application descriptor is
-used. (If no profiles are specified in the application descriptor either, then
-the desktop profile is used.)
+**Note:** When you run an application with ADL and do not specify a value for
+the ADL `-profile` option, then the first profile in the application descriptor
+is used. (If no profiles are specified in the application descriptor either,
+then the desktop profile is used.)
 
 #### Example
 

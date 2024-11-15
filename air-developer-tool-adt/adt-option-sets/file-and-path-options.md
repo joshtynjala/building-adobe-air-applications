@@ -40,9 +40,9 @@ application folder.
 **`-e file_or_dir dir`**` `Places the file or directory into the specified
 package directory. This option cannot be used when packaging an ANE file.
 
-Note: The `<content>` element of the application descriptor file must specify
-the final location of the main application file within the application package
-directory tree.
+> **Note:** The `<content>` element of the application descriptor file must
+> specify the final location of the main application file within the application
+> package directory tree.
 
 **-extdir _dir_** The value of _`dir`_ is the name of a directory to search for
 native extensions (ANE files). Specify either an absolute path, or a path
@@ -62,7 +62,7 @@ look like the following:
         extension1.ane
         extension2.ane
 
-Note: The use of the -extdir option is different for the ADT tool and the ADL
-tool. In ADL, the option specifies a directory that contains subdirectories,
-each containing an unpackaged ANE file. In ADT, the options specifies a
-directory that contains ANE files.
+> **Note:** The use of the -extdir option is different for the ADT tool and the
+> ADL tool. In ADL, the option specifies a directory that contains
+> subdirectories, each containing an unpackaged ANE file. In ADT, the options
+> specifies a directory that contains ANE files.

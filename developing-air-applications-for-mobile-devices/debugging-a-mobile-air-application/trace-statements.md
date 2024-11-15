@@ -30,8 +30,8 @@ These command examples assume that you are running ADB from the Android SDK
 folder or that you have added the `SDK` folder to your path environment
 variable.
 
-Note: In AIR 2.6+, the ADB utility is included in the AIR SDK and can be found
-in the lib/android/bin folder.
+> **Note:** In AIR 2.6+, the ADB utility is included in the AIR SDK and can be
+> found in the lib/android/bin folder.
 
 #### Remote trace statements on iOS
 

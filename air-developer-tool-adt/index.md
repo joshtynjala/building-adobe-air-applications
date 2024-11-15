@@ -42,13 +42,13 @@ variable, you can run ADT using the following basic syntax:
 
     adt -command options
 
-Note: Most integrated development environments, including Adobe Flash Builder
-and Adobe Flash Professional can package and sign AIR applications for you. You
-typically do not need to use ADT for these common tasks when you already use
-such a development environment. However, you might still need to use ADT as a
-command-line tool for functions that are not supported by your integrated
-development environment. In addition, you can use ADT as a command-line tool as
-part of an automated build process.
+> **Note:** Most integrated development environments, including Adobe Flash
+> Builder and Adobe Flash Professional can package and sign AIR applications for
+> you. You typically do not need to use ADT for these common tasks when you
+> already use such a development environment. However, you might still need to
+> use ADT as a command-line tool for functions that are not supported by your
+> integrated development environment. In addition, you can use ADT as a
+> command-line tool as part of an automated build process.
 
 - [ADT commands](WS901d38e593cd1bac1e63e3d128fc240122-8000.html)
 - [ADT option sets](WS901d38e593cd1bac1e63e3d128fc240122-7ff3.html)

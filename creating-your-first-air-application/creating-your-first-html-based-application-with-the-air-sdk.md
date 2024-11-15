@@ -13,11 +13,11 @@ tutorial assumes that you are already familiar with running programs from the
 command line and know how to set up the necessary path environment variables for
 your operating system.
 
-Note: If you are an Adobe® Dreamweaver® user, read
-[Create your first HTML-based AIR application with Dreamweaver](WS5b3ccc516d4fbf351e63e3d118666ade46-7f7f.html).
+> **Note:** If you are an Adobe® Dreamweaver® user, read
+> [Create your first HTML-based AIR application with Dreamweaver](WS5b3ccc516d4fbf351e63e3d118666ade46-7f7f.html).
 
-Note: HTML-based AIR applications can only be developed for the desktop and the
-extendedDesktop profiles. The mobile profile is not supported.
+> **Note:** HTML-based AIR applications can only be developed for the desktop
+> and the extendedDesktop profiles. The mobile profile is not supported.
 
 ## Create the project files
 
@@ -75,8 +75,8 @@ file with the following structure:
     **\<versionNumber\>0.1\</versionNumber\>** Helps users to determine which
     version of your application they are installing.
 
-    Note: If you are using AIR 2, or earlier, you must use the `<version>`
-    element instead of the `<versionNumber>` element.
+    > **Note:** If you are using AIR 2, or earlier, you must use the `<version>`
+    > element instead of the `<versionNumber>` element.
 
 5.  Add the `<filename>` element:
 

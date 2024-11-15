@@ -11,11 +11,11 @@ not support breakpoints or other debugging features. You can use the Flash
 Debugger (or an integrated development environment such as Flash Builder) for
 complex debugging issues.
 
-Note: If your `trace()` statements do not display on the console, ensure that
-you have not specified `ErrorReportingEnable` or `TraceOutputFileEnable` in the
-mm.cfg file. For more information on the platform-specific location of this
-file, see
-[Editing the mm.cfg file](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html).
+> **Note:** If your `trace()` statements do not display on the console, ensure
+> that you have not specified `ErrorReportingEnable` or `TraceOutputFileEnable`
+> in the mm.cfg file. For more information on the platform-specific location of
+> this file, see
+> [Editing the mm.cfg file](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/flex/using/WS2db454920e96a9e51e63e3d11c0bf69084-7fc9.html).
 
 AIR supports debugging directly, so you do not need a debug version of the
 runtime (as you would with Adobe® Flash® Player). To conduct command-line
@@ -27,9 +27,9 @@ version is in the lib subdirectory. The AIR Debug Launcher, adl.exe, is in the
 bin directory of your Flex SDK installation. (There is no separate Java
 version).
 
-Note: You cannot start an AIR application directly with fdb, because fdb
-attempts to launch it with Flash Player. Instead, let the AIR application
-connect to a running fdb session.
+> **Note:** You cannot start an AIR application directly with fdb, because fdb
+> attempts to launch it with Flash Player. Instead, let the AIR application
+> connect to a running fdb session.
 
 ## ADL usage
 
@@ -68,10 +68,10 @@ connection, that use the publisher ID to help uniquely identify an application.
 As of AIR 1.5.3, you can also specify the publisher ID in the application
 descriptor file (and should not use this parameter).
 
-Note: As of AIR 1.5.3, a Publisher ID is no longer automatically computed and
-assigned to an AIR application. You can specify a publisher ID when creating an
-update to an existing AIR application, but new applications do not need and
-should not specify a publisher ID.
+> **Note:** As of AIR 1.5.3, a Publisher ID is no longer automatically computed
+> and assigned to an AIR application. You can specify a publisher ID when
+> creating an update to an existing AIR application, but new applications do not
+> need and should not specify a publisher ID.
 
 **-nodebug** Turns off debugging support. If used, the application process
 cannot connect to the Flash debugger and dialogs for unhandled exceptions are
@@ -203,9 +203,9 @@ not specified, the directory containing the application descriptor file is used.
 **-- _arguments_** Any character strings appearing after "--" are passed to the
 application as command line arguments.
 
-Note: When you launch an AIR application that is already running, a new instance
-of that application is not started. Instead, an `invoke` event is dispatched to
-the running instance.
+> **Note:** When you launch an AIR application that is already running, a new
+> instance of that application is not started. Instead, an `invoke` event is
+> dispatched to the running instance.
 
 ## ADL Examples
 

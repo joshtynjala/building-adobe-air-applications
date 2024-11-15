@@ -65,11 +65,12 @@ utility from the AIR SDK) to forward the device port to the desktop port.
                                             Breakpoint 1 at 0x5993: file DebugExample.as, line 14
                                             (fdb) continue
 
-Note: Port number 7936 is used as the default for USB debugging by both the AIR
-runtime and FDB. You can specify different ports to use with the ADT -listen
-port parameter and the FDB -p port parameter. In this case you must use the
-Android Debug Bridge utility to forward the port number specified in ADT to the
-port specified in FDB: `adb forward tcp:adt_listen_port# tcp:fdb_port#`
+> **Note:** Port number 7936 is used as the default for USB debugging by both
+> the AIR runtime and FDB. You can specify different ports to use with the ADT
+> -listen port parameter and the FDB -p port parameter. In this case you must
+> use the Android Debug Bridge utility to forward the port number specified in
+> ADT to the port specified in FDB:
+> `adb forward tcp:adt_listen_port# tcp:fdb_port#`
 
 **USB debugging procedure for iOS**
 
@@ -135,6 +136,6 @@ desktop port.
 11. When the remote connection is established, you can set breakpoints with the
     FDB `break` command and then start execution with the `continue` command:
 
-Note: Port number 7936 is used as the default for USB debugging by both the AIR
-runtime and FDB. You can specify different ports to use with the IDB -listen
-port parameter and the FDB -p port parameter.
+> **Note:** Port number 7936 is used as the default for USB debugging by both
+> the AIR runtime and FDB. You can specify different ports to use with the IDB
+> -listen port parameter and the FDB -p port parameter.

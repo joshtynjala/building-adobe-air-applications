@@ -9,8 +9,8 @@ You must also download and install the Android SDK from the Android website, as
 described in:
 [Android Developers: Installing the SDK](http://developer.android.com/sdk/installing.html).
 
-Note: For information on iPhone development, see
-[Creating a Hello World iPhone application with Flash Professional CS5](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/WS789ea67d3e73a8b2-240138de1243a7725e7-7ffc.html).
+> **Note:** For information on iPhone development, see
+> [Creating a Hello World iPhone application with Flash Professional CS5](https://web.archive.org/web/20150414032840/http://help.adobe.com/en_US/as3/iphone/WS789ea67d3e73a8b2-240138de1243a7725e7-7ffc.html).
 
 ## Create the AIR application descriptor file
 
@@ -130,9 +130,9 @@ to run the utilities on the command line.
 Running `amxmlc` produces `HelloWorld.swf`, which contains the compiled code of
 the application.
 
-Note: If the application does not compile, fix syntax or spelling errors. Errors
-and warnings are displayed in the console window used to run the amxmlc
-compiler.
+> **Note:** If the application does not compile, fix syntax or spelling errors.
+> Errors and warnings are displayed in the console window used to run the amxmlc
+> compiler.
 
 For more information, see
 [Compiling MXML and ActionScript source files for AIR](WS2d929364fa0b8137-4622b98b129dc3cff3f-7ffe.html).

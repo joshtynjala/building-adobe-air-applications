@@ -13,8 +13,8 @@ For instructions on installing the Adobe AIR Extension for Dreamweaver, see
 For an overview of the extension, including system requirements, see
 [AIR Extension for Dreamweaver](https://web.archive.org/web/20140902231802/https://helpx.adobe.com/dreamweaver/using/air-extension-dreamweaver.html).
 
-Note: HTML-based AIR applications can only be developed for the desktop and the
-extendedDesktop profiles. The mobile profile is not supported.
+> **Note:** HTML-based AIR applications can only be developed for the desktop
+> and the extendedDesktop profiles. The mobile profile is not supported.
 
 ## Prepare the application files
 

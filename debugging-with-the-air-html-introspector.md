@@ -57,8 +57,8 @@ distribute.
 The AIRIntrospector.js file defines a class, Console, which you can access from
 JavaScript code by calling `air.Introspector.Console`.
 
-Note: Code using the AIR Introspector must be in the application security
-sandbox (in a file in the application directory).
+> **Note:** Code using the AIR Introspector must be in the application security
+> sandbox (in a file in the application directory).
 
 ## Inspecting an object in the Console tab
 

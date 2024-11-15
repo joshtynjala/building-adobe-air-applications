@@ -110,12 +110,12 @@ initial application window.
     possible. If window transparency is set to true, then the window "falls
     back" to software rendering and blitting.
 
-    Note: In order to leverage GPU acceleration of Flash content with AIR for
-    mobile platforms, Adobe recommends that you use renderMode="direct" (that
-    is, Stage3D) rather than renderMode="gpu". Adobe officially supports and
-    recommends the following Stage3D based frameworks: Starling (2D) and Away3D
-    (3D). For more details on Stage3D and Starling/Away3D, see
-    <http://gaming.adobe.com/getstarted/>.
+    > **Note:** In order to leverage GPU acceleration of Flash content with AIR
+    > for mobile platforms, Adobe recommends that you use renderMode="direct"
+    > (that is, Stage3D) rather than renderMode="gpu". Adobe officially supports
+    > and recommends the following Stage3D based frameworks: Starling (2D) and
+    > Away3D (3D). For more details on Stage3D and Starling/Away3D, see
+    > <http://gaming.adobe.com/getstarted/>.
 
   - gpu — hardware acceleration is used, if available.
 
@@ -165,9 +165,10 @@ The following elements control desktop installation and update features.
   NativeApplication object. It is good form to ask for the user's permission
   before overriding their existing file type associations.
 
-  Note: File type registration is ignored when you package an application as a
-  captive runtime bundle (using the `-bundle` target). To register a given file
-  type, you must create an installer program that performs the registration.
+  > **Note:** File type registration is ignored when you package an application
+  > as a captive runtime bundle (using the `-bundle` target). To register a
+  > given file type, you must create an installer program that performs the
+  > registration.
 
 - installFolder — Specifies a path relative to the standard application
   installation folder into which the application is installed. You can use this

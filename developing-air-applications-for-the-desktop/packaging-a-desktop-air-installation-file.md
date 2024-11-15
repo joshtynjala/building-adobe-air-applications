@@ -51,10 +51,10 @@ command. You can also create an intermediate, unsigned package with the
 `-prepare` command, and sign the intermediate package with the `-sign` command
 in a separate step.
 
-Note: Java versions 1.5 and above do not accept high-ASCII characters in
-passwords used to protect PKCS12 certificate files. When you create or export
-your code signing certificate file, use only regular ASCII characters in the
-password.
+> **Note:** Java versions 1.5 and above do not accept high-ASCII characters in
+> passwords used to protect PKCS12 certificate files. When you create or export
+> your code signing certificate file, use only regular ASCII characters in the
+> password.
 
 When signing the installation package, ADT automatically contacts a time-stamp
 authority server to verify the time. The time-stamp information is included in
@@ -91,9 +91,9 @@ descriptor file. See
 [Device profiles](WS144092a96ffef7cc16ddeea2126bb46b82f-8000.html) and
 [supportedProfiles](WSfffb011ac560372f2fea1812938a6e463-7fe2.html).
 
-Note: The settings in the application descriptor file determine the identity of
-an AIR application and its default installation path. See
-[AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html).
+> **Note:** The settings in the application descriptor file determine the
+> identity of an AIR application and its default installation path. See
+> [AIR application descriptor files](WS5b3ccc516d4fbf351e63e3d118666ade46-7ff1.html).
 
 #### Publisher IDs
 

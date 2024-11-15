@@ -75,13 +75,14 @@ certificates), then the publisher information cannot be verified. While AIR can
 determine that the AIR package has not been altered since it was signed, there
 is no way to know who actually created and signed the file.
 
-Note: A user can choose to trust a self-signed certificate and then any AIR
-applications signed with the certificate displays the value of the common name
-field in the certificate as the publisher name. AIR does not provide any means
-for a user to designate a certificate as trusted. The certificate (not including
-the private key) must be provided to the user separately and the user must use
-one of the mechanisms provided by the operating system or an appropriate tool to
-import the certificate into the proper location in system certificate store.
+> **Note:** A user can choose to trust a self-signed certificate and then any
+> AIR applications signed with the certificate displays the value of the common
+> name field in the certificate as the publisher name. AIR does not provide any
+> means for a user to designate a certificate as trusted. The certificate (not
+> including the private key) must be provided to the user separately and the
+> user must use one of the mechanisms provided by the operating system or an
+> appropriate tool to import the certificate into the proper location in system
+> certificate store.
 
 ## About AIR publisher identifiers
 
@@ -173,8 +174,8 @@ ChosenSecurity can be used:
 
   - Sun Java Signing Digital ID
 
-Note: The certificate must be created for code signing. You cannot use an SSL or
-other type of certificate to sign AIR files.
+> **Note:** The certificate must be created for code signing. You cannot use an
+> SSL or other type of certificate to sign AIR files.
 
 ## Time stamps
 
@@ -204,11 +205,11 @@ obtain and export an Adobe Developer certificate certificate from Thawte you
 must use Mozilla Firefox. The certificate can then be exported as a .p12 or .pfx
 file directly from the Firefox user interface.
 
-Note: Java versions 1.5 and above do not accept high-ASCII characters in
-passwords used to protect PKCS12 certificate files. Java is used by the AIR
-development tools to create the signed AIR packages. When you export the
-certificate as a .p12 or .pfx file, use only regular ASCII characters in the
-password.
+> **Note:** Java versions 1.5 and above do not accept high-ASCII characters in
+> passwords used to protect PKCS12 certificate files. Java is used by the AIR
+> development tools to create the signed AIR packages. When you export the
+> certificate as a .p12 or .pfx file, use only regular ASCII characters in the
+> password.
 
 You can generate a self-signed certificate using the Air Development Tool (ADT)
 used to package AIR installation files. Some third-party tools can also be used.
@@ -224,9 +225,9 @@ the Thawte Certification Authority and prepare it for use with ADT.
 
 ### Example: Getting an AIR Developer Certificate from Thawte
 
-Note: This example illustrates only one of the many ways to obtain and prepare a
-code signing certificate for use. Each certification authority has its own
-policies and procedures.
+> **Note:** This example illustrates only one of the many ways to obtain and
+> prepare a code signing certificate for use. Each certification authority has
+> its own policies and procedures.
 
 To purchase an AIR Developer Certificate, the Thawte web site requires you to
 use the Mozilla Firefox browser. The private key for the certificate is stored
@@ -252,9 +253,9 @@ certificate from Thawte's web site.
     verification is complete, Thawte will send you e-mail with instructions on
     how to retrieve the certificate.
 
-    Note: Additional information about the type of documentation required can be
-    found here:
-    <https://www.thawte.com/ssl-digital-certificates/free-guides-whitepapers/pdf/enroll_codesign_eng.pdf>_._
+    > **Note:** Additional information about the type of documentation required
+    > can be found here:
+    > <https://www.thawte.com/ssl-digital-certificates/free-guides-whitepapers/pdf/enroll_codesign_eng.pdf>.
 
 4.  Retrieve the issued certificate from the Thawte site. The certificate is
     automatically saved to the Firefox keystore.
@@ -262,8 +263,8 @@ certificate from Thawte's web site.
 5.  Export a keystore file containing the private key and certificate from the
     Firefox keystore using the following steps:
 
-    Note: When exporting the private key/cert from Firefox, it is exported in a
-    .p12 (pfx) format which ADT, Flex, Flash, and Dreamweaver can use.
+    > **Note:** When exporting the private key/cert from Firefox, it is exported
+    > in a .p12 (pfx) format which ADT, Flex, Flash, and Dreamweaver can use.
 
     1.  Open the Firefox _Certificate Manager_ dialog:
 
@@ -354,21 +355,22 @@ An AIR file with a migration signature is, in other respects, a normal AIR file.
 If the application is installed on a system without the original version, AIR
 installs the new version in the usual manner.
 
-Note: Prior to AIR 1.5.3, signing an AIR application with a renewed certificate
-did not always require a migration signature. Starting with AIR 1.5.3, a
-migration signature is always required for renewed certificates.
+> **Note:** Prior to AIR 1.5.3, signing an AIR application with a renewed
+> certificate did not always require a migration signature. Starting with AIR
+> 1.5.3, a migration signature is always required for renewed certificates.
 
 To apply a migration signature use the
 [ADT migrate command](WS901d38e593cd1bac1e63e3d128fc240122-7ffd.html), as
 described in
 [Signing an updated version of an AIR application](WS13ACB483-1711-43c0-9049-0A7251630A7D.html).
 
-Note: The ADT migrate command cannot be used with AIR desktop applications that
-include native extensions, because those applications are packaged as native
-installers, not as .air files. To change certificates for an AIR desktop
-application that includes a native extension, package the application using the
-[ADT package command](WS901d38e593cd1bac1e63e3d128cdca935b-8000.html) with the
--migrate flag.
+> **Note:** The ADT migrate command cannot be used with AIR desktop applications
+> that include native extensions, because those applications are packaged as
+> native installers, not as .air files. To change certificates for an AIR
+> desktop application that includes a native extension, package the application
+> using the
+> [ADT package command](WS901d38e593cd1bac1e63e3d128cdca935b-8000.html) with the
+> -migrate flag.
 
 #### Application identity changes
 
@@ -396,8 +398,8 @@ cannot change. The original application and publisher IDs must be specified in
 the application descriptor of the update AIR file. Otherwise, the new package is
 not recognized as an update.
 
-Note: When publishing a new AIR application with AIR 1.5.3 or later, you should
-not specify a publisher ID.
+> **Note:** When publishing a new AIR application with AIR 1.5.3 or later, you
+> should not specify a publisher ID.
 
 ## Terminology
 

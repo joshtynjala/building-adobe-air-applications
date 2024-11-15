@@ -53,8 +53,8 @@ file with the following structure:
     **\<versionNumber\>1.0\</versionNumber\>** Helps users to determine which
     version of your application they are installing.
 
-    Note: If you are using AIR 2, or earlier, you must use the `<version>`
-    element instead of the `<versionNumber>` element.
+    > **Note:** If you are using AIR 2, or earlier, you must use the `<version>`
+    > element instead of the `<versionNumber>` element.
 
 5.  Add the `<filename>` element:
 
@@ -98,12 +98,12 @@ associated file types, and application icons, see
 
 ## Write the application code
 
-Note: SWF-based AIR applications can use a main class defined either with MXML
-or with Adobe® ActionScript® 3.0. This example uses an MXML file to define its
-main class. The process for creating an AIR application with a main ActionScript
-class is similar. Instead of compiling an MXML file into the SWF file, you
-compile the ActionScript class file. When using ActionScript, the main class
-must extend flash.display.Sprite.
+> **Note:** SWF-based AIR applications can use a main class defined either with
+> MXML or with Adobe® ActionScript® 3.0. This example uses an MXML file to
+> define its main class. The process for creating an AIR application with a main
+> ActionScript class is similar. Instead of compiling an MXML file into the SWF
+> file, you compile the ActionScript class file. When using ActionScript, the
+> main class must extend flash.display.Sprite.
 
 Like all Flex-based applications, AIR applications built with the Flex framework
 contain a main MXML file. Desktop AIR applications, use the
@@ -162,9 +162,9 @@ to run the utilities on the command line.
 Running `amxmlc` produces `HelloWorld.swf`, which contains the compiled code of
 the application.
 
-Note: If the application does not compile, fix syntax or spelling errors. Errors
-and warnings are displayed in the console window used to run the amxmlc
-compiler.
+> **Note:** If the application does not compile, fix syntax or spelling errors.
+> Errors and warnings are displayed in the console window used to run the amxmlc
+> compiler.
 
 For more information, see
 [Compiling MXML and ActionScript source files for AIR](WS2d929364fa0b8137-4622b98b129dc3cff3f-7ffe.html).

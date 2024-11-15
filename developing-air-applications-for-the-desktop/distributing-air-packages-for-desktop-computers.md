@@ -72,8 +72,8 @@ application icon to run it, just like any other desktop application.
 - On Mac OS, double-click the application in the folder in which it was
   installed. The default installation directory is the /Applications directory.
 
-Note: Only AIR applications developed for AIR 2.6 or earlier can be installed on
-Linux.
+> **Note:** Only AIR applications developed for AIR 2.6 or earlier can be
+> installed on Linux.
 
 The AIR _seamless install_ feature lets a user install an AIR application by
 clicking a link in a web page. The AIR _browser invocation_ features lets a user
@@ -131,7 +131,8 @@ The log files are created in the following locations:
 
 - Linux: `/home/<username>/.appdata/Adobe/AIR/Logs/Install.log`
 
-Note: These log files were not created in versions of AIR earlier than AIR 2.
+> **Note:** These log files were not created in versions of AIR earlier than
+> AIR 2.
 
 More Help topics
 

@@ -90,8 +90,8 @@ Next, add the update version of the AIR application to your web server:
     applications using the update framework included with the AIR 2 SDK (and
     earlier).
 
-    Note: Creating this second update descriptor file is only necessary when you
-    are supporting updates to applications created prior to AIR 2.5.
+    > **Note:** Creating this second update descriptor file is only necessary
+    > when you are supporting updates to applications created prior to AIR 2.5.
 
 4.  Add the updateDescriptor.2.5.xml and updateDescriptor.1.0.xml file to the
     same web server directory that contains the update AIR file.

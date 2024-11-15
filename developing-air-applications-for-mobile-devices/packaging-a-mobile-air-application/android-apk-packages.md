@@ -27,9 +27,9 @@ When you run the command as shown, ADT will prompt you for the keystore
 password. (The password characters you type are not displayed; just press Enter
 when you are done typing.)
 
-Note: By default, all AIR Android applications have the `air.` prefix in the
-package name. To opt out of this default behavior, set the environment variable,
-`AIR_NOANDROIDFLAIR` to _true_, on your computer.
+> **Note:** By default, all AIR Android applications have the `air.` prefix in
+> the package name. To opt out of this default behavior, set the environment
+> variable, `AIR_NOANDROIDFLAIR` to _true_, on your computer.
 
 #### Creating an APK package for an application that uses native extensions
 
@@ -69,9 +69,9 @@ Possible drawbacks of this technique include:
 
 - Larger application RAM footprint
 
-Note: When you bundle the runtime, ADT adds the `INTERNET` and
-`BROADCAST_STICKY` permissions to your application. These permissions are
-required by the AIR runtime.
+> **Note:** When you bundle the runtime, ADT adds the `INTERNET` and
+> `BROADCAST_STICKY` permissions to your application. These permissions are
+> required by the AIR runtime.
 
 #### Creating a debug APK package
 
@@ -103,10 +103,10 @@ and SWCs with debugging enabled. See
 [Debugger connection options](WS901d38e593cd1bac1e63e3d128fc240122-7ff1.html)
 for a full description of the `-connect` and `-listen` flags.
 
-Note: By default, ADT packages a captive copy of the AIR runtime with your
-Android app while packaging app with apk-debug target. To force ADT to create an
-APK that uses an external runtime, set the `AIR_ANDROID_SHARED_RUNTIME`
-environment variable to `true`.
+> **Note:** By default, ADT packages a captive copy of the AIR runtime with your
+> Android app while packaging app with apk-debug target. To force ADT to create
+> an APK that uses an external runtime, set the `AIR_ANDROID_SHARED_RUNTIME`
+> environment variable to `true`.
 
 On Android, the app must also have permission to access the Internet in order
 for it to connect to the computer running the debugger over the network. See

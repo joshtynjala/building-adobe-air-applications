@@ -52,8 +52,8 @@ similar `-installApp` command:
 The value set for the `-platform` argument should match the device on which you
 are installing.
 
-Note: Existing versions of the AIR runtime or the AIR application must be
-removed before reinstalling.
+> **Note:** Existing versions of the AIR runtime or the AIR application must be
+> removed before reinstalling.
 
 #### Installing AIR applications on iOS devices using iTunes
 

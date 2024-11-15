@@ -19,7 +19,7 @@ Before you apply a migration signature, consider the following points:
   or have expired within the last 365 days. This period is termed as the 'grace
   period' and the duration can change in the future.
 
-  Note: Until AIR 2.6, the grace period was 180 days.
+  > **Note:** Until AIR 2.6, the grace period was 180 days.
 
 - You cannot apply a migration signature after the certificate expires and the
   365 days grace period elapses. In that case, users must uninstall the existing
@@ -143,10 +143,10 @@ An AIR file signed with the `-migrate` command can also be used to install a new
 version of the application, in addition to being used to update any previous
 version signed with the old certificate.
 
-Note: When updating an application published for a version of AIR earlier
-than1.5.3, specify the original publisher ID in the application descriptor.
-Otherwise, users of your application must uninstall the earlier version before
-installing the update.
+> **Note:** When updating an application published for a version of AIR earlier
+> than 1.5.3, specify the original publisher ID in the application descriptor.
+> Otherwise, users of your application must uninstall the earlier version before
+> installing the update.
 
 Use the ADT -`migrate` command with following syntax:
 
@@ -162,14 +162,15 @@ Use the ADT -`migrate` command with following syntax:
 
 - **air_file_out** The AIR file to create.
 
-Note: The filenames used for the input and output AIR files must be different.
+> **Note:** The filenames used for the input and output AIR files must be
+> different.
 
 The following example demonstrates calling ADT with the `-migrate` flag to apply
 a migration signature to an updated version of an AIR application:
 
     adt -migrate -storetype pkcs12 -keystore cert.p12 myAppIn.air myApp.air
 
-Note: The `-migrate` command was added to ADT in the AIR 1.1 release.
+> **Note:** The `-migrate` command was added to ADT in the AIR 1.1 release.
 
 ## Migrate a native installer AIR application to use a new certificate
 
@@ -245,5 +246,5 @@ uses a native extension and apply a migration signature to the update:
 
     adt -package -storetype pkcs12 -keystore new_cert.p12 -migrate -storetype pkcs12 -keystore original_cert.p12 -target native myApp.exe myApp.xml myApp.swf
 
-Note: The `-migrate` flag of the `-package` command is available in ADT in AIR
-3.6 and later.
+> **Note:** The `-migrate` flag of the `-package` command is available in ADT in
+> AIR 3.6 and later.

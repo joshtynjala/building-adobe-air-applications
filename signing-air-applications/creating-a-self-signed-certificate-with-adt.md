@@ -35,6 +35,6 @@ options with the ADT `-package` or `-prepare` commands:
     -storetype pkcs12 -keystore newcert.p12 -storepass 39#wnetx3tl
     -storetype pkcs12 -keystore SigningCert.p12 -storepass 39#wnetx3tl
 
-Note: Java versions 1.5 and above do not accept high-ASCII characters in
-passwords used to protect PKCS12 certificate files. Use only regular ASCII
-characters in the password.
+> **Note:** Java versions 1.5 and above do not accept high-ASCII characters in
+> passwords used to protect PKCS12 certificate files. Use only regular ASCII
+> characters in the password.
