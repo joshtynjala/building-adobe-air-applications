@@ -115,7 +115,7 @@ initial application window.
     > (that is, Stage3D) rather than renderMode="gpu". Adobe officially supports
     > and recommends the following Stage3D based frameworks: Starling (2D) and
     > Away3D (3D). For more details on Stage3D and Starling/Away3D, see
-    > <http://gaming.adobe.com/getstarted/>.
+    > <https://web.archive.org/web/20170317155409/http://www.adobe.com/devnet/games/gaming.html>.
 
   - gpu — hardware acceleration is used, if available.
 

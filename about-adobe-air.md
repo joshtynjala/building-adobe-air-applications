@@ -8,7 +8,8 @@ Adobe® Flash® (SWF based). Desktop AIR applications can also be built with HTM
 JavaScript®, and Ajax (HTML based).
 
 You can find more information about getting started with and using Adobe AIR at
-the Adobe AIR Developer Connection (<http://www.adobe.com/devnet/air/>).
+the Adobe AIR Developer Connection
+(<https://web.archive.org/web/20170303194911/https://www.adobe.com/devnet/air.html>).
 
 AIR enables you to work in familiar environments, to leverage the tools and
 approaches you find most comfortable. By supporting Flash, Flex, HTML,

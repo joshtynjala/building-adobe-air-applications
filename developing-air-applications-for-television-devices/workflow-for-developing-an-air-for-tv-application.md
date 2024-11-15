@@ -16,7 +16,7 @@ development tools:
 
   Starting with AIR 2.5, you can develop your applications using the
   command-line tools provided with the AIR SDK. To download the AIR SDK, see
-  <http://www.adobe.com/products/air/sdk/>.
+  <https://airsdk.harman.com/>.
 
 ## Using Flash Professional
 
